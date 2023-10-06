@@ -51,6 +51,11 @@ npm install create-react-app
 npx create-react-app client
 ```
 
+3.5. Install web3 
+```
+npm install web3
+```
+
 ### 4. Compile, Migrate, Deploy Solidity Contracts:
 4.1. Compile with truffle
 ```

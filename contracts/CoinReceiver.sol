@@ -19,10 +19,6 @@ contract CoinReceiver {
         _;
     }
 
-    function getName() external view returns (string memory) {
-        return name;
-    }
-
     function deposit(address recipient, uint256 amount) public onlyOwner {
         require(recipient != address(0), "Invalid recipient address");
         require(amount > 0, "Amount must be greater than 0");
