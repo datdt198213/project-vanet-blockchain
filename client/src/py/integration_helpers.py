@@ -3,8 +3,7 @@ import sys
 import binascii
 from iroha import Iroha, IrohaGrpc, IrohaCrypto
 # import sha3
-from Crypto.Hash import keccak
-
+from Cryptodome.Hash import keccak #Python 3.8.9 MacOS
 if sys.version_info[0] < 3:
     raise Exception("Python 3 or a more recent version is required.")
 
