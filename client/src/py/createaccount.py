@@ -125,18 +125,18 @@ def transfer_coin_from_admin_to_userone():
     send_transaction_and_print_status(tx)
 
 
-@trace
-def userone_grants_to_admin_set_account_detail_permission():
-    """
-    Make admin@test able to set detail to userone@domain
-    """
-    tx = iroha.transaction([
-        iroha.command('GrantPermission', account_id='admin@test',
-                      permission=ccan_grant_can_set_my_account_detaill)
-    ], creator_account='datdang@test')
+# @trace
+# def userone_grants_to_admin_set_account_detail_permission():
+#     """
+#     Make admin@test able to set detail to userone@domain
+#     """
+#     tx = iroha.transaction([
+#         iroha.command('GrantPermission', account_id='admin@test',
+#                       permission=can_grant_can_set_my_account_detaill)
+#     ], creator_account='datdang@test')
    
-    IrohaCrypto.sign_transaction(tx, user_private_key)
-    send_transaction_and_print_status(tx)
+#     IrohaCrypto.sign_transaction(tx, user_private_key)
+#     send_transaction_and_print_status(tx)
 
 
 @trace
@@ -196,7 +196,7 @@ def get_userone_details():
 # Let's run the commands defined previously:
 
 # create_account_userone()
-userone_grants_to_admin_set_account_detail_permission()
+# userone_grants_to_admin_set_account_detail_permission()
 
 
 print('done')
