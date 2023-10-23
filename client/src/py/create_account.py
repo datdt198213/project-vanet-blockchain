@@ -135,7 +135,7 @@ def userone_grants_to_admin_set_account_detail_permission():
         iroha.command('GrantPermission', account_id='admin@test',
                       permission=can_set_my_account_detail)
     ], creator_account='datdang@test')
-
+   
     send_transaction_and_print_status(tx)
 
 
@@ -201,7 +201,7 @@ def transfer_asset_tx(src_account_id, dest_account_id, asset_id, amount, src_pri
             asset_id=asset_id,
             amount=amount,
             description='transfer ' + amount +  ' ' + asset_id + ' from '  + src_account_id + ' to ' + dest_account_id)
-    ], creator_account=src_account_id)
+    ], creator_account=src_account_id) 
     IrohaCrypto.sign_transaction(tx,src_private_key)
     send_transaction_and_print_status(tx)
 
