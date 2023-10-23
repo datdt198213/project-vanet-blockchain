@@ -1,17 +1,17 @@
 The process of setting up Ganache and utilizing JavaScript to simulate blockchain technology for testing purposes.
 
-# 1. Setting up Ganache:
+# 1. Setting up Ganache
 
-To begin, we need to install Ganache, a personal Ethereum Blockchain that allows us to simulate blockchain transactions and interactions. Here are the steps to set it up:
+##### Download Ganache GUI version
+ 
+Link download GUI version: https://trufflesuite.com/ganache/ 
 
-### 1.1. Download and Install Ganache:
+##### Download Ganache CLI version
 
-Visit the official Ganache website and download the appropriate version for your operating system. 
-Link download: https://trufflesuite.com/ganache/
+```npm i ganache```
 
-### 1.2. Launching Ganache:
-
-After installation, open Ganache and you will be greeted with a user-friendly interface. Ganache provides you with a local Ethereum Blockchain network, complete with pre-funded accounts for testing your Solidity contracts.
+##### Launching Ganache CLI
+```ganache```
 
 # 2. Setting environment
 
@@ -27,8 +27,6 @@ Link download: https://nodejs.org/en/download
 ```mkdir project-vanet-blockchain```
 
 ##### Change directory to folder project-vanet-blockchain and initialize truffle project
-```cd project-vanet-blockchain```
-
 ```truffle init```
 
 ##### Install create-react-app to initalized reactjs project
@@ -41,10 +39,17 @@ Link download: https://nodejs.org/en/download
 ```npm install web3```
 
 # 4. Compile, Migrate, Deploy Solidity Contracts:
-##### Compile with truffle
+##### Compile truffle
 ```truffle compile```
 
-##### Migrate with truffle or reset truffle
+##### Migrate truffle
 ```truffle migrage```
 
+### Reset truffle
 ```truffle migrate reset```
+
+##### Test truffle
+```truffle test```
+
+##### Deploy truffle
+```truffle deploy```
