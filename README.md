@@ -12,7 +12,10 @@ The process of setting up Ganache and utilizing JavaScript to simulate blockchai
 
 ##### Download node version LTS: https://nodejs.org/en/download
 
-##### Download truffle: ```npm install truffle```
+##### Download truffle: 
+```
+npm install truffle
+```
 
 # 3. Initialized project
 
