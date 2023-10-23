@@ -1,6 +1,10 @@
 The process of setting up Ganache and utilizing JavaScript to simulate blockchain technology for testing purposes.
 
-# 1. Setting up Ganache
+# 1. Setting environment
+
+##### Download node version LTS: https://nodejs.org/en/download
+
+# 2. Setting up Ganache
 
 ##### Download Ganache GUI version: https://trufflesuite.com/ganache/ 
 
@@ -14,35 +18,10 @@ npm i ganache
 ganache
 ```
 
-# 2. Setting environment
-
-##### Download node version LTS: https://nodejs.org/en/download
-
-##### Download truffle
-```
-npm install truffle
-```
-
 # 3. Initialized project
-
-##### Create folder project-vanet-blockchain 
-```
-mkdir project-vanet-blockchain
-```
-
-##### Change directory to folder project-vanet-blockchain and initialize truffle project 
-```
-truffle init
-```
-
 ##### Install create-react-app to initalized reactjs project 
 ```
 npm install create-react-app
-```
-
-##### Inside folder project-vanet-blockchain, initialize project reactjs 
-```
-npx create-react-app client
 ```
 
 ##### Install web3 
@@ -50,7 +29,24 @@ npx create-react-app client
 npm install web3
 ```
 
-# 4. Compile, Migrate, Deploy Solidity Contracts
+##### Initialize project reactjs 
+```
+npx create-react-app client
+```
+
+
+# 4. Install, Init, Compile, Migrate, Test, Deploy Truffle
+
+##### Install truffle
+```
+npm install truffle
+```
+
+##### Initial truffle
+```
+truffle init
+```
+
 ##### Compile truffle 
 ```
 truffle compile
@@ -61,7 +57,7 @@ truffle compile
 truffle migrage
 ```
 
-### Reset truffle 
+##### Reset truffle 
 ```
 truffle migrate reset
 ```
