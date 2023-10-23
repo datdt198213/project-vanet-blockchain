@@ -15,60 +15,36 @@ After installation, open Ganache and you will be greeted with a user-friendly in
 
 # 2. Setting environment
 
-### 2.1. Download node version LTS
+##### Download node version LTS
 Link download: https://nodejs.org/en/download
 
-### 2.2. Download truffle
-```
-npm install truffle
-```
+##### Download truffle
+```npm install truffle```
 
 # 3. Initialized project
 
-### 3.1. Create folder project-vanet-blockchain
-```
-mkdir project-vanet-blockchain
-```
+##### Create folder project-vanet-blockchain
+```mkdir project-vanet-blockchain```
 
-### 3.2. Change directory to folder project-vanet-blockchain and initialize truffle project
-```
-cd project-vanet-blockchain
-```
+##### Change directory to folder project-vanet-blockchain and initialize truffle project
+```cd project-vanet-blockchain```
 
-```
-truffle init
-```
+```truffle init```
 
-### 3.3. Install create-react-app to initalized reactjs project
-```
-npm install create-react-app
-```
+##### Install create-react-app to initalized reactjs project
+```npm install create-react-app```
 
-### 3.4. Inside folder project-vanet-blockchain, initialize project reactjs 
-```
-npx create-react-app client
-```
+##### Inside folder project-vanet-blockchain, initialize project reactjs 
+```npx create-react-app client```
 
-### 3.5. Install web3 
-```
-npm install web3
-```
+##### Install web3 
+```npm install web3```
 
 # 4. Compile, Migrate, Deploy Solidity Contracts:
-4.1. Compile with truffle
-```
-truffle compile
-```
+##### Compile with truffle
+```truffle compile```
 
-4.2. Migrate with truffle
-```
-truffle migrage
-```
+##### Migrate with truffle or reset truffle
+```truffle migrage```
 
-When smart contracts be migrated by truffle, file deployed contracts be placed in "./client/src/contracts"
-
-To reset migration when contracts have changed, run below command
-
-```
-truffle migrate reset
-```
+```truffle migrate reset```
