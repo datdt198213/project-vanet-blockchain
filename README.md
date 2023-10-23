@@ -2,9 +2,7 @@ The process of setting up Ganache and utilizing JavaScript to simulate blockchai
 
 # 1. Setting up Ganache
 
-##### Download Ganache GUI version
- 
-Link download GUI version: https://trufflesuite.com/ganache/ 
+##### Download Ganache GUI version: https://trufflesuite.com/ganache/ 
 
 ##### Download Ganache CLI version
 
