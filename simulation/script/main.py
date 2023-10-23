@@ -21,9 +21,6 @@ numVehicles = totalTime / n
 # command = "python3 convert_data.py " + str(totalTime) + " " + str(n)
 # os.system(command)
 
-# command = "python3 add_header.py"
-# os.system(command)
-
 timeRound = 7200 + 1800 # seconds (s)
 b = 0
 e = timeRound
@@ -40,6 +37,10 @@ for i in range(1, 6):
     else:
         print("WARNING: Time end at " + str(totalTime))
         break
+
+
+# command = "python3 add_header.py"
+# os.system(command)
 
 # command = "python3 handle_data.py"
 # os.system(command)

@@ -1,11 +1,6 @@
 Folder 'simulation/script' generate vehilce simulation data
 Change directory to 'simulation/script' and run files below
 
-# Download convert-array-to-csv to runfile MinerCoin.js
-```
-npm i convert-array-to-csv
-```
-
 # 1. Generating file vehicle.json, run file main.py 
 ### main.py 
 Running 3 file Initial simulation => Initial Vehicle => Convert Data
