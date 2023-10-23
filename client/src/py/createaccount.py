@@ -12,10 +12,11 @@ import os
 import binascii
 from iroha import IrohaCrypto
 from iroha import Iroha, IrohaGrpc
+from iroha import primitive_pb2
 
 # The following line is actually about the permissions
 # you might be using for the transaction.
-# You can find all the permissions here: 
+# You can find all the permissions here:
 # https://iroha.readthedocs.io/en/main/develop/api/permissions.html
 from iroha.primitive_pb2 import can_set_my_account_detail
 import sys
@@ -34,7 +35,7 @@ ADMIN_PRIVATE_KEY = os.getenv(
 
 user_private_key = IrohaCrypto.private_key()
 user_public_key = IrohaCrypto.derive_public_key(user_private_key)
-
+print(str(user_private_key) + '\n' + str(user_public_key))
 iroha = Iroha(ADMIN_ACCOUNT_ID)
 net = IrohaGrpc('{}:{}'.format(IROHA_HOST_ADDR, IROHA_PORT))
 
@@ -82,8 +83,8 @@ def create_domain_and_asset():
     tx = IrohaCrypto.sign_transaction(
         iroha.transaction(commands), ADMIN_PRIVATE_KEY)
     send_transaction_and_print_status(tx)
-# You can define queries 
-# (https://iroha.readthedocs.io/en/main/develop/api/queries.html) 
+# You can define queries
+# (https://iroha.readthedocs.io/en/main/develop/api/queries.html)
 # the same way.
 
 @trace
@@ -100,13 +101,13 @@ def add_coin_to_admin():
 
 
 @trace
-def create_account_userone():
+def create_account(account, domain):
     """
     Create account 'userone@domain'
     """
     tx = iroha.transaction([
-        iroha.command('CreateAccount', account_name='datdang', domain_id='test',
-                      public_key=user_public_key)
+        iroha.command('CreateAccount', account_name=account, domain_id=domain,
+                    public_key=user_public_key)
     ])
     IrohaCrypto.sign_transaction(tx, ADMIN_PRIVATE_KEY)
     send_transaction_and_print_status(tx)
@@ -125,18 +126,17 @@ def transfer_coin_from_admin_to_userone():
     send_transaction_and_print_status(tx)
 
 
-# @trace
-# def userone_grants_to_admin_set_account_detail_permission():
-#     """
-#     Make admin@test able to set detail to userone@domain
-#     """
-#     tx = iroha.transaction([
-#         iroha.command('GrantPermission', account_id='admin@test',
-#                       permission=can_grant_can_set_my_account_detaill)
-#     ], creator_account='datdang@test')
-   
-#     IrohaCrypto.sign_transaction(tx, user_private_key)
-#     send_transaction_and_print_status(tx)
+@trace
+def userone_grants_to_admin_set_account_detail_permission():
+    """
+    Make admin@test able to set detail to userone@domain
+    """
+    tx = iroha.transaction([
+        iroha.command('GrantPermission', account_id='admin@test',
+                      permission=can_set_my_account_detail)
+    ], creator_account='datdang@test')
+
+    send_transaction_and_print_status(tx)
 
 
 @trace
@@ -167,11 +167,11 @@ def get_coin_info():
 
 
 @trace
-def get_account_assets():
+def get_account_assets(account_id):
     """
     List all the assets of userone@domain
     """
-    query = iroha.query('GetAccountAssets', account_id='userone@domain')
+    query = iroha.query('GetAccountAssets', account_id=account_id)
     IrohaCrypto.sign_query(query, ADMIN_PRIVATE_KEY)
 
     response = net.send_query(query)
@@ -193,10 +193,25 @@ def get_userone_details():
     data = response.account_detail_response
     print('Account id = {}, details = {}'.format('userone@domain', data.detail))
 
+def transfer_asset_tx(src_account_id, dest_account_id, asset_id, amount, src_private_key):
+    tx = iroha.transaction([
+        iroha.command('TransferAsset',
+            src_account_id=src_account_id,
+            dest_account_id=dest_account_id,
+            asset_id=asset_id,
+            amount=amount,
+            description='transfer ' + amount +  ' ' + asset_id + ' from '  + src_account_id + ' to ' + dest_account_id)
+    ], creator_account=src_account_id)
+    IrohaCrypto.sign_transaction(tx,src_private_key)
+    send_transaction_and_print_status(tx)
+
 # Let's run the commands defined previously:
+# create_account('dattm2', 'test')
+# transfer_asset_tx('dattm1', 'dattm2', 'money#test', '10', 'c0db6e3e7af8677dda81b7c89cbec94b05c1516bc7d881fd142bf9747b2e425f')
+transfer_asset_tx('test@test', 'dattm2@test', 'money#test', '10', '7e00405ece477bb6dd9b03a78eee4e708afc2f5bcdce399573a5958942f4a390')
 
-# create_account_userone()
-# userone_grants_to_admin_set_account_detail_permission()
-
+#get_account_assets()
+get_account_assets('dattm1@test')
+get_account_assets('dattm2@test')
 
 print('done')

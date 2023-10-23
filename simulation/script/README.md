@@ -1,5 +1,10 @@
-Folder 'simulation/generate_data' generate vehilce simulation data
-Change directory to 'simulation/generate_data' and run files below
+Folder 'simulation/script' generate vehilce simulation data
+Change directory to 'simulation/script' and run files below
+
+# Download convert-array-to-csv to runfile MinerCoin.js
+```
+npm i convert-array-to-csv
+```
 
 # 1. Generating file vehicle.json, run file main.py 
 ### main.py 
@@ -28,8 +33,7 @@ Run file MinerCoin.js to calculate number of coin vehicles earning from moving
 node MinerCoin.js 0 1000
 ```
 
-0 is starting time running simulation
-1000 is ending time running simulation
+```0 is starting time running simulation, 1000 is ending time running simulation```
 
 # 4. Statistic data
 Run file statistic.py to draw diagram 

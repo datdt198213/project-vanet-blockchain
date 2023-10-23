@@ -1,11 +1,18 @@
 const crypto = require("crypto");
-const dataJson = require("../data/vehicle1.json");
 const maxTime = require("process");
+const fs = require('fs');
 
 // Full time run simulation 
-const beginTime = parseFloat(maxTime.argv[2]);
-const endTime = parseFloat(maxTime.argv[3]);
+const timeslot = parseFloat(maxTime.argv[2]);
+const beginTime = parseFloat(maxTime.argv[3]);
+const endTime = parseFloat(maxTime.argv[4]);
+const distance = parseFloat(maxTime.argv[5]);
+const totalTime = parseFloat(maxTime.argv[6]);
+const numVehicles = parseFloat(maxTime.argv[7]);
 
+const filename = "../data/vehicle" + totalTime.toString() + "_" + numVehicles.toString() + ".json";
+// const dataJson = require("../data/vehicle1.json");
+const dataJson = require(filename);
 // Define driver class
 class Driver {
     constructor(id, distance, time, coin) {
@@ -255,10 +262,11 @@ function main() {
     let end = endTime;     
     if (isNaN(end)) console.log("Warning: Please enter beginning time parameter in running command");
     if (isNaN(begin)) console.log("Warning: Please enter ending time parameter in running command");
+    if (isNaN(distance)) console.log("Warning: Please enter distance parameter in running command");
+    if (endTime)
     console.log("\nTime begin = " + begin + " Time end = " + end);
 
-    let timeslot = end - begin;     // Timeslot in 1 round (s)
-    let distance = 2000;            // Distance to earning coin (m)
+    let d = distance;            // Distance to earning coin (m)
     const count = Math.ceil(endTime / timeslot);
     // console.log("Count: " + count);
 
@@ -269,6 +277,8 @@ function main() {
     const classList = classifyList(inputData);
     
     const distanceList = calculateDistanceList(classList, distance, end);
+
+    
 
     const nPOD = rule(distanceList);
     // console.log(inputData)
@@ -312,6 +322,23 @@ function main() {
     // var numberOfVehicle = countNumberOfVehicle(classifyAllData);
     // console.log("Number of vehicle ", numberOfVehicle)
     
+    
+    // Statistic
+    const header = ['Timeslot', 'Begin', 'End', 'Distance', 'Total node', 'Node received coin'];
+    const dataArrays = [
+    [timeslot, begin, end, distance, distanceList.length, nPOD.length]]
+    
+
+    var stream = fs.createWriteStream("../data/data_statistic.csv", {'flags': 'a'});
+    
+    // Running once time to add header
+    // stream.once('open', function(fd) {
+    //     stream.write(header+"\r\n");
+    //   });
+    
+    stream.once('open', function(fd) {
+      stream.write(dataArrays+"\r\n");
+    });
 }
 const start = Date.now();
 main();
@@ -321,3 +348,5 @@ console.log(`Execution time: ${end - start} ms`);
 module.exports = {
     rule
 };
+
+
