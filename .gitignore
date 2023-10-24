@@ -127,3 +127,6 @@ venv.bak/
 /simulation/script/.pyre/
 /simulation/script/.pytype/
 /simulation/script/cython_debug/
+
+
+/iroha
