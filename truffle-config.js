@@ -5,6 +5,7 @@ module.exports = {
 
   // configure network id
   networks: {
+    // Deploy smart contract in Ganache
     development: {
      host: "127.0.0.1",     // Localhost (default: none)
      port: 8545,            // Standard Ethereum port (default: none)
