@@ -16,7 +16,7 @@ from iroha import primitive_pb2
 
 # The following line is actually about the permissions
 # you might be using for the transaction.
-# You can find all the permissions here:
+# You can find all the permissions here: 
 # https://iroha.readthedocs.io/en/main/develop/api/permissions.html
 from iroha.primitive_pb2 import can_set_my_account_detail
 import sys
@@ -35,7 +35,7 @@ ADMIN_PRIVATE_KEY = os.getenv(
 
 user_private_key = IrohaCrypto.private_key()
 user_public_key = IrohaCrypto.derive_public_key(user_private_key)
-print(str(user_private_key) + '\n' + str(user_public_key))
+# print(str(user_private_key) + '\n' + str(user_public_key))
 iroha = Iroha(ADMIN_ACCOUNT_ID)
 net = IrohaGrpc('{}:{}'.format(IROHA_HOST_ADDR, IROHA_PORT))
 
@@ -70,6 +70,24 @@ def send_transaction_and_print_status(transaction):
 # You can check out all of them here:
 # https://iroha.readthedocs.io/en/main/develop/api/commands.html
 @trace
+def create_asset(asset_name, domain_id, precision):
+    tx = iroha.transaction([
+        iroha.command('CreateAsset',
+                    asset_name=asset_name,
+                    domain_id=domain_id, precision=precision)
+    ])
+    IrohaCrypto.sign_transaction(tx, ADMIN_PRIVATE_KEY)
+    send_transaction_and_print_status(tx)
+
+@trace 
+def add_asset_quantity(asset_id, amount):
+    tx = iroha.transaction([
+        iroha.command('AddAssetQuantity', asset_id = asset_id, amount = amount)
+    ])
+    IrohaCrypto.sign_transaction(tx, ADMIN_PRIVATE_KEY)
+    send_transaction_and_print_status(tx)
+
+@trace
 def create_domain_and_asset():
     """
     Create domain 'domain' and asset 'coin#domain' with precision 2
@@ -83,8 +101,8 @@ def create_domain_and_asset():
     tx = IrohaCrypto.sign_transaction(
         iroha.transaction(commands), ADMIN_PRIVATE_KEY)
     send_transaction_and_print_status(tx)
-# You can define queries
-# (https://iroha.readthedocs.io/en/main/develop/api/queries.html)
+# You can define queries 
+# (https://iroha.readthedocs.io/en/main/develop/api/queries.html) 
 # the same way.
 
 @trace
@@ -114,13 +132,13 @@ def create_account(account, domain):
 
 
 @trace
-def transfer_coin_from_admin_to_userone():
+def transfer_asset_from_admin_to_user(dest_account_id, asset_id, amount, description):
     """
     Transfer 2.00 'coin#domain' from 'admin@test' to 'userone@domain'
     """
     tx = iroha.transaction([
-        iroha.command('TransferAsset', src_account_id='admin@test', dest_account_id='userone@domain',
-                      asset_id='coin#domain', description='init top up', amount='2.00')
+        iroha.command('TransferAsset', src_account_id='admin@test', dest_account_id=dest_account_id,
+                      asset_id=asset_id, description=description, amount=amount)
     ])
     IrohaCrypto.sign_transaction(tx, ADMIN_PRIVATE_KEY)
     send_transaction_and_print_status(tx)
@@ -205,13 +223,38 @@ def transfer_asset_tx(src_account_id, dest_account_id, asset_id, amount, src_pri
     IrohaCrypto.sign_transaction(tx,src_private_key)
     send_transaction_and_print_status(tx)
 
+def get_account_public_key(account_id, private_key):
+    query = iroha.query('GetSignatories', account_id=account_id)
+    IrohaCrypto.sign_query(query, private_key)
+    response = net.send_query(query)
+    # data = response.account_detail_response
+    # print('Account id = {}, details = {}'.format('userone@domain', data.detail))
+    # 
+    # print(response.signatories_response.keys)
+    # if('86d63055eb04ed2753e767940ccb16b638acd94b3c7ea81ea677b7a77b80d352' ==str(response.signatories_response.keys[0])): 
+    #     print('==')
+    return response.signatories_response.keys[0]
+def get_acc_tx(account_id):
+    query = iroha.query('GetAccountTransactions', creator_account='admin@test', account_id=account_id, page_size=10)
+    IrohaCrypto.sign_query(query, ADMIN_PRIVATE_KEY)
+    response = net.send_query(query)
+    print(response)
 # Let's run the commands defined previously:
 # create_account('dattm2', 'test')
 # transfer_asset_tx('dattm1', 'dattm2', 'money#test', '10', 'c0db6e3e7af8677dda81b7c89cbec94b05c1516bc7d881fd142bf9747b2e425f')
-transfer_asset_tx('test@test', 'dattm2@test', 'money#test', '10', '7e00405ece477bb6dd9b03a78eee4e708afc2f5bcdce399573a5958942f4a390')
+# transfer_asset_tx('test@test', 'dattm2@test', 'money#test', '10', '7e00405ece477bb6dd9b03a78eee4e708afc2f5bcdce399573a5958942f4a390')
 
 #get_account_assets()
-get_account_assets('dattm1@test')
-get_account_assets('dattm2@test')
 
+# get_account_assets('dattm2@test')
+
+# create_asset('ruby','test',0)
+# add_asset_quantity('ruby#test', '50')
+# get_account_assets('admin@test')
+# transfer_asset_from_admin_to_user('dattm1@test', 'ruby#test','20', 'transfer 20 ruby from admin to dattm1')
+
+# transfer_asset_tx('dattm1@test', 'dattm2@test', 'ruby#test', '10', 'c0db6e3e7af8677dda81b7c89cbec94b05c1516bc7d881fd142bf9747b2e425f')
+# get_account_assets('dattm1@test')
+# get_account_assets('dattm2@test')
+print(get_acc_tx('admin@test'))
 print('done')
