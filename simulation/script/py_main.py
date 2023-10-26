@@ -2,9 +2,9 @@
 
 import os
 
-totalTime = 36000
+totalTime = 360
 
-insertionRate = 100
+insertionRate = 10
 numVehicles = insertionRate # number of vehicle
 
 # init data of simulation   
