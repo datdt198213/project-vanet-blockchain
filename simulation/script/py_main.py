@@ -50,7 +50,7 @@ for i in range(1, 6):
             timeRound += 3600
 
         distance += 500
-    insertionRate += 10
+    insertionRate += 100
 
 # command = "python3 py_add_header.py"
 # os.system(command)
