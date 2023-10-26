@@ -9,8 +9,8 @@ with open(input) as file:
     # Set time running simulation, 0 - 2000s 
     begin = 0
     end = int(sys.argv[1]) # Read parameter from command
-    n = int(sys.argv[2])
-    times = str(end) + "_" + str(int(end/n))
+    numberVehicles = int(sys.argv[2])
+    times = str(end) + "_" + str(numberVehicles)
 
     for i in range(len(lines)):
       if '<begin value="' in lines[i]:

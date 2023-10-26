@@ -71,17 +71,20 @@ function getDataFromJson(begin, end) {
         time = Number(element.time);
         if (time >= begin && time <= end) {
             // Having a object
-            if (element.vehicle.length == undefined) {
-                // Push data to list
-                dataList.push(new Vehicle(element.vehicle, element.time));
+            if (element.vehicle != undefined) {
+                if (element.vehicle.length == undefined) {
+                    // Push data to list
+                    dataList.push(new Vehicle(element.vehicle, element.time));
+                }
+                // Having object list
+                else {
+                    // Push data to list
+                    element.vehicle.forEach((v) => {
+                        dataList.push(new Vehicle(v, element.time));
+                    });
+                }
             }
-            // Having object list
-            else {
-                // Push data to list
-                element.vehicle.forEach((v) => {
-                    dataList.push(new Vehicle(v, element.time));
-                });
-            }
+           
         }
     });
 
@@ -263,8 +266,7 @@ function main() {
     if (isNaN(end)) console.log("Warning: Please enter beginning time parameter in running command");
     if (isNaN(begin)) console.log("Warning: Please enter ending time parameter in running command");
     if (isNaN(distance)) console.log("Warning: Please enter distance parameter in running command");
-    if (endTime)
-    console.log("\nTime begin = " + begin + " Time end = " + end);
+    if (endTime) console.log("\nTime begin = " + begin + " Time end = " + end);
 
     let d = distance;            // Distance to earning coin (m)
     const count = Math.ceil(endTime / timeslot);
@@ -277,10 +279,9 @@ function main() {
     const classList = classifyList(inputData);
     
     const distanceList = calculateDistanceList(classList, distance, end);
-
-    
-
     const nPOD = rule(distanceList);
+
+
     // console.log(inputData)
     // console.log(classList.length);
     
@@ -323,18 +324,14 @@ function main() {
     // console.log("Number of vehicle ", numberOfVehicle)
     
     
-    // Statistic
-    const header = ['Timeslot', 'Begin', 'End', 'Distance', 'Total node', 'Node received coin'];
-    const dataArrays = [
-    [timeslot, begin, end, distance, distanceList.length, nPOD.length]]
-    
 
-    var stream = fs.createWriteStream("../data/data_statistic.csv", {'flags': 'a'});
+
+    // Statistic
+
+    const dataArrays = [[timeslot, begin, end - 0.1, distance, distanceList.length, nPOD.length, totalTime, numVehicles]]
     
-    // Running once time to add header
-    // stream.once('open', function(fd) {
-    //     stream.write(header+"\r\n");
-    //   });
+    const fName = "../data/data_statistic_" + numVehicles.toString() + ".csv"
+    var stream = fs.createWriteStream(fName, {'flags': 'a'});
     
     stream.once('open', function(fd) {
       stream.write(dataArrays+"\r\n");
@@ -346,7 +343,10 @@ const end = Date.now();
 console.log(`Execution time: ${end - start} ms`);
 
 module.exports = {
-    rule
+    rule,
+    getAllDataJson,
+    classifyList,
+    countNumberOfVehicle
 };
 
 
