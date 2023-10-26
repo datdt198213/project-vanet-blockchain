@@ -11,7 +11,10 @@ insertionRate = int(sys.argv[2])
 
 times = str(end) + '_' + str(insertionRate)
 # Define path to 
-PATH_RANDOMTRIP = "python3 /home/parallel_user/sumo/tools/randomTrips.py"
+# SUMO_HOME = "/home/parallel_user/sumo/"
+SUMO_HOME = "/root/sumo/"
+
+PATH_RANDOMTRIP = "python3 "+ SUMO_HOME + "tools/randomTrips.py"
 PATH_NET = "../sumo/net.net.xml"
 PATH_ROUTE = "../sumo/route.rou.xml"
 
