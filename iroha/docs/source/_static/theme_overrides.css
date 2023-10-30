@@ -1,0 +1,28 @@
+/* override table width restrictions */
+@media screen and (min-width: 767px) {
+
+   .wy-table-responsive table td {
+      /* !important prevents the common CSS stylesheets from overriding
+         this as on RTD they are loaded after this stylesheet */
+      white-space: normal !important;
+      word-break: break-word !important;
+   }
+
+   .wy-table-responsive {
+      overflow: auto !important;
+   }
+
+}
+
+.toggle .header {
+    display: block;
+    clear: both;
+}
+
+.toggle .header:after {
+    content: " ▶";
+}
+
+.toggle .header.open:after {
+    content: " ▼";
+}
