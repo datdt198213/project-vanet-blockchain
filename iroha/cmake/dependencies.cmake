@@ -27,7 +27,7 @@ find_package(spdlog 1.3.1 REQUIRED CONFIG)
 #           protobuf           #
 ################################
 # find_package(Protobuf 3.8.0 REQUIRED CONFIG)
-find_package(Protobuf 3.8.0 REQUIRED)
+find_package(Protobuf 3.6.0 REQUIRED)
 
 #########################
 #         gRPC          #
