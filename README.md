@@ -18,7 +18,7 @@ npm i ganache
 ganache
 ```
 
-## 3. Initialized project
+## 3. Initialized project reactjs
 ##### Install create-react-app to initalized reactjs project 
 ```
 npm install create-react-app
@@ -97,3 +97,23 @@ sudo apt-get install pkg-config zip
 go get github.com/golang/protobuf/protoc-gen-go
 ```
 
+## 3. Install Vcpkg Dependency Manager
+```
+git clone https://github.com/hyperledger/iroha.git
+cd iroha
+./vcpkg/build_iroha_deps.sh $PWD/vcpkg-build
+```
+
+## 4. Building Iroha
+1. Build
+```
+cmake -B build -DCMAKE_TOOLCHAIN_FILE=$PWD/vcpkg-build/scripts/buildsystems/vcpkg.cmake . -DCMAKE_BUILD_TYPE=RELEASE -DUSE_BURROW=ON -DUSE_URSA=OFF -DTESTING=OFF -DPACKAGE_DEB=OFF
+```
+2. Run
+```
+cmake --build ./build --target irohad
+```
+3. Check running result
+```
+./build/bin/irohad --help
+```
