@@ -187,9 +187,15 @@ SET(IROHA_ROOT_PROJECT ON)
 # which are generally faster
 add_definitions(-DBOOST_NO_RTTI)
 
+# Display library, options
 include(FeatureSummary)
+
+# Execute a file dependencies.cmake in folder cmake
 include(cmake/dependencies.cmake)
+
+# Execute a file clang-cxx-dev-tools.cmake
 include(cmake/clang-cxx-dev-tools.cmake)
+
 
 if(PACKAGE_TGZ OR PACKAGE_ZIP OR PACKAGE_RPM OR PACKAGE_DEB)
   include(cmake/release.cmake)
