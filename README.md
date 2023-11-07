@@ -77,31 +77,45 @@ truffle deploy
 # A. In Ubuntu
 ## 1. Install golang
 ```
-cd ~
-curl -OL https://golang.org/dl/go1.16.7.linux-amd64.tar.gz
-sha256sum go1.16.7.linux-amd64.tar.gz
-sudo tar -C /usr/local -xvf go1.16.7.linux-amd64.tar.gz
-sudo nano ~/.bashrc
-export PATH=$PATH:/usr/local/go/bin
-source ~/.bashrc
-go version
+$ cd ~
+$ curl -OL https://golang.org/dl/go1.16.7.linux-amd64.tar.gz
+$ sha256sum go1.16.7.linux-amd64.tar.gz
+$ sudo tar -C /usr/local -xvf go1.16.7.linux-amd64.tar.gz
+$ sudo nano ~/.bashrc
+$ export PATH=$PATH:/usr/local/go/bin
+$ source ~/.bashrc
+$ go version
 ```
 
 ## 2. Install environment dependences on Linux 
 ```
-sudo apt-get update
-sudo apt-get -y --no-install-recommends install 
-sudo apt-get install build-essential ninja-build 
-sudo apt-get install git ca-certificates tar curl unzip cmake
-sudo apt-get install pkg-config zip
-go get github.com/golang/protobuf/protoc-gen-go
+$ sudo apt-get update
+$ sudo apt-get -y --no-install-recommends install 
+$ sudo apt-get install build-essential ninja-build 
+$ sudo apt-get install git ca-certificates tar curl unzip cmake
+$ sudo apt-get install pkg-config zip
+$ go get github.com/golang/protobuf/protoc-gen-go
+$ git clone --recurse-submodules -b v1.58.0 --depth 1 --shallow-submodules https://github.com/grpc/grpc
+$ cd grpc
+$ mkdir -p cmake/build
+$ pushd cmake/build
+$ cmake -DgRPC_INSTALL=ON -DgRPC_BUILD_TESTS=OFF ../..
+$ make -j 4
+$ sudo apt install libsoci-dev
+$ pkg-config --cflags --libs soci
 ```
 
 ## 3. Install Vcpkg Dependency Manager
 ```
-git clone https://github.com/hyperledger/iroha.git
-cd iroha
-./vcpkg/build_iroha_deps.sh $PWD/vcpkg-build
+$ git clone https://github.com/microsoft/vcpkg.git
+$ cd vcpkg
+$ ./bootstrap-vcpkg.sh
+
+$ cd ..
+$ cmake -DCMAKE_TOOLCHAIN_FILE=$PWD/vcpkg-build/scripts/buildsystems/vcpkg.cmake
+$ git clone https://github.com/hyperledger/iroha.git
+$ cd iroha
+$ ./vcpkg/build_iroha_deps.sh $PWD/vcpkg-build
 ```
 
 ## 4. Building Iroha
