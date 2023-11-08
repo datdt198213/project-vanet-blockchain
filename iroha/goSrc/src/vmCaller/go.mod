@@ -11,6 +11,7 @@ require (
 	github.com/tmthrgd/go-hex v0.0.0-20190303111820-0bdcb15db631
 	golang.org/x/crypto v0.0.0-20190820162420-60c769a6c586
 	google.golang.org/protobuf v1.21.0
+	github.com/golang/protobuf/protoc-gen-go v1.21.4
 )
 
 replace iroha.protocol => @GO_GENERATED_SCHEMA_PATH@
