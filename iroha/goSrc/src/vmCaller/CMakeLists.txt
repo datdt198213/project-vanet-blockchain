@@ -24,11 +24,11 @@ set(VM_CALLER_HDR ${CMAKE_CURRENT_BINARY_DIR}/vmCall.h)
 file(GLOB_RECURSE VM_CALLER_GO_SRCS LIST_DIRECTORIES false *.go)
 
 set(GO_MOD_FILE_PATH "${CMAKE_CURRENT_BINARY_DIR}/go.mod")
-configure_file(
-    "${CMAKE_CURRENT_SOURCE_DIR}/go.mod.in"
-    "${GO_MOD_FILE_PATH}"
-    @ONLY
-  )
+# configure_file(
+#     "${CMAKE_CURRENT_SOURCE_DIR}/go.mod.in"
+#     "${GO_MOD_FILE_PATH}"
+#     @ONLY
+#   )
 
 get_go_env_path(ENV_PATH)
 
