@@ -89,12 +89,20 @@ $ go version
 
 ## 2. Install environment dependences on Linux 
 ```
+$ cd ~
+$ curl -OL https://golang.org/dl/go1.21.4.linux-amd64.tar.gz
+$ sha256sum go1.21.4.linux-amd64.tar.gz
+$ sudo tar -C /usr/local -xvf go1.21.4.linux-amd64.tar.gz
+$ sudo nano ~/.profile
+=> export PATH=$PATH:/usr/local/go/bin
+$ source ~/.profile
 $ sudo apt-get update
 $ sudo apt-get -y --no-install-recommends install 
 $ sudo apt-get install build-essential ninja-build 
 $ sudo apt-get install git ca-certificates tar curl unzip cmake
 $ sudo apt-get install pkg-config zip
-$ go get github.com/golang/protobuf/protoc-gen-go
+$ cd project-vanet-blockchain/iroha/goSrc/src/vmCaller
+$ go get github.com/golang/protobuf/protoc-gen-go:latest
 $ git clone --recurse-submodules -b v1.58.0 --depth 1 --shallow-submodules https://github.com/grpc/grpc
 $ cd grpc
 $ mkdir -p cmake/build
