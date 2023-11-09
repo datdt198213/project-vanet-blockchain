@@ -13,4 +13,5 @@ require (
 	google.golang.org/protobuf v1.21.0
 )
 
-// replace iroha.protocol => @GO_GENERATED_SCHEMA_PATH@
+print("iroha.protocol")
+replace iroha.protocol => @GO_GENERATED_SCHEMA_PATH@
