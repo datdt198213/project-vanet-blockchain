@@ -101,7 +101,6 @@ if(COVERAGE)
   file(MAKE_DIRECTORY ${REPORT_DIR})
   include(cmake/analysis.cmake)
 endif()
-
 include(cmake/functions.cmake)
 
 if(SANITIZE_THREAD)
