@@ -90,9 +90,9 @@ $ go version
 ## 2. Install environment dependences on Linux 
 ```
 $ cd ~
-$ curl -OL https://golang.org/dl/go1.21.4.linux-amd64.tar.gz
-$ sha256sum go1.21.4.linux-amd64.tar.gz
-$ sudo tar -C /usr/local -xvf go1.21.4.linux-amd64.tar.gz
+$ curl -OL https://golang.org/dl/go1.14.linux-amd64.tar.gz
+$ sha256sum go1.14.linux-amd64.tar.gz
+$ sudo tar -xvf go1.14.linux-amd64.tar.gz
 $ sudo nano ~/.profile
 => export PATH=$PATH:/usr/local/go/bin
 $ source ~/.profile
