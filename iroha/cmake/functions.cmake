@@ -88,6 +88,7 @@ endfunction()
 function(prepare_generated_schema_go_path)
   if(NOT IS_DIRECTORY "${GO_GENERATED_SCHEMA_PATH}")
     file(MAKE_DIRECTORY "${GO_GENERATED_SCHEMA_PATH}")
+    message(GO_GENERATED_SCHEMA_PATH="${GO_GENERATED_SCHEMA_PATH}")
   endif()
   configure_file(
     "${SCHEMA_PATH}/generated_go.mod.in"
