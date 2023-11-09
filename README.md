@@ -102,7 +102,6 @@ $ sudo apt-get install build-essential ninja-build
 $ sudo apt-get install git ca-certificates tar curl unzip cmake
 $ sudo apt-get install pkg-config zip
 $ cd project-vanet-blockchain/iroha/goSrc/src/vmCaller
-$ go get github.com/golang/protobuf/protoc-gen-go:latest
 $ git clone --recurse-submodules -b v1.58.0 --depth 1 --shallow-submodules https://github.com/grpc/grpc
 $ cd grpc
 $ mkdir -p cmake/build
