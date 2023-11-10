@@ -5,7 +5,7 @@ import sys
 
 end = int(sys.argv[1]) # Read parameter from command
 n = int(sys.argv[2])
-times = str(end) + "_" + str(n)
+times = "_" + str(n)
 
 input_file = '../sumo/vehicle'+ str(times) +'.sumo.xml'
 
