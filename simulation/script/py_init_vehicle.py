@@ -9,7 +9,7 @@ end = int(sys.argv[1]) # Read parameter from command
 # n = (end - begin) / int(sys.argv[2])   # Read parameter from command
 insertionRate = int(sys.argv[2])
 
-times = str(end) + '_' + str(insertionRate)
+times = str(insertionRate)
 # Define path to 
 # SUMO_HOME = "/home/parallel_user/sumo/"
 SUMO_HOME = "/root/sumo/"

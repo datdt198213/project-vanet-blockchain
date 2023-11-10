@@ -10,7 +10,7 @@ with open(input) as file:
     begin = 0
     end = int(sys.argv[1]) # Read parameter from command
     numberVehicles = int(sys.argv[2])
-    times = str(end) + "_" + str(numberVehicles)
+    times = str(numberVehicles)
 
     for i in range(len(lines)):
       if '<begin value="' in lines[i]:
