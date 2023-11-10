@@ -1,22 +1,31 @@
-The process of setting up Ganache and utilizing JavaScript to simulate blockchain technology for testing purposes.
+# I Install wallet application, smart contract compiler and 
+## 1. Download Ganache wallet
+Ganache GUI: https://trufflesuite.com/ganache/ 
 
-## 1. Setting environment
-
-##### Download node version LTS: https://nodejs.org/en/download
-
-## 2. Setting up Ganache
-
-##### Download Ganache GUI version: https://trufflesuite.com/ganache/ 
-
-##### Download Ganache CLI version 
+Download Ganache CLI
 ```
 npm i ganache
 ```
 
-##### Launching Ganache CLI
+Launching Ganache CLI
 ```
 ganache
 ```
+
+Ganache wallet ignored consensus algorithm. To install hyperledger with consensus algorithm, go to **II. Build iroha hyperledger**
+
+## 2. Install smart contract compiler
+This project uses truffle compiler to compile from smart contract written by solidity language to json file including ABI byte code. <br/>
+Firstly, installing nodejs at https://nodejs.org/en/download <br/>
+Secondly, installing truffle with command
+```
+npm install truffle
+```
+To compile smart contract in folder project-vanet-blockchain/contracts, using below command
+```
+truffle compile
+```
+Note: all commands run at path folder /project-vanet-blockchain
 
 ## 3. Initialized project reactjs
 ##### Install create-react-app to initalized reactjs project 
@@ -33,45 +42,6 @@ npm install web3
 ```
 npx create-react-app client
 ```
-
-
-## 4. Install, Init, Compile, Migrate, Test, Deploy Truffle
-
-##### Install truffle
-```
-npm install truffle
-```
-
-##### Initial truffle
-```
-truffle init
-```
-
-##### Compile truffle 
-```
-truffle compile
-```
-
-##### Migrate truffle 
-```
-truffle migrage
-```
-
-##### Reset truffle 
-```
-truffle migrate reset
-```
-
-##### Test truffle 
-```
-truffle test
-```
-
-##### Deploy truffle 
-```
-truffle deploy
-```
-
 
 # II. Build Iroha hyperledger
 # A. In Ubuntu
