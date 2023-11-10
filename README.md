@@ -90,18 +90,27 @@ $ go version
 ## 2. Install environment dependences on Linux 
 ```
 $ cd ~
-$ curl -OL https://golang.org/dl/go1.14.linux-amd64.tar.gz
-$ sha256sum go1.14.linux-amd64.tar.gz
-$ sudo tar -xvf go1.14.linux-amd64.tar.gz
-$ sudo nano ~/.profile
-=> export PATH=$PATH:/usr/local/go/bin
-$ source ~/.profile
 $ sudo apt-get update
 $ sudo apt-get -y --no-install-recommends install 
 $ sudo apt-get install build-essential ninja-build 
 $ sudo apt-get install git ca-certificates tar curl unzip cmake
 $ sudo apt-get install pkg-config zip
-$ cd project-vanet-blockchain/iroha/goSrc/src/vmCaller
+```
+
+## 3. Install go 
+Go version must match project-vanet-blockchain/iroha/goSrc/src/vmCaller/go.mod.in
+```
+$ curl -OL https://golang.org/dl/go1.14.linux-amd64.tar.gz
+$ sha256sum go1.14.linux-amd64.tar.gz
+$ sudo tar -xvf go1.14.linux-amd64.tar.gz
+$ sudo nano ~/.bashrc
+=> export PATH=$PATH:/usr/local/go/bin
+$ source ~/.bashrc
+```
+
+## 4. Install grpc
+```
+$ cd ~
 $ git clone --recurse-submodules -b v1.58.0 --depth 1 --shallow-submodules https://github.com/grpc/grpc
 $ cd grpc
 $ mkdir -p cmake/build
@@ -112,12 +121,19 @@ $ sudo apt install libsoci-dev
 $ pkg-config --cflags --libs soci
 ```
 
-## 3. Install Vcpkg Dependency Manager
+## 5. Install postgresql and set password
+```
+$ sudo apt install postgresql postgresql-contrib
+$ sudo -i -u postgres
+$ psql
+$ postgres=# \password 
+```
+
+## 6. Install Vcpkg Dependency Manager
 ```
 $ git clone https://github.com/microsoft/vcpkg.git
 $ cd vcpkg
 $ ./bootstrap-vcpkg.sh
-
 $ cd ..
 $ cmake -DCMAKE_TOOLCHAIN_FILE=$PWD/vcpkg-build/scripts/buildsystems/vcpkg.cmake
 $ git clone https://github.com/hyperledger/iroha.git
@@ -125,7 +141,7 @@ $ cd iroha
 $ ./vcpkg/build_iroha_deps.sh $PWD/vcpkg-build
 ```
 
-## 4. Building Iroha
+## 7. Building Iroha
 1. Build
 ```
 cmake -B build -DCMAKE_TOOLCHAIN_FILE=$PWD/vcpkg-build/scripts/buildsystems/vcpkg.cmake . -DCMAKE_BUILD_TYPE=RELEASE -DUSE_BURROW=ON -DUSE_URSA=OFF -DTESTING=OFF -DPACKAGE_DEB=OFF
