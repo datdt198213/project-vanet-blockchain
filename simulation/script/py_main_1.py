@@ -40,7 +40,7 @@ for k in range(1, 4):
             if (b < totalTime): 
                 if (e > totalTime):
                     e = totalTime
-                command = "node JSMinerCoin.js " + str(timeRound) + " " + str(b) + " " + str(e) + " " + str(distance) + " " + str(times) + " " + str(numVehicles)
+                command = "node JSMinerCoin.js " + str(timeRound) + " " + str(b) + " " + str(e) + " " + str(distance) + " " + str(times) + " " + str(numVehicles) + " " + str(totalTime)
                 os.system(command)
                 b += timeRound
                 e += timeRound
