@@ -207,8 +207,7 @@ function calculateDistanceList(vehicles, distance, end) {
         }
            
     }
-    console.log("DONE calculate distance: Number of vehicle = " + drivers.length);
-
+    // console.log("DONE calculate distance: Number of vehicle = " + drivers.length);
     return drivers;
 }
 
@@ -241,7 +240,7 @@ function rule(drivers) {
         }
     }
 
-    console.log("DONE rule: Number of node POD = " + nodePod.length);
+    // console.log("DONE rule: Number of node POD = " + nodePod.length);
     // nodePod.forEach((v) => console.log(v));
     return nodePod;
 }
@@ -291,6 +290,7 @@ function main() {
       stream.write(dataArrays+"\r\n");
       stream.end()
     });
+    console.log("Filename: " + fName);
 }
 const start = Date.now();
 main();
