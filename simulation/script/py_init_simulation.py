@@ -10,6 +10,7 @@ with open(input) as file:
     begin = 0
     end = int(sys.argv[1]) # Read parameter from command
     numberVehicles = int(sys.argv[2])
+    times = int(sys.argv[3])
 
     for i in range(len(lines)):
       if '<begin value="' in lines[i]:
@@ -29,5 +30,5 @@ with open(input) as file:
     name_file = "../sumo/simulation" + str(numberVehicles) + ".sumo.cfg"
     new_file = open(name_file, "w")
     new_file.writelines(lines)
-    print(f"DONE init_simulation: simulation[{numberVehicles}].sumo.cfg file")
+    print(f"DONE init_simulation: simulation[{times}].sumo.cfg file")
 

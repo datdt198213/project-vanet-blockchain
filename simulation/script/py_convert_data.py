@@ -6,10 +6,11 @@ import sys
 # Read parameter from command
 end = int(sys.argv[1]) 
 numVehicles = int(sys.argv[2])
+times = int(sys.argv[3])
 
 # Define path file
-input_file = '../sumo/vehicle'+ str(numVehicles) +'.sumo.xml'
-output_file = 'vehicle' + str(numVehicles) + '.json'
+input_file = '../sumo/vehicle'+ str(times) +'.sumo.xml'
+output_file = '../sumo/vehicle' + str(times) + '.json'
 
 temp = "Temp.json"
 with open(input_file) as xml_file:
@@ -39,4 +40,4 @@ fout.close()
 os.remove("Temp.json")
 # Delete file trips.trips.xml
 os.remove("trips.trips.xml")
-print(f"DONE convert_data: vehicle[{numVehicles}].sumo.xml => vehicle[{numVehicles}].json")
+print(f"DONE convert_data: vehicle[{times}].sumo.xml => vehicle[{times}].json")
