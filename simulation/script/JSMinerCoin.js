@@ -11,7 +11,6 @@ const times = parseFloat(maxTime.argv[6]);
 const numVehicles = parseFloat(maxTime.argv[7]);
 const filename = "../sumo/vehicle" + times.toString() + ".json";
 const dataJson = require(filename);
-
 // Define driver class
 class Driver {
     constructor(id, distance, time, coin) {

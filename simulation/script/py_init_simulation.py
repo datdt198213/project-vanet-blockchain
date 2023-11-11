@@ -27,7 +27,7 @@ with open(input) as file:
         lines[i] = str_temp
         end += int(sys.argv[1])
 
-    name_file = "../sumo/simulation" + str(numberVehicles) + ".sumo.cfg"
+    name_file = "../sumo/simulation" + str(times) + ".sumo.cfg"
     new_file = open(name_file, "w")
     new_file.writelines(lines)
     print(f"DONE init_simulation: simulation[{times}].sumo.cfg file")
