@@ -56,10 +56,6 @@ function sha512(inputString) {
     return crypto.createHash("sha512").update(inputString).digest("hex");
 }
 
-function getFistElement(drivers) {
-    return drivers.map((subarray) => subarray[0]);
-}
-
 // Get data from json and return list of vehicle in a period of time
 function getDataFromJson(begin, end) {
     const data = dataJson["fcd-export"]["timestep"];
