@@ -289,10 +289,8 @@ function main() {
     
     stream.once('open', function(fd) {
       stream.write(dataArrays+"\r\n");
+      stream.end()
     });
-    // Close stream
-    stream.end();
-
 }
 const start = Date.now();
 main();
