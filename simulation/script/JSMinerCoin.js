@@ -9,10 +9,9 @@ const endTime = parseFloat(maxTime.argv[4]);
 const distance = parseFloat(maxTime.argv[5]);
 const totalTime = parseFloat(maxTime.argv[6]);
 const numVehicles = parseFloat(maxTime.argv[7]);
-
 const filename = "../data/vehicle" + numVehicles.toString() + ".json";
-// const dataJson = require("../data/vehicle1.json");
 const dataJson = require(filename);
+
 // Define driver class
 class Driver {
     constructor(id, distance, time, coin) {
@@ -88,6 +87,9 @@ function getDataFromJson(begin, end) {
         }
     });
 
+    // Clear the cache to "close" the file (force a reload if needed)
+    delete require.cache[require.resolve(filename)];
+    
     return dataList;
 }
 
@@ -111,6 +113,8 @@ function getAllDataJson() {
         }
     });
 
+    // Clear the cache to "close" the file (force a reload if needed)
+    delete require.cache[require.resolve(filename)];
     return dataList;
 }
 
@@ -206,8 +210,6 @@ function calculateDistanceList(vehicles, distance, end) {
         }
            
     }
-
-    // drivers.forEach(v => console.log(v))
     console.log("DONE calculate distance: Number of vehicle = " + drivers.length);
 
     return drivers;
@@ -281,51 +283,6 @@ function main() {
     const distanceList = calculateDistanceList(classList, distance, end);
     const nPOD = rule(distanceList);
 
-
-    // console.log(inputData)
-    // console.log(classList.length);
-    
-
-    // for (let i = 0; i < count; i++) {
-    //     let coins = [];
-
-    //     const inputData = getDataFromJson(begin, end);
-
-    //     const classList = classifyList(inputData);
-        
-    //     const distanceList = calculateDistanceList(classList, distance, end);
-
-    //     const nPOD = rule(distanceList);
-
-    //     nPOD.forEach((v) => {
-    //         // console.log(v)
-    //         output.push(v);
-    //     });
-
-    //     if (end === 3600) {
-    //         console.log("Time end = " + end);
-    //         console.log(inputData)
-    //         // console.log(classList)
-    //         // console.log(distanceList)
-    //         // console.log(nPOD)
-    //     }
-
-    //     begin += timeslot;
-    //     end += timeslot;
-    //     if (end > endTime) end = endTime;
-    // }
-
-    // output.forEach((v) => console.log(v));
-
-    // Statistics
-    // var allDataJson = getAllDataJson();
-    // var classifyAllData = classifyList(allDataJson);
-    // var numberOfVehicle = countNumberOfVehicle(classifyAllData);
-    // console.log("Number of vehicle ", numberOfVehicle)
-    
-    
-
-
     // Statistic
 
     const dataArrays = [[timeslot, begin, end - 0.1, distance, distanceList.length, nPOD.length, totalTime, numVehicles]]
@@ -336,6 +293,9 @@ function main() {
     stream.once('open', function(fd) {
       stream.write(dataArrays+"\r\n");
     });
+    // Close stream
+    stream.end();
+
 }
 const start = Date.now();
 main();
