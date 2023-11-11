@@ -3,13 +3,13 @@ import xmltodict
 import os
 import sys
 
-end = int(sys.argv[1]) # Read parameter from command
-n = int(sys.argv[2])
-times = "_" + str(n)
+# Read parameter from command
+end = int(sys.argv[1]) 
+numVehicles = int(sys.argv[2])
 
-input_file = '../sumo/vehicle'+ str(times) +'.sumo.xml'
-
-output_file = '../data/vehicle' + str(times) + '.json'
+# Define path file
+input_file = '../sumo/vehicle'+ str(numVehicles) +'.sumo.xml'
+output_file = '../data/vehicle' + str(numVehicles) + '.json'
 
 temp = "Temp.json"
 with open(input_file) as xml_file:
@@ -39,4 +39,4 @@ fout.close()
 os.remove("Temp.json")
 # Delete file trips.trips.xml
 os.remove("trips.trips.xml")
-print(f"DONE convert_data: vehicle[{times}].sumo.xml => vehicle[{times}].json")
+print(f"DONE convert_data: vehicle[{numVehicles}].sumo.xml => vehicle[{numVehicles}].json")

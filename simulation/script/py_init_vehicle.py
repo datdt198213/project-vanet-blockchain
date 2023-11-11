@@ -9,11 +9,9 @@ end = int(sys.argv[1]) # Read parameter from command
 # n = (end - begin) / int(sys.argv[2])   # Read parameter from command
 insertionRate = int(sys.argv[2])
 
-times = str(insertionRate)
 # Define path to 
 # SUMO_HOME = "/home/parallel_user/sumo/"
 SUMO_HOME = "/root/sumo/"
-
 PATH_RANDOMTRIP = "python3 "+ SUMO_HOME + "tools/randomTrips.py"
 PATH_NET = "../sumo/net.net.xml"
 PATH_ROUTE = "../sumo/route.rou.xml"
@@ -25,7 +23,7 @@ command1 = PATH_RANDOMTRIP + " -n" + PATH_NET + " -r " + PATH_ROUTE +" -b " + st
 os.system(command1)
 
 # Output latitude and longtitude
-command2 = "sumo -c ../sumo/simulation" + str(times) + ".sumo.cfg --fcd-output ../sumo/vehicle" + str(times) +".sumo.xml --fcd-output.geo"
+command2 = "sumo -c ../sumo/simulation" + str(insertionRate) + ".sumo.cfg --fcd-output ../sumo/vehicle" + str(insertionRate) +".sumo.xml --fcd-output.geo"
 
 # Output X Y 
 # command2 = "sumo -c ../sumo/simulation" + str(times) + ".sumo.cfg --fcd-output ../sumo/vehicle" + str(times) +".sumo.xml"
@@ -35,4 +33,4 @@ os.system(command2)
 # Next time to begin += 2000s and end += 2000s
 begin += int(sys.argv[1])
 end += int(sys.argv[1])
-print(f'DONE init_vehicle: vehicle[{times}].sumo.xml file')
+print(f'DONE init_vehicle: vehicle[{insertionRate}].sumo.xml file')
