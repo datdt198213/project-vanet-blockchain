@@ -9,7 +9,7 @@ numVehicles = int(sys.argv[2])
 
 # Define path file
 input_file = '../sumo/vehicle'+ str(numVehicles) +'.sumo.xml'
-output_file = '../data/vehicle' + str(numVehicles) + '.json'
+output_file = 'vehicle' + str(numVehicles) + '.json'
 
 temp = "Temp.json"
 with open(input_file) as xml_file:
