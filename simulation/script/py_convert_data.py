@@ -4,7 +4,7 @@ import os
 import sys
 
 # Read parameter from command
-end = int(sys.argv[1]) 
+totalTime = int(sys.argv[1]) 
 numVehicles = int(sys.argv[2])
 times = int(sys.argv[3])
 

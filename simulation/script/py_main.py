@@ -18,11 +18,11 @@ for i in range(1, 5):
     os.system(command)
 
     # convert xml data of vehicle to 
-    command = "python3 py_convert_data.py " + str(times) + " " + str(insertionRate) + " " + str(times)
+    command = "python3 py_convert_data.py " + str(totalTime) + " " + str(insertionRate) + " " + str(times)
     os.system(command)
 
     # Adding header in file csv
-    command = "node JSAddHeader.js " + str(numVehicles)    
+    command = "node JSAddHeader.js " + str(numVehicles) + " " + str(times)    
     os.system(command)
 
     distance = 1000
