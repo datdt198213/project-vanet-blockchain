@@ -9,7 +9,7 @@ const endTime = parseFloat(maxTime.argv[4]);
 const distance = parseFloat(maxTime.argv[5]);
 const totalTime = parseFloat(maxTime.argv[6]);
 const numVehicles = parseFloat(maxTime.argv[7]);
-const filename = "vehicle" + numVehicles.toString() + ".json";
+const filename = "/vehicle" + numVehicles.toString() + ".json";
 const dataJson = require(filename);
 
 // Define driver class

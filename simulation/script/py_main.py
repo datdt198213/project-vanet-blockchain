@@ -2,7 +2,7 @@
 
 import os
 
-totalTime = 36000
+totalTime = 1000
 
 insertionRate = 290
 # number of vehicles 100, 200, 300, 400, 500
