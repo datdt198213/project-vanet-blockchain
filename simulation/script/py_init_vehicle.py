@@ -8,7 +8,6 @@ end = int(sys.argv[1]) # Read parameter from command
 # Insertion rate is defined number of vehicles in SUMO
 insertionRate = int(sys.argv[2])
 times = int(sys.argv[3])
-seed = int(sys.argv[4])
 
 # Define path to 
 # SUMO_HOME = "/home/parallel_user/sumo/"
