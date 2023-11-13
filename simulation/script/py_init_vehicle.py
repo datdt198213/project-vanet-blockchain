@@ -18,7 +18,7 @@ PATH_ROUTE = "../sumo/route.rou.xml"
 
 # command1 = PATH_RANDOMTRIP + " -n" + PATH_NET + " -r " + PATH_ROUTE +" -b " + str(begin) +  " -e " + str(end) + " -p " + str(period) + " -l " 
 
-command1 = PATH_RANDOMTRIP + " -n" + PATH_NET + " -r " + PATH_ROUTE +" -b " + str(begin) +  " -e " + str(end) + " --insertion-rate " +  str(insertionRate) + " -l -s 46"
+command1 = PATH_RANDOMTRIP + " -n" + PATH_NET + " -r " + PATH_ROUTE +" -b " + str(begin) +  " -e " + str(end) + " --insertion-rate " +  str(insertionRate) + " -l -s 41"
 
 # python3 my_random_trips.py -n net.net.xml -r route.rou.xml -b 0 -e 10 --insertion-rate 2 > my_random_trips.txt
 os.system(command1)
