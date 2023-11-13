@@ -7,7 +7,7 @@ numVehicles = insertionRate # number of vehicle
 timeRound = 3600
 b = 0
 e = 3600
-distance = 2000
+distance = 1500
 numVehicles = 100
 totalTime = 3600
 
@@ -24,5 +24,7 @@ for seed in seeds:
     command = "python3 test_convert_data.py " + str(totalTime) + " " + str(seed)
     os.system(command)
 
+    # for i in range(1,5):
     command = "node JSMinerCoin.js " + str(timeRound) + " " + str(b) + " " + str(e) + " " + str(distance) + " " + str(seed) + " " + str(numVehicles) + " " + str(totalTime)
     os.system(command)
+        # distance += 200  
