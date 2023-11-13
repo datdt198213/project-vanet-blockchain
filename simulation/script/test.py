@@ -7,7 +7,7 @@ numVehicles = insertionRate # number of vehicle
 timeRound = 3600
 b = 0
 e = 3600
-distance = 1000
+distance = 2000
 numVehicles = 100
 totalTime = 3600
 
