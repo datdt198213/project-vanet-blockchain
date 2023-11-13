@@ -12,18 +12,18 @@ numVehicles = 100
 totalTime = 3600
 
 # init data of vehicle
-for seed in seeds:
-    # init data of simulation   
-    command = "python3 test_init_simulation.py " + str(totalTime) + " " + str(seed)
-    os.system(command)
+for distance in distances:
+    for seed in seeds:
+        # init data of simulation   
+        command = "python3 test_init_simulation.py " + str(totalTime) + " " + str(seed)
+        os.system(command)
 
-    command = "python3 test_init_vehicle.py " + str(totalTime) + " " + str(insertionRate) + " " + str(seed)
-    os.system(command)
+        command = "python3 test_init_vehicle.py " + str(totalTime) + " " + str(insertionRate) + " " + str(seed)
+        os.system(command)
 
-    # convert xml data of vehicle to 
-    command = "python3 test_convert_data.py " + str(totalTime) + " " + str(seed)
-    os.system(command)
+        # convert xml data of vehicle to 
+        command = "python3 test_convert_data.py " + str(totalTime) + " " + str(seed)
+        os.system(command)
 
-    for distance in distances:
         command = "node JSMinerCoin.js " + str(timeRound) + " " + str(b) + " " + str(e) + " " + str(distance) + " " + str(seed) + " " + str(numVehicles) + " " + str(totalTime)
         os.system(command)  
