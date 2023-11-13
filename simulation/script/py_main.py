@@ -2,9 +2,9 @@
 
 import os
 
-totalTime = 36000
+totalTime = 3600
 times = 19
-insertionRate = 190
+insertionRate = 100
 # number of vehicles 100, 200, 300, 400, 500
 for i in range(1, 20):
     numVehicles = insertionRate # number of vehicle
