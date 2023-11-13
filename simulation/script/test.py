@@ -26,5 +26,4 @@ for seed in seeds:
 
     for distance in distances:
         command = "node JSMinerCoin.js " + str(timeRound) + " " + str(b) + " " + str(e) + " " + str(distance) + " " + str(seed) + " " + str(numVehicles) + " " + str(totalTime)
-        os.system(command)
-        distance += 200  
+        os.system(command)  
