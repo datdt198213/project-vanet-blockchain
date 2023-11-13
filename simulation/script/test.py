@@ -15,5 +15,5 @@ for seed in seeds:
     os.system(command)
 
     # convert xml data of vehicle to 
-    command = "python3 py_convert_data.py " + str(totalTime) + " " + str(seed)
+    command = "python3 test_convert_data.py " + str(totalTime) + " " + str(seed)
     os.system(command)
