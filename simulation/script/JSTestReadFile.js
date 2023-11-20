@@ -16,36 +16,13 @@ const filename = "../sumo/vehicle1.json";
 // const filename = "../sumo/vehicle" + times.toString() + ".json";
 
 const readStream = fs.createReadStream(filename);
-const parser = JSONStream.parse(['timestep', true]);
+const parser = JSONStream.parse("*");
 
 readStream.pipe(parser);
 
 parser.on('data', (data) => {
     // Process each chunk of parsed JSON data
-    dataList = [];
-
-    data.forEach((element) => {
-        time = Number(element.time);
-        if (time >= begin && time <= end) {
-            // Having a object
-            if (element.vehicle != undefined) {
-                if (element.vehicle.length == undefined) {
-                    // Push data to list
-                    dataList.push(new Vehicle(element.vehicle, element.time));
-                }
-                // Having object list
-                else {
-                    // Push data to list
-                    element.vehicle.forEach((v) => {
-                        dataList.push(new Vehicle(v, element.time));
-                    });
-                }
-            }
-           
-        }
-    });
-
-    console.log(dataList)
+    console.log(typeof data)
 
 });
 
