@@ -4,11 +4,11 @@ import os
 
 totalTime = 36000
 times = 41
-insertionRate = 291
+insertionRate = 290
 for j in range(1, 4):
 
     # number of vehicles 100, 200, 300, 400, 500
-    for i in range(1, 21):
+    for i in range(1, 22):
         numVehicles = insertionRate # number of vehicle
 
         # init data of simulation   
