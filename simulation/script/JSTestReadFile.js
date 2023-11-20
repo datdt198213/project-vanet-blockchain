@@ -56,19 +56,11 @@ class Vehicle {
         this.time = Number (time);
     }
 }
-
 parser.on('data', (data) => {
     // Process each chunk of parsed JSON data
-    begin = 0, end = 3600
-    dataList = getDataFromJson(begin, end, data);
-    console.log(dataList)
-});
-
-function getDataFromJson(begin, end, data) {
-
     dataList = [];
-
-    data.timeslot.forEach((element) => {
+    begin = 0, end = 3600
+    data.timestep.forEach((element) => {
         time = Number(element.time);
         if (time >= begin && time <= end) {
             // Having a object
@@ -89,11 +81,8 @@ function getDataFromJson(begin, end, data) {
         }
     });
 
-    // Clear the cache to "close" the file (force a reload if needed)
-    delete require.cache[require.resolve(filename)];
-    
-    return dataList;
-}
+    console.log(dataList)
+});
 
 parser.on('end', () => {
     // The entire JSON file has been processed
