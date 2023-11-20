@@ -20,6 +20,43 @@ const parser = JSONStream.parse("*");
 
 readStream.pipe(parser);
 
+class Driver {
+    constructor(id, distance, time, coin) {
+        this.id = id;
+        this.distance = Number(distance);
+        this.time = Number(time);
+        this.coin = Number(coin);
+    }
+
+    display() {
+        console.log(
+            "id: " +
+                this.id +
+                ", Distance: " +
+                this.distance +
+                ", Time: " +
+                this.time +
+                " , Coin: " +
+                this.coin
+        );
+    }
+}
+
+class Vehicle {
+    constructor(vehicle, time) {
+        this.id = vehicle.id;
+        this.x = vehicle.x;
+        this.y = vehicle.y;
+        this.angle = vehicle.angle;
+        this.type = vehicle.type;
+        this.speed = vehicle.speed;
+        this.pos = vehicle.pos;
+        this.lane = vehicle.lane;
+        this.slope = vehicle.slope;
+        this.time = Number (time);
+    }
+}
+
 parser.on('data', (data) => {
     // Process each chunk of parsed JSON data
     dataList = [];
