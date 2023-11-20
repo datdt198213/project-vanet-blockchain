@@ -22,7 +22,7 @@ readStream.pipe(parser);
 
 parser.on('data', (data) => {
     // Process each chunk of parsed JSON data
-    console.log(typeof data)
+    console.log(data.timestep)
 
 });
 
