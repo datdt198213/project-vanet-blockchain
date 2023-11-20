@@ -3,7 +3,7 @@ const crypto = require("crypto");
 const maxTime = require("process");
 const JSONStream = require('JSONStream');
 
-const filename = "../sumo/vehicle41.json";
+const filename = "../sumo/vehicle1.json";
 
 // Full time run simulation 
 // const timeslot = parseFloat(maxTime.argv[2]);
@@ -16,14 +16,13 @@ const filename = "../sumo/vehicle41.json";
 // const filename = "../sumo/vehicle" + times.toString() + ".json";
 
 const readStream = fs.createReadStream(filename);
-const parser = JSONStream.parse('*');
+const parser = JSONStream.parse(['timestep', true]);
 
 readStream.pipe(parser);
 
 parser.on('data', (data) => {
   // Process each chunk of parsed JSON data
-  const d = data["fcd-export"]["timestep"];
-  console.log(d);
+  console.log(data);
 });
 
 parser.on('end', () => {
