@@ -209,6 +209,11 @@ function calculateDistanceList(vehicles, distance, end) {
     return drivers;
 }
 
+// Hash string by sha512
+function sha512(inputString) {
+    return crypto.createHash("sha512").update(inputString).digest("hex");
+}
+
 // Return satisfy node proof of driving
 function rule(drivers) {
     // console.log("INPUT rule: number of drivers = " + drivers.length);
