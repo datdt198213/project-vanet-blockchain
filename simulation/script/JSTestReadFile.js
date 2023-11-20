@@ -59,9 +59,16 @@ class Vehicle {
 
 parser.on('data', (data) => {
     // Process each chunk of parsed JSON data
-    dataList = [];
     begin = 0, end = 3600
-    data.timestep.forEach((element) => {
+    dataList = getDataFromJson(begin, end, data);
+    console.log(dataList)
+});
+
+function getDataFromJson(begin, end, data) {
+
+    dataList = [];
+
+    data.forEach((element) => {
         time = Number(element.time);
         if (time >= begin && time <= end) {
             // Having a object
@@ -82,8 +89,11 @@ parser.on('data', (data) => {
         }
     });
 
-    console.log(dataList)
-});
+    // Clear the cache to "close" the file (force a reload if needed)
+    delete require.cache[require.resolve(filename)];
+    
+    return dataList;
+}
 
 parser.on('end', () => {
     // The entire JSON file has been processed
