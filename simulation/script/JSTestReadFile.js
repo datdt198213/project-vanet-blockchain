@@ -1,25 +1,24 @@
 const fs = require('fs');
-const readline = require('readline');
 
 const filename = "../sumo/vehicle41.json";
+const JSONStream = require('JSONStream');
+
 const readStream = fs.createReadStream(filename);
-const rl = readline.createInterface({
-  input: readStream,
-  crlfDelay: Infinity
+const parser = JSONStream.parse('*');
+
+readStream.pipe(parser);
+
+parser.on('data', (data) => {
+  // Process each chunk of parsed JSON data
+  console.log(data);
 });
 
-// Create an empty string to store the JSON data
-let jsonData = '';
-
-rl.on('line', (line) => {
-  // Process each line of the file
-  jsonData += line;
+parser.on('end', () => {
+  // The entire JSON file has been processed
+  console.log('Finished reading JSON file.');
 });
 
-rl.on('close', () => {
-  // Parse the accumulated JSON data
-  const parsedData = JSON.parse(jsonData);
-
-  // Now you can work with the parsed data
-  console.log(parsedData);
+parser.on('error', (err) => {
+  // Handle errors
+  console.error('Error parsing JSON:', err);
 });
