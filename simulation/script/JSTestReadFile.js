@@ -2,7 +2,7 @@ const fs = require('fs');
 const readline = require('readline');
 
 const filename = "../sumo/vehicle41.json";
-const readStream = fs.createReadStream('your_large_file.json');
+const readStream = fs.createReadStream(filename);
 const rl = readline.createInterface({
   input: readStream,
   crlfDelay: Infinity
