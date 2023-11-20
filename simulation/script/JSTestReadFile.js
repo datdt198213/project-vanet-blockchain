@@ -68,7 +68,7 @@ function getDataFromJson(begin, end, data) {
 
     dataList = [];
 
-    data.forEach((element) => {
+    data.timeslot.forEach((element) => {
         time = Number(element.time);
         if (time >= begin && time <= end) {
             // Having a object
