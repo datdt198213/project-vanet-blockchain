@@ -3,7 +3,6 @@ const crypto = require("crypto");
 const maxTime = require("process");
 const JSONStream = require('JSONStream');
 
-const filename = "../sumo/vehicle1.json";
 
 // Full time run simulation 
 const timeslot = parseFloat(maxTime.argv[2]);
@@ -13,7 +12,7 @@ const distance = parseFloat(maxTime.argv[5]);
 const times = parseFloat(maxTime.argv[6]);
 const numVehicles = parseFloat(maxTime.argv[7]);
 const totalTime = parseFloat(maxTime.argv[8]);
-// const filename = "../sumo/vehicle" + times.toString() + ".json";
+const filename = "../sumo/vehicle" + times.toString() + ".json";
 
 const readStream = fs.createReadStream(filename);
 const parser = JSONStream.parse("*");
