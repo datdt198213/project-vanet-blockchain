@@ -23,7 +23,7 @@ readStream.pipe(parser);
 parser.on('data', (data) => {
     // Process each chunk of parsed JSON data
     dataList = [];
-
+    begin = 0, end = 3600
     data.timestep.forEach((element) => {
         time = Number(element.time);
         if (time >= begin && time <= end) {
