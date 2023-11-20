@@ -56,10 +56,20 @@ class Vehicle {
         this.time = Number (time);
     }
 }
+
 parser.on('data', (data) => {
     // Process each chunk of parsed JSON data
-    dataList = [];
     begin = 0, end = 3600
+    dataList = getDataFromJson(begin, end, data);
+    
+
+    console.log(dataList)
+});
+
+function getDataFromJson(begin, end, data) {
+
+    dataList = [];
+
     data.timestep.forEach((element) => {
         time = Number(element.time);
         if (time >= begin && time <= end) {
@@ -80,9 +90,9 @@ parser.on('data', (data) => {
            
         }
     });
-
-    console.log(dataList)
-});
+    
+    return dataList;
+}
 
 parser.on('end', () => {
     // The entire JSON file has been processed
