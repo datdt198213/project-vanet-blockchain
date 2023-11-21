@@ -243,27 +243,27 @@ function main() {
     if (endTime) console.log("\nTime begin = " + begin + " Time end = " + end);
 
     let t = end - begin;
-    if(t == timeslot) {
-        const inputData = getDataFromJson(begin, end);
+    const inputData = getDataFromJson(begin, end);
+    console.log(inputData[0].time)
+    console.log(inputData[inputData.length - 1].time)
+    const classList = classifyList(inputData);
+    
+    const distanceList = calculateDistanceList(classList, distance, end);
+    const nPOD = rule(distanceList);
 
-        const classList = classifyList(inputData);
-        
-        const distanceList = calculateDistanceList(classList, distance, end);
-        const nPOD = rule(distanceList);
+    // Statistic
+
+    const dataArrays = [[timeslot, begin, end - 0.1, distance, distanceList.length, nPOD.length, totalTime, numVehicles]]
     
-        // Statistic
+    const fName = "../data/data_statistic_" + numVehicles.toString() + ".csv"
+    var stream = fs.createWriteStream(fName, {'flags': 'a'});
     
-        const dataArrays = [[timeslot, begin, end - 0.1, distance, distanceList.length, nPOD.length, totalTime, numVehicles]]
-        
-        const fName = "../data/data_statistic_" + numVehicles.toString() + ".csv"
-        var stream = fs.createWriteStream(fName, {'flags': 'a'});
-        
-        stream.once('open', function(fd) {
-          stream.write(dataArrays+"\r\n");
-          stream.end()
-        });
-        console.log("Filename: " + fName);
-    }
+    stream.once('open', function(fd) {
+        stream.write(dataArrays+"\r\n");
+        stream.end()
+    });
+    console.log("Filename: " + fName);
+    
     
 }
 const start = Date.now();
