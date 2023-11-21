@@ -244,7 +244,7 @@ function main() {
     
     let t = inputData[inputData.length - 1].time - inputData[0].time;
     console.log("t = " + t + " timeslot = " + timeslot)
-    if (t == timeslot) {
+    if (Math.ceil(t) == timeslot) {
         console.log("Time begin = " + begin + " Time end = " + end);
         const classList = classifyList(inputData);
     
