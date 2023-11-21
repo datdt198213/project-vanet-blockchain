@@ -243,6 +243,7 @@ function main() {
     const inputData = getDataFromJson(begin, end);
     
     let t = inputData[inputData.length - 1].time + 0.1 - inputData[0].time;
+    console.log("t = " + t + " timeslot = " + timeslot)
     if (t == timeslot) {
         console.log("Time begin = " + begin + " Time end = " + end);
         const classList = classifyList(inputData);
