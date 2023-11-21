@@ -90,31 +90,6 @@ function getDataFromJson(begin, end) {
     return dataList;
 }
 
-function getAllDataJson() {
-    const data = dataJson["fcd-export"]["timestep"];
-
-    dataList = [];
-
-    data.forEach((element) => {
-        // Having a object
-        if (element.vehicle.length === undefined) {
-            // Push data to list
-            dataList.push(new Vehicle(element.vehicle, element.time));
-        }
-        // Having object list
-        else {
-            // Push data to list
-            element.vehicle.forEach((v) => {
-                dataList.push(new Vehicle(v, element.time));
-            });
-        }
-    });
-
-    // Clear the cache to "close" the file (force a reload if needed)
-    delete require.cache[require.resolve(filename)];
-    return dataList;
-}
-
 // Classify data of a node, return new array is classified
 function classifyList(drivers) {
     newDrivers = [];
@@ -266,31 +241,29 @@ function main() {
     if (isNaN(distance)) console.log("Warning: Please enter distance parameter in running command");
     if (endTime) console.log("\nTime begin = " + begin + " Time end = " + end);
 
-    let d = distance;            // Distance to earning coin (m)
-    const count = Math.ceil(endTime / timeslot);
-    // console.log("Count: " + count);
+    let t = end - begin;
+    if(t == timeslot) {
+        const inputData = getDataFromJson(begin, end);
 
-    const output = [];
-
-    const inputData = getDataFromJson(begin, end);
-
-    const classList = classifyList(inputData);
+        const classList = classifyList(inputData);
+        
+        const distanceList = calculateDistanceList(classList, distance, end);
+        const nPOD = rule(distanceList);
     
-    const distanceList = calculateDistanceList(classList, distance, end);
-    const nPOD = rule(distanceList);
-
-    // Statistic
-
-    const dataArrays = [[timeslot, begin, end - 0.1, distance, distanceList.length, nPOD.length, totalTime, numVehicles]]
+        // Statistic
     
-    const fName = "../data/data_statistic_" + numVehicles.toString() + ".csv"
-    var stream = fs.createWriteStream(fName, {'flags': 'a'});
+        const dataArrays = [[timeslot, begin, end - 0.1, distance, distanceList.length, nPOD.length, totalTime, numVehicles]]
+        
+        const fName = "../data/data_statistic_" + numVehicles.toString() + ".csv"
+        var stream = fs.createWriteStream(fName, {'flags': 'a'});
+        
+        stream.once('open', function(fd) {
+          stream.write(dataArrays+"\r\n");
+          stream.end()
+        });
+        console.log("Filename: " + fName);
+    }
     
-    stream.once('open', function(fd) {
-      stream.write(dataArrays+"\r\n");
-      stream.end()
-    });
-    console.log("Filename: " + fName);
 }
 const start = Date.now();
 main();
