@@ -67,6 +67,7 @@ function getDataFromJson(begin, end) {
         time = Number(element.time);
         if (time >= begin && time <= end) {
             // Having a object
+            console.log("Time: " + time)
             if (element.vehicle != undefined) {
                 if (element.vehicle.length == undefined) {
                     // Push data to list
