@@ -272,7 +272,6 @@ console.log(`Execution time: ${end - start} ms`);
 
 module.exports = {
     rule,
-    getAllDataJson,
     classifyList,
     countNumberOfVehicle
 };
