@@ -67,7 +67,6 @@ function getDataFromJson(begin, end) {
         time = Number(element.time);
         if (time >= begin && time <= end) {
             // Having a object
-            console.log("Time: " + time)
             if (element.vehicle != undefined) {
                 if (element.vehicle.length == undefined) {
                     // Push data to list
@@ -242,29 +241,28 @@ function main() {
     if (isNaN(distance)) console.log("Warning: Please enter distance parameter in running command");
     if (endTime) console.log("\nTime begin = " + begin + " Time end = " + end);
 
-    let t = end - begin;
     const inputData = getDataFromJson(begin, end);
-    console.log(inputData[0].time)
-    console.log(inputData[inputData.length - 1].time)
-    const classList = classifyList(inputData);
     
-    const distanceList = calculateDistanceList(classList, distance, end);
-    const nPOD = rule(distanceList);
-
-    // Statistic
-
-    const dataArrays = [[timeslot, begin, end - 0.1, distance, distanceList.length, nPOD.length, totalTime, numVehicles]]
+    let t = inputData[inputData.length - 1].time + 0.1 - inputData[0].time
+    if (t == timeslot) {
+        const classList = classifyList(inputData);
     
-    const fName = "../data/data_statistic_" + numVehicles.toString() + ".csv"
-    var stream = fs.createWriteStream(fName, {'flags': 'a'});
+        const distanceList = calculateDistanceList(classList, distance, end);
+        const nPOD = rule(distanceList);
     
-    stream.once('open', function(fd) {
-        stream.write(dataArrays+"\r\n");
-        stream.end()
-    });
-    console.log("Filename: " + fName);
+        // Statistic
     
-    
+        const dataArrays = [[timeslot, begin, end - 0.1, distance, distanceList.length, nPOD.length, totalTime, numVehicles]]
+        
+        const fName = "../data/data_statistic_" + numVehicles.toString() + ".csv"
+        var stream = fs.createWriteStream(fName, {'flags': 'a'});
+        
+        stream.once('open', function(fd) {
+            stream.write(dataArrays+"\r\n");
+            stream.end()
+        });
+        console.log("Filename: " + fName);
+    }    
 }
 const start = Date.now();
 main();
