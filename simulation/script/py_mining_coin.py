@@ -8,6 +8,8 @@ insertionRate = 90
 for i in range(1, 22):
     numVehicles = insertionRate # number of vehicle
     distance = 1000
+    command = "node JSAddHeader.js " + str(numVehicles)
+    os.system(command)
 
     # Distance 1km, 1.5km, 2km
     for k in range(1, 4):
