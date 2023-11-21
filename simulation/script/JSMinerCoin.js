@@ -236,15 +236,15 @@ function countNumberOfVehicle(listVehicle) {
 function main() {
     let begin = beginTime;                  // Beginning time calculates distances and coins in 1 round (s)
     let end = endTime;     
-    if (isNaN(end)) console.log("Warning: Please enter beginning time parameter in running command");
-    if (isNaN(begin)) console.log("Warning: Please enter ending time parameter in running command");
+    if (isNaN(begin)) console.log("Warning: Please enter beginning time parameter in running command");
+    if (isNaN(end)) console.log("Warning: Please enter ending time parameter in running command");
     if (isNaN(distance)) console.log("Warning: Please enter distance parameter in running command");
-    if (endTime) console.log("\nTime begin = " + begin + " Time end = " + end);
-
+    
     const inputData = getDataFromJson(begin, end);
     
-    let t = inputData[inputData.length - 1].time + 0.1 - inputData[0].time
+    let t = inputData[inputData.length - 1].time + 0.1 - inputData[0].time;
     if (t == timeslot) {
+        console.log("Time begin = " + begin + " Time end = " + end);
         const classList = classifyList(inputData);
     
         const distanceList = calculateDistanceList(classList, distance, end);
