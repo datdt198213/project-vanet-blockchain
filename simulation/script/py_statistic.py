@@ -1,6 +1,7 @@
 import csv
+import sys
 
-num = 90
+num = int(sys.argv[1])
 # Specify the path to your CSV file
 csv_file_path = f'../data/data_statistic_{num}.csv'
 
@@ -98,7 +99,27 @@ for j in range(1, 4):
     times += 2
     
 # Write the data
-f = open('../data/result_100.csv', 'a', newline='')
+
+result = 100 
+
+if num >= 90 and num <= 110:
+    result = 100
+
+elif num >= 190 and num <= 210:
+    result = 200
+
+elif num >= 290 and num <= 310:
+    result = 300
+
+elif num >= 390 and num <= 410:
+    result = 400
+
+elif num >= 490 and num <= 510:
+    result = 500
+
+
+file_name = f'../data/result_{result}.csv'
+f = open(file_name, 'a', newline='')
 
 fieldnames = ["Timeslot", "Average", "Distance"]
 

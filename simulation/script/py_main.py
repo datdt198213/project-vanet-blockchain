@@ -1,16 +1,16 @@
 import os
 
-totalTime = 3600
+totalTime = 36000
 insertionRate = 100
 
-# command = "python3 py_mining_coin.py " + str(totalTime) + " " + str(insertionRate)
-# os.system(command)
 command = "python3 py_init.py " + str(totalTime) + " " + str(insertionRate)
 os.system(command)
-# timeslot = 100
+# command = "python3 py_mining_coin.py " + str(totalTime) + " " + str(insertionRate)
+# os.system(command)
+# timeslot = 3600
 # b = 0
-# e = 1000
-# distance = 100
+# e = 3600
+# distance = 1000
 # command = "py py_mine_coin.py " + str(timeslot) + " " + str(b) + " " + str(e) + " " + str(distance) + " " + str(insertionRate) + " " + str(totalTime)
 # os.system(command)
 

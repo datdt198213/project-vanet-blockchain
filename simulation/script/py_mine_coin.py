@@ -1,11 +1,62 @@
 import math
 import hashlib
 import json
-import fs
 import sys
 import time
 
 start = time.time()
+
+try:
+    timeslot = int(sys.argv[1])
+    begin_time = int(sys.argv[2])
+    end_time = int(sys.argv[3])
+    distance = int(sys.argv[4])
+    num_vehicles = int(sys.argv[5])
+    total_time = int(sys.argv[6])
+except IndexError:
+    print("Error: Please provide valid command line arguments.")
+    sys.exit()
+
+filename = f"../sumo/vehicle{int(num_vehicles)}.json"
+try:
+    with open(filename, 'r') as file:
+        dataJson = json.load(file)
+except FileNotFoundError:
+    print("Error: File not found.")
+    sys.exit()
+
+total_distance = 0
+total_coin = 0
+total_c = 0
+
+def main():
+    begin = begin_time
+    end = end_time
+
+    input_data = get_data_from_json(begin, end)
+    print(f"{begin}, {timeslot}, {end}, {distance}, {num_vehicles} {total_time}")
+    t = input_data[len(input_data) - 1].time - input_data[0].time
+    print(f"input timeslot = {t} timeslot = {timeslot}")
+    
+    if round(t) == timeslot:
+        print(f"Time begin = {begin} Time end = {end}")
+        class_list = classify_list(input_data)
+        distance_list = calculate_coin(class_list, distance, end)
+        n_pod = rule(distance_list)
+
+        # Statistic
+        data_arrays = [[timeslot, begin, end - 0.1, distance, len(distance_list), len(n_pod), total_time, num_vehicles, total_distance/1000, total_coin, total_c]]
+        print(f'Total distance {total_distance}\t total coin: {total_coin} total coin adding: {total_c}')
+
+        # file_name = f"../data/data_statistic_{num_vehicles}.csv"
+        file_name = f"../data/test{num_vehicles}.csv"
+        try:
+            with open(file_name, 'a', newline="") as stream:
+                stream.write(",".join(map(str, data_arrays[0])) + "\r\n")
+            print("Filename:", file_name)
+        except FileNotFoundError:
+            print("Error: File not found.")
+
 class Driver:
     def __init__(self, id, distance, time, coin):
         self.id = id
@@ -33,6 +84,10 @@ class Vehicle:
 # Calculate distance by Haversine formula (miles)
 def haversine(lat1, lon1, lat2, lon2):
     R = 6371  # Radius of the Earth in kilometers
+    lat1 = float(lat1)
+    lat2 = float(lat2)
+    lon1 = float(lon1)
+    lon2 = float(lon2)
     dLat = math.radians(lat2 - lat1)
     dLon = math.radians(lon2 - lon1)
 
@@ -51,28 +106,31 @@ def sha512(input_string):
     return hashed
 
 def get_data_from_json(begin, end):
-    with open('your_json_file.json', 'r') as file:
-        data_json = json.load(file)
+    try:
+        with open(filename, 'r') as file:
+            data_json = json.load(file)
+            data = data_json['fcd-export']['timestep']
+            data_list = []
+            for element in data:
+                time = float(element['time'])
+                if begin <= time and time <= end:
+                    # Having an object
+                    if 'vehicle' in element:
+                        vehicles = element['vehicle']
+                        if not isinstance(vehicles, list):
+                                # Push data to list
+                            data_list.append(Vehicle(vehicles, element['time']))
+                        else:
+                                # Having object list
+                            for v in vehicles:
+                                data_list.append(Vehicle(v, element['time']))
 
-    data = data_json['fcd-export']['timestep']
-
-    data_list = []
-
-    for element in data:
-        time = float(element['time'])
-        if begin <= time <= end:
-            # Having an object
-            if 'vehicle' in element:
-                vehicles = element['vehicle']
-                if not isinstance(vehicles, list):
-                    # Push data to list
-                    data_list.append(Vehicle(vehicles, element['time']))
-                else:
-                    # Having object list
-                    for v in vehicles:
-                        data_list.append(Vehicle(v, element['time']))
-
-    return data_list
+            return data_list
+    except FileNotFoundError:
+        print("Error: File not found.")
+        sys.exit()
+    
+    
 
 def classify_list(drivers):
     new_drivers = []
@@ -94,10 +152,10 @@ def classify_list(drivers):
     # print("DONE Classify list: Length =", len(new_drivers))
     return new_drivers
 
-def calculate_distance_list(vehicles, distance, end):
+def calculate_coin(vehicles, distance, end):
+    global total_distance, total_coin
     drivers = []
     d = 0
-    c = 0
 
     for idx in range(1, len(vehicles)):
         if vehicles[idx].id == vehicles[idx - 1].id:
@@ -106,25 +164,32 @@ def calculate_distance_list(vehicles, distance, end):
 
             if round_time == 0.1:
                 d += haversine(vehicles[idx].x, vehicles[idx].y, vehicles[idx - 1].x, vehicles[idx - 1].y)
-                if d >= distance:
-                    c += int(d / distance)
-                    d %= distance
+                # if d >= distance:
+                #     c += int(d / distance)
+                #     total_coin += c
+                #     tmp_coin += c
+                #     d %= distance
 
         if idx < len(vehicles) - 1:
             if vehicles[idx - 1].id != vehicles[idx].id:
-                dr = Driver(vehicles[idx - 1].id, d, end, c)
+                total_distance += d
+                coin = d / distance
+                total_coin += coin
+                dr = Driver(vehicles[idx - 1].id, d, end, coin)
                 drivers.append(dr)
                 d = 0
-                c = 0
         elif idx == len(vehicles) - 1:
-            dr = Driver(vehicles[idx - 1].id, d, end, c)
+            total_distance += d
+            coin = d / distance
+            total_coin += coin
+            dr = Driver(vehicles[idx - 1].id, d, end, coin)
             drivers.append(dr)
             d = 0
-            c = 0
 
     return drivers
 
 def rule(drivers):
+    global total_c
     node_pod = []
     w = 0
 
@@ -143,40 +208,10 @@ def rule(drivers):
 
     # print("DONE rule: Number of node POD =", len(node_pod))
     for v in node_pod:
-        print(v)
+        total_c += v.coin
 
     return node_pod
 
-def main():
-    global beginTime, endTime, distance, timeslot, totalTime, numVehicles  # Đảm bảo rằng các biến đã được định nghĩa trước đó
-    begin = beginTime
-    end = endTime
-
-    if not begin or not end or not distance:
-        print("Warning: Please enter valid parameters in the running command.")
-        sys.exit()
-
-    input_data = get_data_from_json(begin, end)
-
-    t = input_data[len(input_data) - 1].time - input_data[0].time
-    print(f"t = {t} timeslot = {timeslot}")
-    
-    if round(t) == timeslot:
-        print(f"Time begin = {begin} Time end = {end}")
-        class_list = classify_list(input_data)
-        distance_list = calculate_distance_list(class_list, distance, end)
-        n_pod = rule(distance_list)
-
-        # Statistic
-        data_arrays = [[timeslot, begin, end - 0.1, distance, len(distance_list), len(n_pod), totalTime, numVehicles]]
-
-        file_name = f"../data/data_statistic_{numVehicles}.csv"
-        try:
-            with open(file_name, 'a') as stream:
-                stream.write(",".join(map(str, data_arrays[0])) + "\r\n")
-            print("Filename:", file_name)
-        except FileNotFoundError:
-            print("Error: File not found.")
 
 main()
 end = time.time()
