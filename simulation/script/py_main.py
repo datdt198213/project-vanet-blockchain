@@ -1,22 +1,29 @@
 import os
 
 totalTime = 36000
-insertionRate = 290
-for j in range(1, 4):
+insertionRate = 209
+
+for i in range(1, 3):
+    command = "python3 py_init.py " + str(totalTime) + " " + str(insertionRate)
+    os.system(command)
+    insertionRate += 1
+
+# for j in range(1, 4):
+    
     # number of vehicles 90,190,290,390,490
-    for i in range(1, 22):
+    # for i in range(1, 22):
         # number of vehicles 90=>110, 190=>210, 290=>310, 390=>410, 490=>510
 
         # init data of simulation   
-        command = "python3 py_init.py " + str(totalTime) + " " + str(insertionRate)
-        os.system(command)
+        # command = "python3 py_init.py " + str(totalTime) + " " + str(insertionRate)
+        # os.system(command)
 
         # command = "python3 py_mining_coin.py " + str(totalTime) + " " + str(insertionRate)
         # os.system(command)
 
-        insertionRate += 1
+        # insertionRate += 1
 
-    insertionRate += 79
+    # insertionRate += 79
 # command = "python3 py_add_header.py"
 # os.system(command)
 
