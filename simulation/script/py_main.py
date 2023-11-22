@@ -1,11 +1,12 @@
 import os
 
-totalTime = 36000
-insertionRate = 210
+totalTime = 1000
+insertionRate = 10
 
-command = "python3 py_mining_coin.py " + str(totalTime) + " " + str(insertionRate)
+# command = "python3 py_mining_coin.py " + str(totalTime) + " " + str(insertionRate)
+# os.system(command)
+command = "python3 py_init.py " + str(totalTime) + " " + str(insertionRate)
 os.system(command)
-
 
 # for j in range(1, 4):
     
