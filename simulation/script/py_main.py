@@ -1,7 +1,7 @@
 import os
 
-totalTime = 100
-insertionRate = 10
+totalTime = 3600
+insertionRate = 100
 
 # command = "python3 py_mining_coin.py " + str(totalTime) + " " + str(insertionRate)
 # os.system(command)
