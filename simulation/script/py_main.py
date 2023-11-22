@@ -1,15 +1,11 @@
 import os
 
 totalTime = 36000
-insertionRate = 209
+insertionRate = 210
 
-for i in range(1, 3):
-    # command = "python3 py_init.py " + str(totalTime) + " " + str(insertionRate)
-    # os.system(command)
+command = "python3 py_mining_coin.py " + str(totalTime) + " " + str(insertionRate)
+os.system(command)
 
-    command = "python3 py_mining_coin.py " + str(totalTime) + " " + str(insertionRate)
-    os.system(command)
-    insertionRate += 1
 
 # for j in range(1, 4):
     
