@@ -1,12 +1,19 @@
 import os
 
-totalTime = 1000
+totalTime = 100
 insertionRate = 10
 
 # command = "python3 py_mining_coin.py " + str(totalTime) + " " + str(insertionRate)
 # os.system(command)
 command = "python3 py_init.py " + str(totalTime) + " " + str(insertionRate)
 os.system(command)
+# timeslot = 100
+# b = 0
+# e = 1000
+# distance = 100
+# command = "py py_mine_coin.py " + str(timeslot) + " " + str(b) + " " + str(e) + " " + str(distance) + " " + str(insertionRate) + " " + str(totalTime)
+# os.system(command)
+
 
 # for j in range(1, 4):
     
