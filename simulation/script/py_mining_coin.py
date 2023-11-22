@@ -1,8 +1,8 @@
 import os
 import sys
 
-totalTime = 36000
-insertionRate = 209
+totalTime = int(sys.argv[1])
+insertionRate = int(sys.argv[2])
 distance = 1000
 
 command = "node JSAddHeader.js " + str(insertionRate)
