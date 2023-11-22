@@ -215,7 +215,7 @@ function rule(drivers) {
     }
 
     // console.log("DONE rule: Number of node POD = " + nodePod.length);
-    // nodePod.forEach((v) => console.log(v));
+    nodePod.forEach((v) => console.log(v));
     return nodePod;
 }
 
