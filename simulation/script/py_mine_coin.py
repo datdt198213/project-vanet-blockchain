@@ -48,7 +48,7 @@ def main():
             v.display()
 
         # Statistic
-        data_arrays = [[timeslot, begin, end - 0.1, distance, len(distance_list), len(n_pod), total_time, num_vehicles, total_distance/1000, total_coin, total_c]]
+        data_arrays = [[timeslot, begin, end - 0.1, distance/1000, len(distance_list), len(n_pod), total_time, num_vehicles, total_distance/1000, total_coin, total_c]]
         print(f'Total distance {total_distance}\t total coin: {total_coin} total coin adding: {total_c}')
 
         # file_name = f"../data/data_statistic_{num_vehicles}.csv"
