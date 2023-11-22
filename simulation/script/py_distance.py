@@ -3,7 +3,7 @@ import math
 import time
 
 start = time.time()
-f = open('../data/vehicle1.json')
+f = open('../sumo/vehicle10.json')
 data = json.load(f)
 
 class MyVehicle(object):
