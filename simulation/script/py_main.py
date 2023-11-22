@@ -25,7 +25,7 @@ for j in range(1, 4):
         # command = "python3 py_init.py " + str(totalTime) + " " + str(insertionRate)
         # os.system(command)
 
-        command = "python3 py_mine_coin.py " + str(totalTime) + " " + str(insertionRate)
+        command = "python3 py_mining_coin.py " + str(totalTime) + " " + str(insertionRate)
         os.system(command)
 
         insertionRate += 1
