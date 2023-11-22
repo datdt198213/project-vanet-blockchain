@@ -5,7 +5,7 @@ totalTime = int(sys.argv[1])
 insertionRate = int(sys.argv[2])
 distance = 1000
 
-command = "node JSAddHeader.js " + str(insertionRate)
+command = "python3 py_add_header_distance.py " + str(insertionRate)
 os.system(command)
 
 # Distance 1km, 1.5km, 2km
@@ -20,7 +20,7 @@ for k in range(1, 4):
             if (b < totalTime): 
                 if (e > totalTime):
                     e = totalTime
-                command = "py py_mine_coin.py " + str(timeslot) + " " + str(b) + " " + str(e) + " " + str(distance) + " " + str(insertionRate) + " " + str(totalTime)
+                command = "python3 py_mine_coin.py " + str(timeslot) + " " + str(b) + " " + str(e) + " " + str(distance) + " " + str(insertionRate) + " " + str(totalTime)
                 # command = "node JSMinerCoin.js " + str(timeslot) + " " + str(b) + " " + str(e) + " " + str(distance) + " " + str(insertionRate) + " " + str(totalTime)
                 os.system(command)
                 b += timeslot
