@@ -69,14 +69,14 @@ parser.on('data', (data) => {
     }
     
     
-    // const dataArrays = [[timeslot, begin, end - 0.1, distance, distanceList.length, nPOD.length, totalTime, numVehicles]]
-    // const fName = "../data/data_statistic_" + numVehicles.toString() + ".csv"
-    // var stream = fs.createWriteStream(fName, {'flags': 'a'});
-    // stream.once('open', function(fd) {
-    //   stream.write(dataArrays+"\r\n");
-    //   stream.end()
-    // });
-    // console.log("Filename: " + fName);
+    const dataArrays = [[timeslot, begin, end - 0.1, distance, distanceList.length, nPOD.length, totalTime, numVehicles]]
+    const fName = "../data/data_statistic_" + numVehicles.toString() + ".csv"
+    var stream = fs.createWriteStream(fName, {'flags': 'a'});
+    stream.once('open', function(fd) {
+      stream.write(dataArrays+"\r\n");
+      stream.end()
+    });
+    console.log("Filename: " + fName);
     const runningEnd = Date.now();
     console.log(`Execution time: ${runningEnd - runningStart} ms`);
 });
