@@ -2,6 +2,7 @@ const fs = require('fs');
 const crypto = require("crypto");
 const maxTime = require("process");
 const JSONStream = require('JSONStream');
+const start = Date.now();
 const timeslot = parseFloat(maxTime.argv[2]);
 const beginTime = parseFloat(maxTime.argv[3]);
 const endTime = parseFloat(maxTime.argv[4]);
@@ -208,3 +209,6 @@ parser.on('end', () => {
 parser.on('error', (err) => {
     console.error('Error parsing JSON:', err);
 });
+
+const end = Date.now();
+console.log(`Execution time: ${end - start} ms`);
