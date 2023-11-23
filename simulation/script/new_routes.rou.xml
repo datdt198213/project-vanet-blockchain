@@ -1,0 +1,11 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <trip id="126" depart="4536.00" from="-12174148#2" to="-12174148#2" />
+    <trip id="170" depart="6120.00" from="-28924719#1" to="-28924719#1" />
+    <trip id="233" depart="8388.00" from="601529284#1" to="601529284#1" />
+    <trip id="240" depart="8640.00" from="-601529284#1" to="-601529284#1" />
+    <trip id="249" depart="8964.00" from="-601529284#1" to="-601529284#1" />
+    <trip id="304" depart="10944.00" from="601529284#1" to="601529284#1" />
+    <trip id="326" depart="11736.00" from="38136736#3" to="38136736#3" />
+    <trip id="752" depart="27072.00" from="-12174148#2" to="-12174148#2" />
+    <trip id="907" depart="32652.00" from="601529284#1" to="601529284#1" />
+    </routes>

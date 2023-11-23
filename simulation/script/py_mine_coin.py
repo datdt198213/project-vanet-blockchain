@@ -41,7 +41,7 @@ def main():
     if round(t) == timeslot:
         print(f"Time begin = {begin} Time end = {end}")
         class_list = classify_list(input_data)
-        distance_list = calculate_coin(class_list, distance, end)
+        distance_list = new_calculate_coin(class_list, distance, end)
         n_pod = rule(distance_list)
 
         for v in n_pod:
@@ -52,13 +52,13 @@ def main():
         print(f'Total distance {total_distance}\t total coin: {total_coin} total coin adding: {total_c}')
 
         # file_name = f"../data/data_statistic_{num_vehicles}.csv"
-        file_name = f"../data/test{num_vehicles}.csv"
-        try:
-            with open(file_name, 'a', newline="") as stream:
-                stream.write(",".join(map(str, data_arrays[0])) + "\r\n")
-            print("Filename:", file_name)
-        except FileNotFoundError:
-            print("Error: File not found.")
+        # file_name = f"../data/test{num_vehicles}.csv"
+        # try:
+        #     with open(file_name, 'a', newline="") as stream:
+        #         stream.write(",".join(map(str, data_arrays[0])) + "\r\n")
+        #     print("Filename:", file_name)
+        # except FileNotFoundError:
+        #     print("Error: File not found.")
 
 class Driver:
     def __init__(self, id, distance, time, coin):
@@ -154,7 +154,48 @@ def classify_list(drivers):
     # print("DONE Classify list: Length =", len(new_drivers))
     return new_drivers
 
-def calculate_coin(vehicles, distance, end):
+class Driver:
+    def __init__(self, _id, distance, time, coin):
+        self.id = _id
+        self.distance = distance
+        self.time = time
+        self.coin = coin
+
+    def display(self):
+        print(f"id: {self.id}, Distance: {self.distance}, Time: {self.time}, Coin: {self.coin}")
+
+def calculate_distance_list(vehicles, distance, end):
+    drivers = []
+    d = 0
+    c = 0
+
+    for idx in range(1, len(vehicles)):
+        if vehicles[idx].id == vehicles[idx - 1].id:
+            timestep = vehicles[idx].time - vehicles[idx - 1].time
+            round_time = round(timestep, 1)
+
+            if round_time == 0.1:
+                d += haversine(vehicles[idx].x, vehicles[idx].y, vehicles[idx-1].x, vehicles[idx-1].y)
+
+                if d >= distance:
+                    c = c + int(d / distance)
+                    d = d % distance
+
+        if idx < len(vehicles) - 1:
+            if vehicles[idx - 1].id != vehicles[idx].id:
+                dr = Driver(vehicles[idx - 1].id, d, end, c)
+                drivers.append(dr)
+                d = 0
+                c = 0
+        elif idx == len(vehicles) - 1:
+            dr = Driver(vehicles[idx - 1].id, d, end, c)
+            drivers.append(dr)
+            d = 0
+            c = 0
+
+    return drivers
+
+def new_calculate_coin(vehicles, distance, end):
     global total_distance, total_coin
     drivers = []
     d = 0
@@ -175,14 +216,14 @@ def calculate_coin(vehicles, distance, end):
         if idx < len(vehicles) - 1:
             if vehicles[idx - 1].id != vehicles[idx].id:
                 total_distance += d
-                coin = d / distance
+                coin = int(d / distance)
                 total_coin += coin
                 dr = Driver(vehicles[idx - 1].id, d, end, coin)
                 drivers.append(dr)
                 d = 0
         elif idx == len(vehicles) - 1:
             total_distance += d
-            coin = d / distance
+            coin = int(d / distance)
             total_coin += coin
             dr = Driver(vehicles[idx - 1].id, d, end, coin)
             drivers.append(dr)
@@ -217,4 +258,4 @@ def rule(drivers):
 
 main()
 end = time.time()
-print(f"Execution time: {end - start} ms")
+print(f"Execution time: {(end - start) * 10**3} ms")

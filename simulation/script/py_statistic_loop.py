@@ -1,6 +1,6 @@
 import os
 
-insertionRate = 90
+insertionRate = 190
 
 command = f"py py_add_statistic_header.py {insertionRate}"
 os.system(command)

@@ -25,4 +25,4 @@ f = open(file_name, 'w', newline='')
 
 writer = csv.writer(f)
 writer.writerow(["Timeslot", "Average", "Distance"])
-
+# writer.writerow(["Timeslot", "Average", "Distance", 'Total distance', 'Total coin', 'Received coin'])
