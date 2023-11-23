@@ -2,7 +2,6 @@ const fs = require('fs');
 const crypto = require("crypto");
 const maxTime = require("process");
 const JSONStream = require('JSONStream');
-const start = Date.now();
 const timeslot = parseFloat(maxTime.argv[2]);
 const beginTime = parseFloat(maxTime.argv[3]);
 const endTime = parseFloat(maxTime.argv[4]);
@@ -50,6 +49,7 @@ class Vehicle {
 }
 parser.on('data', (data) => {
     // Process each chunk of parsed JSON data
+    const runningStart = Date.now();
     let begin = beginTime;                
     let end = endTime;     
     if (isNaN(end)) console.log("Warning: Please enter beginning time parameter in running command");
@@ -67,6 +67,8 @@ parser.on('data', (data) => {
     for(let i = 0; i <= nPOD.length - 1; i++) {
         console.log(nPOD[i])
     }
+    
+    
     // const dataArrays = [[timeslot, begin, end - 0.1, distance, distanceList.length, nPOD.length, totalTime, numVehicles]]
     // const fName = "../data/data_statistic_" + numVehicles.toString() + ".csv"
     // var stream = fs.createWriteStream(fName, {'flags': 'a'});
@@ -75,6 +77,8 @@ parser.on('data', (data) => {
     //   stream.end()
     // });
     // console.log("Filename: " + fName);
+    const runningEnd = Date.now();
+    console.log(`Execution time: ${runningEnd - runningStart} ms`);
 });
 
 function getDataFromJson(begin, end, data) {
@@ -210,5 +214,4 @@ parser.on('error', (err) => {
     console.error('Error parsing JSON:', err);
 });
 
-const end = Date.now();
-console.log(`Execution time: ${end - start} ms`);
+
