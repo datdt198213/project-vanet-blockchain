@@ -58,15 +58,22 @@ parser.on('data', (data) => {
     const inputData = getDataFromJson(begin, end, data);
     const classList = classifyList(inputData);
     const distanceList = calculateDistanceList(classList, distance, end);
+    for(let i = 0; i <= distanceList.length - 1; i++) {
+        console.log(distanceList[i])
+    }
+    console.log("NPOD")
     const nPOD = rule(distanceList);
-    const dataArrays = [[timeslot, begin, end - 0.1, distance, distanceList.length, nPOD.length, totalTime, numVehicles]]
-    const fName = "../data/data_statistic_" + numVehicles.toString() + ".csv"
-    var stream = fs.createWriteStream(fName, {'flags': 'a'});
-    stream.once('open', function(fd) {
-      stream.write(dataArrays+"\r\n");
-      stream.end()
-    });
-    console.log("Filename: " + fName);
+    for(let i = 0; i <= nPOD.length - 1; i++) {
+        console.log(nPOD[i])
+    }
+    // const dataArrays = [[timeslot, begin, end - 0.1, distance, distanceList.length, nPOD.length, totalTime, numVehicles]]
+    // const fName = "../data/data_statistic_" + numVehicles.toString() + ".csv"
+    // var stream = fs.createWriteStream(fName, {'flags': 'a'});
+    // stream.once('open', function(fd) {
+    //   stream.write(dataArrays+"\r\n");
+    //   stream.end()
+    // });
+    // console.log("Filename: " + fName);
 });
 
 function getDataFromJson(begin, end, data) {
