@@ -1,9 +1,9 @@
 import os
 
 totalTime = 36000
-insertionRate = 296
+insertionRate = 298
 
-for i in range(1, 3):
+for i in range(1, 14):
     # number of vehicles 90=>110, 190=>210, 290=>310, 390=>410, 490=>510
 
     # # init data of simulation   
@@ -22,7 +22,7 @@ for i in range(1, 3):
 
     distance = 1000
     # d = 1000, 1500, 2000
-    for k in range(1, 15):
+    for k in range(1, 4):
         timeslot = 3600
         # Timeslot 1h, 2h, 3h, 4h
         # for j in range(1, 5):
