@@ -1,7 +1,7 @@
 import os
 
 totalTime = 36000
-insertionRate = 310
+insertionRate = 390
 
 for i in range(1, 2):
     # number of vehicles 90=>110, 190=>210, 290=>310, 390=>410, 490=>510
