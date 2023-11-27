@@ -242,30 +242,36 @@ function rule(drivers) {
 
   nodePod = [];
 
-  w = 0;
+  //let w = 0;
+  let totalDistance = 0;
   drivers.forEach((d) => {
-    // console.log("d: " + d.coin)
-    w += d.coin;
+    // w += d.coin;
+    totalDistance += d.distance;
   });
-  // console.log("w: " + w)
-  // console.log("driver.length:  " + drivers.length)
-  w = w / drivers.length;
+  totalDistance = totalDistance / drivers.length;
+  // w = w / drivers.length;
 
   //  Get hash value of w
-  let hashW = sha512(w.toString());
+  // let hashW = sha512(w.toString());
+  let hashD = sha512(totalDistance.toString());
 
   for (let i = 0; i < drivers.length; i++) {
     //  Get hash value of driver
-    if (drivers[i].coin != 0) {
-      hashCurrent = sha512(drivers[i].coin.toString());
-      if (hashCurrent.localeCompare(hashW) <= 0) {
+    // if (drivers[i].coin != 0) {
+    //   hashCurrent = sha512(drivers[i].coin.toString());
+    //   if (hashCurrent.localeCompare(hashW) <= 0) {
+    //     nodePod.push(drivers[i]);
+    //   }
+    // }
+    if (drivers[i].distance > distance) {
+      hashCurrent = sha512(drivers[i].distance.toString());
+      if (hashCurrent.localeCompare(hashD) <= 0) {
         nodePod.push(drivers[i]);
       }
     }
   }
 
   // console.log("DONE rule: Number of node POD = " + nodePod.length);
-  nodePod.forEach((v) => console.log(v));
   return nodePod;
 }
 
@@ -299,7 +305,6 @@ function main() {
   const inputData = getDataFromJson(begin, end);
 
   let t = inputData[inputData.length - 1].time - inputData[0].time;
-  console.log("t = " + t + " timeslot = " + timeslot);
   if (Math.ceil(t) == timeslot) {
     console.log("Time begin = " + begin + " Time end = " + end);
     const classList = classifyList(inputData);
@@ -307,23 +312,24 @@ function main() {
     // const distanceList = calculateDistanceList(classList, distance, end);
     const distanceList = newCalculateCoin(classList, distance, end);
 
+    let nodeInPOD = 1;
     for (let i = 0; i <= distanceList.length - 1; i++) {
-      console.log(distanceList[i]);
+      if (distanceList[i].distance >= distance) nodeInPOD++;
     }
-    const nPOD = rule(distanceList);
-
-    console.log("NPOD");
-    for (let i = 0; i <= nPOD.length - 1; i++) {
-      console.log(nPOD[i]);
+    
+    let coinEarning = 0;
+    const nodeFilterPOD = rule(distanceList);
+    for (let i = 0; i < nodeFilterPOD.length - 1; i++) {
+      coinEarning += nodeFilterPOD[i].coin;
     }
-
-    console.log("Total coin " + totalCoin + " total distance " + totalDistance)
+    const distanceAverage = totalDistance/distanceList.length;
+    console.log("Total coin=" + totalCoin + "\tCoin earning=" + coinEarning + "\tDistance average=" + distanceAverage + "\tNode participate POD=" + nodeInPOD + "\tNode POD=" + nodeFilterPOD.length )
 
     // Statistic
 
-    const dataArrays = [[timeslot, begin, end - 0.1, distance, distanceList.length, nPOD.length, totalTime, numVehicles]]
+    const dataArrays = [[timeslot, begin, end - 0.1, distance, distanceList.length, nodeFilterPOD.length, totalTime, numVehicles, nodeInPOD, distanceAverage, totalCoin, coinEarning]]
 
-    const fName = "../data/data_statistic_" + numVehicles.toString() + ".csv"
+    const fName = "../data/data_test_" + numVehicles.toString() + ".csv"
     var stream = fs.createWriteStream(fName, {'flags': 'a'});
 
     stream.once('open', function(fd) {
