@@ -18,7 +18,7 @@ for j in range(1, 3):
         # # convert xml data of vehicle to 
         # command = "python3 py_convert_data.py " + str(totalTime) + " " + str(insertionRate)
         # os.system(command)
-        command = f"py py_add_header_distance.py {insertionRate}"
+        command = f"python3 py_add_header_distance.py {insertionRate}"
         os.system(command)
 
         distance = 1000
