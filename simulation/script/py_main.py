@@ -57,13 +57,16 @@ insertionRate = 90
 # command = "python3 py_handle_data.py"
 # os.system(command)
 
-for i in range(1, 3):
-    command = f"node JSHTest.js {insertionRate}"
-    os.system(command)
-    command = f"node JSTest.js {insertionRate}"
-    os.system(command)
+for j in range(1, 3):
+    for i in range(1, 22):
+        command = f"node JSHTest.js {insertionRate}"
+        os.system(command)
+        command = f"node JSTest.js {insertionRate}"
+        # command = f"node JSMinerLargeFile.js {insertionRate}"
+        os.system(command)
 
-    insertionRate += 1
+        insertionRate += 1
+    insertionRate += 79
 
 end = time.time()
 print("The time of execution of above program is :",

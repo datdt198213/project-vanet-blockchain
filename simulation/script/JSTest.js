@@ -10,8 +10,7 @@ const numVehicles = parseFloat(maxTime.argv[2]);
 const filename = "../sumo/vehicle" + numVehicles.toString() + ".json";
 const dataJson = require(filename);
 
-var totalCoin = 0;
-var totalDistance = 0;
+
 
 // Define driver class
 class Driver {
@@ -212,17 +211,13 @@ function newCalculateCoin(vehicles, distance, end) {
 
     if (idx < vehicles.length - 1) {
       if (vehicles[idx - 1].id !== vehicles[idx].id) {
-        totalDistance += d;
         const coin = parseInt(d / distance);
-        totalCoin += coin;
         const dr = new Driver(vehicles[idx - 1].id, d, end, coin);
         drivers.push(dr);
         d = 0;
       }
     } else if (idx === vehicles.length - 1) {
-      totalDistance += d;
       const coin = parseInt(d / distance);
-      totalCoin += coin;
       const dr = new Driver(vehicles[idx - 1].id, d, end, coin);
       drivers.push(dr);
       d = 0;
@@ -290,18 +285,25 @@ function main() {
     const inputData = getDataFromJson(b, e);
     const classList = classifyList(inputData);
 
+
     for (let d = 1000; d <= 2000; d += 100) {
-      const coinList = newCalculateCoin(classList, d, e);
+      let totalDistance = 0;
+      var totalCoin = 0;
       let nodeInPOD = 1;
+      const coinList = newCalculateCoin(classList, d, e);
       for (let i = 0; i <= coinList.length - 1; i++) {
+        totalDistance += coinList[i].distance;
+        totalCoin += coinList[i].coin;
         if (coinList[i].distance >= d) nodeInPOD++;
       }
       let coinEarning = 0;
+      
       const nodeFilterPOD = rule(coinList, d);
       for (let i = 0; i < nodeFilterPOD.length - 1; i++) {
         coinEarning += nodeFilterPOD[i].coin;
       }
       const distanceAverage = totalDistance / coinList.length;
+      console.log(distanceAverage, totalCoin)
 
       // Statistic
       const data = [
@@ -320,13 +322,13 @@ function main() {
         ],
       ];
 
-      const fName = "../data/data_test_" + numVehicles.toString() + ".csv";
-      var stream = fs.createWriteStream(fName, { flags: "a" });
+      // const fName = "../data/data_test_" + numVehicles.toString() + ".csv";
+      // var stream = fs.createWriteStream(fName, { flags: "a" });
 
-      stream.once("open", function (fd) {
-        stream.write(data + "\r\n");
-      });
-      console.log("Filename: " + fName);
+      // stream.once("open", function (fd) {
+      //   stream.write(data + "\r\n");
+      // });
+      // console.log("Filename: " + fName);
     }
   }
 }

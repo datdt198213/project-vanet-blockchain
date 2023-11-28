@@ -11,6 +11,7 @@ numVehicles = int(sys.argv[2])
 input_file = '../sumo/vehicle'+ str(numVehicles) +'.sumo.xml'
 output_file = '../sumo/vehicle' + str(numVehicles) + '.json'
 
+print("CONVERT DATA excuting ...")
 temp = "Temp.json"
 with open(input_file) as xml_file:
     data_dict = xmltodict.parse(xml_file.read())
@@ -27,7 +28,6 @@ with open(input_file) as xml_file:
         json_file.write(json_data)
 
 # Delete @ character in file
-print("CONVERT DATA excuting ...")
 fin = open(temp, "rt")
 fout = open(output_file, "wt")
 for line in fin:
