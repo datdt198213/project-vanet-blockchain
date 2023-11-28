@@ -289,7 +289,7 @@ function main() {
     for (let d = 1000; d <= 2000; d += 100) {
       let totalDistance = 0;
       var totalCoin = 0;
-      let nodeInPOD = 1;
+      let nodeInPOD = 0;
       const coinList = newCalculateCoin(classList, d, e);
       for (let i = 0; i <= coinList.length - 1; i++) {
         totalDistance += coinList[i].distance;
@@ -322,13 +322,13 @@ function main() {
         ],
       ];
 
-      // const fName = "../data/data_test_" + numVehicles.toString() + ".csv";
-      // var stream = fs.createWriteStream(fName, { flags: "a" });
+      const fName = "../data/data_test_" + numVehicles.toString() + ".csv";
+      var stream = fs.createWriteStream(fName, { flags: "a" });
 
-      // stream.once("open", function (fd) {
-      //   stream.write(data + "\r\n");
-      // });
-      // console.log("Filename: " + fName);
+      stream.once("open", function (fd) {
+        stream.write(data + "\r\n");
+      });
+      console.log("Filename: " + fName);
     }
   }
 }
