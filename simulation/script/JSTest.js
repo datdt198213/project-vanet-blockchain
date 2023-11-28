@@ -254,7 +254,7 @@ function rule(drivers, distance) {
     //     nodePod.push(drivers[i]);
     //   }
     // }
-    if (drivers[i].distance > distance) {
+    if (drivers[i].distance >= distance) {
       hashCurrent = sha512(drivers[i].distance.toString());
       if (hashCurrent.localeCompare(hashD) <= 0) {
         nodePod.push(drivers[i]);
@@ -290,20 +290,21 @@ function main() {
       let totalDistance = 0;
       var totalCoin = 0;
       let nodeInPOD = 0;
+      let coinEarning = 0;
       const coinList = newCalculateCoin(classList, d, e);
-      for (let i = 0; i <= coinList.length - 1; i++) {
+      
+      for (let i = 0; i < coinList.length; i++) {
         totalDistance += coinList[i].distance;
         totalCoin += coinList[i].coin;
         if (coinList[i].distance >= d) nodeInPOD++;
       }
-      let coinEarning = 0;
       
       const nodeFilterPOD = rule(coinList, d);
-      for (let i = 0; i < nodeFilterPOD.length - 1; i++) {
+      for (let i = 0; i < nodeFilterPOD.length; i++) {
         coinEarning += nodeFilterPOD[i].coin;
       }
       const distanceAverage = totalDistance / coinList.length;
-      console.log(distanceAverage, totalCoin)
+      console.log(distanceAverage, totalCoin, nodeFilterPOD.length)
 
       // Statistic
       const data = [
