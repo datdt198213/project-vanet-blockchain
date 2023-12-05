@@ -101,8 +101,6 @@ Moving of vehicles files
 project-vanet-blockchain/simulation/data/vehicle[running times].sumo.xml
 ```
 
-
-
 # III. Build Iroha hyperledger
 ## 3.1. In Ubuntu
 

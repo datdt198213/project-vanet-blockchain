@@ -17,7 +17,7 @@ PATH_ROUTE = "../sumo/route.rou.xml"
 
 # command1 = PATH_RANDOMTRIP + " -n" + PATH_NET + " -r " + PATH_ROUTE +" -b " + str(begin) +  " -e " + str(end) + " -p " + str(period) + " -l " 
 
-command1 = PATH_RANDOMTRIP + " -n" + PATH_NET + " -r " + PATH_ROUTE +" -b " + str(begin) +  " -e " + str(end) + " --insertion-rate " +  str(insertionRate) + " -l"
+command1 = PATH_RANDOMTRIP + " -n" + PATH_NET + " -r " + PATH_ROUTE +" -b " + str(begin) +  " -e " + str(end) + " --insertion-rate " +  str(insertionRate) + " -l -s 20"
 
 # python3 /root/sumo/tools/randomTrips.py -n ../sumo/net.net.xml -r ../sumo/route.rou.xml -b 0 -e 36000 --insertion-rate 208 -l -s 40
 # python3 my_random_trips.py -n net.net.xml -r route.rou.xml -b 0 -e 10 --insertion-rate 2 > my_random_trips.txt
@@ -27,7 +27,7 @@ os.system(command1)
 command2 = "sumo -c ../sumo/simulation" + str(insertionRate) + ".sumo.cfg --fcd-output ../sumo/vehicle" + str(insertionRate) +".sumo.xml --fcd-output.geo"
 
 # Output X Y 
-# command2 = "sumo -c ../sumo/simulation208.sumo.cfg --fcd-output ../sumo/vehicle208.s
+# command2 = "sumo -c ../sumo/simulation208.sumo.cfg --fcd-output ../sumo/vehicle208.sumo.xml
 
 os.system(command2)
 

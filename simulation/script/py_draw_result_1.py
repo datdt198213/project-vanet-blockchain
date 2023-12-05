@@ -51,7 +51,7 @@ with open(csv_file_path, 'r') as file:
         v.append(row[2])
         d.append(row[3])
 
-distance = 1500
+distance = 2000
 if distance == 1000:
     begin = 0
     end = 4
@@ -75,9 +75,9 @@ m = statistics.mean(data)
 sd = statistics.stdev(data)
 
 plt.errorbar(x_values, data, yerr=error_d, fmt='o', color='orange', ecolor='red', capsize=5, capthick=2, label='Error Bar')
-plt.axhline(m, color='k', linestyle='dashed', label='Mean')
-plt.axhline(m + sd, color='blue', linestyle='dashed', label='Mean + stdev')
-plt.axhline(m - sd, color='blue', linestyle='dashed', label='Mean - stdev')
+# plt.axhline(m, color='k', linestyle='dashed', label='Mean')
+# plt.axhline(m + sd, color='blue', linestyle='dashed', label='Mean + stdev')
+# plt.axhline(m - sd, color='blue', linestyle='dashed', label='Mean - stdev')
 
 plt.xlabel("Index")
 plt.ylabel("Value")

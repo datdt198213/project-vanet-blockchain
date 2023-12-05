@@ -10,8 +10,6 @@ const numVehicles = parseFloat(maxTime.argv[2]);
 const filename = "../sumo/vehicle" + numVehicles.toString() + ".json";
 const dataJson = require(filename);
 
-
-
 // Define driver class
 class Driver {
   constructor(id, distance, time, coin) {
@@ -261,22 +259,7 @@ function rule(drivers, distance) {
       }
     }
   }
-
-  // console.log("DONE rule: Number of node POD = " + nodePod.length);
   return nodePod;
-}
-
-function countNumberOfVehicle(listVehicle) {
-  // Starting counter at first element in list vehicle
-  let count = 0;
-  if (listVehicle.length != 0) {
-    count = 1;
-    for (let i = 0; i < listVehicle.length - 1; i++)
-      if (listVehicle[i].id === listVehicle[i + 1].id) continue;
-      else count++;
-  }
-
-  return count;
 }
 
 function main() {
@@ -284,7 +267,6 @@ function main() {
     e = b + 3600;
     const inputData = getDataFromJson(b, e);
     const classList = classifyList(inputData);
-
 
     for (let d = 1000; d <= 2000; d += 100) {
       let totalDistance = 0;
@@ -336,4 +318,3 @@ function main() {
 
 main();
 const end = Date.now();
-// console.log(`Execution time: ${end - start} ms`);
