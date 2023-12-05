@@ -118,6 +118,7 @@ namespace iroha_cli {
       printMenu("Choose query: ", menu);
     }
 
+    // sau khi chọn query
     void InteractiveQueryCli::run() {
       bool is_parsing = true;
       current_context_ = MAIN;
