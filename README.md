@@ -12,9 +12,9 @@ ____________________________________________________________
 |__________________________________________________________|
 </pre>
 
-# I Install wallet application, smart contract compiler and web environment
+# I. Install environment
 ## 1.1. Download Ganache wallet
-Ganache wallet ignored consensus algorithm. To install hyperledger with consensus algorithm, go to **II. Build iroha hyperledger**
+Ganache wallet ignored consensus algorithm. To install hyperledger with consensus algorithm, go to II 
 Ganache GUI: https://trufflesuite.com/ganache/ 
 
 Download Ganache CLI
@@ -51,7 +51,6 @@ Install web3
 ```
 npm install web3
 ```
-
 
 # II. Build simulated environment and statistic data
 ## 2.1. Download sumo and config environment variable  
