@@ -1,0 +1,18 @@
+{
+    "signatures": [
+        {
+            "pubkey": "313a07e6384776ed95447710d15e59148473ccfc052a681317a72a69f2a49910",
+            "signature": "dc6761241fc4763afcbdaa3571f4fd502277439413335a45269321acbea7e171fcd7e72998907372c127941ee0de0477f0c4b3af0091976c0778c12f1d80340c"
+        }
+    ],
+    "created_ts": 1700556496285,
+    "creator_account_id": "admin@test",
+    "quorum": 1,
+    "commands": [
+        {
+            "command_type": "AddAssetQuantity",
+            "asset_id": "coin#test",
+            "amount": "100"
+        }
+    ]
+}
