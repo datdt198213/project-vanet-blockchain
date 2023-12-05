@@ -113,7 +113,7 @@ def menu():
             print("Invalid choice. Please enter 1, 2, or 3.")
 
 def main():
-    print("Please enter your account ID and private key.")
+    print("Please enter your account ID and private key. 2")
     login()
     menu()
     
