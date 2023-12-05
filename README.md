@@ -52,7 +52,7 @@ Install web3
 npm install web3
 ```
 
-# II. Build simulated environment and statistic data
+# II. Build simulated environment
 ## 2.1. Download sumo and config environment variable  
 Operating System: Ubuntu 20.04 LTS
 ```
@@ -74,38 +74,18 @@ $ source .bashrc
 Note: all commands run start at ~
 
 ## 2.2. Generate data with proof of driving algorithm
-To generate vehicle moving data applying proof of driving algorithm, we used file py_main.py at folder project-vanet-blockchain/simulation/script/ to do it. If you have another scenarios, going to **2.3. The argument need to change if having another scenarios.** <br/>
+To generate vehicle moving data applying proof of driving algorithm, we used file py_main.py at folder project-vanet-blockchain/simulation/script/ to do it. If you have another scenarios, going to **Category 2.3** <br/>
 Run file py_main.py
 ```
 python3 py_main.py
 ```
 Note: this command need to run at folder project-vanet-blockchain/simulation/script
 ## 2.3. The parameters need to change if having another scenarios.
-**totalTime**: is amount of time in second which you want to run in simulation, etc. 36000 (second) <br/>
 **insertionRate**: is a number of vehicles which you want to add in simulation, etc. 90 (vehicle) <br/>
-**times**: is a number of scenarios which you want to run simulation continuously, the vehicle will increase 1 in a scenario., etc 20 (scenario)
 
-## 2.4. Statistic data
-After data generates successfully at category 2.2, there are several data files added our project including statistic data files containing number of vehicle satisfied proof of driving algorithm conditions, configured simulation files, moving of vehicles files <br/>
-Statistic data files
-```
-project-vanet-blockchain/simulation/data/data_statistic_[number of vehicle].csv
-```
-```
-project-vanet-blockchain/simulation/data/data_test_[number of vehicle].csv
-```
-Configured simulation files 
-```
-project-vanet-blockchain/simulation/data/simulation[running times].sumo.cfg
-```
-Moving of vehicles files
-```
-project-vanet-blockchain/simulation/data/vehicle[running times].sumo.xml
-```
 
 # III. Build Iroha hyperledger
 ## 3.1. In Ubuntu
-
 ### 3.1.1. Install environment dependences on Linux 
 ```
 $ cd ~
@@ -172,4 +152,23 @@ cmake --build ./build --target irohad
 3. Check running result
 ```
 ./build/bin/irohad --help
+```
+
+
+# IV. Statistic data
+After data generates successfully at **category 2.2**, there are several data files added our project including statistic data files containing number of vehicle satisfied proof of driving algorithm conditions, configured simulation files, moving of vehicles files <br/>
+Statistic data files
+```
+project-vanet-blockchain/simulation/data/data_statistic_[number of vehicle].csv
+```
+```
+project-vanet-blockchain/simulation/data/data_test_[number of vehicle].csv
+```
+Configured simulation files 
+```
+project-vanet-blockchain/simulation/data/simulation[running times].sumo.cfg
+```
+Moving of vehicles files
+```
+project-vanet-blockchain/simulation/data/vehicle[running times].sumo.xml
 ```
