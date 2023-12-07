@@ -51,7 +51,7 @@ def sort():
         for i in range(1,22):
             file_path = f'../data/data_v1_{num}.csv'
             merge_and_sort(file_path)
-            print(f"Done data_test_{num}.csv")
+            print(f"Done data_v1_{num}.csv")
             num+=1
         num+=79
 

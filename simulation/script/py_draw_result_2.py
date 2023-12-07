@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import statistics
 import csv
 
-file_path = f'../data/final_result_2.csv'
+file_path = f'../data/final_result_v2.csv'
 
 try:
     with open(file_path, 'w', newline='') as file:
@@ -16,7 +16,7 @@ d = 1000
 for i in range(1,12):
     num = 100
     for j in range(1,6):
-        csv_file_path = f"../data/v_{num}_d_{d}_2.csv"
+        csv_file_path = f"../data/v_{num}_d_{d}_v2.csv"
 
         averages = []
         with open(csv_file_path, 'r') as file:
@@ -27,7 +27,7 @@ for i in range(1,12):
         std_dev1 = statistics.stdev(averages)
         mean = statistics.mean(averages)
 
-        file_name = f'../data/final_result_2.csv'
+        file_name = f'../data/final_result_v2.csv'
         f = open(file_name, 'a', newline='')
         writer = csv.writer(f)
         writer.writerow([mean, std_dev1, num, d])
@@ -36,7 +36,7 @@ for i in range(1,12):
     d+= 100
 
 # Draw graph
-csv_file_path = f"../data/final_result_2.csv"
+csv_file_path = f"../data/final_result_v2.csv"
 
 tmp_data = []
 tmp_error = []
@@ -68,7 +68,6 @@ for temp in range(1000, 2100):
     plt.xlabel("Number of vehicle (n)")
     plt.ylabel("Percentage (%)")
     plt.title(f"Distance = {distance/1000} km, Timeslot = 1h")
-
     plt.legend()
     plt.show()
 
