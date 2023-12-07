@@ -45,37 +45,6 @@ class Vehicle {
     }
 }
 parser.on('data', (data) => {
-    // Process each chunk of parsed JSON data
-    // const runningStart = Date.now();
-    // let begin = beginTime;                
-    // let end = endTime;     
-    // if (isNaN(end)) console.log("Warning: Please enter beginning time parameter in running command");
-    // if (isNaN(begin)) console.log("Warning: Please enter ending time parameter in running command");
-    // if (isNaN(distance)) console.log("Warning: Please enter distance parameter in running command");
-    // if (endTime) console.log("\nTime begin = " + begin + " Time end = " + end);
-    // const inputData = getDataFromJson(begin, end, data);
-    // const classList = classifyList(inputData);
-    // const distanceList = calculateDistanceList(classList, distance, end);
-    // for(let i = 0; i <= distanceList.length - 1; i++) {
-    //     console.log(distanceList[i])
-    // }
-    // console.log("NPOD")
-    // const nPOD = rule(distanceList);
-    // for(let i = 0; i <= nPOD.length - 1; i++) {
-    //     console.log(nPOD[i])
-    // }
-    
-    
-    // const dataArrays = [[timeslot, begin, end - 0.1, distance, distanceList.length, nPOD.length, totalTime, numVehicles]]
-    // const fName = "../data/data_statistic_" + numVehicles.toString() + ".csv"
-    // var stream = fs.createWriteStream(fName, {'flags': 'a'});
-    // stream.once('open', function(fd) {
-    //   stream.write(dataArrays+"\r\n");
-    //   stream.end()
-    // });
-    // console.log("Filename: " + fName);
-    // const runningEnd = Date.now();
-    // console.log(`Execution time: ${runningEnd - runningStart} ms`);
 
     for (let b = 0; b < 36000; b += 3600) {
         e = b + 3600;
@@ -89,7 +58,7 @@ parser.on('data', (data) => {
             if (coinList[i].distance >= d) nodeInPOD++;
           }
           let coinEarning = 0;
-          const nodeFilterPOD = rule(coinList, d);
+          const nodeFilterPOD = rule(coinList);
           for (let i = 0; i < nodeFilterPOD.length - 1; i++) {
             coinEarning += nodeFilterPOD[i].coin;
           }
@@ -112,7 +81,7 @@ parser.on('data', (data) => {
             ],
           ];
     
-          const fName = "../data/data_test_" + numVehicles.toString() + ".csv";
+          const fName = "../data/data_v1_" + numVehicles.toString() + ".csv";
           var stream = fs.createWriteStream(fName, { flags: "a" });
     
           stream.once("open", function (fd) {
@@ -123,6 +92,7 @@ parser.on('data', (data) => {
       }
 });
 
+// Calculate distance of a vehicle list, return a driver list
 function newCalculateCoin(vehicles, distance, end) {
     let drivers = [];
     let d = 0;
@@ -222,43 +192,7 @@ function haversine(lat1, lon1, lat2, lon2) {
     return distance;
 }
 
-// Calculate distance of a vehicle list, return a driver list
-function calculateDistanceList(vehicles, distance, end) {
-    
-    var drivers = [];
-    d = 0;
-    c = 0;
-    for (let idx = 1; idx < vehicles.length; idx++) {
-        if (vehicles[idx].id === vehicles[idx - 1].id) {
-            timestep = vehicles[idx].time - vehicles[idx - 1].time;
-            roundTime = parseFloat(timestep.toFixed(1));
 
-            if (roundTime === 0.1) {
-                d += haversine(vehicles[idx].x, vehicles[idx].y, vehicles[idx-1].x, vehicles[idx-1].y);
-                if (d >= distance) {
-                    c = c + parseInt(d / distance);
-                    d = d % distance;
-                }
-            }
-        } 
-
-        if (idx < vehicles.length - 1) {
-            if (vehicles[idx - 1].id != vehicles[idx].id) {
-                const dr = new Driver(vehicles[idx - 1].id, d, end, c);
-                drivers.push(dr);
-                d = 0;
-                c = 0;
-            }  
-        } else if (idx == vehicles.length - 1) {
-            const dr = new Driver(vehicles[idx - 1].id, d, end, c);
-            drivers.push(dr);
-            d = 0;
-            c = 0;
-        }
-           
-    }
-    return drivers;
-}
 
 // Hash string by sha512
 function sha512(inputString) {
@@ -266,43 +200,30 @@ function sha512(inputString) {
 }
 
 // Return satisfy node proof of driving
-function rule(drivers, distance) {
-    // console.log("INPUT rule: number of drivers = " + drivers.length);
-  
-    nodePod = [];
-  
-    //let w = 0;
-    let totalDistance = 0;
-    drivers.forEach((d) => {
-      // w += d.coin;
-      totalDistance += d.distance;
-    });
-    totalDistance = totalDistance / drivers.length;
-    // w = w / drivers.length;
-  
-    //  Get hash value of w
-    // let hashW = sha512(w.toString());
-    let hashD = sha512(totalDistance.toString());
-  
-    for (let i = 0; i < drivers.length; i++) {
-      //  Get hash value of driver
-      // if (drivers[i].coin != 0) {
-      //   hashCurrent = sha512(drivers[i].coin.toString());
-      //   if (hashCurrent.localeCompare(hashW) <= 0) {
-      //     nodePod.push(drivers[i]);
-      //   }
-      // }
-      if (drivers[i].distance > distance) {
-        hashCurrent = sha512(drivers[i].distance.toString());
-        if (hashCurrent.localeCompare(hashD) <= 0) {
-          nodePod.push(drivers[i]);
-        }
+function rule(drivers) {
+  nodePod = [];
+
+  let w = 0;
+  drivers.forEach((d) => {
+    w += d.coin;
+  });
+  w = w / drivers.length;
+
+  //  Get hash value of w
+  let hashW = sha512(w.toString());
+
+  for (let i = 0; i < drivers.length; i++) {
+    //  Get hash coin value of a driver
+    if (drivers[i].coin != 0) {
+      hashCurrent = sha512(drivers[i].coin.toString());
+      if (hashCurrent.localeCompare(hashW) <= 0) {
+        nodePod.push(drivers[i]);
       }
     }
-  
-    // console.log("DONE rule: Number of node POD = " + nodePod.length);
-    return nodePod;
   }
+  return nodePod;
+}
+
 
 parser.on('end', () => {
     console.log('Finished reading JSON file.');

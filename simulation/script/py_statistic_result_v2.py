@@ -3,7 +3,7 @@ import sys
 import statistics
 
 num = int(sys.argv[1])
-csv_file_path = f'../data/data_test_{num}.csv'
+csv_file_path = f'../data/data_v2_{num}.csv'
 
 timeslot = []
 begin = []
@@ -109,7 +109,7 @@ elif num >= 490 and num <= 510:
 
 
 for i in range(len(timeslot)):
-    file_name = f'../data/v_{result}_d_{distance[i]}_2.csv'
+    file_name = f'../data/v_{result}_d_{distance[i]}_v2.csv'
     f = open(file_name, 'a', newline='')
     writer = csv.writer(f)
     writer.writerow([timeslot[i], average[i], std_dev_list[i], distance[i]])
