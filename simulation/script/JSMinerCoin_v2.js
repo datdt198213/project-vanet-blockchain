@@ -263,11 +263,12 @@ function rule(drivers, distance) {
 }
 
 function main() {
+  // Loop in 10 hours
   for (let b = 0; b < 36000; b += 3600) {
     e = b + 3600;
     const inputData = getDataFromJson(b, e);
     const classList = classifyList(inputData);
-
+    // Loop from 1 km to 2 km
     for (let d = 1000; d <= 2000; d += 100) {
       let totalDistance = 0;
       var totalCoin = 0;
@@ -305,7 +306,7 @@ function main() {
         ],
       ];
 
-      const fName = "../data/data_test_" + numVehicles.toString() + ".csv";
+      const fName = "../data/data_v2_" + numVehicles.toString() + ".csv";
       var stream = fs.createWriteStream(fName, { flags: "a" });
 
       stream.once("open", function (fd) {

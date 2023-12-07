@@ -50,17 +50,6 @@ with open(csv_file_path, 'r') as file:
         v.append(row[2])
         d.append(int(row[3]))
 
-
-# if distance == 1000:
-#     begin = 0
-#     end = 5
-# elif distance == 1500:
-#     begin = 5
-#     end = 10  
-# elif distance == 2000:
-#     begin = 10
-#     end = 15
-
 distance = 1000
 for temp in range(1000, 2100):
     data = [] 
@@ -68,22 +57,17 @@ for temp in range(1000, 2100):
     # print(tmp_data)
     for i in range(len(tmp_data)):
         if d[i] == distance:
-            data.append(float(tmp_data[i]))
-            error_d.append(float(tmp_error[i]))
+            data.append(float(tmp_data[i]) * 100)
+            error_d.append(float(tmp_error[i]) * 100)
 
     x_values = [100, 200, 300, 400, 500]
     m = statistics.mean(data)
     sd = statistics.stdev(data)
 
     plt.errorbar(x_values, data, yerr=error_d, fmt='o', color='orange', ecolor='red', capsize=5, capthick=2, label='Error Bar')
-    # plt.axhline(m, color='k', linestyle='dashed', label='Mean')
-    # plt.axhline(m + sd, color='blue', linestyle='dashed', label='Mean + stdev')
-    # plt.axhline(m - sd, color='blue', linestyle='dashed', label='Mean - stdev')
-
-    plt.xlabel("Vehicles")
-    plt.ylabel("Value")
-    plt.title(f"Distance = {distance}, Timeslot = 1h")
-    # plt.xticks(x_values, range(100,300))
+    plt.xlabel("Number of vehicle (n)")
+    plt.ylabel("Percentage (%)")
+    plt.title(f"Distance = {distance/1000} km, Timeslot = 1h")
 
     plt.legend()
     plt.show()
