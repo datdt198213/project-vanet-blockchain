@@ -11,8 +11,8 @@ for j in range(1, 3):
         print(insertionRate)
         command = f"node JSAddHeader_v1.js {insertionRate}"
         os.system(command)
-        # command = f"node JSTest.js {insertionRate}"
         command = f"node JSMinerCoin_v1.js {insertionRate}"
+        # command = f"node JSMinerLargeFile_v1.js {insertionRate}"
         os.system(command)
 
         insertionRate += 1

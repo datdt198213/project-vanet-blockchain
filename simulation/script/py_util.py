@@ -1,4 +1,5 @@
 import csv
+import os
 
 def check_number_of_lines(file_path, expected_lines):
     with open(file_path, 'r', newline='', encoding='utf-8') as file:
@@ -55,5 +56,18 @@ def sort():
             num+=1
         num+=79
 
+
+# Thay đổi tên file từ "old_file.csv" thành "new_file.csv"
+# rename_csv_file(f"..data/data_test_{number}.csv", f"../data/data_v2_{number}.csv")
+def rename_csv_file(old_name, new_name):
+    try:
+        os.rename(old_name, new_name)
+        print(f"Đã đổi tên file {old_name} thành {new_name} thành công.")
+    except FileNotFoundError:
+        print(f"File {old_name} không tồn tại.")
+    except Exception as e:
+        print(f"Lỗi khi đổi tên file: {e}")
+
 if __name__ == '__main__':
     sort()
+    
