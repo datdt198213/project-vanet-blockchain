@@ -111,8 +111,6 @@ function classifyList(drivers) {
     }
   }
 
-  // newDrivers.forEach((v) => {console.log(v)})
-  // console.log("DONE Classify list: Length = " + newDrivers.length)
   return newDrivers;
 }
 
@@ -137,58 +135,6 @@ function haversine(lat1, lon1, lat2, lon2) {
 }
 
 // Calculate distance of a vehicle list, return a driver list
-function calculateDistanceList(vehicles, distance, end) {
-  // console.log("Vehicle length in calculate distance: " + vehicles.length);
-  // vehicles.forEach((v) => {console.log(v)})
-  // console.log("INPUT calculate distance: Length = " + vehicles.length);
-
-  var drivers = [];
-  d = 0;
-  c = 0;
-  for (let idx = 1; idx < vehicles.length; idx++) {
-    // console.log("calculateDistanceList: ")
-    if (vehicles[idx].id === vehicles[idx - 1].id) {
-      timestep = vehicles[idx].time - vehicles[idx - 1].time;
-      roundTime = parseFloat(timestep.toFixed(1));
-
-      if (roundTime === 0.1) {
-        d += haversine(
-          vehicles[idx].x,
-          vehicles[idx].y,
-          vehicles[idx - 1].x,
-          vehicles[idx - 1].y
-        );
-        // console.log("Distance = ", d)
-        if (d >= distance) {
-          c = c + parseInt(d / distance);
-          d = d % distance;
-        }
-        // console.log("Coin = ", c)
-      }
-    }
-
-    if (idx < vehicles.length - 1) {
-      if (vehicles[idx - 1].id != vehicles[idx].id) {
-        const dr = new Driver(vehicles[idx - 1].id, d, end, c);
-        // console.log(dr)
-        drivers.push(dr);
-        // console.log("Dr Coin", dr.coin)
-        d = 0;
-        c = 0;
-      }
-    } else if (idx == vehicles.length - 1) {
-      const dr = new Driver(vehicles[idx - 1].id, d, end, c);
-      // console.log(dr)
-      drivers.push(dr);
-      // console.log("Dr Coin", dr.coin)
-      d = 0;
-      c = 0;
-    }
-  }
-  // console.log("DONE calculate distance: Number of vehicle = " + drivers.length);
-  return drivers;
-}
-
 function newCalculateCoin(vehicles, distance, end) {
   let drivers = [];
   let d = 0;
@@ -221,43 +167,30 @@ function newCalculateCoin(vehicles, distance, end) {
       d = 0;
     }
   }
-
   return drivers;
 }
 
 // Return satisfy node proof of driving
-function rule(drivers, distance) {
-  // console.log("INPUT rule: number of drivers = " + drivers.length);
-
+function rule(drivers) {
   nodePod = [];
 
-  //let w = 0;
-  let totalDistance = 0;
+  let w = 0;
   drivers.forEach((d) => {
-    // w += d.coin;
-    totalDistance += d.distance;
+    w += d.coin;
   });
-  totalDistance = totalDistance / drivers.length;
-  // w = w / drivers.length;
+  w = w / drivers.length;
 
   //  Get hash value of w
-  // let hashW = sha512(w.toString());
-  let hashD = sha512(totalDistance.toString());
+  let hashW = sha512(w.toString());
 
   for (let i = 0; i < drivers.length; i++) {
-    //  Get hash value of driver
+    //  Get hash coin value of a driver
     if (drivers[i].coin != 0) {
       hashCurrent = sha512(drivers[i].coin.toString());
       if (hashCurrent.localeCompare(hashW) <= 0) {
         nodePod.push(drivers[i]);
       }
     }
-    // if (drivers[i].distance >= distance) {
-    //   hashCurrent = sha512(drivers[i].distance.toString());
-    //   if (hashCurrent.localeCompare(hashD) <= 0) {
-    //     nodePod.push(drivers[i]);
-    //   }
-    // }
   }
   return nodePod;
 }
@@ -282,7 +215,7 @@ function main() {
         if (coinList[i].distance >= d) nodeInPOD++;
       }
       
-      const nodeFilterPOD = rule(coinList, d);
+      const nodeFilterPOD = rule(coinList);
       for (let i = 0; i < nodeFilterPOD.length; i++) {
         coinEarning += nodeFilterPOD[i].coin;
       }
