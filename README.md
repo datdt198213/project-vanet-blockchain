@@ -127,6 +127,15 @@ $ sudo -i -u postgres
 $ psql
 $ postgres=# \password 
 ```
+
+Alternative with postgres
+```
+List databases: \l
+Acessing a database: \c iroha_default;
+List tables: \dt
+Select information in a table: SELECT * FROM account;
+```
+
 Note: all commands can run anywhere
 ### 3.1.5. Install Vcpkg Dependency Manager
 ```
