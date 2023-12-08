@@ -43,8 +43,7 @@ def statistic(num):
     # Ignore a first element
     for i in range(1, len(distance)):
         percent = 0
-        if(int(node_participate_pod[i]) != 0):
-            percent = int(nPoD[i]) / int(node_participate_pod[i]) 
+        percent = int(nPoD[i]) / int(total_node[i]) 
         percentages.append(percent)
         tmp_timeslot.append(timeslot[i])
         tmp_distance.append(distance[i])

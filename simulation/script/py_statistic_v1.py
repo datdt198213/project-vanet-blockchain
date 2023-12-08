@@ -11,10 +11,13 @@ def statistic(num):
     distance = []
     numNode = []
     nPoD = []
-    total_time = []
+    node_participate_pod = []
     total_node = []
+    distance_average = []   
+    total_coin = []
+    coin_earning = []
 
-
+    # Read file 
     with open(csv_file_path, 'r') as file:
         csv_reader = csv.reader(file)
         for row in csv_reader:
@@ -23,29 +26,39 @@ def statistic(num):
             end.append(row[2])
             distance.append(row[3])
             numNode.append(row[4])
-            nPoD.append(row[5])
-            total_time.append(row[6])
-            total_node.append(row[7])
+            total_node.append(row[5])
+            nPoD.append(row[6])
+            node_participate_pod.append(row[7])
+            distance_average.append(row[8])
+            total_coin.append(row[9])
+            coin_earning.append(row[10])
 
     percentages = []
     tmp_timeslot = []
     tmp_distance = []
-
+    tmp_distance_average = []
+    tmp_total_coin = []
+    tmp_coin_earning = []
+    
+    # Ignore a first element
     for i in range(1, len(distance)):
-        print(nPoD[i])
-        percent = int(nPoD[i]) / int(numNode[i]) 
+        percent = 0
+        # if(int(node_participate_pod[i]) != 0):
+        percent = int(nPoD[i]) / int(total_node[i]) 
         percentages.append(percent)
         tmp_timeslot.append(timeslot[i])
         tmp_distance.append(distance[i])
+        tmp_distance_average.append(distance_average[i])
+        tmp_total_coin.append(total_coin[i])
+        tmp_coin_earning.append(coin_earning[i])
 
-        
-    data = []
     timeslot = []
     average = []
     distance = []
-
     times = 0
-    for j in range(1, 4):
+
+    # Calculate average of a scenario (90 vehicles => 110 vehilces)
+    for j in range(1, 12):
         begin = times
         end = times + 10
         ave = 0
@@ -56,60 +69,39 @@ def statistic(num):
         timeslot.append(tmp_timeslot[times])
         distance.append(tmp_distance[times])
         times += 10
+    percentage_distance = []
+    b = 0
+    e = 10
+    for i in range(1, 12):
+        d = []
+        for j in range(b, e):
+            d.append(percentages[j])    
+        percentage_distance.append(d)
+        b+=10
+        e+=10
 
-    d1 = []
-    d2 = []
-    d3 = []
-
-    for i in range(0, 10):
-        d1.append(percentages[i]) 
-
-    for i in range(10, 20):
-        d2.append(percentages[i]) 
-
-    for i in range(20, 30):
-        d3.append(percentages[i]) 
-
-    std_dev1 = statistics.stdev(d1)
-    std_dev2 = statistics.stdev(d2)
-    std_dev3 = statistics.stdev(d3)
+    std_dev_list = []
+    for i in range(len(percentage_distance)):
+        std_dev_list.append(statistics.stdev(percentage_distance[i]))
 
     # Write data to file
     result = 100 
-
     if num >= 90 and num <= 110:
         result = 100
-
     elif num >= 190 and num <= 210:
         result = 200
-
     elif num >= 290 and num <= 310:
         result = 300
-
     elif num >= 390 and num <= 410:
         result = 400
-
     elif num >= 490 and num <= 510:
         result = 500
 
     for i in range(len(timeslot)):
-        if distance[i] == '1000':
-            file_name = f'../data/v_{result}_d_1000_v1.csv'
-            f = open(file_name, 'a', newline='')
-            writer = csv.writer(f)
-            writer.writerow([timeslot[i], average[i], std_dev1, distance[i]])
-
-        if distance[i] == '1500':
-            file_name = f'../data/v_{result}_d_1500_v1.csv'
-            f = open(file_name, 'a', newline='')
-            writer = csv.writer(f)
-            writer.writerow([timeslot[i], average[i], std_dev2, distance[i]])
-
-        if distance[i] == '2000':
-            file_name = f'../data/v_{result}_d_2000_v1.csv'
-            f = open(file_name, 'a', newline='')
-            writer = csv.writer(f)
-            writer.writerow([timeslot[i], average[i], std_dev3, distance[i]])
+        file_name = f'../data/v_{result}_d_{distance[i]}_v1.csv'
+        f = open(file_name, 'a', newline='')
+        writer = csv.writer(f)
+        writer.writerow([timeslot[i], average[i], std_dev_list[i], distance[i]])
 
 def loop_statistic():
     numVehicles = 90

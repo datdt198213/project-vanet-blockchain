@@ -4,14 +4,14 @@ import time
 start = time.time()
 
 totalTime = 36000
-insertionRate = 90
+insertionRate = 290
 
-for j in range(1, 3):
+for j in range(1, 4):
     for i in range(1, 22):
         print(insertionRate)
         command = f"node JSAddHeader_v1.js {insertionRate}"
         os.system(command)
-        command = f"node JSMinerCoin_v1.js {insertionRate}"
+        command = f"node JSMinerLargeFile_v1.js {insertionRate}"
         # command = f"node JSMinerLargeFile_v1.js {insertionRate}"
         os.system(command)
 
