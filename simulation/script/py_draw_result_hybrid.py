@@ -89,7 +89,7 @@ def statistic_difference_v1_v2(num):
 
     # Adding labels and title
     ax.set_xlabel('Time (h)')
-    ax.set_ylabel('Number of vehicles')
+    ax.set_ylabel('Number of vehicles (vehicle)')
     ax.set_title(f'Scenario of {num} vehicles and distance 1.0km')
     ax.set_xticks([i + bar_width for i in index])
     ax.set_xticklabels(labels)
@@ -179,5 +179,5 @@ def statistic_rate_difference_v1_v2(num):
     # Show the plot
     plt.show()
 
-# statistic_difference_v1_v2(500)
-statistic_rate_difference_v1_v2(90)
+statistic_difference_v1_v2(90)
+# statistic_rate_difference_v1_v2(90)
