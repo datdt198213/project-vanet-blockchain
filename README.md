@@ -31,14 +31,56 @@ Note: all commands can run anywhere
 ## 1.2. Install smart contract compiler
 This project uses truffle compiler to compile from smart contract written by solidity language to json file including ABI byte code. <br/>
 Firstly, installing nodejs at https://nodejs.org/en/download <br/>
-Secondly, installing truffle with command
+**1. Create project blockchain**
+
+Step 1: Initialize project based on npm
 ```
-npm install truffle
+$ npm init
 ```
-To compile smart contract in folder project-vanet-blockchain/contracts, using below command
+
+Step 2: install truffle version 5.4.11
+```
+$ npm install truffle@5.4.11 --save-dev
+```
+
+Step 3: Address vulnerabilities
+```
+$ npm audit fix
+```
+
+Step 4: Initialize truffle project
+```
+$ npx truffle init
+```
+
+**2. Deploy code into Ganache**
+
+a. Config network address
+
+```
+networkds: {
+      ganache :{
+        host: "127.0.0.1",     // Localhost (default: none)
+        port: 7545,            // Standard Ethereum port (default: none)
+        network_id: "*",       // Any network (default: none)
+      },
+}
+```
+
+b. Create file 1_rideshare.js
+```
+const RideShare = artifacts.require("RideShare");
+
+module.exports = function(deployer) {
+    deployer.deploy(RideShare);
+}
+```
+
+**3. Compile smart contract**
 ```
 truffle compile
 ```
+
 Note: all commands run start at folder path /project-vanet-blockchain
 
 ## 1.3. Install web environment
@@ -128,7 +170,7 @@ $ psql
 $ postgres=# \password 
 ```
 
-Alternative with postgres
+Interaction with postgres
 ```
 List databases: \l
 Acessing a database: \c iroha_default;
@@ -148,7 +190,7 @@ $ git clone https://github.com/hyperledger/iroha.git
 $ cd iroha
 $ ./vcpkg/build_iroha_deps.sh $PWD/vcpkg-build
 ```
-Note: all commands run start at project-vanet-blockchain/iroha
+Note: all commands run at project-vanet-blockchain/iroha
 ### 3.1.6. Building Iroha
 1. Build
 ```
@@ -162,6 +204,11 @@ cmake --build ./build --target irohad
 ```
 ./build/bin/irohad --help
 ```
+4. Running iroha
+```
+build/bin/irohad --config example/config1.sample --genesis_block example/genesis.block --keypair_name example/node0
+```
+Note: all command run at project-vanet-blockchain/iroha
 
 
 # IV. Statistic data
