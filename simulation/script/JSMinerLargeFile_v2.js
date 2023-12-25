@@ -46,109 +46,161 @@ class Vehicle {
 }
 
 parser.on('data', (data) => {
-
     for (let b = 0; b < 36000; b += 3600) {
         e = b + 3600;
         const inputData = getDataFromJson(b, e, data);
         const classList = classifyList(inputData);
-    
-        for (let d = 1000; d <= 2000; d += 100) {
-          // Declare variable totalDistance, totalCoin, nodeInPOD, coinEarning
-          let totalDistance = 0;
-          var totalCoin = 0;
-          let nodeInPOD = 0;
-          let coinEarning = 0;
-          
-          const coinList = newCalculateCoin(classList, d, e);
-          
-          // Calculate the number of distances and coins in a time round of proof of driving algorithms
-          for (let i = 0; i < coinList.length; i++) {
-            totalDistance += coinList[i].distance;
-            totalCoin += coinList[i].coin;
-            // Add number of node participating in proof of driving algorithms
-            if (coinList[i].distance >= d) nodeInPOD++;
-          }
-          
-          // Get nodes are filter by proof of driving algorithm
-          const nodeFilterPOD = rule(coinList, d);
-
-          // Calculate number of coins of all vehicles in a time round  
-          for (let i = 0; i < nodeFilterPOD.length; i++) {
-            coinEarning += nodeFilterPOD[i].coin;
-          }
-
-          // Calculate the average distance of all vehicle in a round
-          const distanceAverage = totalDistance / coinList.length;
-          console.log(distanceAverage, totalCoin, nodeFilterPOD.length)
-    
-          // Statistic
-          const data = [
-            [
-              3600,
-              b,
-              e - 0.1,
-              d,
-              numVehicles,
-              coinList.length,
-              nodeFilterPOD.length,
-              nodeInPOD,
-              distanceAverage,
-              totalCoin,
-              coinEarning,
-            ],
-          ];
-          
-          // Write data to file 
-          const fName = "../data/data_v2_" + numVehicles.toString() + ".csv";
-          var stream = fs.createWriteStream(fName, { flags: "a" });
-    
-          stream.once("open", function (fd) {
-            stream.write(data + "\r\n");
-          });
-          console.log("Filename: " + fName);
+        let totalDistance = 0;
+        var totalCoin = 0;
+        let nodeInPOD = 0;
+        let coinEarning = 0;
+        const distanceList = calculateDistances(classList, e);
+        
+        // Calculate the total of distances in a time round of proof of driving algorithms
+        for (let i = 0; i < distanceList.length; i++) {
+          totalDistance += distanceList[i].distance;
         }
-      }
+
+        // Calculate the average distance of all vehicle in a round
+        const averageDistance = totalDistance / distanceList.length;
+        
+        // Count number of nodes participating in proof of driving algorithms
+        for (let i = 0; i < distanceList.length; i++) {
+          if (distanceList[i].distance >= averageDistance) nodeInPOD++;
+        }
+        
+        // Calculate the number of coins in each vehicles
+        const coinList = calculateCoins(distanceList, averageDistance)
+        // const coinList = newCalculateCoin(classList, averageDistance, e);
+        console.log(coinList)
+
+        // Calculate the total of coins in a time round of proof of driving algorithms
+        for (let i =0; i < coinList.length; i++) {
+          totalCoin += coinList[i].coin;
+        }
+
+        // Get nodes are filter by proof of driving algorithm
+        const nodeFilterPOD = rule(coinList, averageDistance);
+
+        // Calculate number of coins of all vehicles in a time round 
+        for (let i = 0; i < nodeFilterPOD.length; i++) {
+          coinEarning += nodeFilterPOD[i].coin;
+        }
+  
+        console.log(averageDistance, totalCoin, nodeFilterPOD.length)
+
+        // Statistic
+        const myData = [
+          [
+            3600,
+            b,
+            e - 0.1,
+            averageDistance,
+            numVehicles,
+            coinList.length,
+            nodeFilterPOD.length,
+            nodeInPOD,
+            averageDistance,
+            totalCoin,
+            coinEarning,
+          ],
+        ];
+  
+        // Write data to file
+        const fName = "../data/data_v2_" + numVehicles.toString() + ".csv";
+        var stream = fs.createWriteStream(fName, { flags: "a" });
+  
+        stream.once("open", function (fd) {
+          stream.write(myData + "\r\n");
+        });
+        console.log("Filename: " + fName);
+    }
 });
 
-function newCalculateCoin(vehicles, distance, end) {
-    let drivers = [];
-    let d = 0;
-  
-    for (let idx = 1; idx < vehicles.length; idx++) {
-      if (vehicles[idx].id === vehicles[idx - 1].id) {
-        const timestep = vehicles[idx].time - vehicles[idx - 1].time;
-        const roundTime = parseFloat(timestep.toFixed(1));
-        if (roundTime === 0.1) {
-          d += haversine(
-            vehicles[idx].x,
-            vehicles[idx].y,
-            vehicles[idx - 1].x,
-            vehicles[idx - 1].y
-          );
-        }
+function calculateCoins(vehicles, averageDistance) {
+  for(i= 0; i < vehicles.length; i++) {
+    if (vehicles[i].distance >= averageDistance) {
+      let coin = parseInt(vehicles[i].distance / averageDistance);
+      vehicles[i].coin = coin;
+    }
+  }
+  return vehicles;
+}
+
+// Calculate distance of a vehicle list, return a driver list
+function calculateDistances(vehicles, end) {
+  let drivers = [];
+  let d = 0;
+
+  for (let idx = 1; idx < vehicles.length; idx++) {
+    if (vehicles[idx].id === vehicles[idx - 1].id) {
+      const timestep = vehicles[idx].time - vehicles[idx - 1].time;
+      const roundTime = parseFloat(timestep.toFixed(1));
+      if (roundTime === 0.1) {
+        d += haversine(
+          vehicles[idx].x,
+          vehicles[idx].y,
+          vehicles[idx - 1].x,
+          vehicles[idx - 1].y
+        );
       }
-  
-      if (idx < vehicles.length - 1) {
-        if (vehicles[idx - 1].id !== vehicles[idx].id) {
-          totalDistance += d;
-          const coin = parseInt(d / distance);
-          totalCoin += coin;
-          const dr = new Driver(vehicles[idx - 1].id, d, end, coin);
-          drivers.push(dr);
-          d = 0;
-        }
-      } else if (idx === vehicles.length - 1) {
-        totalDistance += d;
-        const coin = parseInt(d / distance);
-        totalCoin += coin;
-        const dr = new Driver(vehicles[idx - 1].id, d, end, coin);
+    }
+
+    if (idx < vehicles.length - 1) {
+      if (vehicles[idx - 1].id !== vehicles[idx].id) {
+        const dr = new Driver(vehicles[idx - 1].id, d, end, 0);
         drivers.push(dr);
         d = 0;
       }
+    } else if (idx === vehicles.length - 1) {
+      const dr = new Driver(vehicles[idx - 1].id, d, end, 0);
+      drivers.push(dr);
+      d = 0;
     }
-  
-    return drivers;
   }
+
+  return drivers;
+}
+
+// function newCalculateCoin(vehicles, distance, end) {
+//     let drivers = [];
+//     let d = 0;
+  
+//     for (let idx = 1; idx < vehicles.length; idx++) {
+//       if (vehicles[idx].id === vehicles[idx - 1].id) {
+//         const timestep = vehicles[idx].time - vehicles[idx - 1].time;
+//         const roundTime = parseFloat(timestep.toFixed(1));
+//         if (roundTime === 0.1) {
+//           d += haversine(
+//             vehicles[idx].x,
+//             vehicles[idx].y,
+//             vehicles[idx - 1].x,
+//             vehicles[idx - 1].y
+//           );
+//         }
+//       }
+  
+//       if (idx < vehicles.length - 1) {
+//         if (vehicles[idx - 1].id !== vehicles[idx].id) {
+//           totalDistance += d;
+//           const coin = parseInt(d / distance);
+//           totalCoin += coin;
+//           const dr = new Driver(vehicles[idx - 1].id, d, end, coin);
+//           drivers.push(dr);
+//           d = 0;
+//         }
+//       } else if (idx === vehicles.length - 1) {
+//         totalDistance += d;
+//         const coin = parseInt(d / distance);
+//         totalCoin += coin;
+//         const dr = new Driver(vehicles[idx - 1].id, d, end, coin);
+//         drivers.push(dr);
+//         d = 0;
+//       }
+//     }
+  
+//     return drivers;
+//   }
   
 
 function getDataFromJson(begin, end, data) {
