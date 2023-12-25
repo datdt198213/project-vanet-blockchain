@@ -46,15 +46,18 @@ def merge_and_sort(file_path):
         for distance in sorted(merged_lines.keys()):
             writer.writerows(merged_lines[distance])
 
-def sort():
-    num = 90
-    for i in range(1,6):
-        for i in range(1,22):
-            file_path = f'../data/data_v1_{num}.csv'
-            merge_and_sort(file_path)
-            print(f"Done data_v1_{num}.csv")
-            num+=1
-        num+=79
+def sort(version, num):
+    # num = 90
+    # for i in range(1,6):
+    #     for i in range(1,22):
+    #         file_path = f'../data/data_v1_{num}.csv'
+    #         merge_and_sort(file_path)
+    #         print(f"Done data_v1_{num}.csv")
+    #         num+=1
+    #     num+=79
+    file_path = f'../data/data_{version}_{num}.csv'
+    merge_and_sort(file_path)
+    print(f"Done data_{version}_{num}.csv")
 
 
 # Thay đổi tên file từ "old_file.csv" thành "new_file.csv"
@@ -68,6 +71,11 @@ def rename_csv_file(old_name, new_name):
     except Exception as e:
         print(f"Lỗi khi đổi tên file: {e}")
 
+
 if __name__ == '__main__':
-    sort()
+    num = 20
+    version = "v1"
+    sort(version, num)
+    version = "v2"
+    sort(version, num)
     
