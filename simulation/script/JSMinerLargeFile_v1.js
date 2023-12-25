@@ -52,17 +52,32 @@ parser.on('data', (data) => {
         const classList = classifyList(inputData);
     
         for (let d = 1000; d <= 2000; d += 100) {
+          // Declare variable totalDistance, totalCoin, nodeInPOD, coinEarning   
+          let totalDistance = 0;
+          var totalCoin = 0;
+          let nodeInPOD = 0;
+          let coinEarning = 0;
           const coinList = newCalculateCoin(classList, d, e);
-          let nodeInPOD = 1;
-          for (let i = 0; i <= coinList.length - 1; i++) {
+          
+          // Calculate the number of distances and coins in a time round of proof of driving algorithms
+          for (let i = 0; i < coinList.length; i++) {
+            totalDistance += coinList[i].distance;
+            totalCoin += coinList[i].coin;
+            // Add number of node participating in proof of driving algorithms
             if (coinList[i].distance >= d) nodeInPOD++;
           }
-          let coinEarning = 0;
+          
+          // Get nodes are filter by proof of driving algorithm
           const nodeFilterPOD = rule(coinList);
-          for (let i = 0; i < nodeFilterPOD.length - 1; i++) {
+
+          // Calculate number of coins of all vehicles in a time round 
+          for (let i = 0; i < nodeFilterPOD.length; i++) {
             coinEarning += nodeFilterPOD[i].coin;
           }
+
+          // Calculate the average distance of all vehicle in a round
           const distanceAverage = totalDistance / coinList.length;
+          console.log(distanceAverage, totalCoin, nodeFilterPOD.length)
     
           // Statistic
           const data = [
@@ -81,6 +96,7 @@ parser.on('data', (data) => {
             ],
           ];
     
+          // Write data to file
           const fName = "../data/data_v1_" + numVehicles.toString() + ".csv";
           var stream = fs.createWriteStream(fName, { flags: "a" });
     
