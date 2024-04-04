@@ -110,7 +110,7 @@ parser.on("data", (data) => {
     ];
 
     // Write data to file
-    const fName = "../data/data_v1_" + numVehicles.toString() + ".csv";
+    const fName = "../data/Result_coin_average_algorithm/data_v1_" + numVehicles.toString() + ".csv";
     var stream = fs.createWriteStream(fName, { flags: "a" });
 
     stream.once("open", function (fd) {

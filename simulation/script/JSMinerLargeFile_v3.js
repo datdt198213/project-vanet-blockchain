@@ -115,7 +115,7 @@ parser.on('data', (data) => {
         oldVehicles = updateDistance(distanceList, averageDistance)
   
         // Write data to file
-        const fName = "../data/data_v2_" + numVehicles.toString() + ".csv";
+        const fName = "../data/Result_accumulate_distance/data_v3_" + numVehicles.toString() + ".csv";
         var stream = fs.createWriteStream(fName, { flags: "a" });
   
         stream.once("open", function (fd) {
