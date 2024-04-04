@@ -68,6 +68,69 @@ def statistic_difference(num):
 
     plt.show()
 
+# statistic the number of vehicle satisfy condition of algorithm in 3 hours (v2)
+def statistic_difference_v3(num):    
+    csv_file_path1 = f'../data/Result_accumulate_distance/data_v3_{num}.csv'
+
+    timeslot1 = []
+    begin1 = []
+    end1 = [] 
+    distance1 = []
+    numNode1 = []
+    nPoD1 = []
+    node_participate_pod1 = []
+    total_node = []
+    distance_average1 = []   
+    total_coin1 = []
+    coin_earning1 = []
+
+    # Read file 
+    with open(csv_file_path1, 'r') as file:
+        csv_reader = csv.reader(file)
+        for row in csv_reader:
+            timeslot1.append(row[0])
+            begin1.append(row[1])
+            end1.append(row[2])
+            distance1.append(row[3])
+            numNode1.append(row[4])
+            total_node.append(row[5])
+            nPoD1.append(row[6])
+            node_participate_pod1.append(row[7])
+            distance_average1.append(row[8])
+            total_coin1.append(row[9])
+            coin_earning1.append(row[10])
+    
+    # Extracting relevant data for the first 10 points
+    x_labels = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+    y_labels = [0, 5, 10, 15, 20]
+    values1 = [int(x) for x in nPoD1[1:11]]
+    values2 = [int(x) for x in node_participate_pod1[1:11]]
+    values3 = [int(x) for x in total_node[1:11]]
+
+    # Plotting the bar chart
+    width = 0.2
+    index = range(len(x_labels))
+
+    fig, ax = plt.subplots()
+    
+    ax.bar(index, values1, width, label="Vehicle received coin")
+    ax.bar([i + width for i in index], values2, width, label="Vehicles satisfy conditions")
+    ax.bar([i + 2 * width for i in index], values3, width, label="Total vehicles")
+
+
+    # Adding labels and title
+    ax.set_xlabel('Time (h)')
+    ax.set_ylabel('Number of vehicles')
+    ax.set_xticks([i + width for i in index])
+    ax.set_xticklabels(x_labels)
+    ax.set_yticks(y_labels)
+
+    # ax.set_title(f'Average distance')
+    ax.legend()
+
+    plt.show()
+
+
 # Statistic the fixed threshold of v1
 def statistic_rate_difference(num):
     csv_file_path1 = f'../data/Result_coin_average_algorithm/data_v1_{num}_25000.csv'
@@ -799,6 +862,6 @@ def statistic_timeslot_have_all_vehicles(num):
 # Statistic the number of timeslots does not have vehicles 
 # statistic_timeslot_not_have_vehicles(20)
 
-statistic_difference(20)
-statistic_rate_difference(20)
-statistic_rate_difference_dynamic(20)
+statistic_difference_v3(20)
+# statistic_rate_difference(20)
+# statistic_rate_difference_dynamic(20)
