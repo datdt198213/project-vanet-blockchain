@@ -58,21 +58,21 @@ parser.on('data', (data) => {
         let nodeInPOD = 0;
         let coinEarning = 0;
         const newVehicles = calculateDistances(classList, e);
-        const distanceList = accumulateDistance(oldVehicles, newVehicles);
         console.log("Hello")
-        console.log(oldVehicles)
-
+        // console.log(oldVehicles)
+        
         
         // Calculate the total of distances in a time round of proof of driving algorithms
-        for (let i = 0; i < distanceList.length; i++) {
-          totalDistance += distanceList[i].distance;
+        for (let i = 0; i < newVehicles.length; i++) {
+          totalDistance += newVehicles[i].distance;
         }
-
+        
         // Calculate the average distance of all vehicle in a round
-        const averageDistance = totalDistance / distanceList.length;
+        const averageDistance = totalDistance / newVehicles.length;
         // const averageDistance = 40000;
         
         // Count number of nodes participating in proof of driving algorithms
+        const distanceList = accumulateDistance(oldVehicles, newVehicles);
         for (let i = 0; i < distanceList.length; i++) {
           if (distanceList[i].distance >= averageDistance) nodeInPOD++;
         }
@@ -112,6 +112,7 @@ parser.on('data', (data) => {
           ],
         ];
 
+        // If implement in blockchain, we need to store current state of distance of vehicles in the system
         oldVehicles = updateDistance(distanceList, averageDistance)
   
         // Write data to file
@@ -145,17 +146,18 @@ function updateDistance(vehicles, averageDistance) {
 }
 
 function accumulateDistance(oldVehicles, newVehicles) {
+  let tempVehicles = newVehicles;
   if(oldVehicles.length > 0) {
     for (let i = 0; i < oldVehicles.length - 1; i++) {
-      for (let j = 0; j < newVehicles.length - 1; j++) {
-        if (newVehicles[i].id === oldVehicles[i].id) {
-          newVehicles[i].distance += oldVehicles[i].distance;
+      for (let j = 0; j < tempVehicles.length - 1; j++) {
+        if (tempVehicles[i].id === oldVehicles[i].id) {
+          tempVehicles[i].distance += oldVehicles[i].distance;
           break;
         }
       }
     }
   }  
-  return newVehicles;
+  return tempVehicles;
 }
 
 // Calculate distance of a vehicle list, return a driver list
