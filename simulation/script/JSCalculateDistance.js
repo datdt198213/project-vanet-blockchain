@@ -1,14 +1,26 @@
+// Add header
+const params = require("process");
+const numVehicles = parseFloat(params.argv[2]);
+const fs = require("fs");
+const fName = "../data/data_distance_" + numVehicles.toString() + ".csv";
+const header = [
+  "Timeslot",
+  "Begin",
+  "End",
+  "ID",
+  "Distance",
+];
+var stream = fs.createWriteStream(fName, { flags: "a" });
+stream.once("open", function (fd) {
+  stream.write(header + "\r\n");
+});
 
 const crypto = require("crypto");
-const maxTime = require("process");
-const fs = require("fs");
-
-const start = Date.now();
-// Full time run simulation
-const numVehicles = parseFloat(maxTime.argv[2]);
-
+const JSONStream = require("JSONStream");
 const filename = "../sumo/vehicle" + numVehicles.toString() + ".json";
-const dataJson = require(filename);
+const readStream = fs.createReadStream(filename);
+const parser = JSONStream.parse("*");
+readStream.pipe(parser);
 
 // Define driver class
 class Driver {
@@ -55,23 +67,15 @@ function sha512(inputString) {
 }
 
 // Get data from json and return list of vehicle in a period of time
-function getDataFromJson(begin, end) {
-  const data = dataJson["fcd-export"]["timestep"];
-
+function getDataFromJson(begin, end, data) {
   dataList = [];
-
-  data.forEach((element) => {
+  data.timestep.forEach((element) => {
     time = Number(element.time);
     if (time >= begin && time <= end) {
-      // Having a object
       if (element.vehicle != undefined) {
         if (element.vehicle.length == undefined) {
-          // Push data to list
           dataList.push(new Vehicle(element.vehicle, element.time));
-        }
-        // Having object list
-        else {
-          // Push data to list
+        } else {
           element.vehicle.forEach((v) => {
             dataList.push(new Vehicle(v, element.time));
           });
@@ -79,10 +83,6 @@ function getDataFromJson(begin, end) {
       }
     }
   });
-
-  // Clear the cache to "close" the file (force a reload if needed)
-  delete require.cache[require.resolve(filename)];
-
   return dataList;
 }
 
@@ -134,8 +134,7 @@ function haversine(lat1, lon1, lat2, lon2) {
   return distance;
 }
 
-// Calculate distance of a vehicle list, return a driver list
-function newCalculateCoin(vehicles, distance, end) {
+function calculateDistances(vehicles, end) {
   let drivers = [];
   let d = 0;
 
@@ -155,91 +154,33 @@ function newCalculateCoin(vehicles, distance, end) {
 
     if (idx < vehicles.length - 1) {
       if (vehicles[idx - 1].id !== vehicles[idx].id) {
-        const coin = parseInt(d / distance);
-        const dr = new Driver(vehicles[idx - 1].id, d, end, coin);
+        const dr = new Driver(vehicles[idx - 1].id, d, end, 0);
         drivers.push(dr);
         d = 0;
       }
     } else if (idx === vehicles.length - 1) {
-      const coin = parseInt(d / distance);
-      const dr = new Driver(vehicles[idx - 1].id, d, end, coin);
+      const dr = new Driver(vehicles[idx - 1].id, d, end, 0);
       drivers.push(dr);
       d = 0;
     }
   }
+
   return drivers;
 }
 
-// Return satisfy node proof of driving
-function rule(drivers) {
-  nodePod = [];
-
-  let w = 0;
-  drivers.forEach((d) => {
-    w += d.coin;
-  });
-  w = w / drivers.length;
-
-  //  Get hash value of w
-  let hashW = sha512(w.toString());
-
-  for (let i = 0; i < drivers.length; i++) {
-    //  Get hash coin value of a driver
-    if (drivers[i].coin != 0) {
-      hashCurrent = sha512(drivers[i].coin.toString());
-      if (hashCurrent.localeCompare(hashW) <= 0) {
-        nodePod.push(drivers[i]);
-      }
-    }
-  }
-  return nodePod;
-}
-
-function main() {
-  // Loop in 10 hours
+parser.on("data", (data) => {
   for (let b = 0; b < 36000; b += 3600) {
     e = b + 3600;
-    const inputData = getDataFromJson(b, e);
+    const inputData = getDataFromJson(b, e, data);
     const classList = classifyList(inputData);
-    // Loop from 1 km to 2 km
-    for (let d = 1000; d <= 2000; d += 100) {
-      let totalDistance = 0;
-      var totalCoin = 0;
-      let nodeInPOD = 0;
-      let coinEarning = 0;
-      const coinList = newCalculateCoin(classList, d, e);
-      
-      for (let i = 0; i < coinList.length; i++) {
-        totalDistance += coinList[i].distance;
-        totalCoin += coinList[i].coin;
-        if (coinList[i].distance >= d) nodeInPOD++;
-      }
-      
-      const nodeFilterPOD = rule(coinList);
-      for (let i = 0; i < nodeFilterPOD.length; i++) {
-        coinEarning += nodeFilterPOD[i].coin;
-      }
-      const distanceAverage = totalDistance / coinList.length;
-      console.log(distanceAverage, totalCoin, nodeFilterPOD.length)
+    const distanceList = calculateDistances(classList, e);
 
-      // Statistic
+    for (let i = 0; i < distanceList.length; i++) {
+      console.log(distanceList[i].id, distanceList[i].distance);
       const data = [
-        [
-          3600,
-          b,
-          e - 0.1,
-          d,
-          numVehicles,
-          coinList.length,
-          nodeFilterPOD.length,
-          nodeInPOD,
-          distanceAverage,
-          totalCoin,
-          coinEarning,
-        ],
+        [3600, b, e - 0.1, distanceList[i].id, distanceList[i].distance],
       ];
-
-      const fName = "../data/data_v1_" + numVehicles.toString() + ".csv";
+      const fName = "../data/data_distance_" + numVehicles.toString() + ".csv";
       var stream = fs.createWriteStream(fName, { flags: "a" });
 
       stream.once("open", function (fd) {
@@ -248,7 +189,4 @@ function main() {
       console.log("Filename: " + fName);
     }
   }
-}
-
-main();
-const end = Date.now();
+});

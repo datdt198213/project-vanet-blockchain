@@ -1,16 +1,17 @@
+# Tạo ra các kịch bản với mỗi kịch bản có số lượng xe khác nhau
 import sys
 
 input = "../sumo/simulation.sumo.cfg"
 
+
+# Set time running simulation, 0 - 2000s 
+begin = 0
+end = int(sys.argv[1])
+numberVehicles = int(sys.argv[2])
+
 with open(input) as file:
     
     lines = file.readlines()
-
-    # Set time running simulation, 0 - 2000s 
-    begin = 0
-    end = int(sys.argv[1]) # Read parameter from command
-    numberVehicles = int(sys.argv[2])
-
     for i in range(len(lines)):
       if '<begin value="' in lines[i]:
         temp = lines[i].split('"')

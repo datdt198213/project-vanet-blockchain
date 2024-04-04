@@ -1,3 +1,5 @@
+# Thống kê kết quả theo số lượng xe của thuật toán coin trung bình (90 - 110, 190 - 210, 290 - 310, 390 - 410, 490 - 510) 
+
 import csv
 import sys
 import statistics

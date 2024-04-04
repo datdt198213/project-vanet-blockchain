@@ -71,11 +71,23 @@ def rename_csv_file(old_name, new_name):
     except Exception as e:
         print(f"Lỗi khi đổi tên file: {e}")
 
+import pandas as pd
+def my_sort(file):
+
+# Đọc file CSV vào DataFrame
+    df = pd.read_csv(file)
+
+# Sắp xếp DataFrame theo cột "Begin" tăng dần
+    df_sorted = df.sort_values(by='Begin')
+
+    df_sorted.to_csv(file, index=False)
+# In ra kết quả
+    print(df_sorted)
 
 if __name__ == '__main__':
     num = 20
-    version = "v1"
-    sort(version, num)
+    # version = "v1"
+    # sort(version, num)
     version = "v2"
-    sort(version, num)
+    my_sort("../data/data_v1_20.csv")
     
