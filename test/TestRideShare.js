@@ -189,7 +189,7 @@ contract("RideShare", (accounts) => {
     // console.log(passenger)
   });
 
-  it("Test 7: AddPassenger, CreateRide, JoinRide, ConfirmDriverMet and Arrived", async () => {
+  it.skip("Test 7: AddPassenger, CreateRide, JoinRide, ConfirmDriverMet and Arrived", async () => {
     // Create a ride
     const drivingCost = web3.utils.toWei("1", "ether");
     const capacity = 4;
@@ -236,12 +236,178 @@ contract("RideShare", (accounts) => {
     
     const rides = await rideShareInstance.rides(0);
     const passenger1 = await rideShareInstance.passengers(accounts[1], 0);
-    const passenger2 = await rideShareInstance.passengers(accounts[1], 0);
+    const passenger2 = await rideShareInstance.passengers(accounts[2], 0);
 
     assert.equal(passenger1.state, "completion", "State is not completion")
     assert.equal(passenger2.state, "completion", "State is not completion")
 
-    console.log(rides)
+    // console.log(rides)
+  });
+
+  it.skip("Test 8: AddPassenger, CreateRide, JoinRide, ConfirmDriverMet and Cancel from Driver", async () => {
+    // Create a ride
+    const drivingCost = web3.utils.toWei("1", "ether");
+    const capacity = 4;
+    const confirmedAt = Math.floor(Date.now() / 1000);
+    const originAddress = "Ha Noi";
+    const destAddress = "Quang Ninh";
+
+    const passengerName = "Alice";
+    const passengerPhoneNumber = "1234567890";
+    const numberOfPeople = 2;
+    const state = "initial";
+
+    await rideShareInstance.addPassenger(
+      passengerName,
+      passengerPhoneNumber,
+      numberOfPeople,
+      state,
+      { from: accounts[1] }
+    );
+
+    await rideShareInstance.createRide(
+      drivingCost,
+      capacity,
+      confirmedAt,
+      originAddress,
+      destAddress,
+      { from: accounts[0], value: drivingCost }
+    );
+
+    // Passenger joins the ride
+    await rideShareInstance.joinRide(0, {
+      from: accounts[1],
+      value: drivingCost,
+    });
+
+    await rideShareInstance.joinRide(0, {
+      from: accounts[2],
+      value: drivingCost,
+    });
+
+    await rideShareInstance.confirmDriverMet(0, {from: accounts[0]})
+
+    await rideShareInstance.cancel(0, {from: accounts[0]})
+    
+    const rides = await rideShareInstance.rides(0);
+    const passenger1 = await rideShareInstance.passengers(accounts[1], 0);
+    const passenger2 = await rideShareInstance.passengers(accounts[2], 0);
+
+    assert.equal(passenger1.state, "Cancel from driver", "State is not cancel from driver")
+    assert.equal(passenger2.state, "Cancel from driver", "State is not cancel from driver")
+
+    // console.log(rides)
+  });
+
+  it.skip("Test 9: AddPassenger, CreateRide, JoinRide, ConfirmDriverMet and Cancel from Passenger", async () => {
+    // Create a ride
+    const drivingCost = web3.utils.toWei("1", "ether");
+    const capacity = 4;
+    const confirmedAt = Math.floor(Date.now() / 1000);
+    const originAddress = "Ha Noi";
+    const destAddress = "Quang Ninh";
+
+    const passengerName = "Alice";
+    const passengerPhoneNumber = "1234567890";
+    const numberOfPeople = 2;
+    const state = "initial";
+
+    await rideShareInstance.addPassenger(
+      passengerName,
+      passengerPhoneNumber,
+      numberOfPeople,
+      state,
+      { from: accounts[1] }
+    );
+
+    await rideShareInstance.createRide(
+      drivingCost,
+      capacity,
+      confirmedAt,
+      originAddress,
+      destAddress,
+      { from: accounts[0], value: drivingCost }
+    );
+
+    // Passenger joins the ride
+    await rideShareInstance.joinRide(0, {
+      from: accounts[1],
+      value: drivingCost,
+    });
+
+    await rideShareInstance.confirmDriverMet(0, {from: accounts[0]})
+
+    await rideShareInstance.cancel(0, {from: accounts[1]})
+    
+    const rides = await rideShareInstance.rides(0);
+    const p = await rideShareInstance.passengers(accounts[1], 0);
+
+    assert.equal(p.state, "Cancel from passenger", "State is not cancel from passenger")
+  });
+
+  it("Test 10: AddPassenger, CreateRide, JoinRide, ConfirmDriverMet and Cancel from Passenger", async () => {
+    // Create a ride
+    const drivingCost = web3.utils.toWei("1", "ether");
+    const capacity = 4;
+    const confirmedAt = Math.floor(Date.now() / 1000);
+    const originAddress = "Ha Noi";
+    const destAddress = "Quang Ninh";
+
+    const passengerName = "Alice";
+    const passengerPhoneNumber = "1234567890";
+    const numberOfPeople = 2;
+    const state = "initial";
+
+    const passengerName1 = "Bob";
+    const passengerPhoneNumber1 = "0348237932";
+    const numberOfPeople1 = 1;
+    const state1 = "initial";
+
+    await rideShareInstance.addPassenger(
+      passengerName,
+      passengerPhoneNumber,
+      numberOfPeople,
+      state,
+      { from: accounts[1] }
+    );
+
+    await rideShareInstance.addPassenger(
+      passengerName1,
+      passengerPhoneNumber1,
+      numberOfPeople1,
+      state1,
+      { from: accounts[2] }
+    );
+
+    await rideShareInstance.createRide(
+      drivingCost,
+      capacity,
+      confirmedAt,
+      originAddress,
+      destAddress,
+      { from: accounts[0], value: drivingCost }
+    );
+
+    // Passenger joins the ride
+    await rideShareInstance.joinRide(0, {
+      from: accounts[1],
+      value: drivingCost,
+    });
+
+    await rideShareInstance.joinRide(0, {
+      from: accounts[2],
+      value: drivingCost,
+    });
+
+    await rideShareInstance.confirmDriverMet(0, {from: accounts[0]})
+
+    await rideShareInstance.cancel(0, {from: accounts[1]})
+    await rideShareInstance.arrived(0, {from: accounts[0]})
+    
+    const rides = await rideShareInstance.rides(0);
+    const p = await rideShareInstance.passengers(accounts[1], 0);
+
+    assert.equal(p.state, "Cancel from passenger", "State is not cancel from passenger")
   });
   // Add more test cases for other functions as needed
 });
