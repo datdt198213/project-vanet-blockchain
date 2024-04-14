@@ -3,6 +3,7 @@ COMMAND
 Truffle test --show-events
 ```
 
+<b><i>1. test/TestRideShare.js </i></b> <br>
 * Test 1: AddPassenger, thêm hành khách vào hệ thống <br>
 * Test 2: CreateRide, tạo 1 chuyến đi <br>
 * Test 3: CreateRide and JoinRide, tạo 1 chuyến đi và 1 passenger join vào chuyến đi đó, 2 tài khoản khác nhau <br>
