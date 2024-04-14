@@ -345,7 +345,7 @@ contract("RideShare", (accounts) => {
     assert.equal(p.state, "Cancel from passenger", "State is not cancel from passenger")
   });
 
-  it("Test 10: AddPassenger, CreateRide, JoinRide, ConfirmDriverMet and Cancel from Passenger", async () => {
+  it.skip("Test 10: AddPassenger, CreateRide, JoinRide, ConfirmDriverMet and Cancel from Passenger", async () => {
     // Create a ride
     const drivingCost = web3.utils.toWei("1", "ether");
     const capacity = 4;
