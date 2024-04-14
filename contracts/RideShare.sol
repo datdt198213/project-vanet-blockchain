@@ -148,6 +148,7 @@ contract RideShare {
     }
 
     event TransferReceived(address _from, uint _amount);
+    event log(uint _message);
 
     // 5. Khi 1 trong 2 bên hủy chuyến đi 
     function cancel(uint256 _idxRide) public payable {
@@ -158,16 +159,15 @@ contract RideShare {
 
         // Khi tài xế hủy
         if(msg.sender == rides[_idxRide].driver) {  
-            uint256 share = msg.value / allPassenger.length;
+            uint256 shareETH = address(this).balance / allPassenger.length;
             for (uint256 i = 0; i < length; i++) {
                 // Convert address payable to address
                 address pAddress = address(allPassenger[i]);
-                (bool callSuccess, ) = payable(pAddress).call{value: share}("");
-                require(callSuccess, "Cancel: Transfer coin from driver to passenger failed");
-
-                // Xóa phần tử ra khỏi mảng các chuyến đi rides 
-                rides[_idxRide].passengerAccounts[i] = rides[_idxRide].passengerAccounts[length - 1];
-                rides[_idxRide].passengerAccounts.pop();
+                if(keccak256(abi.encodePacked(passengers[pAddress][_idxRide].state)) == keccak256(abi.encodePacked("confirm"))) {
+                    (bool callSuccess, ) = payable(pAddress).call{value: shareETH}("");
+                    require(callSuccess, "Cancel: Transfer coin from driver to passenger failed");
+                    passengers[pAddress][_idxRide].state = "Cancel from driver";
+                }
             }
             emit TransferReceived(msg.sender, msg.value);
         } 
@@ -177,15 +177,19 @@ contract RideShare {
                 // Convert address payable to address
                 address pAddress = address(allPassenger[i]);
                 if(msg.sender == pAddress) {
-                    (bool callSuccess, ) = payable(msg.sender).call{value: rides[_idxRide].drivingCost}("");
-                    require(callSuccess, "Cancel: Transfer coin from passenger to driver failed");
-
-                    // Xóa phần tử ra khỏi mảng các chuyến đi rides 
-                    rides[_idxRide].passengerAccounts[i] = rides[_idxRide].passengerAccounts[length - 1];
-                    rides[_idxRide].passengerAccounts.pop();
+                    if (length == 1) {
+                        (bool callSuccess, ) = payable(rides[_idxRide].driver).call{value: address(this).balance}("");
+                        require(callSuccess, "Cancel: Transfer coin from passenger to driver failed");
+                    } else {
+                        (bool callSuccess, ) = payable(rides[_idxRide].driver).call{value: rides[_idxRide].drivingCost}("");
+                        require(callSuccess, "Cancel: Transfer coin from passenger to driver failed");
+                    }
+                    emit log(length);
+                    
+                    passengers[pAddress][_idxRide].state = "Cancel from passenger";
                 }
-                emit TransferReceived(msg.sender, msg.value);
             }
+            // emit TransferReceived(msg.sender, msg.value);
         } 
     }
 
