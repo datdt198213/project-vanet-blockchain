@@ -68,7 +68,7 @@ def statistic_difference(num):
 
     plt.show()
 
-# statistic the number of vehicle satisfy condition of algorithm in 3 hours (v2)
+# statistic the number of vehicle satisfy condition of algorithm in 1 hours (v3)
 def statistic_difference_v3(num):    
     csv_file_path1 = f'../data/Result_accumulate_distance/data_v3_{num}.csv'
 
@@ -129,7 +129,6 @@ def statistic_difference_v3(num):
     ax.legend()
 
     plt.show()
-
 
 # Statistic the fixed threshold of v1
 def statistic_rate_difference(num):
@@ -855,13 +854,66 @@ def statistic_timeslot_have_all_vehicles(num):
     # Show the plot
     plt.show()
 
+def statistic_difficulty():
+    file1 = "../data/Result_coin_average_algorithm/data_v1_20_coin_ave.csv"
+    file2 = "../data/Result_distance_average_algorithm/data_v2_20_dis_ave.csv"
+    file3 = "../data/Result_accumulate_distance/data_v3_20.csv"
+    
+    # Get difficulty
+    dif1 = get_average_difficulty(file1)
+    dif2 = get_average_difficulty(file2)
+    dif3 = get_average_difficulty(file3)
 
+    categories = ["Coin average", "Distance average", "Accumulate distance"]
+    values = [dif1*100, dif2*100, dif3*100]
+
+    plt.bar(categories, values, color=['blue', 'green', 'orange'])
+
+    yticks = [0, 20, 40, 60, 80, 100]
+
+    plt.yticks(yticks)
+    # Add labels and title
+    plt.xlabel('Threshold (m)')
+    plt.ylabel('Timeslot (%)')
+
+    # Show the plot
+    plt.show()
+
+    print(dif1, dif2, dif3)
+
+# Get average difficulty of senarios
+def get_average_difficulty(csv_file_path):
+    nPoD = []
+    node_participate_pod = []
+
+    # Read file 
+    with open(csv_file_path, 'r') as file:
+        csv_reader = csv.reader(file)
+        for row in csv_reader:
+            nPoD.append(row[6])
+            node_participate_pod.append(row[7])
+
+
+    percentages = []
+    
+    ave = 0
+    # Ignore a first element
+    for i in range(1, len(nPoD)):
+        
+        percentages.append(int(nPoD[i]) / int(node_participate_pod[i]))
+        ave += percentages[i-1]
+    ave /= len(percentages)
+    
+    return ave
+
+statistic_difficulty()
 # Statistic the number of timeslots have all vehicels
 # statistic_timeslot_have_all_vehicles(20)
 
 # Statistic the number of timeslots does not have vehicles 
 # statistic_timeslot_not_have_vehicles(20)
 
-statistic_difference_v3(20)
+# statistic_difference(20)
+# statistic_difference_v3(20)
 # statistic_rate_difference(20)
 # statistic_rate_difference_dynamic(20)
