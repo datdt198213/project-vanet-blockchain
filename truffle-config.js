@@ -1,7 +1,7 @@
 module.exports = {
 
   // Confiure directory accommodate deployed contract files
-  contracts_build_directory: "./client/src/contracts/",
+  contracts_build_directory: "./rideshare/src/contracts/",
 
   // configure network id
   networks: {
