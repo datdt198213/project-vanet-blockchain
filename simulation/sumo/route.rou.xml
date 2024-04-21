@@ -1,42 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2023-10-26 20:13:47.016294 by randomTrips.py v1_17_0+0195-4b6db401955
-<configuration>
-    <net-file value="../sumo/net.net.xml"/>
-    <route-file value="../sumo/route.rou.xml"/>
-    <end value="36000.0"/>
-    <length value="True"/>
-    <insertion-rate value="100.0"/>
-</configuration>
--->
-
-<!-- generated on 2023-10-26 20:13:46 by Eclipse SUMO duarouter Version UNKNOWN
-<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
-
-    <input>
-        <net-file value="../sumo/net.net.xml"/>
-        <route-files value="trips.trips.xml"/>
-    </input>
-
-    <output>
-        <output-file value="../sumo/route.rou.xml"/>
-        <alternatives-output value="NUL"/>
-    </output>
-
-    <time>
-        <begin value="0.0"/>
-        <end value="36000.0"/>
-    </time>
-
-    <report>
-        <no-warnings value="true"/>
-        <ignore-errors value="true"/>
-        <no-step-log value="true"/>
-    </report>
-
-</configuration>
--->
-
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
     <vehicle id="0" depart="0.00">
         <route edges="38136736#5 38136736#6 38136736#7 38136736#8 708596416#0 708596416#1 708596411 708596412 702914101#0 702914101#1 28924692#0 28924692#1 28924692#2 28924692#3 28924692#4 28924692#5 28924692#6 838419183#0 838419183#1 838419183#2 838419183#3 838419183#4 838419183#5 953227387#0 953227387#1 -200605636#4 -200605636#3 -200605636#2"/>
