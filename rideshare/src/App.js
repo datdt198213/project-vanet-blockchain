@@ -76,6 +76,7 @@ function App() {
   // }
 
   const [account, setAccount]= useState("");
+  const [balance, setBalance] = useState("");
   const [drivingCost, setDrivingCost] = useState(0);
   const [capacity, setCapacity] = useState(0);
   const [confirmAt, setConfirmAt] = useState('');
@@ -96,6 +97,7 @@ function App() {
         const accounts = await window.ethereum.request({method: "eth_requestAccounts"});
         //console.log(accounts);
         setAccount(accounts[0]);
+        
       }catch(error){
         console.log('Error connecting with MetaMask');
       }
@@ -160,33 +162,46 @@ function App() {
         {/* <p> Balance: {balance} ETH</p> */}
         <div>
           {/* <button onClick={() => addPassenger("Dat", "0348247064", 2, "initial")}>Add passenger</button> */}
-          <div>
-          <h2>Create Ride</h2>
-          <div className="row">
-          <div className="col-md-6">
-              <label>From:</label>
-              <input type="text" className="form-control" required value={originAddress} onChange={(e) => setOriginAddress(e.target.value)} />
-          </div>
-          <div className="col-md-6">
-              <label>To:</label>
-              <input type="text" className="form-control" required value={destAddress} onChange={(e) => setDestAddress(e.target.value)} />
-          </div>
-          </div>
-          <div className="row">
-          <div className="col-md-6">
-              <label>Driving Cost:</label>
-              <input type="number" className="form-control" required value={drivingCost} min ='0' onChange={(e) => setDrivingCost(e.target.value)} />
-          </div>
-          <div className="col-md-6">
-              <label>Start Time:</label>
-              <input type="datetime-local" className="form-control" required value={confirmAt} onChange={(e) => setConfirmAt(e.target.value)} />
-          </div>
-          </div>
-          <div className="row">
-          <div className="col-md-6">
-              <label>Capacity</label>
-              <input type="number" className="form-control" required value={capacity} min='1'onChange={(e) => setCapacity(e.target.value)} />
-          </div>
+          <nav className="navbar navbar-dark fixed-top shadow p-0" style={{backgroundColor:'black', height:'50px'}}>
+            <a className="navbar-brand col-sm-3 col-md-2 mr-0"
+             style={{color:'white'}}>Rideshare Application</a>
+            <ul className="navbar-nav px-3">
+              <li className="text-nowrap nav-item d-sm-block">
+                <small style={{color:'white'}}>Account: {account}</small>
+              </li>
+              <li className="text-nowrap nav-item d-sm-block">
+                <small style={{color:'white'}}>Balance: {balance} ETH</small>
+              </li>
+            </ul>
+          </nav>
+          <div className="container">
+            <div style={{marginTop:'70px'}}>
+            <h2>Create Ride</h2>
+            <div className="row">
+              <div className="col-md-6">
+                  <label>From:</label>
+                  <input type="text" className="form-control" required value={originAddress} onChange={(e) => setOriginAddress(e.target.value)} />
+              </div>
+              <div className="col-md-6">
+                  <label>To:</label>
+                  <input type="text" className="form-control" required value={destAddress} onChange={(e) => setDestAddress(e.target.value)} />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-6">
+                  <label>Driving Cost:</label>
+                  <input type="number" className="form-control" required value={drivingCost} min ='0' onChange={(e) => setDrivingCost(e.target.value)} />
+              </div>
+              <div className="col-md-6">
+                  <label>Start Time:</label>
+                  <input type="datetime-local" className="form-control" required value={confirmAt} onChange={(e) => setConfirmAt(e.target.value)} />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-6">
+                  <label>Capacity</label>
+                  <input type="number" className="form-control" required value={capacity} min='1'onChange={(e) => setCapacity(e.target.value)} />
+              </div>
           </div>
           <button className="btn btn-primary mt-3" onClick={handleCreateRide}>Create Ride</button>
           
@@ -209,6 +224,8 @@ function App() {
     
         
         </div>
+          </div>
+          
         
         </div>
       </div>
