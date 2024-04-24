@@ -1,5 +1,3 @@
-// Thuật toán POD khi quãng đường của các xe được tích lũy qua từng round 
-
 const fs = require('fs');
 const crypto = require("crypto");
 const maxTime = require("process");
@@ -47,39 +45,37 @@ class Vehicle {
     }
 }
 
-// Có tích lũy quãng đường, quãng đường trung bình là quãng đường của riêng round, không tích tích lũy
+// Không tích lũy quãng đường - v2
 parser.on('data', (data) => {
-    let oldVehicles = [];
-    for (let b = 0; b < 36000; b += 3600) {
-        let e = b + 3600;
+    let timeslot = 3000
+    for (let b = 0; b < 36000; b += timeslot) {
+        e = b + timeslot;
         const inputData = getDataFromJson(b, e, data);
         const classList = classifyList(inputData);
         let totalDistance = 0;
         var totalCoin = 0;
         let nodeInPOD = 0;
         let coinEarning = 0;
-        const newVehicles = calculateDistances(classList, e);
-        console.log("Hello")
-        // console.log(oldVehicles)
-        
+        const distanceList = calculateDistances(classList, e);
         
         // Calculate the total of distances in a time round of proof of driving algorithms
-        for (let i = 0; i < newVehicles.length; i++) {
-          totalDistance += newVehicles[i].distance;
+        for (let i = 0; i < distanceList.length; i++) {
+          totalDistance += distanceList[i].distance;
         }
-        
+
         // Calculate the average distance of all vehicle in a round
-        const averageDistance = totalDistance / newVehicles.length;
+        const averageDistance = totalDistance / distanceList.length;
         // const averageDistance = 40000;
         
         // Count number of nodes participating in proof of driving algorithms
-        const distanceList = accumulateDistance(oldVehicles, newVehicles);
         for (let i = 0; i < distanceList.length; i++) {
           if (distanceList[i].distance >= averageDistance) nodeInPOD++;
         }
         
         // Calculate the number of coins in each vehicles
         const coinList = calculateCoins(distanceList, averageDistance)
+        // const coinList = newCalculateCoin(classList, averageDistance, e);
+        console.log(coinList)
 
         // Calculate the total of coins in a time round of proof of driving algorithms
         for (let i =0; i < coinList.length; i++) {
@@ -94,12 +90,12 @@ parser.on('data', (data) => {
           coinEarning += nodeFilterPOD[i].coin;
         }
   
-        console.log(`Average Distance: ${averageDistance}, Total coin ${totalCoin}, Num POD: ${nodeFilterPOD.length}`)
+        console.log(averageDistance, totalCoin, nodeFilterPOD.length)
 
         // Statistic
         const myData = [
           [
-            7200,
+            timeslot,
             b,
             e - 0.1,
             averageDistance,
@@ -112,12 +108,9 @@ parser.on('data', (data) => {
             coinEarning,
           ],
         ];
-
-        // If implement in blockchain, we need to store current state of distance of vehicles in the system
-        oldVehicles = updateDistance(distanceList, averageDistance)
   
         // Write data to file
-        const fName = "../data/Result_accumulate_distance/data_v3_" + numVehicles.toString() + ".csv";
+        const fName = "../data/Result_consider_time/data_v6_" + numVehicles.toString() + ".csv";
         var stream = fs.createWriteStream(fName, { flags: "a" });
   
         stream.once("open", function (fd) {
@@ -135,30 +128,6 @@ function calculateCoins(vehicles, averageDistance) {
     }
   }
   return vehicles;
-}
-
-function updateDistance(vehicles, averageDistance) {
-  for(i= 0; i < vehicles.length; i++) {
-    if (vehicles[i].distance >= averageDistance) {
-      vehicles[i].distance = vehicles[i].distance % averageDistance;
-    }
-  }
-  return vehicles;
-}
-
-function accumulateDistance(oldVehicles, newVehicles) {
-  let tempVehicles = newVehicles;
-  if(oldVehicles.length > 0) {
-    for (let i = 0; i < oldVehicles.length - 1; i++) {
-      for (let j = 0; j < tempVehicles.length - 1; j++) {
-        if (tempVehicles[i].id === oldVehicles[i].id) {
-          tempVehicles[i].distance += oldVehicles[i].distance;
-          break;
-        }
-      }
-    }
-  }  
-  return tempVehicles;
 }
 
 // Calculate distance of a vehicle list, return a driver list
@@ -205,7 +174,12 @@ function calculateDistances(vehicles, end) {
 //         const timestep = vehicles[idx].time - vehicles[idx - 1].time;
 //         const roundTime = parseFloat(timestep.toFixed(1));
 //         if (roundTime === 0.1) {
-//           d += haversine(vehicles[idx].x, vehicles[idx].y, vehicles[idx - 1].x, vehicles[idx - 1].y);
+//           d += haversine(
+//             vehicles[idx].x,
+//             vehicles[idx].y,
+//             vehicles[idx - 1].x,
+//             vehicles[idx - 1].y
+//           );
 //         }
 //       }
   

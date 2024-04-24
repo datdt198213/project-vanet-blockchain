@@ -858,28 +858,30 @@ def statistic_difficulty():
     file1 = "../data/Result_coin_average_algorithm/data_v1_20_coin_ave.csv"
     file2 = "../data/Result_distance_average_algorithm/data_v2_20_dis_ave.csv"
     file3 = "../data/Result_accumulate_distance/data_v3_20.csv"
+    file4 = "../data/Result_accumulate_distance/data_v4_20.csv"
     
     # Get difficulty
     dif1 = get_average_difficulty(file1)
     dif2 = get_average_difficulty(file2)
     dif3 = get_average_difficulty(file3)
+    dif4 = get_average_difficulty(file4)
 
-    categories = ["Coin average", "Distance average", "Accumulate distance"]
-    values = [dif1*100, dif2*100, dif3*100]
+    categories = ["Coin average", "Distance average", "Accumulate distance", "Total accumulated distance"]
+    values = [dif1*100, dif2*100, dif3*100, dif4*100]
 
-    plt.bar(categories, values, color=['blue', 'green', 'orange'])
+    plt.bar(categories, values, color=['blue', 'green', 'orange', 'red'])
 
     yticks = [0, 20, 40, 60, 80, 100]
 
     plt.yticks(yticks)
     # Add labels and title
     plt.xlabel('Threshold (m)')
-    plt.ylabel('Timeslot (%)')
+    plt.ylabel('Difficulty (%)')
 
     # Show the plot
     plt.show()
 
-    print(dif1, dif2, dif3)
+    # print(dif1, dif2, dif3, dif4)
 
 # Get average difficulty of senarios
 def get_average_difficulty(csv_file_path):
@@ -893,9 +895,9 @@ def get_average_difficulty(csv_file_path):
             nPoD.append(row[6])
             node_participate_pod.append(row[7])
 
-
     percentages = []
     
+    print(nPoD)
     ave = 0
     # Ignore a first element
     for i in range(1, len(nPoD)):
@@ -906,7 +908,133 @@ def get_average_difficulty(csv_file_path):
     
     return ave
 
-statistic_difficulty()
+# statistic_difficulty()
+
+# Lấy ra tỉ lệ (số xe nhận coin / tổng số xe)
+def get_multi_average_difficulty(csv_file):
+    # 60 dữ liệu 10p
+    # 30 dữ liệu 20p
+    # 20 dữ liệu 30p
+    # 15 dữ liệu 40p
+    # 12 dữ liệu 50p
+    # 10 dữ liệu 60p
+
+    nPoD = []
+    total_node = []
+
+    # Read file 
+    with open(csv_file, 'r') as file:
+        csv_reader = csv.reader(file)
+        for row in csv_reader:
+            nPoD.append(row[6])
+            total_node.append(row[5])
+
+    percentages = []
+    temp = 0
+    ave = []
+    
+    # 600s
+    for i in range(1, 61):
+        percentages.append(int(nPoD[i]) / int(total_node[i]))
+        temp += percentages[i-1]
+    
+    temp/= 60
+    ave.append(temp)
+
+    temp = 0
+    # 1200s
+    for i in range(61, 91):
+        percentages.append(int(nPoD[i]) / int(total_node[i]))
+        temp += percentages[i-1]
+
+    temp /= 30
+    ave.append(temp)
+
+    temp = 0
+    # 1800s
+    for i in range(91, 111):
+        percentages.append(int(nPoD[i]) / int(total_node[i]))
+        temp += percentages[i-1]
+
+    temp /= 20
+    ave.append(temp)
+
+    # 2400
+    temp = 0
+    for i in range(111, 126):
+        percentages.append(int(nPoD[i]) / int(total_node[i]))
+        temp += percentages[i-1]
+
+    temp /= 15
+    ave.append(temp)
+
+    # 3000
+    temp = 0
+    for i in range(126, 138):
+        percentages.append(int(nPoD[i]) / int(total_node[i]))
+        temp += percentages[i-1]
+
+    temp /= 12
+    ave.append(temp)
+
+    # 3600
+    temp = 0
+    for i in range(137, 147):
+        percentages.append(int(nPoD[i]) / int(total_node[i]))
+        temp += percentages[i-1]
+    temp /= 10
+    ave.append(temp)
+
+    return ave
+
+def statistic_difficulty_time(file):
+    ave = get_multi_average_difficulty(file)
+
+    categories = ["600", "1200", "1800", "2400", "3000","3600"]
+    values = [ave[0]*100, ave[1]*100, ave[2]*100, ave[3]*100, ave[4]*100, ave[5]*100]
+
+    plt.bar(categories, values, color=['blue', 'green', 'orange', 'red', "black", 'gray'])
+
+    for i in range(len(categories)):
+        plt.text(i, values[i] + 1, str(round(values[i], 1)), ha='center')
+
+    yticks = [0, 20, 40, 60, 80, 100]
+
+    plt.yticks(yticks)
+    # Add labels and title
+    plt.xlabel('Time (s)')
+    plt.ylabel('Difficulty (%)')
+
+    # Show the plot
+    plt.show()
+
+# file = "../data/Result_consider_time/data_v6_20.csv"
+# statistic_difficulty_time(file)
+
+def line_graph_difficulty():
+    file1 = "../data/Result_consider_time/data_v5_20.csv"
+    file2 = "../data/Result_consider_time/data_v6_20.csv"
+    file3 = "../data/Result_consider_time/data_v7_20.csv"
+    file4 = "../data/Result_consider_time/data_v8_20.csv"
+    ave1 = get_multi_average_difficulty(file1)
+    ave2 = get_multi_average_difficulty(file2)
+    ave3 = get_multi_average_difficulty(file3)
+    ave4 = get_multi_average_difficulty(file4)
+
+    new_x_values = [600, 1200, 1800, 2400, 3000, 3600]
+    plt.plot(new_x_values, ave1, label='Có tích lũy, ave = 1 round')
+    plt.plot(new_x_values, ave3, label='Có tích lũy ave = nhiều round')
+    plt.plot(new_x_values, ave4, label='Coin trung bình')
+    plt.plot(new_x_values, ave2, label='Không có tích lũy')
+
+    plt.title('Tỉ lệ Winner của 4 trường hợp')
+    plt.xlabel('Time (s)')
+    plt.xticks(new_x_values)
+    plt.ylabel('Winner percentage (%)')
+    plt.legend()
+    plt.show()
+
+line_graph_difficulty()
 # Statistic the number of timeslots have all vehicels
 # statistic_timeslot_have_all_vehicles(20)
 

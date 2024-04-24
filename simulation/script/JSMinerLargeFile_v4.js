@@ -47,11 +47,11 @@ class Vehicle {
     }
 }
 
-// Có tích lũy quãng đường, quãng đường trung bình là quãng đường của riêng round, không tích tích lũy
+// Tích lũy quãng đường, quãng đường trung bình là trung bình của quãng đường tích lũy của round trước và round hiện tại
 parser.on('data', (data) => {
     let oldVehicles = [];
     for (let b = 0; b < 36000; b += 3600) {
-        let e = b + 3600;
+        e = b + 3600;
         const inputData = getDataFromJson(b, e, data);
         const classList = classifyList(inputData);
         let totalDistance = 0;
@@ -63,17 +63,18 @@ parser.on('data', (data) => {
         // console.log(oldVehicles)
         
         
+        // Count number of nodes participating in proof of driving algorithms
+        const distanceList = accumulateDistance(oldVehicles, newVehicles);
+
         // Calculate the total of distances in a time round of proof of driving algorithms
-        for (let i = 0; i < newVehicles.length; i++) {
-          totalDistance += newVehicles[i].distance;
+        for (let i = 0; i < distanceList.length; i++) {
+          totalDistance += distanceList[i].distance;
         }
-        
+
         // Calculate the average distance of all vehicle in a round
         const averageDistance = totalDistance / newVehicles.length;
         // const averageDistance = 40000;
         
-        // Count number of nodes participating in proof of driving algorithms
-        const distanceList = accumulateDistance(oldVehicles, newVehicles);
         for (let i = 0; i < distanceList.length; i++) {
           if (distanceList[i].distance >= averageDistance) nodeInPOD++;
         }
@@ -117,7 +118,7 @@ parser.on('data', (data) => {
         oldVehicles = updateDistance(distanceList, averageDistance)
   
         // Write data to file
-        const fName = "../data/Result_accumulate_distance/data_v3_" + numVehicles.toString() + ".csv";
+        const fName = "../data/Result_accumulate_distance/data_v4_" + numVehicles.toString() + ".csv";
         var stream = fs.createWriteStream(fName, { flags: "a" });
   
         stream.once("open", function (fd) {

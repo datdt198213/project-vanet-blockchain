@@ -27,23 +27,45 @@ B. Processing data
 node JSAddHeader_v1.js num_vehicle
 node JSMinerLargeFile_v1.js num_vehicle
 ```
-num_vehicle: Số lượng xe trong mô phỏng
 
 2. POD distance average algorithm
 ```
 node JSAddHeader_v2.js num_vehicle
 node JSMinerLargeFile_v2.js num_vehicle
 ```
-num_vehicle: Số lượng xe trong mô phỏng
 
-3. POD accumulate distance average algorithm
+3. POD accumulate distance, average distance is the average distance in 1 round
 ```
 node JSAddHeader_v3.js num_vehicle
 node JSMinerLargeFile_v3.js num_vehicle
 ```
-num_vehicle: Số lượng xe trong mô phỏng
 
-4. Calculate distance of vehicles in 1 hours
+4. POD accumulate distance, average distance is the average accumulated distance
+```
+node JSMinerLargeFile_v4.js num_vehicle
+```
+
+5. v3 - Different time 600s, 1200s, 1800s, 2400s, 3000s, 3600s
+```
+node JSMinerLargeFile_v5.js num_vehicle
+```
+
+6. v2 - Different time 600s, 1200s, 1800s, 2400s, 3000s, 3600s
+```
+node JSMinerLargeFile_v6.js num_vehicle
+```
+
+7. v4 - Different time 600s, 1200s, 1800s, 2400s, 3000s, 3600s
+```
+node JSMinerLargeFile_v7.js num_vehicle
+```
+
+8. v1 - Different time 600s, 1200s, 1800s, 2400s, 3000s, 3600s
+```
+node JSMinerLargeFile_v8.js num_vehicle
+```
+
+6. Calculate distance of vehicles in 1 hours
 ```
 node JSCalculateDistance.js num_vehicle
 ```

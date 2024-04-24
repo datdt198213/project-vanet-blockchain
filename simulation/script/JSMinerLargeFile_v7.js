@@ -10,8 +10,6 @@ const readStream = fs.createReadStream(filename);
 const parser = JSONStream.parse("*");
 readStream.pipe(parser);
 
-var totalCoin = 0;
-var totalDistance = 0;
 class Driver {
     constructor(id, distance, time, coin) {
         this.id = id;
@@ -47,11 +45,13 @@ class Vehicle {
     }
 }
 
-// Có tích lũy quãng đường, quãng đường trung bình là quãng đường của riêng round, không tích tích lũy
+// Tích lũy quãng đường, v4
 parser.on('data', (data) => {
     let oldVehicles = [];
-    for (let b = 0; b < 36000; b += 3600) {
-        let e = b + 3600;
+    let timeslot = 3600;
+    let e = 0;
+    for (let b = 0; b < 36000; b += timeslot) {
+        e = b + timeslot;
         const inputData = getDataFromJson(b, e, data);
         const classList = classifyList(inputData);
         let totalDistance = 0;
@@ -59,21 +59,22 @@ parser.on('data', (data) => {
         let nodeInPOD = 0;
         let coinEarning = 0;
         const newVehicles = calculateDistances(classList, e);
-        console.log("Hello")
+
         // console.log(oldVehicles)
         
         
+        // Count number of nodes participating in proof of driving algorithms
+        const distanceList = accumulateDistance(oldVehicles, newVehicles);
+
         // Calculate the total of distances in a time round of proof of driving algorithms
-        for (let i = 0; i < newVehicles.length; i++) {
-          totalDistance += newVehicles[i].distance;
+        for (let i = 0; i < distanceList.length; i++) {
+          totalDistance += distanceList[i].distance;
         }
-        
+
         // Calculate the average distance of all vehicle in a round
         const averageDistance = totalDistance / newVehicles.length;
         // const averageDistance = 40000;
         
-        // Count number of nodes participating in proof of driving algorithms
-        const distanceList = accumulateDistance(oldVehicles, newVehicles);
         for (let i = 0; i < distanceList.length; i++) {
           if (distanceList[i].distance >= averageDistance) nodeInPOD++;
         }
@@ -99,7 +100,7 @@ parser.on('data', (data) => {
         // Statistic
         const myData = [
           [
-            7200,
+            timeslot,
             b,
             e - 0.1,
             averageDistance,
@@ -117,7 +118,7 @@ parser.on('data', (data) => {
         oldVehicles = updateDistance(distanceList, averageDistance)
   
         // Write data to file
-        const fName = "../data/Result_accumulate_distance/data_v3_" + numVehicles.toString() + ".csv";
+        const fName = "../data/Result_consider_time/data_v7_" + numVehicles.toString() + ".csv";
         var stream = fs.createWriteStream(fName, { flags: "a" });
   
         stream.once("open", function (fd) {

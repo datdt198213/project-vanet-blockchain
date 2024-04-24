@@ -47,11 +47,12 @@ class Vehicle {
     }
 }
 
-// Có tích lũy quãng đường, quãng đường trung bình là quãng đường của riêng round, không tích tích lũy
+// Có tích lũy quãng đường - v3
 parser.on('data', (data) => {
     let oldVehicles = [];
-    for (let b = 0; b < 36000; b += 3600) {
-        let e = b + 3600;
+    timeslot = 1200
+    for (let b = 0; b < 36000; b += timeslot) {
+        let e = b + timeslot;
         const inputData = getDataFromJson(b, e, data);
         const classList = classifyList(inputData);
         let totalDistance = 0;
@@ -99,7 +100,7 @@ parser.on('data', (data) => {
         // Statistic
         const myData = [
           [
-            7200,
+            timeslot,
             b,
             e - 0.1,
             averageDistance,
@@ -117,7 +118,7 @@ parser.on('data', (data) => {
         oldVehicles = updateDistance(distanceList, averageDistance)
   
         // Write data to file
-        const fName = "../data/Result_accumulate_distance/data_v3_" + numVehicles.toString() + ".csv";
+        const fName = "../data/Result_consider_time/data_v5_" + numVehicles.toString() + ".csv";
         var stream = fs.createWriteStream(fName, { flags: "a" });
   
         stream.once("open", function (fd) {
