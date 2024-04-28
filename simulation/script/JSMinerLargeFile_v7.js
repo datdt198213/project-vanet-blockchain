@@ -10,6 +10,8 @@ const readStream = fs.createReadStream(filename);
 const parser = JSONStream.parse("*");
 readStream.pipe(parser);
 
+var totalCoin = 0;
+var totalDistance = 0;
 class Driver {
     constructor(id, distance, time, coin) {
         this.id = id;
@@ -45,13 +47,12 @@ class Vehicle {
     }
 }
 
-// Tích lũy quãng đường, v4
+// Có tích lũy quãng đường - v3
 parser.on('data', (data) => {
     let oldVehicles = [];
-    let timeslot = 3600;
-    let e = 0;
+    timeslot = 1200
     for (let b = 0; b < 36000; b += timeslot) {
-        e = b + timeslot;
+        let e = b + timeslot;
         const inputData = getDataFromJson(b, e, data);
         const classList = classifyList(inputData);
         let totalDistance = 0;
@@ -59,22 +60,21 @@ parser.on('data', (data) => {
         let nodeInPOD = 0;
         let coinEarning = 0;
         const newVehicles = calculateDistances(classList, e);
-
+        console.log("Hello")
         // console.log(oldVehicles)
         
         
-        // Count number of nodes participating in proof of driving algorithms
-        const distanceList = accumulateDistance(oldVehicles, newVehicles);
-
         // Calculate the total of distances in a time round of proof of driving algorithms
-        for (let i = 0; i < distanceList.length; i++) {
-          totalDistance += distanceList[i].distance;
+        for (let i = 0; i < newVehicles.length; i++) {
+          totalDistance += newVehicles[i].distance;
         }
-
+        
         // Calculate the average distance of all vehicle in a round
         const averageDistance = totalDistance / newVehicles.length;
         // const averageDistance = 40000;
         
+        // Count number of nodes participating in proof of driving algorithms
+        const distanceList = accumulateDistance(oldVehicles, newVehicles);
         for (let i = 0; i < distanceList.length; i++) {
           if (distanceList[i].distance >= averageDistance) nodeInPOD++;
         }

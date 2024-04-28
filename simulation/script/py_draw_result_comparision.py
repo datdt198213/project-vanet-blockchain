@@ -1022,10 +1022,10 @@ def line_graph_difficulty():
     ave4 = get_multi_average_difficulty(file4)
 
     new_x_values = [600, 1200, 1800, 2400, 3000, 3600]
-    plt.plot(new_x_values, ave1, label='Có tích lũy, ave = 1 round')
-    plt.plot(new_x_values, ave3, label='Có tích lũy ave = nhiều round')
-    plt.plot(new_x_values, ave4, label='Coin trung bình')
+    plt.plot(new_x_values, ave1, label='Coin trung bình')
     plt.plot(new_x_values, ave2, label='Không có tích lũy')
+    plt.plot(new_x_values, ave3, label='Có tích lũy, ave = 1 round')
+    plt.plot(new_x_values, ave4, label='Có tích lũy ave = nhiều round')
 
     plt.title('Tỉ lệ Winner của 4 trường hợp')
     plt.xlabel('Time (s)')

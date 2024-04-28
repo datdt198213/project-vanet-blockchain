@@ -45,7 +45,7 @@ node JSMinerLargeFile_v3.js num_vehicle
 node JSMinerLargeFile_v4.js num_vehicle
 ```
 
-5. v3 - Different time 600s, 1200s, 1800s, 2400s, 3000s, 3600s
+5. v1 - Different time 600s, 1200s, 1800s, 2400s, 3000s, 3600s
 ```
 node JSMinerLargeFile_v5.js num_vehicle
 ```
@@ -55,12 +55,12 @@ node JSMinerLargeFile_v5.js num_vehicle
 node JSMinerLargeFile_v6.js num_vehicle
 ```
 
-7. v4 - Different time 600s, 1200s, 1800s, 2400s, 3000s, 3600s
+7. v3 - Different time 600s, 1200s, 1800s, 2400s, 3000s, 3600s
 ```
 node JSMinerLargeFile_v7.js num_vehicle
 ```
 
-8. v1 - Different time 600s, 1200s, 1800s, 2400s, 3000s, 3600s
+8. v4 - Different time 600s, 1200s, 1800s, 2400s, 3000s, 3600s
 ```
 node JSMinerLargeFile_v8.js num_vehicle
 ```
