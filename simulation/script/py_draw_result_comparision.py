@@ -1,10 +1,8 @@
-    
+import json    
 import csv
 import sys
 import statistics
-
 import matplotlib.pyplot as plt
-
 
 # statistic the number of vehicle satisfy condition of algorithm in 1 hours (v2)
 def statistic_difference(num):    
@@ -911,7 +909,7 @@ def get_average_difficulty(csv_file_path):
 # statistic_difficulty()
 
 # Lấy ra tỉ lệ (số xe nhận coin / tổng số xe)
-def get_multi_average_difficulty(csv_file):
+def get_multi_average_winner(csv_file):
     # 60 dữ liệu 10p
     # 30 dữ liệu 20p
     # 20 dữ liệu 30p
@@ -988,7 +986,7 @@ def get_multi_average_difficulty(csv_file):
     return ave
 
 def statistic_difficulty_time(file):
-    ave = get_multi_average_difficulty(file)
+    ave = get_multi_average_winner(file)
 
     categories = ["600", "1200", "1800", "2400", "3000","3600"]
     values = [ave[0]*100, ave[1]*100, ave[2]*100, ave[3]*100, ave[4]*100, ave[5]*100]
@@ -1003,23 +1001,23 @@ def statistic_difficulty_time(file):
     plt.yticks(yticks)
     # Add labels and title
     plt.xlabel('Time (s)')
-    plt.ylabel('Difficulty (%)')
+    plt.ylabel('Winner percentage (%)')
 
     # Show the plot
     plt.show()
 
-# file = "../data/Result_consider_time/data_v6_20.csv"
-# statistic_difficulty_time(file)
+
+
 
 def line_graph_difficulty():
     file1 = "../data/Result_consider_time/data_v5_20.csv"
     file2 = "../data/Result_consider_time/data_v6_20.csv"
     file3 = "../data/Result_consider_time/data_v7_20.csv"
     file4 = "../data/Result_consider_time/data_v8_20.csv"
-    ave1 = get_multi_average_difficulty(file1)
-    ave2 = get_multi_average_difficulty(file2)
-    ave3 = get_multi_average_difficulty(file3)
-    ave4 = get_multi_average_difficulty(file4)
+    ave1 = get_multi_average_winner(file1)
+    ave2 = get_multi_average_winner(file2)
+    ave3 = get_multi_average_winner(file3)
+    ave4 = get_multi_average_winner(file4)
 
     new_x_values = [600, 1200, 1800, 2400, 3000, 3600]
     plt.plot(new_x_values, ave1, label='Coin trung bình')
@@ -1034,14 +1032,292 @@ def line_graph_difficulty():
     plt.legend()
     plt.show()
 
-line_graph_difficulty()
-# Statistic the number of timeslots have all vehicels
-# statistic_timeslot_have_all_vehicles(20)
+def get_min_max_ave(percentages):
+    min_value = float('inf')  # Khởi tạo min_value là vô cùng
+    max_value = float('-inf') # Khởi tạo max_value là âm vô cùng
+    for percentage in percentages:
+        if percentage < min_value:
+            min_value = percentage
+        if percentage > max_value:
+            max_value = percentage
 
-# Statistic the number of timeslots does not have vehicles 
-# statistic_timeslot_not_have_vehicles(20)
+    ave_value = (min_value + max_value) / 2
+    return min_value, max_value, ave_value
 
-# statistic_difference(20)
-# statistic_difference_v3(20)
-# statistic_rate_difference(20)
-# statistic_rate_difference_dynamic(20)
+def statistic_min_max_ave(csv_file):
+    
+    max_arr = []
+    min_arr = []
+    ave_arr = []
+
+    
+    algorithm = ''
+    if ('v5' in csv_file):
+        algorithm = '1'
+    if ('v6' in csv_file):
+        algorithm = '2'
+    if ('v7' in csv_file):
+        algorithm = '3'
+    if ('v8' in csv_file):
+        algorithm = '4'
+    
+    nPoD = []
+    total_node = []
+
+    # Read file 
+    with open(csv_file, 'r') as file:
+        csv_reader = csv.reader(file)
+        for row in csv_reader:
+            nPoD.append(row[6])
+            total_node.append(row[5])
+
+    
+    # 600s
+    percentages = []
+    for i in range(1, 61):
+        percentages.append(int(nPoD[i]) / int(total_node[i]))
+
+    min, max, ave = get_min_max_ave(percentages)
+    min_arr.append(min)
+    max_arr.append(max)
+    ave_arr.append(ave)
+
+    # 1200s
+    percentages = []
+    for i in range(61, 91):
+        percentages.append(int(nPoD[i]) / int(total_node[i]))
+    min, max, ave = get_min_max_ave(percentages)
+    min_arr.append(min)
+    max_arr.append(max)
+    ave_arr.append(ave)
+
+    # 1800s
+    percentages = []
+    for i in range(91, 111):
+        percentages.append(int(nPoD[i]) / int(total_node[i]))
+    min, max, ave = get_min_max_ave(percentages)
+    min_arr.append(min)
+    max_arr.append(max)
+    ave_arr.append(ave)
+
+    # 2400
+    percentages = []
+    for i in range(111, 126):
+        percentages.append(int(nPoD[i]) / int(total_node[i]))
+    min, max, ave = get_min_max_ave(percentages)
+    min_arr.append(min)
+    max_arr.append(max)
+    ave_arr.append(ave)
+
+    # 3000
+    percentages = []
+    for i in range(126, 138):
+        percentages.append(int(nPoD[i]) / int(total_node[i]))
+    min, max, ave = get_min_max_ave(percentages)
+    min_arr.append(min)
+    max_arr.append(max)
+    ave_arr.append(ave)
+   
+    # 3600
+    percentages = []
+    for i in range(137, 147):
+        percentages.append(int(nPoD[i]) / int(total_node[i]))
+    min, max, ave = get_min_max_ave(percentages)
+    min_arr.append(min)
+    max_arr.append(max)
+    ave_arr.append(ave)
+
+    print(f"Min: {min_arr} \nMax: {max_arr} \nAve: {ave_arr}")
+
+    # Dữ liệu
+    time_intervals = ['1', '2', '3', '4', '5', '6']
+
+    # Vẽ biểu đồ
+    plt.figure(figsize=(10, 6))
+    plt.plot(time_intervals, min_arr, label='Min')
+    plt.plot(time_intervals, max_arr, label='Max')
+    plt.plot(time_intervals, ave_arr, label='Ave')
+    plt.xlabel('Time Intervals')
+    plt.ylabel('Values')
+    plt.title('Min, Max, and Ave Values over Time')
+    plt.legend()
+    plt.grid(True)
+    plt.show()
+
+    # for i in range(0, len(max) - 1):
+    #     a = (float(max[i]) + float(min[i])) / 2
+    #     ave.append(a)
+
+def draw_standard_deviation(csv_file, csv_file2):
+    mean  = []
+    sd = []
+    time_intervals = ['600', '1200', '1800', '2400', '3000', '3600', 'Dynamic']
+
+    nPoD = []
+    total_node = []
+
+    # Read file 
+    with open(csv_file, 'r') as file:
+        csv_reader = csv.reader(file)
+        for row in csv_reader:
+            nPoD.append(row[6])
+            total_node.append(row[5])
+
+    percentages = []
+    
+    # 600s
+    for i in range(1, 61):
+        percentages.append(int(nPoD[i]) / int(total_node[i]))
+    mean.append(statistics.mean(percentages)) 
+    sd.append(statistics.stdev(percentages))
+
+    # 1200s
+    percentages = []
+    for i in range(61, 91):
+        percentages.append(int(nPoD[i]) / int(total_node[i]))
+    mean.append(statistics.mean(percentages)) 
+    sd.append(statistics.stdev(percentages))
+
+    # 1800s
+    percentages = []
+    for i in range(91, 111):
+        percentages.append(int(nPoD[i]) / int(total_node[i]))
+    mean.append(statistics.mean(percentages)) 
+    sd.append(statistics.stdev(percentages))
+
+    # 2400
+    percentages = []
+    for i in range(111, 126):
+        percentages.append(int(nPoD[i]) / int(total_node[i]))
+    mean.append(statistics.mean(percentages)) 
+    sd.append(statistics.stdev(percentages))
+
+    # 3000
+    percentages = []
+    for i in range(126, 138):
+        percentages.append(int(nPoD[i]) / int(total_node[i]))
+    mean.append(statistics.mean(percentages)) 
+    sd.append(statistics.stdev(percentages))
+
+    # 3600
+    percentages = []
+    for i in range(137, 147):
+        percentages.append(int(nPoD[i]) / int(total_node[i]))
+    mean.append(statistics.mean(percentages)) 
+    sd.append(statistics.stdev(percentages))
+
+    # print(mean, sd)
+    # Dynamic
+
+    nPoD = []
+    total_node = []
+    # read_file
+    with open(csv_file2, 'r') as file:
+        csv_reader = csv.reader(file)
+        for row in csv_reader:
+            nPoD.append(row[6])
+            total_node.append(row[5])
+
+    percentages = []
+    for i in range(1, len(nPoD)):
+        percentages.append(int(nPoD[i]) / int(total_node[i]))
+    mean.append(statistics.mean(percentages)) 
+    sd.append(statistics.stdev(percentages))
+    print(mean, sd)
+
+
+    algorithm = ''
+    if ('v5' in csv_file):
+        algorithm = '1'
+    if ('v6' in csv_file):
+        algorithm = '2'
+    if ('v7' in csv_file):
+        algorithm = '3'
+    if ('v8' in csv_file):
+        algorithm = '4'
+
+    plt.figure(figsize=(10, 6))
+    plt.boxplot([[mean[0], sd[0]], [mean[1], sd[1]], [mean[2], sd[2]], [mean[3], sd[3]], [mean[4], sd[4]], [mean[5], sd[5]], [mean[6], sd[6]]], labels=time_intervals)
+    plt.ylabel('Winner percentage')
+    plt.title(f'Standard deviation thuật toán {algorithm}')
+    plt.grid(True)
+    plt.show()
+    
+    return mean, sd
+
+def main():
+    file = "../data/Result_consider_time/data_v8_20.csv"
+    file2 = "../data/Result_consider_time/data_v9_20.csv"
+    draw_standard_deviation(file, file2)
+    
+    
+    # statistic_difficulty_time(file)
+    
+    # line_graph_difficulty()
+    # Statistic the number of timeslots have all vehicels
+    # statistic_timeslot_have_all_vehicles(20)
+
+    # Statistic the number of timeslots does not have vehicles 
+    # statistic_timeslot_not_have_vehicles(20)
+
+    # statistic_difference(20)
+    # statistic_difference_v3(20)
+    # statistic_rate_difference(20)
+    # statistic_rate_difference_dynamic(20)
+    # statistic_min_max_ave(file)
+
+# main()
+
+with open('../data/Result_problem_statement/data_v1_3_20_0.1AverageDistance_Not_Parse_Int.json', 'r') as file:
+    # Load the JSON data
+    vehicles = json.load(file)
+
+id_list = []
+time_list = []
+distance_list = []
+mining_list = []
+average_distance = 0
+
+timeslot1 = 3600    # Data from 0 to 3600s
+timeslot2 = 7200    # Data from 3600s to 7200s
+timeslot3 = 10800   # Data from 7200s to 10800s
+timeslot4 = 14400   # Data from 10800s to 14400s
+timeslot5 = 18000   # Data from 14400s to 18000s
+timeslot6 = 21600   # Data from 18000s to 21600s
+timeslot7 = 25200   # Data from 21600s to 25200s
+timeslot8 = 28800   # Data from 25200s to 28800s
+timeslot9 = 32400   # Data from 28800s to 32400s
+timeslot10 = 36000  # Data from 32400s to 36000s
+
+for i in range(0, len(vehicles)):
+    if (int(vehicles[i]['time']) == timeslot1):
+        id = vehicles[i]['id']
+        time = vehicles[i]['time']
+        distance = vehicles[i]['distance']
+        mining = vehicles[i]['mining']
+        average_distance = vehicles[i]['averageDistance']
+        id_list.append(id)
+        time_list.append(time)
+        distance_list.append(distance)
+        mining_list.append(mining)
+
+    
+colors = ['red' if not mining else 'green' for mining in mining_list]
+print(average_distance)
+plt.bar(id_list, distance_list, color=colors)
+plt.axhline(y=average_distance, color='blue', linestyle='--', label='Average Distance')
+
+
+# Adding labels and title
+plt.xlabel('ID')
+plt.ylabel('Distance')
+# plt.title('Time = 600')
+
+# Custom legend
+legend_labels = ['Not Mining', 'Mining', 'Average Distance']
+colors_legend = ['red', 'green', 'blue']
+legend_patches = [plt.Line2D([0], [0], color=color, label=label, linewidth=3) for label, color in zip(legend_labels, colors_legend)]
+plt.legend(handles=legend_patches)
+
+# Display the plot
+plt.show()
