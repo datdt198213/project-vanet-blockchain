@@ -1,7 +1,7 @@
 [
     {
-        "time": "3599.90",
-        "id": "0",
+        "time": 3599.9,
+        "id": 0,
         "distance": 24490,
         "coin": 2,
         "mining": true,
@@ -328,292 +328,292 @@
         "threshold": 12201
     },
     {
-        "time": "3599.90",
-        "id": "1",
+        "time": 3599.9,
+        "id": 1,
         "distance": 26462,
         "coin": 2,
         "mining": true,
         "threshold": 12201
     },
     {
-        "time": "3599.90",
-        "id": "2",
+        "time": 3599.9,
+        "id": 2,
         "distance": 29684,
         "coin": 0,
         "mining": false,
         "threshold": 12201
     },
     {
-        "time": "3599.90",
-        "id": "3",
+        "time": 3599.9,
+        "id": 3,
         "distance": 22249,
         "coin": 0,
         "mining": false,
         "threshold": 12201
     },
     {
-        "time": "3599.90",
-        "id": "4",
+        "time": 3599.9,
+        "id": 4,
         "distance": 26334,
         "coin": 2,
         "mining": true,
         "threshold": 12201
     },
     {
-        "time": "3599.90",
-        "id": "5",
+        "time": 3599.9,
+        "id": 5,
         "distance": 22926,
         "coin": 1,
         "mining": true,
         "threshold": 12201
     },
     {
-        "time": "3599.90",
-        "id": "6",
+        "time": 3599.9,
+        "id": 6,
         "distance": 26635,
         "coin": 0,
         "mining": false,
         "threshold": 12201
     },
     {
-        "time": "3599.90",
-        "id": "7",
+        "time": 3599.9,
+        "id": 7,
         "distance": 19012,
         "coin": 1,
         "mining": true,
         "threshold": 12201
     },
     {
-        "time": "3599.90",
-        "id": "8",
+        "time": 3599.9,
+        "id": 8,
         "distance": 27614,
         "coin": 2,
         "mining": true,
         "threshold": 12201
     },
     {
-        "time": "3599.90",
-        "id": "9",
+        "time": 3599.9,
+        "id": 9,
         "distance": 25755,
         "coin": 0,
         "mining": false,
         "threshold": 12201
     },
     {
-        "time": "3599.90",
-        "id": "10",
+        "time": 3599.9,
+        "id": 10,
         "distance": 17147,
         "coin": 0,
         "mining": false,
         "threshold": 12201
     },
     {
-        "time": "3599.90",
-        "id": "11",
+        "time": 3599.9,
+        "id": 11,
         "distance": 21548,
         "coin": 1,
         "mining": true,
         "threshold": 12201
     },
     {
-        "time": "3599.90",
-        "id": "12",
+        "time": 3599.9,
+        "id": 12,
         "distance": 21430,
         "coin": 0,
         "mining": false,
         "threshold": 12201
     },
     {
-        "time": "3599.90",
-        "id": "13",
+        "time": 3599.9,
+        "id": 13,
         "distance": 30904,
         "coin": 2,
         "mining": true,
         "threshold": 12201
     },
     {
-        "time": "3599.90",
-        "id": "14",
+        "time": 3599.9,
+        "id": 14,
         "distance": 22837,
         "coin": 0,
         "mining": false,
         "threshold": 12201
     },
     {
-        "time": "3599.90",
-        "id": "15",
+        "time": 3599.9,
+        "id": 15,
         "distance": 18676,
         "coin": 0,
         "mining": false,
         "threshold": 12201
     },
     {
-        "time": "3599.90",
-        "id": "16",
+        "time": 3599.9,
+        "id": 16,
         "distance": 22109,
         "coin": 0,
         "mining": false,
         "threshold": 12201
     },
     {
-        "time": "3599.90",
-        "id": "17",
+        "time": 3599.9,
+        "id": 17,
         "distance": 21106,
         "coin": 1,
         "mining": true,
         "threshold": 12201
     },
     {
-        "time": "3599.90",
-        "id": "18",
+        "time": 3599.9,
+        "id": 18,
         "distance": 22884,
         "coin": 0,
         "mining": false,
         "threshold": 12201
     },
     {
-        "time": "3599.90",
-        "id": "19",
+        "time": 3599.9,
+        "id": 19,
         "distance": 23965,
         "coin": 0,
         "mining": false,
         "threshold": 12201
     },
     {
-        "time": "7199.90",
-        "id": "0",
+        "time": 7199.9,
+        "id": 0,
         "distance": 28817,
         "coin": 1,
         "mining": true,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
-        "time": "7199.90",
-        "id": "1",
+        "time": 7199.9,
+        "id": 1,
         "distance": 28908,
-        "coin": 0,
-        "mining": false,
-        "threshold": 20573
-    },
-    {
-        "time": "7199.90",
-        "id": "10",
-        "distance": 28428,
         "coin": 1,
         "mining": true,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
-        "time": "7199.90",
-        "id": "11",
+        "time": 7199.9,
+        "id": 10,
+        "distance": 45575,
+        "coin": 1,
+        "mining": true,
+        "threshold": 26606
+    },
+    {
+        "time": 7199.9,
+        "id": 11,
         "distance": 32145,
-        "coin": 0,
-        "mining": false,
-        "threshold": 20573
+        "coin": 1,
+        "mining": true,
+        "threshold": 26606
     },
     {
-        "time": "7199.90",
-        "id": "12",
-        "distance": 27003,
-        "coin": 0,
-        "mining": false,
-        "threshold": 20573
+        "time": 7199.9,
+        "id": 12,
+        "distance": 48433,
+        "coin": 1,
+        "mining": true,
+        "threshold": 26606
     },
     {
-        "time": "7199.90",
-        "id": "13",
+        "time": 7199.9,
+        "id": 13,
         "distance": 25006,
         "coin": 0,
         "mining": false,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
-        "time": "7199.90",
-        "id": "14",
-        "distance": 28289,
+        "time": 7199.9,
+        "id": 14,
+        "distance": 51126,
         "coin": 1,
         "mining": true,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
-        "time": "7199.90",
-        "id": "15",
-        "distance": 26281,
-        "coin": 0,
-        "mining": false,
-        "threshold": 20573
-    },
-    {
-        "time": "7199.90",
-        "id": "16",
-        "distance": 25673,
+        "time": 7199.9,
+        "id": 15,
+        "distance": 44957,
         "coin": 1,
         "mining": true,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
-        "time": "7199.90",
-        "id": "17",
+        "time": 7199.9,
+        "id": 16,
+        "distance": 47782,
+        "coin": 1,
+        "mining": true,
+        "threshold": 26606
+    },
+    {
+        "time": 7199.9,
+        "id": 17,
         "distance": 36036,
-        "coin": 0,
-        "mining": false,
-        "threshold": 20573
-    },
-    {
-        "time": "7199.90",
-        "id": "18",
-        "distance": 31012,
-        "coin": 0,
-        "mining": false,
-        "threshold": 20573
-    },
-    {
-        "time": "7199.90",
-        "id": "19",
-        "distance": 30358,
-        "coin": 0,
-        "mining": false,
-        "threshold": 20573
-    },
-    {
-        "time": "7199.90",
-        "id": "2",
-        "distance": 29455,
         "coin": 1,
         "mining": true,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
-        "time": "7199.90",
-        "id": "3",
-        "distance": 32537,
-        "coin": 0,
-        "mining": false,
-        "threshold": 20573
+        "time": 7199.9,
+        "id": 18,
+        "distance": 53896,
+        "coin": 2,
+        "mining": true,
+        "threshold": 26606
     },
     {
-        "time": "7199.90",
-        "id": "4",
+        "time": 7199.9,
+        "id": 19,
+        "distance": 54323,
+        "coin": 2,
+        "mining": true,
+        "threshold": 26606
+    },
+    {
+        "time": 7199.9,
+        "id": 2,
+        "distance": 59139,
+        "coin": 2,
+        "mining": true,
+        "threshold": 26606
+    },
+    {
+        "time": 7199.9,
+        "id": 3,
+        "distance": 54786,
+        "coin": 2,
+        "mining": true,
+        "threshold": 26606
+    },
+    {
+        "time": 7199.9,
+        "id": 4,
         "distance": 34006,
         "coin": 1,
         "mining": true,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
-        "time": "7199.90",
-        "id": "5",
+        "time": 7199.9,
+        "id": 5,
         "distance": 28905,
-        "coin": 0,
-        "mining": false,
-        "threshold": 20573
+        "coin": 1,
+        "mining": true,
+        "threshold": 26606
     },
     {
-        "time": "7199.90",
-        "id": "6",
-        "distance": 31666,
-        "coin": 0,
-        "mining": false,
-        "threshold": 20573
+        "time": 7199.9,
+        "id": 6,
+        "distance": 58301,
+        "coin": 2,
+        "mining": true,
+        "threshold": 26606
     },
     {
         "time": 7199.9,
@@ -621,7 +621,7 @@
         "distance": 18547,
         "coin": 0,
         "mining": false,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
         "time": 7199.9,
@@ -629,7 +629,7 @@
         "distance": 13729,
         "coin": 0,
         "mining": false,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
         "time": 7199.9,
@@ -637,7 +637,7 @@
         "distance": 13543,
         "coin": 0,
         "mining": false,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
         "time": 7199.9,
@@ -645,7 +645,7 @@
         "distance": 12468,
         "coin": 0,
         "mining": false,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
         "time": 7199.9,
@@ -653,7 +653,7 @@
         "distance": 12809,
         "coin": 0,
         "mining": false,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
         "time": 7199.9,
@@ -661,7 +661,7 @@
         "distance": 12825,
         "coin": 0,
         "mining": false,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
         "time": 7199.9,
@@ -669,7 +669,7 @@
         "distance": 12357,
         "coin": 0,
         "mining": false,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
         "time": 7199.9,
@@ -677,7 +677,7 @@
         "distance": 11254,
         "coin": 0,
         "mining": false,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
         "time": 7199.9,
@@ -685,15 +685,15 @@
         "distance": 12296,
         "coin": 0,
         "mining": false,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
-        "time": "7199.90",
-        "id": "7",
+        "time": 7199.9,
+        "id": 7,
         "distance": 23644,
         "coin": 0,
         "mining": false,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
         "time": 7199.9,
@@ -701,7 +701,7 @@
         "distance": 10692,
         "coin": 0,
         "mining": false,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
         "time": 7199.9,
@@ -709,7 +709,7 @@
         "distance": 14912,
         "coin": 0,
         "mining": false,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
         "time": 7199.9,
@@ -717,7 +717,7 @@
         "distance": 14222,
         "coin": 0,
         "mining": false,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
         "time": 7199.9,
@@ -725,7 +725,7 @@
         "distance": 13922,
         "coin": 0,
         "mining": false,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
         "time": 7199.9,
@@ -733,7 +733,7 @@
         "distance": 10040,
         "coin": 0,
         "mining": false,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
         "time": 7199.9,
@@ -741,7 +741,7 @@
         "distance": 9583,
         "coin": 0,
         "mining": false,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
         "time": 7199.9,
@@ -749,15 +749,15 @@
         "distance": 11396,
         "coin": 0,
         "mining": false,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
-        "time": "7199.90",
-        "id": "8",
+        "time": 7199.9,
+        "id": 8,
         "distance": 28589,
-        "coin": 0,
-        "mining": false,
-        "threshold": 20573
+        "coin": 1,
+        "mining": true,
+        "threshold": 26606
     },
     {
         "time": 7199.9,
@@ -765,7 +765,7 @@
         "distance": 14338,
         "coin": 0,
         "mining": false,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
         "time": 7199.9,
@@ -773,15 +773,15 @@
         "distance": 13472,
         "coin": 0,
         "mining": false,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
-        "time": "7199.90",
-        "id": "9",
-        "distance": 24517,
-        "coin": 0,
-        "mining": false,
-        "threshold": 20573
+        "time": 7199.9,
+        "id": 9,
+        "distance": 50272,
+        "coin": 1,
+        "mining": true,
+        "threshold": 26606
     },
     {
         "time": 7199.9,
@@ -789,7 +789,7 @@
         "distance": 12971,
         "coin": 0,
         "mining": false,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
         "time": 7199.9,
@@ -797,7 +797,7 @@
         "distance": 12903,
         "coin": 0,
         "mining": false,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
         "time": 7199.9,
@@ -805,7 +805,7 @@
         "distance": 11799,
         "coin": 0,
         "mining": false,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
         "time": 7199.9,
@@ -813,31 +813,31 @@
         "distance": 12730,
         "coin": 0,
         "mining": false,
-        "threshold": 20573
+        "threshold": 26606
     },
     {
-        "time": "10799.90",
-        "id": "0",
+        "time": 10799.9,
+        "id": 0,
         "distance": 21826,
-        "coin": 0,
-        "mining": false,
-        "threshold": 15040
+        "coin": 1,
+        "mining": true,
+        "threshold": 15672
     },
     {
-        "time": "10799.90",
-        "id": "1",
+        "time": 10799.9,
+        "id": 1,
         "distance": 14392,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
-        "time": "10799.90",
-        "id": "10",
+        "time": 10799.9,
+        "id": 10,
         "distance": 18768,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -845,7 +845,7 @@
         "distance": 25568,
         "coin": 1,
         "mining": true,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -853,7 +853,7 @@
         "distance": 19555,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -861,7 +861,7 @@
         "distance": 19713,
         "coin": 1,
         "mining": true,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -869,7 +869,7 @@
         "distance": 17924,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -877,7 +877,7 @@
         "distance": 19677,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -885,15 +885,15 @@
         "distance": 19167,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
         "id": 26,
         "distance": 19385,
-        "coin": 0,
-        "mining": false,
-        "threshold": 15040
+        "coin": 1,
+        "mining": true,
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -901,31 +901,31 @@
         "distance": 18780,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
-        "time": "10799.90",
-        "id": "11",
+        "time": 10799.9,
+        "id": 11,
         "distance": 26698,
         "coin": 1,
         "mining": true,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
         "id": 28,
         "distance": 18459,
-        "coin": 0,
-        "mining": false,
-        "threshold": 15040
+        "coin": 1,
+        "mining": true,
+        "threshold": 15672
     },
     {
         "time": 10799.9,
         "id": 29,
         "distance": 17704,
-        "coin": 0,
-        "mining": false,
-        "threshold": 15040
+        "coin": 1,
+        "mining": true,
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -933,7 +933,7 @@
         "distance": 22327,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -941,7 +941,7 @@
         "distance": 18071,
         "coin": 1,
         "mining": true,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -949,7 +949,7 @@
         "distance": 20469,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -957,7 +957,7 @@
         "distance": 15647,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -965,7 +965,7 @@
         "distance": 16400,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -973,15 +973,15 @@
         "distance": 18275,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
         "id": 36,
         "distance": 19460,
-        "coin": 0,
-        "mining": false,
-        "threshold": 15040
+        "coin": 1,
+        "mining": true,
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -989,15 +989,15 @@
         "distance": 18164,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
-        "time": "10799.90",
-        "id": "12",
+        "time": 10799.9,
+        "id": 12,
         "distance": 20202,
-        "coin": 0,
-        "mining": false,
-        "threshold": 15040
+        "coin": 1,
+        "mining": true,
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1005,7 +1005,7 @@
         "distance": 19512,
         "coin": 1,
         "mining": true,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1013,23 +1013,23 @@
         "distance": 19511,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
         "id": 40,
         "distance": 18450,
-        "coin": 0,
-        "mining": false,
-        "threshold": 15040
+        "coin": 1,
+        "mining": true,
+        "threshold": 15672
     },
     {
         "time": 10799.9,
         "id": 41,
         "distance": 18453,
-        "coin": 0,
-        "mining": false,
-        "threshold": 15040
+        "coin": 1,
+        "mining": true,
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1037,7 +1037,7 @@
         "distance": 13554,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1045,7 +1045,7 @@
         "distance": 12281,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1053,7 +1053,7 @@
         "distance": 12241,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1061,7 +1061,7 @@
         "distance": 12458,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1069,15 +1069,15 @@
         "distance": 12682,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
-        "time": "10799.90",
-        "id": "13",
-        "distance": 15801,
+        "time": 10799.9,
+        "id": 13,
+        "distance": 40807,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1085,7 +1085,7 @@
         "distance": 12601,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1093,7 +1093,7 @@
         "distance": 13055,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1101,7 +1101,7 @@
         "distance": 13875,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1109,7 +1109,7 @@
         "distance": 14061,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1117,7 +1117,7 @@
         "distance": 13628,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1125,111 +1125,111 @@
         "distance": 12067,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
-        "time": "10799.90",
-        "id": "14",
+        "time": 10799.9,
+        "id": 14,
         "distance": 14031,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
-        "time": "10799.90",
-        "id": "15",
+        "time": 10799.9,
+        "id": 15,
         "distance": 15454,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
-        "time": "10799.90",
-        "id": "16",
+        "time": 10799.9,
+        "id": 16,
         "distance": 20631,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
-        "time": "10799.90",
-        "id": "17",
+        "time": 10799.9,
+        "id": 17,
         "distance": 13675,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
-        "time": "10799.90",
-        "id": "18",
+        "time": 10799.9,
+        "id": 18,
         "distance": 20736,
-        "coin": 0,
-        "mining": false,
-        "threshold": 15040
+        "coin": 1,
+        "mining": true,
+        "threshold": 15672
     },
     {
-        "time": "10799.90",
-        "id": "19",
+        "time": 10799.9,
+        "id": 19,
         "distance": 20997,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
-        "time": "10799.90",
-        "id": "2",
+        "time": 10799.9,
+        "id": 2,
         "distance": 24496,
         "coin": 1,
         "mining": true,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
-        "time": "10799.90",
-        "id": "3",
+        "time": 10799.9,
+        "id": 3,
         "distance": 23036,
-        "coin": 0,
-        "mining": false,
-        "threshold": 15040
+        "coin": 1,
+        "mining": true,
+        "threshold": 15672
     },
     {
-        "time": "10799.90",
-        "id": "4",
+        "time": 10799.9,
+        "id": 4,
         "distance": 25654,
-        "coin": 0,
-        "mining": false,
-        "threshold": 15040
+        "coin": 1,
+        "mining": true,
+        "threshold": 15672
     },
     {
-        "time": "10799.90",
-        "id": "5",
+        "time": 10799.9,
+        "id": 5,
         "distance": 24169,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
-        "time": "10799.90",
-        "id": "6",
+        "time": 10799.9,
+        "id": 6,
         "distance": 20238,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
-        "time": "10799.90",
-        "id": "7",
-        "distance": 18806,
+        "time": 10799.9,
+        "id": 7,
+        "distance": 42450,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
-        "time": "10799.90",
-        "id": "8",
+        "time": 10799.9,
+        "id": 8,
         "distance": 22990,
-        "coin": 0,
-        "mining": false,
-        "threshold": 15040
+        "coin": 1,
+        "mining": true,
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1237,7 +1237,7 @@
         "distance": 13802,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1245,7 +1245,7 @@
         "distance": 14676,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1253,7 +1253,7 @@
         "distance": 11625,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1261,7 +1261,7 @@
         "distance": 13093,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1269,7 +1269,7 @@
         "distance": 11554,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1277,7 +1277,7 @@
         "distance": 12332,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1285,7 +1285,7 @@
         "distance": 11775,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1293,15 +1293,15 @@
         "distance": 5392,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
-        "time": "10799.90",
-        "id": "9",
+        "time": 10799.9,
+        "id": 9,
         "distance": 20004,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1309,7 +1309,7 @@
         "distance": 5557,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1317,7 +1317,7 @@
         "distance": 4706,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1325,7 +1325,7 @@
         "distance": 6109,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1333,7 +1333,7 @@
         "distance": 4697,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1341,7 +1341,7 @@
         "distance": 5763,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1349,7 +1349,7 @@
         "distance": 6703,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1357,7 +1357,7 @@
         "distance": 6157,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1365,7 +1365,7 @@
         "distance": 6267,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1373,7 +1373,7 @@
         "distance": 6123,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1381,7 +1381,7 @@
         "distance": 6930,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1389,7 +1389,7 @@
         "distance": 6008,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1397,7 +1397,7 @@
         "distance": 5374,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1405,7 +1405,7 @@
         "distance": 7370,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1413,7 +1413,7 @@
         "distance": 7089,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1421,7 +1421,7 @@
         "distance": 7228,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
         "time": 10799.9,
@@ -1429,63 +1429,63 @@
         "distance": 6012,
         "coin": 0,
         "mining": false,
-        "threshold": 15040
+        "threshold": 15672
     },
     {
-        "time": "14399.90",
-        "id": "0",
+        "time": 14399.9,
+        "id": 0,
         "distance": 14382,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
-        "id": "1",
-        "distance": 4080,
+        "time": 14399.9,
+        "id": 1,
+        "distance": 18472,
+        "coin": 1,
+        "mining": true,
+        "threshold": 14744
+    },
+    {
+        "time": 14399.9,
+        "id": 10,
+        "distance": 24939,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
-        "id": "10",
-        "distance": 6171,
-        "coin": 0,
-        "mining": false,
-        "threshold": 13222
-    },
-    {
-        "time": "14399.90",
-        "id": "11",
+        "time": 14399.9,
+        "id": 11,
         "distance": 8768,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
-        "id": "12",
+        "time": 14399.9,
+        "id": 12,
         "distance": 8910,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
-        "id": "13",
-        "distance": 15857,
-        "coin": 1,
-        "mining": true,
-        "threshold": 13222
-    },
-    {
-        "time": "14399.90",
-        "id": "14",
-        "distance": 4081,
+        "time": 14399.9,
+        "id": 13,
+        "distance": 56664,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
+    },
+    {
+        "time": 14399.9,
+        "id": 14,
+        "distance": 18112,
+        "coin": 1,
+        "mining": true,
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1493,7 +1493,7 @@
         "distance": 6713,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1501,7 +1501,7 @@
         "distance": 26672,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1509,7 +1509,7 @@
         "distance": 4911,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1517,7 +1517,7 @@
         "distance": 23295,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1525,7 +1525,7 @@
         "distance": 26232,
         "coin": 1,
         "mining": true,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1533,55 +1533,55 @@
         "distance": 25458,
         "coin": 1,
         "mining": true,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
         "id": 26,
-        "distance": 24189,
-        "coin": 1,
-        "mining": true,
-        "threshold": 13222
+        "distance": 4804,
+        "coin": 0,
+        "mining": false,
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
+        "time": 14399.9,
         "id": 27,
         "distance": 22391,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
+        "time": 14399.9,
         "id": 28,
-        "distance": 23016,
+        "distance": 4557,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
+        "time": 14399.9,
         "id": 29,
-        "distance": 21223,
-        "coin": 1,
-        "mining": true,
-        "threshold": 13222
-    },
-    {
-        "time": "14399.90",
-        "id": "15",
-        "distance": 10738,
+        "distance": 3519,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
+    },
+    {
+        "time": 14399.9,
+        "id": 15,
+        "distance": 26192,
+        "coin": 0,
+        "mining": false,
+        "threshold": 14744
     },
     {
         "time": 14399.9,
         "id": 30,
         "distance": 29243,
-        "coin": 2,
+        "coin": 1,
         "mining": true,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1589,15 +1589,15 @@
         "distance": 6948,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
         "id": 32,
         "distance": 26745,
-        "coin": 2,
+        "coin": 1,
         "mining": true,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1605,7 +1605,7 @@
         "distance": 22100,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1613,7 +1613,7 @@
         "distance": 22884,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1621,23 +1621,23 @@
         "distance": 25042,
         "coin": 1,
         "mining": true,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
         "id": 36,
-        "distance": 25903,
-        "coin": 1,
-        "mining": true,
-        "threshold": 13222
+        "distance": 6443,
+        "coin": 0,
+        "mining": false,
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
+        "time": 14399.9,
         "id": 37,
         "distance": 21291,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1645,39 +1645,39 @@
         "distance": 5497,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
         "id": 39,
         "distance": 25026,
-        "coin": 1,
-        "mining": true,
-        "threshold": 13222
-    },
-    {
-        "time": "14399.90",
-        "id": "16",
-        "distance": 5134,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
+    },
+    {
+        "time": 14399.9,
+        "id": 16,
+        "distance": 25765,
+        "coin": 1,
+        "mining": true,
+        "threshold": 14744
     },
     {
         "time": 14399.9,
         "id": 40,
-        "distance": 25247,
-        "coin": 1,
-        "mining": true,
-        "threshold": 13222
+        "distance": 6797,
+        "coin": 0,
+        "mining": false,
+        "threshold": 14744
     },
     {
         "time": 14399.9,
         "id": 41,
-        "distance": 25041,
-        "coin": 1,
-        "mining": true,
-        "threshold": 13222
+        "distance": 6588,
+        "coin": 0,
+        "mining": false,
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1685,7 +1685,7 @@
         "distance": 19453,
         "coin": 1,
         "mining": true,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1693,7 +1693,7 @@
         "distance": 18095,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1701,7 +1701,7 @@
         "distance": 19661,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1709,15 +1709,15 @@
         "distance": 18848,
         "coin": 1,
         "mining": true,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
+        "time": 14399.9,
         "id": 46,
         "distance": 18510,
         "coin": 1,
         "mining": true,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1725,23 +1725,23 @@
         "distance": 18528,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
         "id": 48,
         "distance": 19884,
-        "coin": 1,
-        "mining": true,
-        "threshold": 13222
-    },
-    {
-        "time": "14399.90",
-        "id": "17",
-        "distance": 17237,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
+    },
+    {
+        "time": 14399.9,
+        "id": 17,
+        "distance": 30912,
+        "coin": 2,
+        "mining": true,
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1749,7 +1749,7 @@
         "distance": 20734,
         "coin": 1,
         "mining": true,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1757,7 +1757,7 @@
         "distance": 18282,
         "coin": 1,
         "mining": true,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1765,7 +1765,7 @@
         "distance": 18752,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1773,7 +1773,7 @@
         "distance": 17991,
         "coin": 1,
         "mining": true,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1781,7 +1781,7 @@
         "distance": 21542,
         "coin": 1,
         "mining": true,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1789,7 +1789,7 @@
         "distance": 20172,
         "coin": 1,
         "mining": true,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1797,7 +1797,7 @@
         "distance": 18438,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1805,15 +1805,15 @@
         "distance": 20170,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
-        "id": "18",
+        "time": 14399.9,
+        "id": 18,
         "distance": 6680,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1821,7 +1821,7 @@
         "distance": 19223,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1829,23 +1829,23 @@
         "distance": 19654,
         "coin": 1,
         "mining": true,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
         "id": 59,
         "distance": 16566,
-        "coin": 1,
-        "mining": true,
-        "threshold": 13222
+        "coin": 0,
+        "mining": false,
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
+        "time": 14399.9,
         "id": 60,
         "distance": 10975,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1853,7 +1853,7 @@
         "distance": 10944,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1861,15 +1861,15 @@
         "distance": 12485,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
         "id": 63,
         "distance": 13319,
-        "coin": 1,
-        "mining": true,
-        "threshold": 13222
+        "coin": 0,
+        "mining": false,
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1877,15 +1877,15 @@
         "distance": 11302,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
-        "id": "19",
-        "distance": 11793,
-        "coin": 0,
-        "mining": false,
-        "threshold": 13222
+        "time": 14399.9,
+        "id": 19,
+        "distance": 32790,
+        "coin": 2,
+        "mining": true,
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1893,7 +1893,7 @@
         "distance": 12544,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1901,15 +1901,15 @@
         "distance": 13514,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
         "id": 67,
         "distance": 13316,
-        "coin": 1,
-        "mining": true,
-        "threshold": 13222
+        "coin": 0,
+        "mining": false,
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1917,7 +1917,7 @@
         "distance": 13013,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1925,7 +1925,7 @@
         "distance": 12726,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1933,7 +1933,7 @@
         "distance": 12645,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1941,31 +1941,31 @@
         "distance": 13228,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
+        "time": 14399.9,
         "id": 72,
         "distance": 10336,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
-        "id": "2",
+        "time": 14399.9,
+        "id": 2,
         "distance": 9486,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
         "id": 73,
         "distance": 14418,
-        "coin": 1,
-        "mining": true,
-        "threshold": 13222
+        "coin": 0,
+        "mining": false,
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1973,7 +1973,7 @@
         "distance": 11706,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1981,7 +1981,7 @@
         "distance": 15314,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1989,7 +1989,7 @@
         "distance": 10885,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -1997,23 +1997,23 @@
         "distance": 6609,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
+        "time": 14399.9,
         "id": 78,
         "distance": 2768,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
+        "time": 14399.9,
         "id": 79,
         "distance": 5295,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -2021,7 +2021,7 @@
         "distance": 5840,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -2029,7 +2029,7 @@
         "distance": 6646,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -2037,7 +2037,7 @@
         "distance": 7057,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -2045,7 +2045,7 @@
         "distance": 7020,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -2053,7 +2053,7 @@
         "distance": 5271,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -2061,7 +2061,7 @@
         "distance": 5537,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -2069,7 +2069,7 @@
         "distance": 4990,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -2077,63 +2077,63 @@
         "distance": 4396,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
-        "id": "3",
+        "time": 14399.9,
+        "id": 3,
         "distance": 8510,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
-        "id": "4",
+        "time": 14399.9,
+        "id": 4,
         "distance": 6623,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
-        "id": "5",
-        "distance": 6696,
+        "time": 14399.9,
+        "id": 5,
+        "distance": 30865,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
-        "id": "6",
-        "distance": 3566,
+        "time": 14399.9,
+        "id": 6,
+        "distance": 23804,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
-        "id": "7",
-        "distance": 12165,
-        "coin": 0,
-        "mining": false,
-        "threshold": 13222
+        "time": 14399.9,
+        "id": 7,
+        "distance": 54615,
+        "coin": 3,
+        "mining": true,
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
-        "id": "8",
+        "time": 14399.9,
+        "id": 8,
         "distance": 6792,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
-        "id": "9",
-        "distance": 7024,
-        "coin": 0,
-        "mining": false,
-        "threshold": 13222
+        "time": 14399.9,
+        "id": 9,
+        "distance": 27028,
+        "coin": 1,
+        "mining": true,
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -2141,7 +2141,7 @@
         "distance": 7271,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -2149,15 +2149,15 @@
         "distance": 6980,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
+        "time": 14399.9,
         "id": 90,
         "distance": 2871,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -2165,7 +2165,7 @@
         "distance": 6486,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -2173,7 +2173,7 @@
         "distance": 6573,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -2181,7 +2181,7 @@
         "distance": 5975,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -2189,7 +2189,7 @@
         "distance": 6451,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -2197,7 +2197,7 @@
         "distance": 6857,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -2205,7 +2205,7 @@
         "distance": 6284,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -2213,7 +2213,7 @@
         "distance": 7355,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
         "time": 14399.9,
@@ -2221,79 +2221,79 @@
         "distance": 6262,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
+        "time": 14399.9,
         "id": 99,
         "distance": 2534,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
-        "time": "14399.90",
+        "time": 14399.9,
         "id": 100,
         "distance": 5237,
         "coin": 0,
         "mining": false,
-        "threshold": 13222
+        "threshold": 14744
     },
     {
-        "time": "17999.90",
-        "id": "0",
-        "distance": 2575,
-        "coin": 0,
-        "mining": false,
-        "threshold": 9545
+        "time": 17999.9,
+        "id": 0,
+        "distance": 16957,
+        "coin": 1,
+        "mining": true,
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
-        "id": "1",
+        "time": 17999.9,
+        "id": 1,
         "distance": 7161,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
-        "id": "10",
-        "distance": 2639,
+        "time": 17999.9,
+        "id": 10,
+        "distance": 27578,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
-        "id": "11",
-        "distance": 3529,
+        "time": 17999.9,
+        "id": 11,
+        "distance": 12297,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
-        "id": "12",
-        "distance": 2097,
+        "time": 17999.9,
+        "id": 12,
+        "distance": 11007,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
-        "id": "13",
-        "distance": 1968,
-        "coin": 0,
-        "mining": false,
-        "threshold": 9545
+        "time": 17999.9,
+        "id": 13,
+        "distance": 58632,
+        "coin": 4,
+        "mining": true,
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
-        "id": "14",
+        "time": 17999.9,
+        "id": 14,
         "distance": 7166,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
@@ -2301,15 +2301,15 @@
         "distance": 7424,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
         "id": 21,
         "distance": 27530,
-        "coin": 2,
-        "mining": true,
-        "threshold": 9545
+        "coin": 0,
+        "mining": false,
+        "threshold": 12395
     },
     {
         "time": 17999.9,
@@ -2317,31 +2317,31 @@
         "distance": 6056,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
-        "id": "15",
-        "distance": 6588,
-        "coin": 0,
-        "mining": false,
-        "threshold": 9545
+        "time": 17999.9,
+        "id": 15,
+        "distance": 32780,
+        "coin": 2,
+        "mining": true,
+        "threshold": 12395
     },
     {
         "time": 17999.9,
         "id": 23,
         "distance": 24327,
-        "coin": 2,
+        "coin": 1,
         "mining": true,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
-        "id": "16",
+        "time": 17999.9,
+        "id": 16,
         "distance": 5305,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
@@ -2349,23 +2349,23 @@
         "distance": 516,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
-        "id": "17",
+        "time": 17999.9,
+        "id": 17,
         "distance": 15730,
         "coin": 1,
         "mining": true,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
-        "id": "18",
-        "distance": 886,
+        "time": 17999.9,
+        "id": 18,
+        "distance": 7566,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
@@ -2373,55 +2373,55 @@
         "distance": 154,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
         "id": 26,
-        "distance": 16,
+        "distance": 4820,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
-        "id": "19",
+        "time": 17999.9,
+        "id": 19,
         "distance": 2683,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
         "id": 27,
         "distance": 22761,
-        "coin": 2,
+        "coin": 1,
         "mining": true,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
-        "id": "2",
-        "distance": 839,
+        "time": 17999.9,
+        "id": 2,
+        "distance": 10325,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
         "id": 28,
-        "distance": 24559,
-        "coin": 2,
-        "mining": true,
-        "threshold": 9545
+        "distance": 6100,
+        "coin": 0,
+        "mining": false,
+        "threshold": 12395
     },
     {
         "time": 17999.9,
         "id": 29,
-        "distance": 97,
+        "distance": 3616,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
@@ -2429,7 +2429,7 @@
         "distance": 2845,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
@@ -2437,87 +2437,87 @@
         "distance": 8782,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 32,
         "distance": 2846,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 33,
         "distance": 25500,
         "coin": 2,
         "mining": true,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 34,
         "distance": 26288,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 35,
         "distance": 1665,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 36,
-        "distance": 1474,
+        "distance": 7917,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 37,
         "distance": 28197,
-        "coin": 2,
-        "mining": true,
-        "threshold": 9545
+        "coin": 0,
+        "mining": false,
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 38,
         "distance": 9546,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
         "id": 39,
-        "distance": 6273,
-        "coin": 0,
-        "mining": false,
-        "threshold": 9545
+        "distance": 31299,
+        "coin": 2,
+        "mining": true,
+        "threshold": 12395
     },
     {
         "time": 17999.9,
         "id": 40,
-        "distance": 7612,
-        "coin": 0,
-        "mining": false,
-        "threshold": 9545
+        "distance": 14409,
+        "coin": 1,
+        "mining": true,
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 41,
-        "distance": 2378,
+        "distance": 8966,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
@@ -2525,23 +2525,23 @@
         "distance": 6526,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 43,
         "distance": 24178,
-        "coin": 2,
+        "coin": 1,
         "mining": true,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 44,
         "distance": 22136,
-        "coin": 2,
+        "coin": 1,
         "mining": true,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
@@ -2549,7 +2549,7 @@
         "distance": 6717,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
@@ -2557,7 +2557,7 @@
         "distance": 6900,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
@@ -2565,55 +2565,55 @@
         "distance": 25299,
         "coin": 2,
         "mining": true,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 48,
-        "distance": 6527,
-        "coin": 0,
-        "mining": false,
-        "threshold": 9545
+        "distance": 26411,
+        "coin": 2,
+        "mining": true,
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 49,
         "distance": 4397,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 50,
         "distance": 1965,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 51,
         "distance": 23719,
-        "coin": 2,
+        "coin": 1,
         "mining": true,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 52,
         "distance": 1020,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 53,
         "distance": 3128,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
@@ -2621,7 +2621,7 @@
         "distance": 6976,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
@@ -2629,39 +2629,39 @@
         "distance": 25440,
         "coin": 2,
         "mining": true,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 56,
         "distance": 22767,
-        "coin": 2,
+        "coin": 1,
         "mining": true,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 57,
         "distance": 23819,
-        "coin": 2,
+        "coin": 1,
         "mining": true,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 58,
         "distance": 5502,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 59,
-        "distance": 2887,
-        "coin": 0,
-        "mining": false,
-        "threshold": 9545
+        "distance": 19453,
+        "coin": 1,
+        "mining": true,
+        "threshold": 12395
     },
     {
         "time": 17999.9,
@@ -2669,191 +2669,191 @@
         "distance": 18817,
         "coin": 1,
         "mining": true,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 61,
         "distance": 16338,
         "coin": 1,
         "mining": true,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 62,
         "distance": 15601,
         "coin": 1,
         "mining": true,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
         "id": 63,
-        "distance": 6894,
-        "coin": 0,
-        "mining": false,
-        "threshold": 9545
+        "distance": 20213,
+        "coin": 1,
+        "mining": true,
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 64,
         "distance": 12546,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 65,
         "distance": 16928,
-        "coin": 1,
-        "mining": true,
-        "threshold": 9545
+        "coin": 0,
+        "mining": false,
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 66,
         "distance": 18884,
-        "coin": 1,
-        "mining": true,
-        "threshold": 9545
+        "coin": 0,
+        "mining": false,
+        "threshold": 12395
     },
     {
         "time": 17999.9,
         "id": 67,
-        "distance": 6994,
-        "coin": 0,
-        "mining": false,
-        "threshold": 9545
+        "distance": 20310,
+        "coin": 1,
+        "mining": true,
+        "threshold": 12395
     },
     {
         "time": 17999.9,
         "id": 68,
         "distance": 20049,
-        "coin": 2,
-        "mining": true,
-        "threshold": 9545
+        "coin": 0,
+        "mining": false,
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 69,
         "distance": 15486,
-        "coin": 1,
-        "mining": true,
-        "threshold": 9545
+        "coin": 0,
+        "mining": false,
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 70,
         "distance": 16671,
         "coin": 1,
         "mining": true,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
         "id": 71,
         "distance": 18082,
-        "coin": 1,
-        "mining": true,
-        "threshold": 9545
+        "coin": 0,
+        "mining": false,
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 72,
         "distance": 14556,
-        "coin": 1,
-        "mining": true,
-        "threshold": 9545
+        "coin": 0,
+        "mining": false,
+        "threshold": 12395
     },
     {
         "time": 17999.9,
         "id": 73,
-        "distance": 8086,
-        "coin": 0,
-        "mining": false,
-        "threshold": 9545
+        "distance": 22504,
+        "coin": 1,
+        "mining": true,
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 74,
         "distance": 15672,
         "coin": 1,
         "mining": true,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
         "id": 75,
         "distance": 21718,
-        "coin": 2,
-        "mining": true,
-        "threshold": 9545
+        "coin": 0,
+        "mining": false,
+        "threshold": 12395
     },
     {
         "time": 17999.9,
         "id": 76,
         "distance": 17418,
-        "coin": 1,
-        "mining": true,
-        "threshold": 9545
+        "coin": 0,
+        "mining": false,
+        "threshold": 12395
     },
     {
         "time": 17999.9,
         "id": 77,
         "distance": 12985,
-        "coin": 1,
-        "mining": true,
-        "threshold": 9545
+        "coin": 0,
+        "mining": false,
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 78,
         "distance": 5724,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
         "id": 79,
         "distance": 11944,
-        "coin": 1,
-        "mining": true,
-        "threshold": 9545
+        "coin": 0,
+        "mining": false,
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 80,
         "distance": 8429,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 81,
         "distance": 11811,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
         "id": 82,
         "distance": 14055,
-        "coin": 1,
-        "mining": true,
-        "threshold": 9545
+        "coin": 0,
+        "mining": false,
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 83,
         "distance": 9735,
-        "coin": 1,
-        "mining": true,
-        "threshold": 9545
+        "coin": 0,
+        "mining": false,
+        "threshold": 12395
     },
     {
         "time": 17999.9,
@@ -2861,31 +2861,31 @@
         "distance": 7127,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
         "id": 85,
         "distance": 13229,
-        "coin": 1,
-        "mining": true,
-        "threshold": 9545
+        "coin": 0,
+        "mining": false,
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 86,
         "distance": 10310,
-        "coin": 1,
-        "mining": true,
-        "threshold": 9545
+        "coin": 0,
+        "mining": false,
+        "threshold": 12395
     },
     {
         "time": 17999.9,
         "id": 87,
         "distance": 10906,
-        "coin": 1,
-        "mining": true,
-        "threshold": 9545
+        "coin": 0,
+        "mining": false,
+        "threshold": 12395
     },
     {
         "time": 17999.9,
@@ -2893,7 +2893,7 @@
         "distance": 14389,
         "coin": 1,
         "mining": true,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
@@ -2901,63 +2901,63 @@
         "distance": 13741,
         "coin": 1,
         "mining": true,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
         "id": 90,
         "distance": 9705,
-        "coin": 1,
-        "mining": true,
-        "threshold": 9545
+        "coin": 0,
+        "mining": false,
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 91,
         "distance": 10872,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 92,
         "distance": 9793,
-        "coin": 1,
-        "mining": true,
-        "threshold": 9545
+        "coin": 0,
+        "mining": false,
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 93,
         "distance": 11740,
-        "coin": 1,
-        "mining": true,
-        "threshold": 9545
+        "coin": 0,
+        "mining": false,
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 94,
         "distance": 8185,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
-        "id": "3",
-        "distance": 1610,
+        "time": 17999.9,
+        "id": 3,
+        "distance": 10120,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 95,
         "distance": 9663,
-        "coin": 1,
-        "mining": true,
-        "threshold": 9545
+        "coin": 0,
+        "mining": false,
+        "threshold": 12395
     },
     {
         "time": 17999.9,
@@ -2965,63 +2965,63 @@
         "distance": 13126,
         "coin": 1,
         "mining": true,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 97,
         "distance": 12413,
         "coin": 1,
         "mining": true,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 98,
         "distance": 10073,
-        "coin": 1,
-        "mining": true,
-        "threshold": 9545
+        "coin": 0,
+        "mining": false,
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 99,
         "distance": 5715,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 100,
         "distance": 7910,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 101,
         "distance": 6267,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 102,
         "distance": 4356,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 103,
         "distance": 5151,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
@@ -3029,7 +3029,7 @@
         "distance": 6352,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
@@ -3037,87 +3037,87 @@
         "distance": 6986,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 106,
         "distance": 7189,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
-        "id": "4",
-        "distance": 7929,
-        "coin": 0,
-        "mining": false,
-        "threshold": 9545
+        "time": 17999.9,
+        "id": 4,
+        "distance": 14552,
+        "coin": 1,
+        "mining": true,
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
-        "id": "5",
-        "distance": 2173,
-        "coin": 0,
-        "mining": false,
-        "threshold": 9545
+        "time": 17999.9,
+        "id": 5,
+        "distance": 33038,
+        "coin": 2,
+        "mining": true,
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
-        "id": "6",
-        "distance": 7735,
-        "coin": 0,
-        "mining": false,
-        "threshold": 9545
+        "time": 17999.9,
+        "id": 6,
+        "distance": 31539,
+        "coin": 2,
+        "mining": true,
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
-        "id": "7",
+        "time": 17999.9,
+        "id": 7,
         "distance": 2768,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
-        "id": "8",
-        "distance": 11733,
+        "time": 17999.9,
+        "id": 8,
+        "distance": 18525,
         "coin": 1,
         "mining": true,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
-        "id": "9",
+        "time": 17999.9,
+        "id": 9,
         "distance": 5329,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 107,
         "distance": 861,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 108,
         "distance": 2454,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 109,
         "distance": 2376,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
@@ -3125,15 +3125,15 @@
         "distance": 6999,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 111,
         "distance": 4322,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
@@ -3141,23 +3141,23 @@
         "distance": 6003,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 113,
         "distance": 2304,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 114,
         "distance": 4809,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
@@ -3165,7 +3165,7 @@
         "distance": 7384,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
         "time": 17999.9,
@@ -3173,167 +3173,167 @@
         "distance": 5734,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 117,
         "distance": 2951,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 118,
         "distance": 656,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 119,
         "distance": 1324,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "17999.90",
+        "time": 17999.9,
         "id": 120,
         "distance": 1058,
         "coin": 0,
         "mining": false,
-        "threshold": 9545
+        "threshold": 12395
     },
     {
-        "time": "21599.90",
-        "id": "0",
+        "time": 21599.9,
+        "id": 0,
         "distance": 2398,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
-        "id": "1",
-        "distance": 1168,
+        "time": 21599.9,
+        "id": 1,
+        "distance": 8329,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
-        "id": "10",
-        "distance": 3836,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "time": 21599.9,
+        "id": 10,
+        "distance": 31414,
+        "coin": 3,
+        "mining": true,
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
-        "id": "11",
-        "distance": 5821,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "time": 21599.9,
+        "id": 11,
+        "distance": 18118,
+        "coin": 2,
+        "mining": true,
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
-        "id": "12",
-        "distance": 3037,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "time": 21599.9,
+        "id": 12,
+        "distance": 14044,
+        "coin": 1,
+        "mining": true,
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
-        "id": "13",
+        "time": 21599.9,
+        "id": 13,
         "distance": 4937,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
-        "id": "14",
-        "distance": 3315,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "time": 21599.9,
+        "id": 14,
+        "distance": 10481,
+        "coin": 1,
+        "mining": true,
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
-        "id": "15",
+        "time": 21599.9,
+        "id": 15,
         "distance": 9999,
         "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
-        "id": "16",
-        "distance": 7988,
+        "time": 21599.9,
+        "id": 16,
+        "distance": 13293,
         "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
-        "id": "17",
+        "time": 21599.9,
+        "id": 17,
         "distance": 2635,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
-        "id": "18",
-        "distance": 3968,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "time": 21599.9,
+        "id": 18,
+        "distance": 11534,
+        "coin": 1,
+        "mining": true,
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
-        "id": "19",
-        "distance": 5565,
+        "time": 21599.9,
+        "id": 19,
+        "distance": 8248,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
-        "id": "2",
-        "distance": 2388,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "time": 21599.9,
+        "id": 2,
+        "distance": 12713,
+        "coin": 1,
+        "mining": true,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 20,
         "distance": 10169,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "coin": 1,
+        "mining": true,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 21,
-        "distance": 1680,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "distance": 29210,
+        "coin": 3,
+        "mining": true,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 22,
         "distance": 7845,
-        "coin": 1,
-        "mining": true,
-        "threshold": 6203
+        "coin": 0,
+        "mining": false,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3341,7 +3341,7 @@
         "distance": 4189,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3349,7 +3349,7 @@
         "distance": 5278,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3357,15 +3357,15 @@
         "distance": 387,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 26,
-        "distance": 1307,
+        "distance": 6111,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3373,23 +3373,23 @@
         "distance": 3075,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 28,
-        "distance": 74,
+        "distance": 6174,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 29,
-        "distance": 3091,
+        "distance": 6610,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3397,7 +3397,7 @@
         "distance": 5081,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3405,7 +3405,7 @@
         "distance": 9017,
         "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3413,23 +3413,23 @@
         "distance": 4386,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 33,
         "distance": 2143,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 34,
         "distance": 26990,
-        "coin": 4,
+        "coin": 3,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3437,23 +3437,23 @@
         "distance": 6179,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 36,
-        "distance": 4333,
+        "distance": 10776,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 37,
-        "distance": 2680,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "distance": 30877,
+        "coin": 3,
+        "mining": true,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3461,31 +3461,31 @@
         "distance": 10876,
         "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 39,
-        "distance": 10889,
-        "coin": 1,
-        "mining": true,
-        "threshold": 6203
+        "distance": 4616,
+        "coin": 0,
+        "mining": false,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 40,
-        "distance": 11884,
-        "coin": 1,
-        "mining": true,
-        "threshold": 6203
+        "distance": 4272,
+        "coin": 0,
+        "mining": false,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 41,
-        "distance": 3490,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "distance": 10078,
+        "coin": 1,
+        "mining": true,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3493,7 +3493,7 @@
         "distance": 9559,
         "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3501,31 +3501,31 @@
         "distance": 543,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 44,
         "distance": 1246,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 45,
         "distance": 8853,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 46,
         "distance": 7775,
-        "coin": 1,
-        "mining": true,
-        "threshold": 6203
+        "coin": 0,
+        "mining": false,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3533,15 +3533,15 @@
         "distance": 1133,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 48,
-        "distance": 9139,
-        "coin": 1,
-        "mining": true,
-        "threshold": 6203
+        "distance": 2612,
+        "coin": 0,
+        "mining": false,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3549,15 +3549,15 @@
         "distance": 6102,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 50,
         "distance": 4672,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3565,7 +3565,7 @@
         "distance": 1605,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3573,15 +3573,15 @@
         "distance": 1778,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 53,
         "distance": 6807,
-        "coin": 1,
-        "mining": true,
-        "threshold": 6203
+        "coin": 0,
+        "mining": false,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3589,7 +3589,7 @@
         "distance": 9975,
         "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3597,7 +3597,7 @@
         "distance": 1164,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3605,7 +3605,7 @@
         "distance": 3469,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3613,7 +3613,7 @@
         "distance": 2257,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3621,15 +3621,15 @@
         "distance": 7353,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 59,
-        "distance": 6380,
-        "coin": 1,
-        "mining": true,
-        "threshold": 6203
+        "distance": 3493,
+        "coin": 0,
+        "mining": false,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3637,15 +3637,15 @@
         "distance": 1246,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 61,
         "distance": 832,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3653,71 +3653,71 @@
         "distance": 1153,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 63,
-        "distance": 8612,
-        "coin": 1,
-        "mining": true,
-        "threshold": 6203
+        "distance": 1718,
+        "coin": 0,
+        "mining": false,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 64,
         "distance": 14541,
-        "coin": 2,
+        "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 65,
-        "distance": 451,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "distance": 17379,
+        "coin": 1,
+        "mining": true,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 66,
-        "distance": 3283,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "distance": 22167,
+        "coin": 2,
+        "mining": true,
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
-        "id": "3",
-        "distance": 845,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "time": 21599.9,
+        "id": 3,
+        "distance": 10965,
+        "coin": 1,
+        "mining": true,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 67,
-        "distance": 9613,
-        "coin": 1,
-        "mining": true,
-        "threshold": 6203
-    },
-    {
-        "time": "21599.90",
-        "id": 68,
-        "distance": 851,
+        "distance": 2619,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
+    },
+    {
+        "time": 21599.9,
+        "id": 68,
+        "distance": 20900,
+        "coin": 2,
+        "mining": true,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 69,
-        "distance": 1754,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "distance": 17240,
+        "coin": 1,
+        "mining": true,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3725,31 +3725,31 @@
         "distance": 3643,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 71,
-        "distance": 5820,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "distance": 23902,
+        "coin": 2,
+        "mining": true,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 72,
-        "distance": 3000,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "distance": 17556,
+        "coin": 1,
+        "mining": true,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 73,
-        "distance": 8274,
+        "distance": 188,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3757,31 +3757,31 @@
         "distance": 1068,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 75,
-        "distance": 1398,
+        "distance": 23116,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 76,
-        "distance": 8,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "distance": 17426,
+        "coin": 1,
+        "mining": true,
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 77,
-        "distance": 3620,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "distance": 16605,
+        "coin": 1,
+        "mining": true,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3789,15 +3789,15 @@
         "distance": 11573,
         "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 79,
-        "distance": 2947,
+        "distance": 14891,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3805,71 +3805,71 @@
         "distance": 16444,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 81,
         "distance": 15193,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 82,
-        "distance": 2819,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "distance": 16874,
+        "coin": 1,
+        "mining": true,
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 83,
-        "distance": 1901,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "distance": 11636,
+        "coin": 1,
+        "mining": true,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 84,
         "distance": 14080,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "coin": 1,
+        "mining": true,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 85,
-        "distance": 6220,
+        "distance": 19449,
+        "coin": 2,
+        "mining": true,
+        "threshold": 8977
+    },
+    {
+        "time": 21599.9,
+        "id": 86,
+        "distance": 15820,
         "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
-        "id": 86,
-        "distance": 5510,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
-    },
-    {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 87,
-        "distance": 2860,
+        "distance": 13766,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 88,
         "distance": 6125,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3877,15 +3877,15 @@
         "distance": 7010,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 90,
-        "distance": 4619,
+        "distance": 14324,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3893,79 +3893,79 @@
         "distance": 15169,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 92,
-        "distance": 5258,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "distance": 15051,
+        "coin": 1,
+        "mining": true,
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 93,
-        "distance": 5635,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "distance": 17375,
+        "coin": 1,
+        "mining": true,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 94,
         "distance": 15922,
-        "coin": 2,
+        "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 95,
-        "distance": 7436,
+        "distance": 17099,
         "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 96,
         "distance": 6350,
-        "coin": 1,
-        "mining": true,
-        "threshold": 6203
+        "coin": 0,
+        "mining": false,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 97,
         "distance": 6433,
-        "coin": 1,
-        "mining": true,
-        "threshold": 6203
+        "coin": 0,
+        "mining": false,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 98,
-        "distance": 7062,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "distance": 17135,
+        "coin": 1,
+        "mining": true,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 99,
         "distance": 13330,
-        "coin": 2,
+        "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 100,
         "distance": 14054,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "coin": 1,
+        "mining": true,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3973,7 +3973,7 @@
         "distance": 8366,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3981,7 +3981,7 @@
         "distance": 10909,
         "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -3989,31 +3989,31 @@
         "distance": 12246,
         "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 104,
         "distance": 12834,
-        "coin": 2,
+        "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 105,
         "distance": 13462,
-        "coin": 2,
+        "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 106,
         "distance": 11656,
         "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -4021,31 +4021,31 @@
         "distance": 7753,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 108,
         "distance": 4498,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 109,
         "distance": 6983,
-        "coin": 1,
-        "mining": true,
-        "threshold": 6203
+        "coin": 0,
+        "mining": false,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 110,
         "distance": 13913,
-        "coin": 2,
+        "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -4053,7 +4053,7 @@
         "distance": 10281,
         "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -4061,7 +4061,7 @@
         "distance": 10753,
         "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -4069,31 +4069,31 @@
         "distance": 8089,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 114,
         "distance": 11820,
-        "coin": 0,
-        "mining": false,
-        "threshold": 6203
+        "coin": 1,
+        "mining": true,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 115,
         "distance": 14722,
-        "coin": 2,
+        "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 116,
         "distance": 10846,
         "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -4101,15 +4101,15 @@
         "distance": 10054,
         "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 118,
         "distance": 7678,
-        "coin": 1,
-        "mining": true,
-        "threshold": 6203
+        "coin": 0,
+        "mining": false,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -4117,15 +4117,15 @@
         "distance": 7551,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 120,
         "distance": 8451,
-        "coin": 1,
-        "mining": true,
-        "threshold": 6203
+        "coin": 0,
+        "mining": false,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -4133,39 +4133,39 @@
         "distance": 5652,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 122,
         "distance": 2178,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 123,
         "distance": 7201,
-        "coin": 1,
-        "mining": true,
-        "threshold": 6203
+        "coin": 0,
+        "mining": false,
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 124,
         "distance": 3604,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 125,
         "distance": 2298,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -4173,31 +4173,31 @@
         "distance": 4569,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 127,
         "distance": 6924,
-        "coin": 1,
-        "mining": true,
-        "threshold": 6203
+        "coin": 0,
+        "mining": false,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 128,
         "distance": 6879,
-        "coin": 1,
-        "mining": true,
-        "threshold": 6203
+        "coin": 0,
+        "mining": false,
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 129,
         "distance": 1073,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -4205,127 +4205,127 @@
         "distance": 6629,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 131,
         "distance": 2214,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 132,
         "distance": 5003,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 133,
         "distance": 4452,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 134,
         "distance": 6352,
-        "coin": 1,
-        "mining": true,
-        "threshold": 6203
+        "coin": 0,
+        "mining": false,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 135,
         "distance": 7266,
-        "coin": 1,
-        "mining": true,
-        "threshold": 6203
+        "coin": 0,
+        "mining": false,
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 136,
         "distance": 7160,
+        "coin": 0,
+        "mining": false,
+        "threshold": 8977
+    },
+    {
+        "time": 21599.9,
+        "id": 4,
+        "distance": 14954,
         "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
-        "id": "4",
-        "distance": 14954,
-        "coin": 2,
-        "mining": true,
-        "threshold": 6203
-    },
-    {
-        "time": "21599.90",
-        "id": "5",
+        "time": 21599.9,
+        "id": 5,
         "distance": 1923,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
-        "id": "6",
+        "time": 21599.9,
+        "id": 6,
         "distance": 1164,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
-        "id": "7",
-        "distance": 10549,
+        "time": 21599.9,
+        "id": 7,
+        "distance": 13317,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
-        "id": "8",
+        "time": 21599.9,
+        "id": 8,
         "distance": 5674,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
-        "id": "9",
-        "distance": 7979,
+        "time": 21599.9,
+        "id": 9,
+        "distance": 13308,
         "coin": 1,
         "mining": true,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 137,
         "distance": 4143,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 138,
         "distance": 5805,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 139,
         "distance": 1468,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -4333,23 +4333,23 @@
         "distance": 7164,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 141,
         "distance": 4495,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 142,
         "distance": 4425,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -4357,7 +4357,7 @@
         "distance": 7617,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -4365,23 +4365,23 @@
         "distance": 6017,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 145,
         "distance": 2322,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 146,
         "distance": 5744,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -4389,7 +4389,7 @@
         "distance": 5294,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -4397,7 +4397,7 @@
         "distance": 6929,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
@@ -4405,159 +4405,159 @@
         "distance": 4194,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
         "time": 21599.9,
         "id": 150,
         "distance": 7450,
-        "coin": 1,
-        "mining": true,
-        "threshold": 6203
+        "coin": 0,
+        "mining": false,
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 151,
         "distance": 4337,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "21599.90",
+        "time": 21599.9,
         "id": 152,
         "distance": 1322,
         "coin": 0,
         "mining": false,
-        "threshold": 6203
+        "threshold": 8977
     },
     {
-        "time": "25199.90",
-        "id": "0",
-        "distance": 6266,
-        "coin": 0,
-        "mining": false,
-        "threshold": 7790
-    },
-    {
-        "time": "25199.90",
-        "id": "1",
-        "distance": 13705,
+        "time": 25199.9,
+        "id": 0,
+        "distance": 8664,
         "coin": 1,
         "mining": true,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
-        "time": "25199.90",
-        "id": "10",
+        "time": 25199.9,
+        "id": 1,
+        "distance": 22034,
+        "coin": 0,
+        "mining": false,
+        "threshold": 8534
+    },
+    {
+        "time": 25199.9,
+        "id": 10,
         "distance": 6856,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
-        "time": "25199.90",
-        "id": "11",
+        "time": 25199.9,
+        "id": 11,
         "distance": 9627,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
-        "time": "25199.90",
-        "id": "12",
+        "time": 25199.9,
+        "id": 12,
         "distance": 12577,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
-        "time": "25199.90",
-        "id": "13",
-        "distance": 6272,
+        "time": 25199.9,
+        "id": 13,
+        "distance": 11209,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
-        "time": "25199.90",
-        "id": "14",
+        "time": 25199.9,
+        "id": 14,
         "distance": 11535,
         "coin": 1,
         "mining": true,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
-        "time": "25199.90",
-        "id": "15",
+        "time": 25199.9,
+        "id": 15,
         "distance": 8956,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
-        "time": "25199.90",
-        "id": "16",
+        "time": 25199.9,
+        "id": 16,
         "distance": 9354,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
-        "time": "25199.90",
-        "id": "17",
-        "distance": 15909,
-        "coin": 2,
-        "mining": true,
-        "threshold": 7790
+        "time": 25199.9,
+        "id": 17,
+        "distance": 18544,
+        "coin": 0,
+        "mining": false,
+        "threshold": 8534
     },
     {
-        "time": "25199.90",
-        "id": "18",
+        "time": 25199.9,
+        "id": 18,
         "distance": 12575,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
-        "time": "25199.90",
-        "id": "19",
-        "distance": 6137,
-        "coin": 0,
-        "mining": false,
-        "threshold": 7790
+        "time": 25199.9,
+        "id": 19,
+        "distance": 14385,
+        "coin": 1,
+        "mining": true,
+        "threshold": 8534
     },
     {
-        "time": "25199.90",
-        "id": "2",
+        "time": 25199.9,
+        "id": 2,
         "distance": 4226,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 20,
-        "distance": 10777,
+        "distance": 608,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 21,
-        "distance": 2008,
+        "distance": 328,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 22,
-        "distance": 690,
-        "coin": 0,
-        "mining": false,
-        "threshold": 7790
+        "distance": 8535,
+        "coin": 1,
+        "mining": true,
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4565,7 +4565,7 @@
         "distance": 4734,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4573,7 +4573,7 @@
         "distance": 6155,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4581,15 +4581,15 @@
         "distance": 737,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 26,
-        "distance": 1823,
+        "distance": 6627,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4597,31 +4597,31 @@
         "distance": 3931,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 28,
-        "distance": 3054,
-        "coin": 0,
-        "mining": false,
-        "threshold": 7790
+        "distance": 9154,
+        "coin": 1,
+        "mining": true,
+        "threshold": 8534
     },
     {
-        "time": "25199.90",
-        "id": "3",
+        "time": 25199.9,
+        "id": 3,
         "distance": 7243,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 29,
-        "distance": 3436,
+        "distance": 6955,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4629,7 +4629,7 @@
         "distance": 6772,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4637,7 +4637,7 @@
         "distance": 3806,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4645,7 +4645,7 @@
         "distance": 6817,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4653,7 +4653,7 @@
         "distance": 4094,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4661,7 +4661,7 @@
         "distance": 4653,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4669,23 +4669,23 @@
         "distance": 7025,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 36,
-        "distance": 7181,
-        "coin": 0,
-        "mining": false,
-        "threshold": 7790
+        "distance": 13624,
+        "coin": 1,
+        "mining": true,
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 37,
-        "distance": 3794,
+        "distance": 1114,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4693,31 +4693,31 @@
         "distance": 1717,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 39,
-        "distance": 108,
+        "distance": 4724,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 40,
-        "distance": 434,
+        "distance": 4706,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 41,
-        "distance": 6072,
+        "distance": 2582,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4725,7 +4725,7 @@
         "distance": 1788,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4733,7 +4733,7 @@
         "distance": 5032,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4741,7 +4741,7 @@
         "distance": 2994,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4749,15 +4749,15 @@
         "distance": 11314,
         "coin": 1,
         "mining": true,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 46,
-        "distance": 3614,
-        "coin": 0,
-        "mining": false,
-        "threshold": 7790
+        "distance": 11389,
+        "coin": 1,
+        "mining": true,
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4765,15 +4765,15 @@
         "distance": 3389,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 48,
-        "distance": 53,
+        "distance": 2665,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4781,7 +4781,7 @@
         "distance": 6353,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4789,7 +4789,7 @@
         "distance": 5607,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4797,7 +4797,7 @@
         "distance": 3843,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4805,15 +4805,15 @@
         "distance": 3573,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 53,
-        "distance": 2668,
-        "coin": 0,
-        "mining": false,
-        "threshold": 7790
+        "distance": 9475,
+        "coin": 1,
+        "mining": true,
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4821,7 +4821,7 @@
         "distance": 4942,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4829,7 +4829,7 @@
         "distance": 3874,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4837,7 +4837,7 @@
         "distance": 8172,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4845,7 +4845,7 @@
         "distance": 6858,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4853,15 +4853,15 @@
         "distance": 7995,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 59,
-        "distance": 931,
+        "distance": 4424,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4869,7 +4869,7 @@
         "distance": 1689,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4877,7 +4877,7 @@
         "distance": 7030,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4885,15 +4885,15 @@
         "distance": 8331,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 63,
-        "distance": 6545,
+        "distance": 8263,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4901,47 +4901,47 @@
         "distance": 7248,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 65,
-        "distance": 6859,
+        "distance": 6408,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 66,
-        "distance": 8981,
+        "distance": 5698,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 67,
-        "distance": 6581,
+        "distance": 9200,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 68,
-        "distance": 5215,
+        "distance": 4364,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 69,
-        "distance": 6506,
+        "distance": 4752,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4949,39 +4949,39 @@
         "distance": 8246,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 71,
-        "distance": 12983,
+        "distance": 7163,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 72,
-        "distance": 10053,
+        "distance": 7053,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 73,
-        "distance": 15539,
-        "coin": 1,
-        "mining": true,
-        "threshold": 7790
+        "distance": 7453,
+        "coin": 0,
+        "mining": false,
+        "threshold": 8534
     },
     {
-        "time": "25199.90",
-        "id": "4",
+        "time": 25199.9,
+        "id": 4,
         "distance": 17135,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -4989,31 +4989,31 @@
         "distance": 6610,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 75,
-        "distance": 6214,
+        "distance": 27932,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 76,
-        "distance": 5628,
+        "distance": 5620,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 77,
-        "distance": 10572,
+        "distance": 6952,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -5021,15 +5021,15 @@
         "distance": 6125,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 79,
-        "distance": 8656,
-        "coin": 1,
+        "distance": 20600,
+        "coin": 2,
         "mining": true,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -5037,7 +5037,7 @@
         "distance": 22707,
         "coin": 2,
         "mining": true,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -5045,31 +5045,31 @@
         "distance": 22158,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 82,
-        "distance": 10472,
+        "distance": 7653,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
-        "time": "25199.90",
+        "time": 25199.9,
         "id": 83,
-        "distance": 5619,
+        "distance": 3718,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 84,
-        "distance": 19055,
+        "distance": 4975,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -5077,23 +5077,23 @@
         "distance": 5838,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 86,
-        "distance": 11833,
-        "coin": 1,
-        "mining": true,
-        "threshold": 7790
+        "distance": 6323,
+        "coin": 0,
+        "mining": false,
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 87,
-        "distance": 10449,
-        "coin": 0,
-        "mining": false,
-        "threshold": 7790
+        "distance": 21355,
+        "coin": 2,
+        "mining": true,
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -5101,7 +5101,7 @@
         "distance": 13122,
         "coin": 1,
         "mining": true,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -5109,39 +5109,39 @@
         "distance": 12733,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 90,
-        "distance": 9515,
-        "coin": 1,
+        "distance": 19220,
+        "coin": 2,
         "mining": true,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
-        "time": "25199.90",
+        "time": 25199.9,
         "id": 91,
         "distance": 19383,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 92,
-        "distance": 12803,
-        "coin": 1,
-        "mining": true,
-        "threshold": 7790
+        "distance": 7545,
+        "coin": 0,
+        "mining": false,
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 93,
-        "distance": 11477,
-        "coin": 1,
-        "mining": true,
-        "threshold": 7790
+        "distance": 5842,
+        "coin": 0,
+        "mining": false,
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -5149,7 +5149,7 @@
         "distance": 5877,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -5157,31 +5157,31 @@
         "distance": 7111,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 96,
-        "distance": 6954,
+        "distance": 13304,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 97,
-        "distance": 7043,
+        "distance": 13476,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 98,
-        "distance": 14051,
-        "coin": 1,
-        "mining": true,
-        "threshold": 7790
+        "distance": 6989,
+        "coin": 0,
+        "mining": false,
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -5189,15 +5189,15 @@
         "distance": 6904,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 100,
-        "distance": 20807,
+        "distance": 6753,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -5205,15 +5205,15 @@
         "distance": 14793,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
-        "time": "25199.90",
+        "time": 25199.9,
         "id": 102,
         "distance": 6559,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -5221,7 +5221,7 @@
         "distance": 5795,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -5229,7 +5229,7 @@
         "distance": 6792,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -5237,7 +5237,7 @@
         "distance": 5774,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -5245,7 +5245,7 @@
         "distance": 6276,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -5253,7 +5253,7 @@
         "distance": 14940,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -5261,55 +5261,55 @@
         "distance": 11754,
         "coin": 1,
         "mining": true,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
         "id": 109,
-        "distance": 6789,
+        "distance": 13772,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
-        "time": "25199.90",
-        "id": "5",
-        "distance": 16542,
+        "time": 25199.9,
+        "id": 5,
+        "distance": 18465,
         "coin": 2,
         "mining": true,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
-        "time": "25199.90",
-        "id": "6",
-        "distance": 10727,
+        "time": 25199.9,
+        "id": 6,
+        "distance": 11891,
         "coin": 1,
         "mining": true,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
-        "time": "25199.90",
-        "id": "7",
-        "distance": 13935,
+        "time": 25199.9,
+        "id": 7,
+        "distance": 27252,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
-        "time": "25199.90",
-        "id": "8",
-        "distance": 6526,
+        "time": 25199.9,
+        "id": 8,
+        "distance": 12200,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
-        "time": "25199.90",
-        "id": "9",
+        "time": 25199.9,
+        "id": 9,
         "distance": 9127,
         "coin": 1,
         "mining": true,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -5317,7 +5317,7 @@
         "distance": 4819,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -5325,7 +5325,7 @@
         "distance": 6083,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
         "time": 25199.9,
@@ -5333,151 +5333,151 @@
         "distance": 335,
         "coin": 0,
         "mining": false,
-        "threshold": 7790
+        "threshold": 8534
     },
     {
-        "time": "28799.90",
-        "id": "0",
+        "time": 28799.9,
+        "id": 0,
         "distance": 4529,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
-        "time": "28799.90",
-        "id": "1",
-        "distance": 6110,
+        "time": 28799.9,
+        "id": 1,
+        "distance": 28144,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
-        "time": "28799.90",
-        "id": "10",
-        "distance": 10917,
+        "time": 28799.9,
+        "id": 10,
+        "distance": 17773,
+        "coin": 1,
+        "mining": true,
+        "threshold": 13415
+    },
+    {
+        "time": 28799.9,
+        "id": 11,
+        "distance": 18541,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
-        "time": "28799.90",
-        "id": "11",
-        "distance": 8914,
+        "time": 28799.9,
+        "id": 12,
+        "distance": 24980,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
-        "time": "28799.90",
-        "id": "12",
-        "distance": 12403,
-        "coin": 0,
-        "mining": false,
-        "threshold": 11519
+        "time": 28799.9,
+        "id": 13,
+        "distance": 21609,
+        "coin": 1,
+        "mining": true,
+        "threshold": 13415
     },
     {
-        "time": "28799.90",
-        "id": "13",
-        "distance": 10400,
-        "coin": 0,
-        "mining": false,
-        "threshold": 11519
-    },
-    {
-        "time": "28799.90",
-        "id": "14",
+        "time": 28799.9,
+        "id": 14,
         "distance": 8428,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
-        "time": "28799.90",
-        "id": "15",
-        "distance": 15709,
+        "time": 28799.9,
+        "id": 15,
+        "distance": 24665,
         "coin": 1,
         "mining": true,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
-        "time": "28799.90",
-        "id": "16",
-        "distance": 13745,
-        "coin": 1,
-        "mining": true,
-        "threshold": 11519
-    },
-    {
-        "time": "28799.90",
-        "id": "17",
-        "distance": 7938,
+        "time": 28799.9,
+        "id": 16,
+        "distance": 23099,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
-        "time": "28799.90",
-        "id": "18",
-        "distance": 15303,
+        "time": 28799.9,
+        "id": 17,
+        "distance": 26482,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
-        "time": "28799.90",
-        "id": "19",
+        "time": 28799.9,
+        "id": 18,
+        "distance": 27878,
+        "coin": 0,
+        "mining": false,
+        "threshold": 13415
+    },
+    {
+        "time": 28799.9,
+        "id": 19,
         "distance": 4360,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
-        "time": "28799.90",
-        "id": "2",
-        "distance": 13735,
-        "coin": 1,
-        "mining": true,
-        "threshold": 11519
-    },
-    {
-        "time": "28799.90",
-        "id": "3",
-        "distance": 21721,
+        "time": 28799.9,
+        "id": 2,
+        "distance": 17961,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
-        "time": "28799.90",
-        "id": "4",
-        "distance": 9583,
+        "time": 28799.9,
+        "id": 3,
+        "distance": 28964,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
+    },
+    {
+        "time": 28799.9,
+        "id": 4,
+        "distance": 26718,
+        "coin": 0,
+        "mining": false,
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 20,
-        "distance": 12002,
-        "coin": 1,
-        "mining": true,
-        "threshold": 11519
+        "distance": 1833,
+        "coin": 0,
+        "mining": false,
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 21,
-        "distance": 2510,
+        "distance": 830,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 22,
-        "distance": 882,
+        "distance": 192,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5485,7 +5485,7 @@
         "distance": 10413,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5493,7 +5493,7 @@
         "distance": 12710,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5501,15 +5501,15 @@
         "distance": 5173,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 26,
-        "distance": 8315,
+        "distance": 13119,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5517,23 +5517,23 @@
         "distance": 10054,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 28,
-        "distance": 10818,
+        "distance": 7764,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 29,
-        "distance": 9389,
+        "distance": 12908,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5541,7 +5541,7 @@
         "distance": 12469,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5549,7 +5549,7 @@
         "distance": 10211,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5557,7 +5557,7 @@
         "distance": 14455,
         "coin": 1,
         "mining": true,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5565,15 +5565,15 @@
         "distance": 10970,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
-        "time": "28799.90",
+        "time": 28799.9,
         "id": 34,
         "distance": 9276,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5581,23 +5581,23 @@
         "distance": 11913,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 36,
-        "distance": 13385,
-        "coin": 1,
-        "mining": true,
-        "threshold": 11519
+        "distance": 6204,
+        "coin": 0,
+        "mining": false,
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 37,
-        "distance": 11757,
+        "distance": 9077,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5605,31 +5605,31 @@
         "distance": 7904,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 39,
-        "distance": 6779,
+        "distance": 11395,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 40,
-        "distance": 7319,
+        "distance": 11591,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 41,
-        "distance": 12919,
+        "distance": 9429,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5637,7 +5637,7 @@
         "distance": 8652,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5645,7 +5645,7 @@
         "distance": 11428,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5653,7 +5653,7 @@
         "distance": 10589,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5661,15 +5661,15 @@
         "distance": 4894,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 46,
-        "distance": 9216,
+        "distance": 5602,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5677,15 +5677,15 @@
         "distance": 8938,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 48,
-        "distance": 6828,
+        "distance": 9440,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5693,7 +5693,7 @@
         "distance": 13015,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5701,7 +5701,7 @@
         "distance": 11395,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5709,7 +5709,7 @@
         "distance": 10187,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5717,15 +5717,15 @@
         "distance": 9530,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 53,
-        "distance": 9296,
+        "distance": 6628,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5733,7 +5733,7 @@
         "distance": 12442,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5741,7 +5741,7 @@
         "distance": 10554,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5749,7 +5749,7 @@
         "distance": 15267,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5757,7 +5757,7 @@
         "distance": 11722,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5765,15 +5765,15 @@
         "distance": 14258,
         "coin": 1,
         "mining": true,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 59,
-        "distance": 7919,
+        "distance": 11412,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5781,7 +5781,7 @@
         "distance": 9637,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5789,7 +5789,7 @@
         "distance": 12457,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5797,15 +5797,15 @@
         "distance": 15198,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 63,
-        "distance": 13691,
+        "distance": 15409,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5813,47 +5813,47 @@
         "distance": 14390,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 65,
-        "distance": 13358,
+        "distance": 12907,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 66,
-        "distance": 15694,
+        "distance": 12411,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 67,
-        "distance": 14236,
-        "coin": 1,
-        "mining": true,
-        "threshold": 11519
+        "distance": 16855,
+        "coin": 0,
+        "mining": false,
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 68,
-        "distance": 11631,
-        "coin": 1,
-        "mining": true,
-        "threshold": 11519
+        "distance": 10780,
+        "coin": 0,
+        "mining": false,
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 69,
-        "distance": 12121,
+        "distance": 10367,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5861,31 +5861,31 @@
         "distance": 15141,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 71,
-        "distance": 18907,
-        "coin": 1,
-        "mining": true,
-        "threshold": 11519
+        "distance": 13087,
+        "coin": 0,
+        "mining": false,
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 72,
-        "distance": 14654,
-        "coin": 1,
-        "mining": true,
-        "threshold": 11519
+        "distance": 11654,
+        "coin": 0,
+        "mining": false,
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 73,
-        "distance": 6559,
+        "distance": 14012,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5893,39 +5893,39 @@
         "distance": 13048,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 75,
-        "distance": 11798,
-        "coin": 1,
-        "mining": true,
-        "threshold": 11519
+        "distance": 33516,
+        "coin": 0,
+        "mining": false,
+        "threshold": 13415
     },
     {
-        "time": "28799.90",
-        "id": "5",
+        "time": 28799.9,
+        "id": 5,
         "distance": 11611,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 76,
-        "distance": 11916,
+        "distance": 11908,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 77,
-        "distance": 16876,
+        "distance": 13256,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5933,7 +5933,7 @@
         "distance": 11505,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5941,7 +5941,7 @@
         "distance": 6766,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5949,7 +5949,7 @@
         "distance": 7110,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -5957,87 +5957,87 @@
         "distance": 28939,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 82,
-        "distance": 16753,
+        "distance": 13934,
         "coin": 1,
         "mining": true,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 83,
-        "distance": 12751,
-        "coin": 1,
-        "mining": true,
-        "threshold": 11519
+        "distance": 10850,
+        "coin": 0,
+        "mining": false,
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 84,
-        "distance": 24171,
+        "distance": 10091,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
-        "time": "28799.90",
-        "id": "6",
+        "time": 28799.9,
+        "id": 6,
         "distance": 6119,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
-        "time": "28799.90",
-        "id": "7",
-        "distance": 10242,
+        "time": 28799.9,
+        "id": 7,
+        "distance": 37494,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
-        "time": "28799.90",
-        "id": "8",
-        "distance": 21682,
-        "coin": 1,
-        "mining": true,
-        "threshold": 11519
+        "time": 28799.9,
+        "id": 8,
+        "distance": 33882,
+        "coin": 0,
+        "mining": false,
+        "threshold": 13415
     },
     {
-        "time": "28799.90",
-        "id": "9",
+        "time": 28799.9,
+        "id": 9,
         "distance": 15618,
         "coin": 1,
         "mining": true,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 85,
         "distance": 12993,
-        "coin": 1,
-        "mining": true,
-        "threshold": 11519
-    },
-    {
-        "time": "28799.90",
-        "id": 86,
-        "distance": 5907,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
+    },
+    {
+        "time": 28799.9,
+        "id": 86,
+        "distance": 12230,
+        "coin": 0,
+        "mining": false,
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 87,
-        "distance": 16981,
+        "distance": 6532,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -6045,7 +6045,7 @@
         "distance": 6785,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -6053,7 +6053,7 @@
         "distance": 18903,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -6061,7 +6061,7 @@
         "distance": 5948,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -6069,23 +6069,23 @@
         "distance": 23388,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 92,
-        "distance": 7475,
-        "coin": 0,
-        "mining": false,
-        "threshold": 11519
+        "distance": 15020,
+        "coin": 1,
+        "mining": true,
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 93,
-        "distance": 5722,
+        "distance": 11564,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -6093,7 +6093,7 @@
         "distance": 10261,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
         "time": 28799.9,
@@ -6101,175 +6101,175 @@
         "distance": 13626,
         "coin": 0,
         "mining": false,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
-        "time": "28799.90",
+        "time": 28799.9,
         "id": 96,
-        "distance": 12266,
-        "coin": 0,
-        "mining": false,
-        "threshold": 11519
+        "distance": 18616,
+        "coin": 1,
+        "mining": true,
+        "threshold": 13415
     },
     {
         "time": 28799.9,
         "id": 97,
-        "distance": 12494,
+        "distance": 18927,
         "coin": 1,
         "mining": true,
-        "threshold": 11519
+        "threshold": 13415
     },
     {
-        "time": "32399.90",
-        "id": "0",
-        "distance": 30094,
+        "time": 32399.9,
+        "id": 0,
+        "distance": 34623,
         "coin": 0,
         "mining": false,
-        "threshold": 22040
+        "threshold": 30920
     },
     {
-        "time": "32399.90",
-        "id": "1",
-        "distance": 28843,
+        "time": 32399.9,
+        "id": 1,
+        "distance": 56987,
         "coin": 0,
         "mining": false,
-        "threshold": 22040
+        "threshold": 30920
     },
     {
-        "time": "32399.90",
-        "id": "10",
+        "time": 32399.9,
+        "id": 10,
         "distance": 28444,
         "coin": 0,
         "mining": false,
-        "threshold": 22040
+        "threshold": 30920
     },
     {
-        "time": "32399.90",
-        "id": "11",
-        "distance": 30416,
-        "coin": 0,
-        "mining": false,
-        "threshold": 22040
+        "time": 32399.9,
+        "id": 11,
+        "distance": 48957,
+        "coin": 1,
+        "mining": true,
+        "threshold": 30920
     },
     {
-        "time": "32399.90",
-        "id": "12",
-        "distance": 30674,
-        "coin": 0,
-        "mining": false,
-        "threshold": 22040
+        "time": 32399.9,
+        "id": 12,
+        "distance": 55654,
+        "coin": 1,
+        "mining": true,
+        "threshold": 30920
     },
     {
-        "time": "32399.90",
-        "id": "13",
+        "time": 32399.9,
+        "id": 13,
         "distance": 33103,
-        "coin": 0,
-        "mining": false,
-        "threshold": 22040
+        "coin": 1,
+        "mining": true,
+        "threshold": 30920
     },
     {
-        "time": "32399.90",
-        "id": "14",
-        "distance": 28292,
-        "coin": 0,
-        "mining": false,
-        "threshold": 22040
+        "time": 32399.9,
+        "id": 14,
+        "distance": 36720,
+        "coin": 1,
+        "mining": true,
+        "threshold": 30920
     },
     {
-        "time": "32399.90",
-        "id": "15",
+        "time": 32399.9,
+        "id": 15,
         "distance": 27694,
         "coin": 0,
         "mining": false,
-        "threshold": 22040
+        "threshold": 30920
     },
     {
-        "time": "32399.90",
-        "id": "16",
-        "distance": 28504,
+        "time": 32399.9,
+        "id": 16,
+        "distance": 51603,
         "coin": 0,
         "mining": false,
-        "threshold": 22040
+        "threshold": 30920
     },
     {
-        "time": "32399.90",
-        "id": "17",
-        "distance": 33506,
+        "time": 32399.9,
+        "id": 17,
+        "distance": 59988,
         "coin": 0,
         "mining": false,
-        "threshold": 22040
+        "threshold": 30920
     },
     {
-        "time": "32399.90",
-        "id": "18",
-        "distance": 29665,
-        "coin": 0,
-        "mining": false,
-        "threshold": 22040
-    },
-    {
-        "time": "32399.90",
-        "id": "19",
-        "distance": 29249,
-        "coin": 0,
-        "mining": false,
-        "threshold": 22040
-    },
-    {
-        "time": "32399.90",
-        "id": "2",
-        "distance": 33702,
-        "coin": 0,
-        "mining": false,
-        "threshold": 22040
-    },
-    {
-        "time": "32399.90",
-        "id": "3",
-        "distance": 30257,
-        "coin": 0,
-        "mining": false,
-        "threshold": 22040
-    },
-    {
-        "time": "32399.90",
-        "id": "4",
-        "distance": 31554,
+        "time": 32399.9,
+        "id": 18,
+        "distance": 57543,
         "coin": 1,
         "mining": true,
-        "threshold": 22040
+        "threshold": 30920
+    },
+    {
+        "time": 32399.9,
+        "id": 19,
+        "distance": 33609,
+        "coin": 0,
+        "mining": false,
+        "threshold": 30920
+    },
+    {
+        "time": 32399.9,
+        "id": 2,
+        "distance": 51663,
+        "coin": 1,
+        "mining": true,
+        "threshold": 30920
+    },
+    {
+        "time": 32399.9,
+        "id": 3,
+        "distance": 59221,
+        "coin": 1,
+        "mining": true,
+        "threshold": 30920
+    },
+    {
+        "time": 32399.9,
+        "id": 4,
+        "distance": 58272,
+        "coin": 0,
+        "mining": false,
+        "threshold": 30920
     },
     {
         "time": 32399.9,
         "id": 20,
-        "distance": 99,
+        "distance": 1932,
         "coin": 0,
         "mining": false,
-        "threshold": 22040
+        "threshold": 30920
     },
     {
         "time": 32399.9,
         "id": 21,
-        "distance": 2759,
+        "distance": 1079,
         "coin": 0,
         "mining": false,
-        "threshold": 22040
+        "threshold": 30920
     },
     {
         "time": 32399.9,
         "id": 22,
-        "distance": 2039,
+        "distance": 1349,
         "coin": 0,
         "mining": false,
-        "threshold": 22040
+        "threshold": 30920
     },
     {
-        "time": "32399.90",
-        "id": "5",
-        "distance": 31631,
-        "coin": 0,
-        "mining": false,
-        "threshold": 22040
+        "time": 32399.9,
+        "id": 5,
+        "distance": 43242,
+        "coin": 1,
+        "mining": true,
+        "threshold": 30920
     },
     {
         "time": 32399.9,
@@ -6277,7 +6277,7 @@
         "distance": 17204,
         "coin": 0,
         "mining": false,
-        "threshold": 22040
+        "threshold": 30920
     },
     {
         "time": 32399.9,
@@ -6285,7 +6285,7 @@
         "distance": 19135,
         "coin": 0,
         "mining": false,
-        "threshold": 22040
+        "threshold": 30920
     },
     {
         "time": 32399.9,
@@ -6293,15 +6293,15 @@
         "distance": 11638,
         "coin": 0,
         "mining": false,
-        "threshold": 22040
+        "threshold": 30920
     },
     {
         "time": 32399.9,
         "id": 26,
-        "distance": 15823,
+        "distance": 20627,
         "coin": 0,
         "mining": false,
-        "threshold": 22040
+        "threshold": 30920
     },
     {
         "time": 32399.9,
@@ -6309,23 +6309,23 @@
         "distance": 16811,
         "coin": 0,
         "mining": false,
-        "threshold": 22040
+        "threshold": 30920
     },
     {
         "time": 32399.9,
         "id": 28,
-        "distance": 17054,
+        "distance": 14000,
         "coin": 0,
         "mining": false,
-        "threshold": 22040
+        "threshold": 30920
     },
     {
         "time": 32399.9,
         "id": 29,
-        "distance": 13534,
+        "distance": 17053,
         "coin": 0,
         "mining": false,
-        "threshold": 22040
+        "threshold": 30920
     },
     {
         "time": 32399.9,
@@ -6333,7 +6333,7 @@
         "distance": 18496,
         "coin": 0,
         "mining": false,
-        "threshold": 22040
+        "threshold": 30920
     },
     {
         "time": 32399.9,
@@ -6341,7 +6341,7 @@
         "distance": 16915,
         "coin": 0,
         "mining": false,
-        "threshold": 22040
+        "threshold": 30920
     },
     {
         "time": 32399.9,
@@ -6349,7 +6349,7 @@
         "distance": 7053,
         "coin": 0,
         "mining": false,
-        "threshold": 22040
+        "threshold": 30920
     },
     {
         "time": 32399.9,
@@ -6357,7 +6357,7 @@
         "distance": 17706,
         "coin": 0,
         "mining": false,
-        "threshold": 22040
+        "threshold": 30920
     },
     {
         "time": 32399.9,
@@ -6365,7 +6365,7 @@
         "distance": 15756,
         "coin": 0,
         "mining": false,
-        "threshold": 22040
+        "threshold": 30920
     },
     {
         "time": 32399.9,
@@ -6373,207 +6373,207 @@
         "distance": 17731,
         "coin": 0,
         "mining": false,
-        "threshold": 22040
+        "threshold": 30920
     },
     {
         "time": 32399.9,
         "id": 36,
-        "distance": 6110,
+        "distance": 12314,
         "coin": 0,
         "mining": false,
-        "threshold": 22040
+        "threshold": 30920
     },
     {
         "time": 32399.9,
         "id": 37,
-        "distance": 18727,
+        "distance": 16047,
         "coin": 0,
         "mining": false,
-        "threshold": 22040
+        "threshold": 30920
     },
     {
-        "time": "32399.90",
-        "id": "6",
-        "distance": 28819,
-        "coin": 0,
-        "mining": false,
-        "threshold": 22040
-    },
-    {
-        "time": "32399.90",
-        "id": "7",
-        "distance": 27994,
-        "coin": 0,
-        "mining": false,
-        "threshold": 22040
-    },
-    {
-        "time": "32399.90",
-        "id": "8",
-        "distance": 27431,
-        "coin": 0,
-        "mining": false,
-        "threshold": 22040
-    },
-    {
-        "time": "32399.90",
-        "id": "9",
-        "distance": 33069,
-        "coin": 0,
-        "mining": false,
-        "threshold": 22040
-    },
-    {
-        "time": "35999.90",
-        "id": "0",
-        "distance": 23538,
+        "time": 32399.9,
+        "id": 6,
+        "distance": 34938,
         "coin": 1,
         "mining": true,
-        "threshold": 17071
+        "threshold": 30920
     },
     {
-        "time": "35999.90",
-        "id": "1",
-        "distance": 21038,
+        "time": 32399.9,
+        "id": 7,
+        "distance": 65488,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 30920
     },
     {
-        "time": "35999.90",
-        "id": "10",
-        "distance": 14983,
-        "coin": 0,
-        "mining": false,
-        "threshold": 17071
+        "time": 32399.9,
+        "id": 8,
+        "distance": 61313,
+        "coin": 1,
+        "mining": true,
+        "threshold": 30920
     },
     {
-        "time": "35999.90",
-        "id": "11",
+        "time": 32399.9,
+        "id": 9,
+        "distance": 33069,
+        "coin": 1,
+        "mining": true,
+        "threshold": 30920
+    },
+    {
+        "time": 35999.9,
+        "id": 0,
+        "distance": 58161,
+        "coin": 2,
+        "mining": true,
+        "threshold": 22307
+    },
+    {
+        "time": 35999.9,
+        "id": 1,
+        "distance": 78025,
+        "coin": 3,
+        "mining": true,
+        "threshold": 22307
+    },
+    {
+        "time": 35999.9,
+        "id": 10,
+        "distance": 43427,
+        "coin": 1,
+        "mining": true,
+        "threshold": 22307
+    },
+    {
+        "time": 35999.9,
+        "id": 11,
         "distance": 17371,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
-        "time": "35999.90",
-        "id": "12",
+        "time": 35999.9,
+        "id": 12,
         "distance": 13897,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
-        "time": "35999.90",
-        "id": "13",
+        "time": 35999.9,
+        "id": 13,
         "distance": 17727,
-        "coin": 1,
-        "mining": true,
-        "threshold": 17071
+        "coin": 0,
+        "mining": false,
+        "threshold": 22307
     },
     {
-        "time": "35999.90",
-        "id": "14",
+        "time": 35999.9,
+        "id": 14,
         "distance": 19682,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
-        "time": "35999.90",
-        "id": "15",
-        "distance": 23008,
-        "coin": 1,
-        "mining": true,
-        "threshold": 17071
-    },
-    {
-        "time": "35999.90",
-        "id": "16",
-        "distance": 22590,
-        "coin": 1,
-        "mining": true,
-        "threshold": 17071
-    },
-    {
-        "time": "35999.90",
-        "id": "17",
-        "distance": 17030,
+        "time": 35999.9,
+        "id": 15,
+        "distance": 50702,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
-        "time": "35999.90",
-        "id": "18",
+        "time": 35999.9,
+        "id": 16,
+        "distance": 74193,
+        "coin": 0,
+        "mining": false,
+        "threshold": 22307
+    },
+    {
+        "time": 35999.9,
+        "id": 17,
+        "distance": 77018,
+        "coin": 3,
+        "mining": true,
+        "threshold": 22307
+    },
+    {
+        "time": 35999.9,
+        "id": 18,
         "distance": 11594,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
-        "time": "35999.90",
-        "id": "19",
-        "distance": 13999,
+        "time": 35999.9,
+        "id": 19,
+        "distance": 47608,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
-        "time": "35999.90",
-        "id": "2",
+        "time": 35999.9,
+        "id": 2,
         "distance": 18327,
-        "coin": 1,
-        "mining": true,
-        "threshold": 17071
+        "coin": 0,
+        "mining": false,
+        "threshold": 22307
     },
     {
-        "time": "35999.90",
-        "id": "3",
+        "time": 35999.9,
+        "id": 3,
         "distance": 15676,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
-        "time": "35999.90",
-        "id": "4",
-        "distance": 15242,
-        "coin": 0,
-        "mining": false,
-        "threshold": 17071
+        "time": 35999.9,
+        "id": 4,
+        "distance": 73514,
+        "coin": 3,
+        "mining": true,
+        "threshold": 22307
     },
     {
-        "time": "35999.90",
-        "id": "5",
+        "time": 35999.9,
+        "id": 5,
         "distance": 13621,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 20,
-        "distance": 6667,
+        "distance": 8500,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 21,
-        "distance": 6965,
+        "distance": 5285,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 22,
-        "distance": 8582,
+        "distance": 7892,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -6581,7 +6581,7 @@
         "distance": 23353,
         "coin": 1,
         "mining": true,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -6589,7 +6589,7 @@
         "distance": 26759,
         "coin": 1,
         "mining": true,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -6597,15 +6597,15 @@
         "distance": 17848,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 26,
-        "distance": 22321,
-        "coin": 1,
-        "mining": true,
-        "threshold": 17071
+        "distance": 27125,
+        "coin": 0,
+        "mining": false,
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -6613,23 +6613,23 @@
         "distance": 22342,
         "coin": 1,
         "mining": true,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 28,
-        "distance": 23483,
+        "distance": 20429,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 29,
-        "distance": 20818,
+        "distance": 24337,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -6637,15 +6637,15 @@
         "distance": 25819,
         "coin": 1,
         "mining": true,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 31,
         "distance": 21609,
-        "coin": 1,
-        "mining": true,
-        "threshold": 17071
+        "coin": 0,
+        "mining": false,
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -6653,7 +6653,7 @@
         "distance": 11923,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -6661,7 +6661,7 @@
         "distance": 23812,
         "coin": 1,
         "mining": true,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -6669,7 +6669,7 @@
         "distance": 23686,
         "coin": 1,
         "mining": true,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -6677,23 +6677,23 @@
         "distance": 23937,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 36,
-        "distance": 12934,
+        "distance": 19138,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 37,
-        "distance": 25542,
-        "coin": 1,
-        "mining": true,
-        "threshold": 17071
+        "distance": 22862,
+        "coin": 0,
+        "mining": false,
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -6701,31 +6701,31 @@
         "distance": 14828,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 39,
-        "distance": 13690,
+        "distance": 18306,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 40,
-        "distance": 13426,
+        "distance": 17698,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 41,
-        "distance": 20555,
-        "coin": 1,
-        "mining": true,
-        "threshold": 17071
+        "distance": 17065,
+        "coin": 0,
+        "mining": false,
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -6733,7 +6733,7 @@
         "distance": 13696,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -6741,7 +6741,7 @@
         "distance": 17011,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -6749,7 +6749,7 @@
         "distance": 15878,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -6757,15 +6757,15 @@
         "distance": 11868,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 46,
-        "distance": 15900,
+        "distance": 12286,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -6773,31 +6773,31 @@
         "distance": 14719,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 48,
-        "distance": 12731,
+        "distance": 15343,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 49,
         "distance": 20583,
-        "coin": 1,
-        "mining": true,
-        "threshold": 17071
+        "coin": 0,
+        "mining": false,
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 50,
         "distance": 17561,
-        "coin": 1,
-        "mining": true,
-        "threshold": 17071
+        "coin": 0,
+        "mining": false,
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -6805,7 +6805,7 @@
         "distance": 16290,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -6813,31 +6813,31 @@
         "distance": 16251,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 53,
-        "distance": 14695,
+        "distance": 12027,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 54,
         "distance": 19784,
-        "coin": 1,
-        "mining": true,
-        "threshold": 17071
+        "coin": 0,
+        "mining": false,
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 55,
         "distance": 17229,
-        "coin": 1,
-        "mining": true,
-        "threshold": 17071
+        "coin": 0,
+        "mining": false,
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -6845,7 +6845,7 @@
         "distance": 22310,
         "coin": 1,
         "mining": true,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -6853,7 +6853,7 @@
         "distance": 16214,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -6861,15 +6861,15 @@
         "distance": 4912,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 59,
-        "distance": 14289,
+        "distance": 17782,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -6877,7 +6877,7 @@
         "distance": 16483,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -6885,7 +6885,7 @@
         "distance": 20048,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -6893,135 +6893,135 @@
         "distance": 22023,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 63,
-        "distance": 20876,
-        "coin": 1,
-        "mining": true,
-        "threshold": 17071
+        "distance": 22594,
+        "coin": 0,
+        "mining": false,
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 64,
         "distance": 21175,
-        "coin": 1,
-        "mining": true,
-        "threshold": 17071
+        "coin": 0,
+        "mining": false,
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 65,
-        "distance": 19940,
-        "coin": 1,
-        "mining": true,
-        "threshold": 17071
+        "distance": 19489,
+        "coin": 0,
+        "mining": false,
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 66,
-        "distance": 22354,
-        "coin": 1,
-        "mining": true,
-        "threshold": 17071
+        "distance": 19071,
+        "coin": 0,
+        "mining": false,
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 67,
-        "distance": 3890,
+        "distance": 20745,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 68,
-        "distance": 6722,
+        "distance": 17502,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 69,
-        "distance": 17592,
+        "distance": 15838,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 70,
         "distance": 22088,
-        "coin": 1,
-        "mining": true,
-        "threshold": 17071
+        "coin": 0,
+        "mining": false,
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 71,
-        "distance": 6170,
+        "distance": 19257,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 72,
-        "distance": 4497,
+        "distance": 16151,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 73,
-        "distance": 13079,
+        "distance": 20532,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 74,
         "distance": 19328,
-        "coin": 1,
-        "mining": true,
-        "threshold": 17071
+        "coin": 0,
+        "mining": false,
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 75,
-        "distance": 5738,
-        "coin": 0,
-        "mining": false,
-        "threshold": 17071
+        "distance": 39254,
+        "coin": 1,
+        "mining": true,
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 76,
-        "distance": 18698,
-        "coin": 1,
-        "mining": true,
-        "threshold": 17071
+        "distance": 18690,
+        "coin": 0,
+        "mining": false,
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 77,
-        "distance": 23037,
-        "coin": 1,
-        "mining": true,
-        "threshold": 17071
+        "distance": 19417,
+        "coin": 0,
+        "mining": false,
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 78,
         "distance": 17838,
-        "coin": 1,
-        "mining": true,
-        "threshold": 17071
+        "coin": 0,
+        "mining": false,
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -7029,7 +7029,7 @@
         "distance": 12231,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -7037,7 +7037,7 @@
         "distance": 13852,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -7045,7 +7045,7 @@
         "distance": 36102,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -7053,55 +7053,55 @@
         "distance": 6777,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 83,
-        "distance": 6183,
+        "distance": 17033,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 84,
-        "distance": 31353,
+        "distance": 17273,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 85,
-        "distance": 7224,
+        "distance": 20217,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
-        "time": "35999.90",
-        "id": "6",
+        "time": 35999.9,
+        "id": 6,
         "distance": 18981,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 86,
-        "distance": 11248,
+        "distance": 17571,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 87,
-        "distance": 23823,
-        "coin": 1,
-        "mining": true,
-        "threshold": 17071
+        "distance": 13374,
+        "coin": 0,
+        "mining": false,
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -7109,31 +7109,31 @@
         "distance": 12714,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
-        "time": "35999.90",
-        "id": "7",
-        "distance": 23676,
-        "coin": 1,
-        "mining": true,
-        "threshold": 17071
+        "time": 35999.9,
+        "id": 7,
+        "distance": 89164,
+        "coin": 0,
+        "mining": false,
+        "threshold": 22307
     },
     {
-        "time": "35999.90",
-        "id": "8",
+        "time": 35999.9,
+        "id": 8,
         "distance": 17210,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
-        "time": "35999.90",
-        "id": "9",
+        "time": 35999.9,
+        "id": 9,
         "distance": 13160,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -7141,7 +7141,7 @@
         "distance": 24658,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -7149,7 +7149,7 @@
         "distance": 11986,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -7157,23 +7157,23 @@
         "distance": 30008,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 92,
-        "distance": 13284,
+        "distance": 5809,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 93,
-        "distance": 13510,
+        "distance": 19352,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -7181,7 +7181,7 @@
         "distance": 16544,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
@@ -7189,14 +7189,14 @@
         "distance": 19754,
         "coin": 0,
         "mining": false,
-        "threshold": 17071
+        "threshold": 22307
     },
     {
         "time": 35999.9,
         "id": 96,
-        "distance": 17973,
-        "coin": 1,
-        "mining": true,
-        "threshold": 17071
+        "distance": 5707,
+        "coin": 0,
+        "mining": false,
+        "threshold": 22307
     }
 ]

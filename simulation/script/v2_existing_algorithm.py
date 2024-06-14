@@ -66,4 +66,4 @@ def main (filename):
     with open(json_file_path, 'w') as json_file:
         json.dump(data, json_file, indent=4)
 
-main(filename='v1.json')
+main(filename='v1.1.json')

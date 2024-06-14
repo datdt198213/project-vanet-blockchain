@@ -55,7 +55,7 @@ def main ():
                         lon2 = float(vehicle_y)
                         # print(lat1, lon1, lat2, lon2)
                         # Công thức Haversine
-                        R = 6371000  # Bán kính trung bình của Trái Đất (đơn vị mét)
+                        R = 6371000  # Bán kính trung bình của Trái Đất (đơn vị kilômét)
                         dLat = (lat2 - lat1) * (math.pi / 180)
                         dLon = (lon2 - lon1) * (math.pi / 180)
                         a = math.sin(dLat / 2) * math.sin(dLat / 2) + math.cos(lat1 * (math.pi / 180)) * math.cos(lat2 * (math.pi / 180)) * math.sin(dLon / 2) * math.sin(dLon / 2)
@@ -73,25 +73,8 @@ def main ():
             vehicle_x = None
             vehicle_y = None
         
-        # End of round 
         if vehicle_time == "3600.00" or vehicle_time == "7200.00" or vehicle_time == "10800.00" or vehicle_time == "14400.00" or vehicle_time == "18000.00" or vehicle_time == "21600.00" or vehicle_time == "25200.00" or vehicle_time == "28800.00" or vehicle_time == "32400.00" or vehicle_time == "36000.00": 
-
-                # for i in range(0, len(vehicle_list)):
-                #     if (vehicle_list[i]["distance"] != 0):
-                #         total_coin += float(vehicle_list[i]["distance"]) / 2000
-                #     is_exist[int(vehicle_list[i]["id"])] = False
-                # if (len(vehicle_list) != 0 and vehicle_list[i]["distance"] != 0):
-                #     average_coin = total_coin / len(vehicle_list)
-                #     hash_average_coin = hashlib.sha256(str(average_coin).encode()).hexdigest()
-                #     for i in range(0, len(vehicle_list)):
-                #         coin = float(vehicle_list[i]["distance"]) / 2000
-                #         vehicle_list[i]["coin"] = coin
-                #         hash_coin = hashlib.sha256(str(coin).encode()).hexdigest()
-                #         if (hash_coin > hash_average_coin):
-                #             vehicle_list[i]["mining"] = True
-                #         else: 
-                #             vehicle_list[i]["mining"] = False
-                
+            # if len(vehicle_list) == 2: 
                 for i in range(0, len(vehicle_list)):
                     is_exist[int(vehicle_list[i]["id"])] = False
                 if (len(vehicle_list) != 0 and vehicle_list[i]["distance"] != 0):
@@ -100,19 +83,19 @@ def main ():
                         vehicle_list[i]["mining"] = False
 
                 for i in range(0, len(vehicle_list)):
-                    vehicle_list_storage.append(vehicle_list[i])
-                    # break;  
+                    if (vehicle_list[i]["distance"] != 0):
+                        # print(vehicle_list)
+                        vehicle_list_storage.append(vehicle_list[i])
+                        # break;  
 
                 vehicle_list.clear()
-                # total_coin = 0
 
                 # break
-    
     data = []
     for vehicle in vehicle_list_storage:
         new_entry = {
             "time": float(vehicle["time"]),
-            "id": vehicle["id"],
+            "id": int(vehicle["id"]),
             "distance": int(vehicle["distance"]),
             "coin": int(vehicle["coin"]),
             "mining": vehicle["mining"]
@@ -122,12 +105,10 @@ def main ():
     json_file_path = 'v1.1.json'
     with open(json_file_path, 'w') as json_file:
         json.dump(data, json_file, indent=4)
-    
-    end = time.time() #time at the end of program execution is noted
+    end = time.time()
     
     #total time taken to print the file
     print("Execution time in seconds: ",(end - start))
     print("No. of lines printed: ",len(vehicle_list))
-
 
 main()

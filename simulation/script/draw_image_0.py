@@ -41,7 +41,7 @@ def calculate_distance_not_reward(file_name):
     distance1 = 0
     while (timeslot1 <= 36000):
         for i in range(0, len(vehicles1)):
-            if ((vehicles1[i]['time']) == timeslot1):
+            if ((float(vehicles1[i]['time'])) == timeslot1):
                 total_distance += int(vehicles1[i]['distance']) 
                 if(vehicles1[i]['mining'] == False):
                     distance1 += int(vehicles1[i]['distance'])
@@ -121,7 +121,7 @@ def main5(file_name):
     # Hiển thị biểu đồ
     plt.show()
 
-# Fig 5.3
+# Fig 5.3.Thống kê số giá trị coin và distance khác nhau trong mỗi round
 def main6(file_coin, file_distance):
     with open(file_coin, 'r') as file:
         vehicle1 = json.load(file)
@@ -129,7 +129,6 @@ def main6(file_coin, file_distance):
     with open(file_distance, 'r') as file:
         vehicle2 = json.load(file)
     
-
     statistic_times1 = []
     statistic_times2 = []
     total_vehicle = []
@@ -476,7 +475,7 @@ def main9(file_existing_algorithm, file_proposal_algorithm, noVehicle=False):
     plt.show()
 
 # Fig 4.1.3 Total wasted distance of 2 algorithm
-main4("v2.1.json", "v4.5_statistic_hash_distance_average.json")
+# main4("v2.1.json", "v4.5_statistic_hash_distance_average.json")
 
 # main5("v4.7_hash_distance_average_not_filter.json") # Fig 4.7 Winner small contribution, proposal algorithm
 

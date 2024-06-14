@@ -29,7 +29,7 @@ def v4_5_statistic_hash_distance_average (filename):
         count_tmp = 20
         for i in range(len(vehicle_list)):
             vehicle_list[i]["mining"] = False
-            if(vehicle_list[i]["time"] == time_init):
+            if(float(vehicle_list[i]["time"]) == time_init):
                 if(int(vehicle_list[i]["id"]) >= 20):
                     vehicle_list[i]["id"] = count_tmp
                     count_tmp += 1
@@ -134,10 +134,10 @@ def v4_6_hash_distance_average(filename):
                 (28800, 32399.9), (32400, 35999.9)]
 
     # Thay thế giá trị time theo khoảng thời gian
-    for item in vehicle_list:
+    for vehicle in vehicle_list:
         for start, end in time_ranges:
-            if start <= float(item["time"]) < end:
-                item["time"] = end
+            if start <= float(vehicle["time"]) < end:
+                vehicle["time"] = end
                 break
 
     # Đặt Id cho các xe lớn hơn 20 để thực hiện tích lũy và đặt lại các giá trị mining của các xe là False
@@ -170,17 +170,9 @@ def v4_6_hash_distance_average(filename):
             for i in range(len(vehicle_list)):
                 if (time_init == float(vehicle_list[i]["time"])):
                     for idx in range(len(distance_tmp_list)):
-                        if (int(vehicle_list[i]["id"]) == distance_tmp_list[idx]['id']):
-                            vehicle_list[i]["distance"] += distance_tmp_list[idx]['distance']
+                        if (int(vehicle_list[i]["id"]) == int(distance_tmp_list[idx]['id'])):
+                            vehicle_list[i]["distance"] += int(distance_tmp_list[idx]['distance'])
                             tmp_idx.append(idx)
-                
-                # Cập nhật lại giá trị quãng đường của round trước là 0 nếu đã được cập nhật tại round hiện tại
-                # for idx in range(len(distance_tmp_list)):
-                #     if (distance_tmp_list[idx]["time"] == vehicle_list[i]["time"]):
-                #         if(distance_tmp_list[idx]["id"] == vehicle_list[i]["id"]):
-                #             vehicle_list[i]["distance"] = 0
-                #             break
-
 
             # Xóa các phần tử đã được tăng quãng đường trong mảng distance_tmp_list
             error = 0
@@ -265,7 +257,7 @@ def v4_7_hash_distance_average_not_filter (filename):
         count_tmp = 20
         for i in range(len(vehicle_list)):
             vehicle_list[i]["mining"] = False
-            if(vehicle_list[i]["time"] == time_init):
+            if(float(vehicle_list[i]["time"]) == time_init):
                 if(int(vehicle_list[i]["id"]) >= 20):
                     vehicle_list[i]["id"] = count_tmp
                     count_tmp += 1
@@ -286,7 +278,7 @@ def v4_7_hash_distance_average_not_filter (filename):
         if(time_init != 3599.9):
             tmp_idx = [] # mảng chứa các vị trí các phần tử có quãng đường của round trước đã được cập nhật cho round hiện tại
             for i in range(len(vehicle_list)):
-                if (time_init == vehicle_list[i]["time"]):
+                if (time_init == float(vehicle_list[i]["time"])):
                     for idx in range(len(distance_tmp_list)):
                         if (int(vehicle_list[i]["id"]) == distance_tmp_list[idx]['id']):
                             vehicle_list[i]["distance"] += distance_tmp_list[idx]['distance']
