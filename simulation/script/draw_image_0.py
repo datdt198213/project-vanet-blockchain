@@ -347,7 +347,7 @@ def main8(file_name):
     # Hiển thị biểu đồ
     plt.show()
 
-# Fig 4.5 & Fig 4.6
+# Fig 4.5 Contributed distance & Fig 4.6 No. winners of 2 algorithm
 def main9(file_existing_algorithm, file_proposal_algorithm, noVehicle=False):
     with open(file_existing_algorithm, 'r') as file:
         existing_algorithm_vehicles = json.load(file)
@@ -488,5 +488,5 @@ def main9(file_existing_algorithm, file_proposal_algorithm, noVehicle=False):
 # Hình 4.9. Tổng số xe trong mỗi round
 # main8("v4.6_hash_distance_average.json")
 
-# main9("./v2.1.json", "./v4.6_hash_distance_average.json")   # Fig 4.5. Contributed distance 
+main9("./v2.1.json", "./v4.6_hash_distance_average.json")   # Fig 4.5. Contributed distance 
 # main9("./v2.1.json", "./v4.6_hash_distance_average.json", noVehicle=True)   # Vẽ hình 4.6. No. winners of 2 algorithm

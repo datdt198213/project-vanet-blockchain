@@ -102,7 +102,7 @@ def main ():
         }
         data.append(new_entry)
     
-    json_file_path = 'v1.1.json'
+    json_file_path = 'v1.json'
     with open(json_file_path, 'w') as json_file:
         json.dump(data, json_file, indent=4)
     end = time.time()

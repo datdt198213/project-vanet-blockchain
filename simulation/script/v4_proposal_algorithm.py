@@ -348,6 +348,6 @@ def v4_7_hash_distance_average_not_filter (filename):
         json.dump(data, json_file, indent=4)
 
 
-# v4_5_statistic_hash_distance_average(filename="v1.1.json")
-# v4_6_hash_distance_average(filename="v1.1.json")
-# v4_7_hash_distance_average_not_filter(filename="v1.1.json")
+v4_5_statistic_hash_distance_average(filename="v1.json")
+# v4_6_hash_distance_average(filename="v1.json")
+# v4_7_hash_distance_average_not_filter(filename="v1.json")
