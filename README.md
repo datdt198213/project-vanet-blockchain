@@ -2,13 +2,10 @@
 <pre>
 ____________________________________________________________
 |                                                          |
-|client/src/py                                             |
-|contracts                                                 |
-|iroha/irohad/consensus && iroha/iroha-cli                 |
-|library/sumo/tool                                         |
-|migrations                                                |
+|rideshare-contract                                        |
+|iroha_app                                                 |
+|iroha/irohad/consensus && iroha/iroha-cli                 |                                          
 |simulation/data && simulation/script                      |
-|test                                                      |
 |__________________________________________________________|
 </pre>
 
@@ -31,68 +28,7 @@ Note: all commands can run anywhere
 ## 1.2. Install smart contract compiler
 This project uses truffle compiler to compile from smart contract written by solidity language to json file including ABI byte code. <br/>
 Firstly, installing nodejs at https://nodejs.org/en/download <br/>
-**1. Create project blockchain**
 
-Step 1: Initialize project based on npm
-```
-$ npm init
-```
-
-Step 2: install truffle version 5.4.11
-```
-$ npm install truffle@5.4.11 --save-dev
-```
-
-Step 3: Address vulnerabilities
-```
-$ npm audit fix
-```
-
-Step 4: Initialize truffle project
-```
-$ npx truffle init
-```
-
-**2. Deploy code into Ganache**
-
-a. Config network address
-
-```
-networkds: {
-      ganache :{
-        host: "127.0.0.1",     // Localhost (default: none)
-        port: 7545,            // Standard Ethereum port (default: none)
-        network_id: "*",       // Any network (default: none)
-      },
-}
-```
-
-b. Create file 1_rideshare.js
-```
-const RideShare = artifacts.require("RideShare");
-
-module.exports = function(deployer) {
-    deployer.deploy(RideShare);
-}
-```
-
-**3. Compile smart contract**
-```
-truffle compile
-```
-
-Note: all commands run start at folder path /project-vanet-blockchain
-
-## 1.3. Install web environment
-Install react application with npm
-```
-npm install create-react-app
-```
-
-Install web3 
-```
-npm install web3
-```
 
 # II. Build simulated environment
 ## 2.1. Download sumo and config environment variable  
@@ -114,17 +50,6 @@ $ nano ~/.bashrc
 $ source .bashrc
 ```
 Note: all commands run start at ~
-
-## 2.2. Generate data with proof of driving algorithm
-To generate vehicle moving data applying proof of driving algorithm, we used file py_main.py at folder project-vanet-blockchain/simulation/script/ to do it. If you have another scenarios, going to **Category 2.3** <br/>
-Run file py_main.py
-```
-python3 py_main.py
-```
-Note: this command need to run at folder project-vanet-blockchain/simulation/script
-## 2.3. The parameters need to change if having another scenarios.
-**insertionRate**: is a number of vehicles which you want to add in simulation, etc. 90 (vehicle) <br/>
-
 
 # III. Build Iroha hyperledger
 ## 3.1. In Ubuntu
@@ -209,22 +134,3 @@ cmake --build ./build --target irohad
 build/bin/irohad --config example/config1.sample --genesis_block example/genesis.block --keypair_name example/node0
 ```
 Note: all command run at project-vanet-blockchain/iroha
-
-
-# IV. Statistic data
-After data generates successfully at **category 2.2**, there are several data files added our project including statistic data files containing number of vehicle satisfied proof of driving algorithm conditions, configured simulation files, moving of vehicles files <br/>
-Statistic data files
-```
-project-vanet-blockchain/simulation/data/data_statistic_[number of vehicle].csv
-```
-```
-project-vanet-blockchain/simulation/data/data_test_[number of vehicle].csv
-```
-Configured simulation files 
-```
-project-vanet-blockchain/simulation/data/simulation[running times].sumo.cfg
-```
-Moving of vehicles files
-```
-project-vanet-blockchain/simulation/data/vehicle[running times].sumo.xml
-```
