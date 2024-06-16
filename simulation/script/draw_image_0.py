@@ -32,6 +32,7 @@ def main4(file_name1, file_name2):
     plt.show()
     return
 
+# Function of main 4
 def calculate_distance_not_reward(file_name):
     with open(file_name, 'r') as file:
         vehicles1 = json.load(file)
