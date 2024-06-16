@@ -1,0 +1,1802 @@
+[
+  {
+    "time": 3600,
+    "id": "0",
+    "distance": 32829.05029017717,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 3600,
+    "id": "1",
+    "distance": 29098.176844285903,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 3600,
+    "id": "2",
+    "distance": 28001.211639436406,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 3600,
+    "id": "3",
+    "distance": 33394.01050393142,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 3600,
+    "id": "4",
+    "distance": 25634.572922969484,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 3600,
+    "id": "5",
+    "distance": 25015.758514605237,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 3600,
+    "id": "6",
+    "distance": 31109.016294465328,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 3600,
+    "id": "7",
+    "distance": 26145.07494276732,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 3600,
+    "id": "8",
+    "distance": 30803.603606398283,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 3600,
+    "id": "9",
+    "distance": 23123.473882015966,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 3600,
+    "id": "10",
+    "distance": 32247.151923358455,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 3600,
+    "id": "11",
+    "distance": 26927.437273937205,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 3600,
+    "id": "12",
+    "distance": 28841.280281318872,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 3600,
+    "id": "13",
+    "distance": 34525.00210247611,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 3600,
+    "id": "14",
+    "distance": 33927.82099767248,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 3600,
+    "id": "15",
+    "distance": 25933.559794061315,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 3600,
+    "id": "16",
+    "distance": 28460.767788725174,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 3600,
+    "id": "17",
+    "distance": 20750.757774643935,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 3600,
+    "id": "18",
+    "distance": 27640.609155223003,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 3600,
+    "id": "19",
+    "distance": 30463.28673694469,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 7200,
+    "id": "0",
+    "distance": 30040.222091718915,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 7200,
+    "id": "1",
+    "distance": 30231.21926010726,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 7200,
+    "id": "10",
+    "distance": 30345.534869583673,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 7200,
+    "id": "11",
+    "distance": 29413.91573735162,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 7200,
+    "id": "12",
+    "distance": 31890.457001904422,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 7200,
+    "id": "13",
+    "distance": 28186.242790779546,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 7200,
+    "id": "14",
+    "distance": 28274.234970559162,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 7200,
+    "id": "15",
+    "distance": 29793.478605092303,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 7200,
+    "id": "16",
+    "distance": 27001.715918695758,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 7200,
+    "id": "17",
+    "distance": 33939.58356126118,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 7200,
+    "id": "18",
+    "distance": 26271.457972854347,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 7200,
+    "id": "19",
+    "distance": 37323.654950726595,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 7200,
+    "id": "2",
+    "distance": 30079.53460664561,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 7200,
+    "id": "3",
+    "distance": 33937.16739704405,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 7200,
+    "id": "4",
+    "distance": 37413.83207089029,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 7200,
+    "id": "5",
+    "distance": 28205.324662548275,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 7200,
+    "id": "6",
+    "distance": 32633.3189372787,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 7200,
+    "id": "7",
+    "distance": 30282.38903782504,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 7200,
+    "id": "8",
+    "distance": 34326.76691431303,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 7200,
+    "id": "9",
+    "distance": 28927.185377768656,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 10800,
+    "id": "0",
+    "distance": 36041.35784964176,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 10800,
+    "id": "1",
+    "distance": 33285.128780219406,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 10800,
+    "id": "10",
+    "distance": 37782.03514060751,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 10800,
+    "id": "11",
+    "distance": 35988.93356374684,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 10800,
+    "id": "12",
+    "distance": 35909.35097233413,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 10800,
+    "id": "13",
+    "distance": 36188.27479644479,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 10800,
+    "id": "14",
+    "distance": 36581.87867407214,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 10800,
+    "id": "15",
+    "distance": 33490.690465656386,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 10800,
+    "id": "16",
+    "distance": 32223.868574415923,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 10800,
+    "id": "17",
+    "distance": 35111.327577662196,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 10800,
+    "id": "18",
+    "distance": 31595.07895155989,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 10800,
+    "id": "19",
+    "distance": 35738.080673142955,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 10800,
+    "id": "2",
+    "distance": 35259.613282480925,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 10800,
+    "id": "3",
+    "distance": 37893.39333766745,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 10800,
+    "id": "4",
+    "distance": 35923.32838201742,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 10800,
+    "id": "5",
+    "distance": 30103.76974050331,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 10800,
+    "id": "6",
+    "distance": 34873.45733176596,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 10800,
+    "id": "7",
+    "distance": 31410.81111958552,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 10800,
+    "id": "8",
+    "distance": 34965.1489308269,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 10800,
+    "id": "9",
+    "distance": 33855.966345110595,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 14400,
+    "id": "0",
+    "distance": 35587.06824439093,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 14400,
+    "id": "1",
+    "distance": 34244.715721179244,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 14400,
+    "id": "10",
+    "distance": 37777.71758792113,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 14400,
+    "id": "11",
+    "distance": 35515.349794809496,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 14400,
+    "id": "12",
+    "distance": 36008.588533220274,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 14400,
+    "id": "13",
+    "distance": 41025.58625811314,
+    "mining": false,
+    "coin": 2,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 14400,
+    "id": "14",
+    "distance": 37785.82998380291,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 14400,
+    "id": "15",
+    "distance": 33057.976542953766,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 14400,
+    "id": "16",
+    "distance": 34222.63517201172,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 14400,
+    "id": "17",
+    "distance": 35098.038602024375,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 14400,
+    "id": "18",
+    "distance": 36618.16880551726,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 14400,
+    "id": "19",
+    "distance": 39320.85563402798,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 14400,
+    "id": "2",
+    "distance": 36712.69533989654,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 14400,
+    "id": "3",
+    "distance": 35966.181370218204,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 14400,
+    "id": "4",
+    "distance": 37892.417917339386,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 14400,
+    "id": "5",
+    "distance": 33743.066633649825,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 14400,
+    "id": "6",
+    "distance": 37708.85187428273,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 14400,
+    "id": "7",
+    "distance": 34057.338683981034,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 14400,
+    "id": "8",
+    "distance": 33720.33934341319,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 14400,
+    "id": "9",
+    "distance": 33787.50777455548,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 18000,
+    "id": "0",
+    "distance": 30287.727785670137,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 18000,
+    "id": "1",
+    "distance": 24972.310624798363,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 18000,
+    "id": "10",
+    "distance": 9717.376286727991,
+    "mining": false,
+    "coin": 0,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 18000,
+    "id": "11",
+    "distance": 32559.145266044037,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 18000,
+    "id": "12",
+    "distance": 16990.048665449383,
+    "mining": false,
+    "coin": 0,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 18000,
+    "id": "13",
+    "distance": 22940.44689431667,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 18000,
+    "id": "14",
+    "distance": 22316.2034360165,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 18000,
+    "id": "15",
+    "distance": 28697.950092385672,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 18000,
+    "id": "16",
+    "distance": 19402.964258655313,
+    "mining": false,
+    "coin": 0,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 18000,
+    "id": "17",
+    "distance": 16268.926371330464,
+    "mining": false,
+    "coin": 0,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 18000,
+    "id": "18",
+    "distance": 22157.419745086358,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 18000,
+    "id": "19",
+    "distance": 27267.598459162156,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 18000,
+    "id": "2",
+    "distance": 14155.267764133996,
+    "mining": false,
+    "coin": 0,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 18000,
+    "id": "3",
+    "distance": 17805.15866117214,
+    "mining": false,
+    "coin": 0,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 18000,
+    "id": "4",
+    "distance": 15849.357390540128,
+    "mining": false,
+    "coin": 0,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 18000,
+    "id": "5",
+    "distance": 16587.61811732708,
+    "mining": false,
+    "coin": 0,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 18000,
+    "id": "6",
+    "distance": 27188.11286700985,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 18000,
+    "id": "7",
+    "distance": 14875.723191797862,
+    "mining": false,
+    "coin": 0,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 18000,
+    "id": "8",
+    "distance": 17672.71116348937,
+    "mining": false,
+    "coin": 0,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 18000,
+    "id": "9",
+    "distance": 24480.871894551878,
+    "mining": false,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 0
+  },
+  {
+    "time": 21600,
+    "id": "0",
+    "distance": 35793.682824697105,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 21600,
+    "id": "1",
+    "distance": 33853.24739628509,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 21600,
+    "id": "10",
+    "distance": 37353.00248179968,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 21600,
+    "id": "11",
+    "distance": 33678.86574012582,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 21600,
+    "id": "12",
+    "distance": 36223.670506496484,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 21600,
+    "id": "13",
+    "distance": 36754.13966172007,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 21600,
+    "id": "14",
+    "distance": 33086.126393468534,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 21600,
+    "id": "15",
+    "distance": 32275.898355042853,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 21600,
+    "id": "16",
+    "distance": 33896.01314609925,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 21600,
+    "id": "17",
+    "distance": 30045.00100610098,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 21600,
+    "id": "18",
+    "distance": 33051.2957499133,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 21600,
+    "id": "19",
+    "distance": 32929.267473571854,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 21600,
+    "id": "2",
+    "distance": 32840.01787824915,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 21600,
+    "id": "3",
+    "distance": 31610.739731776543,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 21600,
+    "id": "4",
+    "distance": 31102.833463072042,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 21600,
+    "id": "5",
+    "distance": 31536.030023203184,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 21600,
+    "id": "6",
+    "distance": 33801.51296985938,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 21600,
+    "id": "7",
+    "distance": 31632.959425413697,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 21600,
+    "id": "8",
+    "distance": 30348.57174034593,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 21600,
+    "id": "9",
+    "distance": 26787.76426545155,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 25200,
+    "id": "0",
+    "distance": 37089.2380416264,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 25200,
+    "id": "1",
+    "distance": 35518.285016997586,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 25200,
+    "id": "10",
+    "distance": 34087.0635325264,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 25200,
+    "id": "11",
+    "distance": 31561.54348291645,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 25200,
+    "id": "12",
+    "distance": 33979.45595471349,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 25200,
+    "id": "13",
+    "distance": 34300.662559055425,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 25200,
+    "id": "14",
+    "distance": 33963.45699006894,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 25200,
+    "id": "15",
+    "distance": 31729.864443543633,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 25200,
+    "id": "16",
+    "distance": 32362.2697918519,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 25200,
+    "id": "17",
+    "distance": 31582.447800110174,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 25200,
+    "id": "18",
+    "distance": 35390.50477173364,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 25200,
+    "id": "19",
+    "distance": 37799.93011791786,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 25200,
+    "id": "2",
+    "distance": 31453.342650662482,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 25200,
+    "id": "3",
+    "distance": 39677.59241357742,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 25200,
+    "id": "4",
+    "distance": 37405.306408940254,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 25200,
+    "id": "5",
+    "distance": 33011.52353859135,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 25200,
+    "id": "6",
+    "distance": 35529.46119500853,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 25200,
+    "id": "7",
+    "distance": 31609.91110925315,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 25200,
+    "id": "8",
+    "distance": 33334.972838590176,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 25200,
+    "id": "9",
+    "distance": 31348.52322111732,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 28800,
+    "id": "0",
+    "distance": 30962.814807817223,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 28800,
+    "id": "1",
+    "distance": 33960.98847117158,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 28800,
+    "id": "10",
+    "distance": 33823.74699302151,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 28800,
+    "id": "11",
+    "distance": 34884.06542211144,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 28800,
+    "id": "12",
+    "distance": 29576.941559028037,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 28800,
+    "id": "13",
+    "distance": 31884.7178731809,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 28800,
+    "id": "14",
+    "distance": 30797.33273689017,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 28800,
+    "id": "15",
+    "distance": 30342.655030687805,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 28800,
+    "id": "16",
+    "distance": 25856.49828641266,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 28800,
+    "id": "17",
+    "distance": 29233.856980881934,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 28800,
+    "id": "18",
+    "distance": 28898.81297037187,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 28800,
+    "id": "19",
+    "distance": 39101.82189437022,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 28800,
+    "id": "2",
+    "distance": 34551.30470225174,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 28800,
+    "id": "3",
+    "distance": 34499.914617301576,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 28800,
+    "id": "4",
+    "distance": 33574.92553128643,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 28800,
+    "id": "5",
+    "distance": 28893.243218133684,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 28800,
+    "id": "6",
+    "distance": 38003.07224399704,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 28800,
+    "id": "7",
+    "distance": 28696.82502496074,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 28800,
+    "id": "8",
+    "distance": 31220.594501715645,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 28800,
+    "id": "9",
+    "distance": 30698.32119972903,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 32400,
+    "id": "0",
+    "distance": 30396.16676804725,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 32400,
+    "id": "1",
+    "distance": 30669.375842413723,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 32400,
+    "id": "10",
+    "distance": 30812.271376169854,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 32400,
+    "id": "11",
+    "distance": 29407.907635880772,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 32400,
+    "id": "12",
+    "distance": 33520.22308665329,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 32400,
+    "id": "13",
+    "distance": 34046.884017805125,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 32400,
+    "id": "14",
+    "distance": 31225.736662955445,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 32400,
+    "id": "15",
+    "distance": 31846.269668900193,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 32400,
+    "id": "16",
+    "distance": 31026.03968578379,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 32400,
+    "id": "17",
+    "distance": 32949.26434177184,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 32400,
+    "id": "18",
+    "distance": 32944.251477039594,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 32400,
+    "id": "19",
+    "distance": 34541.03218430556,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 32400,
+    "id": "2",
+    "distance": 32854.8672895418,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 32400,
+    "id": "3",
+    "distance": 30076.628931943193,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 32400,
+    "id": "4",
+    "distance": 34080.861645078214,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 32400,
+    "id": "5",
+    "distance": 25934.424391661396,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 32400,
+    "id": "6",
+    "distance": 36599.7672084861,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 32400,
+    "id": "7",
+    "distance": 27037.522711189653,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 32400,
+    "id": "8",
+    "distance": 30658.252386007778,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 32400,
+    "id": "9",
+    "distance": 31420.603987215152,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 36000,
+    "id": "0",
+    "distance": 38615.24807838186,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 36000,
+    "id": "1",
+    "distance": 34389.129137578246,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 36000,
+    "id": "10",
+    "distance": 35772.96516878462,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 36000,
+    "id": "11",
+    "distance": 37781.02515480898,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 36000,
+    "id": "12",
+    "distance": 34418.20284506197,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 36000,
+    "id": "13",
+    "distance": 35903.99477820333,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 36000,
+    "id": "14",
+    "distance": 34878.429857844436,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 36000,
+    "id": "15",
+    "distance": 34775.880795424935,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 36000,
+    "id": "16",
+    "distance": 33691.51230833191,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 36000,
+    "id": "17",
+    "distance": 35326.57430183193,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 36000,
+    "id": "18",
+    "distance": 34557.4417129862,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 36000,
+    "id": "19",
+    "distance": 37897.642140758995,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 36000,
+    "id": "2",
+    "distance": 34338.728578550035,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 36000,
+    "id": "3",
+    "distance": 37046.98155371824,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 36000,
+    "id": "4",
+    "distance": 34015.8456342335,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 36000,
+    "id": "5",
+    "distance": 31107.132744677227,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 36000,
+    "id": "6",
+    "distance": 35071.596730242156,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 36000,
+    "id": "7",
+    "distance": 33438.097523019496,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 36000,
+    "id": "8",
+    "distance": 35902.14249051683,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  },
+  {
+    "time": 36000,
+    "id": "9",
+    "distance": 33028.75201186701,
+    "mining": true,
+    "coin": 1,
+    "averageDistance": 20000,
+    "nodeStatisfy": 20
+  }
+]

@@ -1,0 +1,1802 @@
+[
+  {
+    "time": 3600,
+    "id": "0",
+    "distance": 32829.05029017717,
+    "mining": true,
+    "coin": 5.710675037927873,
+    "averageDistance": 5748.716232694137,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 3600,
+    "id": "1",
+    "distance": 29098.176844285903,
+    "mining": true,
+    "coin": 5.061682585548154,
+    "averageDistance": 5748.716232694137,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 3600,
+    "id": "2",
+    "distance": 28001.211639436406,
+    "mining": true,
+    "coin": 4.870863425157034,
+    "averageDistance": 5748.716232694137,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 3600,
+    "id": "3",
+    "distance": 33394.01050393142,
+    "mining": false,
+    "coin": 5.808950929602819,
+    "averageDistance": 5748.716232694137,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 3600,
+    "id": "4",
+    "distance": 25634.572922969484,
+    "mining": false,
+    "coin": 4.459182169608646,
+    "averageDistance": 5748.716232694137,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 3600,
+    "id": "5",
+    "distance": 25015.758514605237,
+    "mining": true,
+    "coin": 4.351538239500403,
+    "averageDistance": 5748.716232694137,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 3600,
+    "id": "6",
+    "distance": 31109.016294465328,
+    "mining": false,
+    "coin": 5.4114718895919625,
+    "averageDistance": 5748.716232694137,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 3600,
+    "id": "7",
+    "distance": 26145.07494276732,
+    "mining": false,
+    "coin": 4.547984956028074,
+    "averageDistance": 5748.716232694137,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 3600,
+    "id": "8",
+    "distance": 30803.603606398283,
+    "mining": true,
+    "coin": 5.3583447781283455,
+    "averageDistance": 5748.716232694137,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 3600,
+    "id": "9",
+    "distance": 23123.473882015966,
+    "mining": false,
+    "coin": 4.022371768936513,
+    "averageDistance": 5748.716232694137,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 3600,
+    "id": "10",
+    "distance": 32247.151923358455,
+    "mining": true,
+    "coin": 5.609452722672627,
+    "averageDistance": 5748.716232694137,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 3600,
+    "id": "11",
+    "distance": 26927.437273937205,
+    "mining": true,
+    "coin": 4.684078354884749,
+    "averageDistance": 5748.716232694137,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 3600,
+    "id": "12",
+    "distance": 28841.280281318872,
+    "mining": false,
+    "coin": 5.016994945287532,
+    "averageDistance": 5748.716232694137,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 3600,
+    "id": "13",
+    "distance": 34525.00210247611,
+    "mining": true,
+    "coin": 6.005689045168952,
+    "averageDistance": 5748.716232694137,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 3600,
+    "id": "14",
+    "distance": 33927.82099767248,
+    "mining": true,
+    "coin": 5.901808268899751,
+    "averageDistance": 5748.716232694137,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 3600,
+    "id": "15",
+    "distance": 25933.559794061315,
+    "mining": true,
+    "coin": 4.511191498124712,
+    "averageDistance": 5748.716232694137,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 3600,
+    "id": "16",
+    "distance": 28460.767788725174,
+    "mining": true,
+    "coin": 4.950804081590062,
+    "averageDistance": 5748.716232694137,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 3600,
+    "id": "17",
+    "distance": 20750.757774643935,
+    "mining": false,
+    "coin": 3.609633339810737,
+    "averageDistance": 5748.716232694137,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 3600,
+    "id": "18",
+    "distance": 27640.609155223003,
+    "mining": true,
+    "coin": 4.808135944861071,
+    "averageDistance": 5748.716232694137,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 3600,
+    "id": "19",
+    "distance": 30463.28673694469,
+    "mining": true,
+    "coin": 5.299146018669992,
+    "averageDistance": 5748.716232694137,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 7200,
+    "id": "0",
+    "distance": 30040.222091718915,
+    "mining": false,
+    "coin": 4.856812439099731,
+    "averageDistance": 6185.172367349486,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 7200,
+    "id": "1",
+    "distance": 30231.21926010726,
+    "mining": true,
+    "coin": 4.887692284808896,
+    "averageDistance": 6185.172367349486,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 7200,
+    "id": "10",
+    "distance": 30345.534869583673,
+    "mining": true,
+    "coin": 4.906174487516757,
+    "averageDistance": 6185.172367349486,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 7200,
+    "id": "11",
+    "distance": 29413.91573735162,
+    "mining": false,
+    "coin": 4.755553118070383,
+    "averageDistance": 6185.172367349486,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 7200,
+    "id": "12",
+    "distance": 31890.457001904422,
+    "mining": true,
+    "coin": 5.155952834919999,
+    "averageDistance": 6185.172367349486,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 7200,
+    "id": "13",
+    "distance": 28186.242790779546,
+    "mining": false,
+    "coin": 4.55706666148386,
+    "averageDistance": 6185.172367349486,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 7200,
+    "id": "14",
+    "distance": 28274.234970559162,
+    "mining": true,
+    "coin": 4.57129297152885,
+    "averageDistance": 6185.172367349486,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 7200,
+    "id": "15",
+    "distance": 29793.478605092303,
+    "mining": false,
+    "coin": 4.816919696913736,
+    "averageDistance": 6185.172367349486,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 7200,
+    "id": "16",
+    "distance": 27001.715918695758,
+    "mining": true,
+    "coin": 4.365555931995267,
+    "averageDistance": 6185.172367349486,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 7200,
+    "id": "17",
+    "distance": 33939.58356126118,
+    "mining": false,
+    "coin": 5.48724943227495,
+    "averageDistance": 6185.172367349486,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 7200,
+    "id": "18",
+    "distance": 26271.457972854347,
+    "mining": false,
+    "coin": 4.247490031407545,
+    "averageDistance": 6185.172367349486,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 7200,
+    "id": "19",
+    "distance": 37323.654950726595,
+    "mining": true,
+    "coin": 6.034375880574011,
+    "averageDistance": 6185.172367349486,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 7200,
+    "id": "2",
+    "distance": 30079.53460664561,
+    "mining": true,
+    "coin": 4.863168367858357,
+    "averageDistance": 6185.172367349486,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 7200,
+    "id": "3",
+    "distance": 33937.16739704405,
+    "mining": true,
+    "coin": 5.4868587941368965,
+    "averageDistance": 6185.172367349486,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 7200,
+    "id": "4",
+    "distance": 37413.83207089029,
+    "mining": false,
+    "coin": 6.048955445185618,
+    "averageDistance": 6185.172367349486,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 7200,
+    "id": "5",
+    "distance": 28205.324662548275,
+    "mining": true,
+    "coin": 4.5601517609177025,
+    "averageDistance": 6185.172367349486,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 7200,
+    "id": "6",
+    "distance": 32633.3189372787,
+    "mining": false,
+    "coin": 5.276056510493492,
+    "averageDistance": 6185.172367349486,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 7200,
+    "id": "7",
+    "distance": 30282.38903782504,
+    "mining": true,
+    "coin": 4.895965260027484,
+    "averageDistance": 6185.172367349486,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 7200,
+    "id": "8",
+    "distance": 34326.76691431303,
+    "mining": true,
+    "coin": 5.549848068182937,
+    "averageDistance": 6185.172367349486,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 7200,
+    "id": "9",
+    "distance": 28927.185377768656,
+    "mining": false,
+    "coin": 4.676860022603499,
+    "averageDistance": 6185.172367349486,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 10800,
+    "id": "0",
+    "distance": 36041.35784964176,
+    "mining": true,
+    "coin": 5.191622289964813,
+    "averageDistance": 6942.214944894621,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 10800,
+    "id": "1",
+    "distance": 33285.128780219406,
+    "mining": true,
+    "coin": 4.794597840088147,
+    "averageDistance": 6942.214944894621,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 10800,
+    "id": "10",
+    "distance": 37782.03514060751,
+    "mining": false,
+    "coin": 5.442360318790305,
+    "averageDistance": 6942.214944894621,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 10800,
+    "id": "11",
+    "distance": 35988.93356374684,
+    "mining": false,
+    "coin": 5.184070768395537,
+    "averageDistance": 6942.214944894621,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 10800,
+    "id": "12",
+    "distance": 35909.35097233413,
+    "mining": true,
+    "coin": 5.172607194875498,
+    "averageDistance": 6942.214944894621,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 10800,
+    "id": "13",
+    "distance": 36188.27479644479,
+    "mining": false,
+    "coin": 5.212785124588808,
+    "averageDistance": 6942.214944894621,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 10800,
+    "id": "14",
+    "distance": 36581.87867407214,
+    "mining": true,
+    "coin": 5.269482285473578,
+    "averageDistance": 6942.214944894621,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 10800,
+    "id": "15",
+    "distance": 33490.690465656386,
+    "mining": false,
+    "coin": 4.824208229145339,
+    "averageDistance": 6942.214944894621,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 10800,
+    "id": "16",
+    "distance": 32223.868574415923,
+    "mining": false,
+    "coin": 4.64172729167853,
+    "averageDistance": 6942.214944894621,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 10800,
+    "id": "17",
+    "distance": 35111.327577662196,
+    "mining": false,
+    "coin": 5.057654920852522,
+    "averageDistance": 6942.214944894621,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 10800,
+    "id": "18",
+    "distance": 31595.07895155989,
+    "mining": false,
+    "coin": 4.551152507139706,
+    "averageDistance": 6942.214944894621,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 10800,
+    "id": "19",
+    "distance": 35738.080673142955,
+    "mining": false,
+    "coin": 5.14793635126857,
+    "averageDistance": 6942.214944894621,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 10800,
+    "id": "2",
+    "distance": 35259.613282480925,
+    "mining": false,
+    "coin": 5.079014919930017,
+    "averageDistance": 6942.214944894621,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 10800,
+    "id": "3",
+    "distance": 37893.39333766745,
+    "mining": false,
+    "coin": 5.458401049010252,
+    "averageDistance": 6942.214944894621,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 10800,
+    "id": "4",
+    "distance": 35923.32838201742,
+    "mining": false,
+    "coin": 5.174620588265682,
+    "averageDistance": 6942.214944894621,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 10800,
+    "id": "5",
+    "distance": 30103.76974050331,
+    "mining": false,
+    "coin": 4.336335014034958,
+    "averageDistance": 6942.214944894621,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 10800,
+    "id": "6",
+    "distance": 34873.45733176596,
+    "mining": false,
+    "coin": 5.023390604955594,
+    "averageDistance": 6942.214944894621,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 10800,
+    "id": "7",
+    "distance": 31410.81111958552,
+    "mining": false,
+    "coin": 4.524609417731349,
+    "averageDistance": 6942.214944894621,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 10800,
+    "id": "8",
+    "distance": 34965.1489308269,
+    "mining": false,
+    "coin": 5.036598435567116,
+    "averageDistance": 6942.214944894621,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 10800,
+    "id": "9",
+    "distance": 33855.966345110595,
+    "mining": false,
+    "coin": 4.876824848243662,
+    "averageDistance": 6942.214944894621,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 14400,
+    "id": "0",
+    "distance": 35587.06824439093,
+    "mining": true,
+    "coin": 4.943671914603569,
+    "averageDistance": 7198.509298173085,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 14400,
+    "id": "1",
+    "distance": 34244.715721179244,
+    "mining": false,
+    "coin": 4.757195455713343,
+    "averageDistance": 7198.509298173085,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 14400,
+    "id": "10",
+    "distance": 37777.71758792113,
+    "mining": true,
+    "coin": 5.2479917748399325,
+    "averageDistance": 7198.509298173085,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 14400,
+    "id": "11",
+    "distance": 35515.349794809496,
+    "mining": false,
+    "coin": 4.933708956078304,
+    "averageDistance": 7198.509298173085,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 14400,
+    "id": "12",
+    "distance": 36008.588533220274,
+    "mining": true,
+    "coin": 5.002228522835821,
+    "averageDistance": 7198.509298173085,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 14400,
+    "id": "13",
+    "distance": 41025.58625811314,
+    "mining": false,
+    "coin": 5.69917806017491,
+    "averageDistance": 7198.509298173085,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 14400,
+    "id": "14",
+    "distance": 37785.82998380291,
+    "mining": false,
+    "coin": 5.249118729817104,
+    "averageDistance": 7198.509298173085,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 14400,
+    "id": "15",
+    "distance": 33057.976542953766,
+    "mining": false,
+    "coin": 4.5923364371208875,
+    "averageDistance": 7198.509298173085,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 14400,
+    "id": "16",
+    "distance": 34222.63517201172,
+    "mining": false,
+    "coin": 4.754128077697574,
+    "averageDistance": 7198.509298173085,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 14400,
+    "id": "17",
+    "distance": 35098.038602024375,
+    "mining": true,
+    "coin": 4.875737065579943,
+    "averageDistance": 7198.509298173085,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 14400,
+    "id": "18",
+    "distance": 36618.16880551726,
+    "mining": true,
+    "coin": 5.086909982155697,
+    "averageDistance": 7198.509298173085,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 14400,
+    "id": "19",
+    "distance": 39320.85563402798,
+    "mining": true,
+    "coin": 5.462360886858513,
+    "averageDistance": 7198.509298173085,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 14400,
+    "id": "2",
+    "distance": 36712.69533989654,
+    "mining": false,
+    "coin": 5.100041386237271,
+    "averageDistance": 7198.509298173085,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 14400,
+    "id": "3",
+    "distance": 35966.181370218204,
+    "mining": true,
+    "coin": 4.996337419380161,
+    "averageDistance": 7198.509298173085,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 14400,
+    "id": "4",
+    "distance": 37892.417917339386,
+    "mining": true,
+    "coin": 5.263925675133341,
+    "averageDistance": 7198.509298173085,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 14400,
+    "id": "5",
+    "distance": 33743.066633649825,
+    "mining": false,
+    "coin": 4.687507543014982,
+    "averageDistance": 7198.509298173085,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 14400,
+    "id": "6",
+    "distance": 37708.85187428273,
+    "mining": true,
+    "coin": 5.238425111689845,
+    "averageDistance": 7198.509298173085,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 14400,
+    "id": "7",
+    "distance": 34057.338683981034,
+    "mining": true,
+    "coin": 4.731165477917,
+    "averageDistance": 7198.509298173085,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 14400,
+    "id": "8",
+    "distance": 33720.33934341319,
+    "mining": true,
+    "coin": 4.684350321249303,
+    "averageDistance": 7198.509298173085,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 14400,
+    "id": "9",
+    "distance": 33787.50777455548,
+    "mining": false,
+    "coin": 4.693681201902516,
+    "averageDistance": 7198.509298173085,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 18000,
+    "id": "0",
+    "distance": 30287.727785670137,
+    "mining": true,
+    "coin": 7.173906759791981,
+    "averageDistance": 4221.929389356655,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 18000,
+    "id": "1",
+    "distance": 24972.310624798363,
+    "mining": false,
+    "coin": 5.914904850789958,
+    "averageDistance": 4221.929389356655,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 18000,
+    "id": "10",
+    "distance": 9717.376286727991,
+    "mining": false,
+    "coin": 2.301643488217775,
+    "averageDistance": 4221.929389356655,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 18000,
+    "id": "11",
+    "distance": 32559.145266044037,
+    "mining": false,
+    "coin": 7.711911371167072,
+    "averageDistance": 4221.929389356655,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 18000,
+    "id": "12",
+    "distance": 16990.048665449383,
+    "mining": true,
+    "coin": 4.024237996087935,
+    "averageDistance": 4221.929389356655,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 18000,
+    "id": "13",
+    "distance": 22940.44689431667,
+    "mining": false,
+    "coin": 5.43364058909862,
+    "averageDistance": 4221.929389356655,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 18000,
+    "id": "14",
+    "distance": 22316.2034360165,
+    "mining": true,
+    "coin": 5.285783199566274,
+    "averageDistance": 4221.929389356655,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 18000,
+    "id": "15",
+    "distance": 28697.950092385672,
+    "mining": true,
+    "coin": 6.797354348164197,
+    "averageDistance": 4221.929389356655,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 18000,
+    "id": "16",
+    "distance": 19402.964258655313,
+    "mining": true,
+    "coin": 4.595757642837312,
+    "averageDistance": 4221.929389356655,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 18000,
+    "id": "17",
+    "distance": 16268.926371330464,
+    "mining": true,
+    "coin": 3.8534340276613563,
+    "averageDistance": 4221.929389356655,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 18000,
+    "id": "18",
+    "distance": 22157.419745086358,
+    "mining": true,
+    "coin": 5.248173927528131,
+    "averageDistance": 4221.929389356655,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 18000,
+    "id": "19",
+    "distance": 27267.598459162156,
+    "mining": false,
+    "coin": 6.458563359184281,
+    "averageDistance": 4221.929389356655,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 18000,
+    "id": "2",
+    "distance": 14155.267764133996,
+    "mining": false,
+    "coin": 3.3527959514952954,
+    "averageDistance": 4221.929389356655,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 18000,
+    "id": "3",
+    "distance": 17805.15866117214,
+    "mining": true,
+    "coin": 4.217303753600986,
+    "averageDistance": 4221.929389356655,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 18000,
+    "id": "4",
+    "distance": 15849.357390540128,
+    "mining": true,
+    "coin": 3.7540555345373225,
+    "averageDistance": 4221.929389356655,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 18000,
+    "id": "5",
+    "distance": 16587.61811732708,
+    "mining": false,
+    "coin": 3.9289188869771063,
+    "averageDistance": 4221.929389356655,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 18000,
+    "id": "6",
+    "distance": 27188.11286700985,
+    "mining": false,
+    "coin": 6.439736518462434,
+    "averageDistance": 4221.929389356655,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 18000,
+    "id": "7",
+    "distance": 14875.723191797862,
+    "mining": true,
+    "coin": 3.523441966911875,
+    "averageDistance": 4221.929389356655,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 18000,
+    "id": "8",
+    "distance": 17672.71116348937,
+    "mining": false,
+    "coin": 4.1859324336502866,
+    "averageDistance": 4221.929389356655,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 18000,
+    "id": "9",
+    "distance": 24480.871894551878,
+    "mining": true,
+    "coin": 5.798503394269774,
+    "averageDistance": 4221.929389356655,
+    "nodeStatisfy": 11
+  },
+  {
+    "time": 21600,
+    "id": "0",
+    "distance": 35793.682824697105,
+    "mining": false,
+    "coin": 5.434808385860467,
+    "averageDistance": 6586.006402326926,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 21600,
+    "id": "1",
+    "distance": 33853.24739628509,
+    "mining": false,
+    "coin": 5.140178330881105,
+    "averageDistance": 6586.006402326926,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 21600,
+    "id": "10",
+    "distance": 37353.00248179968,
+    "mining": true,
+    "coin": 5.671570933882232,
+    "averageDistance": 6586.006402326926,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 21600,
+    "id": "11",
+    "distance": 33678.86574012582,
+    "mining": false,
+    "coin": 5.113700728900994,
+    "averageDistance": 6586.006402326926,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 21600,
+    "id": "12",
+    "distance": 36223.670506496484,
+    "mining": false,
+    "coin": 5.50009646114194,
+    "averageDistance": 6586.006402326926,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 21600,
+    "id": "13",
+    "distance": 36754.13966172007,
+    "mining": false,
+    "coin": 5.5806413502322645,
+    "averageDistance": 6586.006402326926,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 21600,
+    "id": "14",
+    "distance": 33086.126393468534,
+    "mining": true,
+    "coin": 5.023700915592604,
+    "averageDistance": 6586.006402326926,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 21600,
+    "id": "15",
+    "distance": 32275.898355042853,
+    "mining": false,
+    "coin": 4.900678253765338,
+    "averageDistance": 6586.006402326926,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 21600,
+    "id": "16",
+    "distance": 33896.01314609925,
+    "mining": false,
+    "coin": 5.146671757580333,
+    "averageDistance": 6586.006402326926,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 21600,
+    "id": "17",
+    "distance": 30045.00100610098,
+    "mining": false,
+    "coin": 4.561945308083161,
+    "averageDistance": 6586.006402326926,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 21600,
+    "id": "18",
+    "distance": 33051.2957499133,
+    "mining": true,
+    "coin": 5.018412332280124,
+    "averageDistance": 6586.006402326926,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 21600,
+    "id": "19",
+    "distance": 32929.267473571854,
+    "mining": true,
+    "coin": 4.999883914770792,
+    "averageDistance": 6586.006402326926,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 21600,
+    "id": "2",
+    "distance": 32840.01787824915,
+    "mining": false,
+    "coin": 4.986332516568208,
+    "averageDistance": 6586.006402326926,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 21600,
+    "id": "3",
+    "distance": 31610.739731776543,
+    "mining": false,
+    "coin": 4.799682508751895,
+    "averageDistance": 6586.006402326926,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 21600,
+    "id": "4",
+    "distance": 31102.833463072042,
+    "mining": false,
+    "coin": 4.722563502532124,
+    "averageDistance": 6586.006402326926,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 21600,
+    "id": "5",
+    "distance": 31536.030023203184,
+    "mining": false,
+    "coin": 4.788338804538829,
+    "averageDistance": 6586.006402326926,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 21600,
+    "id": "6",
+    "distance": 33801.51296985938,
+    "mining": false,
+    "coin": 5.132323126487828,
+    "averageDistance": 6586.006402326926,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 21600,
+    "id": "7",
+    "distance": 31632.959425413697,
+    "mining": false,
+    "coin": 4.803056282216389,
+    "averageDistance": 6586.006402326926,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 21600,
+    "id": "8",
+    "distance": 30348.57174034593,
+    "mining": false,
+    "coin": 4.608038602820575,
+    "averageDistance": 6586.006402326926,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 21600,
+    "id": "9",
+    "distance": 26787.76426545155,
+    "mining": false,
+    "coin": 4.067375983112781,
+    "averageDistance": 6586.006402326926,
+    "nodeStatisfy": 4
+  },
+  {
+    "time": 25200,
+    "id": "0",
+    "distance": 37089.2380416264,
+    "mining": true,
+    "coin": 5.432447246544879,
+    "averageDistance": 6827.353558788027,
+    "nodeStatisfy": 5
+  },
+  {
+    "time": 25200,
+    "id": "1",
+    "distance": 35518.285016997586,
+    "mining": false,
+    "coin": 5.202350326691254,
+    "averageDistance": 6827.353558788027,
+    "nodeStatisfy": 5
+  },
+  {
+    "time": 25200,
+    "id": "10",
+    "distance": 34087.0635325264,
+    "mining": false,
+    "coin": 4.992719834854641,
+    "averageDistance": 6827.353558788027,
+    "nodeStatisfy": 5
+  },
+  {
+    "time": 25200,
+    "id": "11",
+    "distance": 31561.54348291645,
+    "mining": false,
+    "coin": 4.622807829000021,
+    "averageDistance": 6827.353558788027,
+    "nodeStatisfy": 5
+  },
+  {
+    "time": 25200,
+    "id": "12",
+    "distance": 33979.45595471349,
+    "mining": true,
+    "coin": 4.9769585919533705,
+    "averageDistance": 6827.353558788027,
+    "nodeStatisfy": 5
+  },
+  {
+    "time": 25200,
+    "id": "13",
+    "distance": 34300.662559055425,
+    "mining": false,
+    "coin": 5.024005606814419,
+    "averageDistance": 6827.353558788027,
+    "nodeStatisfy": 5
+  },
+  {
+    "time": 25200,
+    "id": "14",
+    "distance": 33963.45699006894,
+    "mining": false,
+    "coin": 4.974615229403476,
+    "averageDistance": 6827.353558788027,
+    "nodeStatisfy": 5
+  },
+  {
+    "time": 25200,
+    "id": "15",
+    "distance": 31729.864443543633,
+    "mining": false,
+    "coin": 4.647461739066027,
+    "averageDistance": 6827.353558788027,
+    "nodeStatisfy": 5
+  },
+  {
+    "time": 25200,
+    "id": "16",
+    "distance": 32362.2697918519,
+    "mining": false,
+    "coin": 4.740089921107991,
+    "averageDistance": 6827.353558788027,
+    "nodeStatisfy": 5
+  },
+  {
+    "time": 25200,
+    "id": "17",
+    "distance": 31582.447800110174,
+    "mining": false,
+    "coin": 4.625869676759,
+    "averageDistance": 6827.353558788027,
+    "nodeStatisfy": 5
+  },
+  {
+    "time": 25200,
+    "id": "18",
+    "distance": 35390.50477173364,
+    "mining": false,
+    "coin": 5.183634400503505,
+    "averageDistance": 6827.353558788027,
+    "nodeStatisfy": 5
+  },
+  {
+    "time": 25200,
+    "id": "19",
+    "distance": 37799.93011791786,
+    "mining": true,
+    "coin": 5.5365420572459705,
+    "averageDistance": 6827.353558788027,
+    "nodeStatisfy": 5
+  },
+  {
+    "time": 25200,
+    "id": "2",
+    "distance": 31453.342650662482,
+    "mining": false,
+    "coin": 4.606959692335897,
+    "averageDistance": 6827.353558788027,
+    "nodeStatisfy": 5
+  },
+  {
+    "time": 25200,
+    "id": "3",
+    "distance": 39677.59241357742,
+    "mining": false,
+    "coin": 5.811562572807622,
+    "averageDistance": 6827.353558788027,
+    "nodeStatisfy": 5
+  },
+  {
+    "time": 25200,
+    "id": "4",
+    "distance": 37405.306408940254,
+    "mining": false,
+    "coin": 5.478741665691668,
+    "averageDistance": 6827.353558788027,
+    "nodeStatisfy": 5
+  },
+  {
+    "time": 25200,
+    "id": "5",
+    "distance": 33011.52353859135,
+    "mining": true,
+    "coin": 4.8351858819585525,
+    "averageDistance": 6827.353558788027,
+    "nodeStatisfy": 5
+  },
+  {
+    "time": 25200,
+    "id": "6",
+    "distance": 35529.46119500853,
+    "mining": false,
+    "coin": 5.203987297431778,
+    "averageDistance": 6827.353558788027,
+    "nodeStatisfy": 5
+  },
+  {
+    "time": 25200,
+    "id": "7",
+    "distance": 31609.91110925315,
+    "mining": true,
+    "coin": 4.629892217690342,
+    "averageDistance": 6827.353558788027,
+    "nodeStatisfy": 5
+  },
+  {
+    "time": 25200,
+    "id": "8",
+    "distance": 33334.972838590176,
+    "mining": false,
+    "coin": 4.882561383639214,
+    "averageDistance": 6827.353558788027,
+    "nodeStatisfy": 5
+  },
+  {
+    "time": 25200,
+    "id": "9",
+    "distance": 31348.52322111732,
+    "mining": false,
+    "coin": 4.591606828500358,
+    "averageDistance": 6827.353558788027,
+    "nodeStatisfy": 5
+  },
+  {
+    "time": 28800,
+    "id": "0",
+    "distance": 30962.814807817223,
+    "mining": false,
+    "coin": 4.8420066903027825,
+    "averageDistance": 6394.624540653214,
+    "nodeStatisfy": 9
+  },
+  {
+    "time": 28800,
+    "id": "1",
+    "distance": 33960.98847117158,
+    "mining": false,
+    "coin": 5.310865126680674,
+    "averageDistance": 6394.624540653214,
+    "nodeStatisfy": 9
+  },
+  {
+    "time": 28800,
+    "id": "10",
+    "distance": 33823.74699302151,
+    "mining": true,
+    "coin": 5.289403119446696,
+    "averageDistance": 6394.624540653214,
+    "nodeStatisfy": 9
+  },
+  {
+    "time": 28800,
+    "id": "11",
+    "distance": 34884.06542211144,
+    "mining": false,
+    "coin": 5.455217143764943,
+    "averageDistance": 6394.624540653214,
+    "nodeStatisfy": 9
+  },
+  {
+    "time": 28800,
+    "id": "12",
+    "distance": 29576.941559028037,
+    "mining": false,
+    "coin": 4.62528196471825,
+    "averageDistance": 6394.624540653214,
+    "nodeStatisfy": 9
+  },
+  {
+    "time": 28800,
+    "id": "13",
+    "distance": 31884.7178731809,
+    "mining": false,
+    "coin": 4.986175133579283,
+    "averageDistance": 6394.624540653214,
+    "nodeStatisfy": 9
+  },
+  {
+    "time": 28800,
+    "id": "14",
+    "distance": 30797.33273689017,
+    "mining": false,
+    "coin": 4.8161283811268465,
+    "averageDistance": 6394.624540653214,
+    "nodeStatisfy": 9
+  },
+  {
+    "time": 28800,
+    "id": "15",
+    "distance": 30342.655030687805,
+    "mining": false,
+    "coin": 4.74502526892506,
+    "averageDistance": 6394.624540653214,
+    "nodeStatisfy": 9
+  },
+  {
+    "time": 28800,
+    "id": "16",
+    "distance": 25856.49828641266,
+    "mining": true,
+    "coin": 4.043474033859603,
+    "averageDistance": 6394.624540653214,
+    "nodeStatisfy": 9
+  },
+  {
+    "time": 28800,
+    "id": "17",
+    "distance": 29233.856980881934,
+    "mining": true,
+    "coin": 4.571629936211342,
+    "averageDistance": 6394.624540653214,
+    "nodeStatisfy": 9
+  },
+  {
+    "time": 28800,
+    "id": "18",
+    "distance": 28898.81297037187,
+    "mining": true,
+    "coin": 4.519235302502974,
+    "averageDistance": 6394.624540653214,
+    "nodeStatisfy": 9
+  },
+  {
+    "time": 28800,
+    "id": "19",
+    "distance": 39101.82189437022,
+    "mining": true,
+    "coin": 6.114795582724854,
+    "averageDistance": 6394.624540653214,
+    "nodeStatisfy": 9
+  },
+  {
+    "time": 28800,
+    "id": "2",
+    "distance": 34551.30470225174,
+    "mining": true,
+    "coin": 5.403179574124349,
+    "averageDistance": 6394.624540653214,
+    "nodeStatisfy": 9
+  },
+  {
+    "time": 28800,
+    "id": "3",
+    "distance": 34499.914617301576,
+    "mining": true,
+    "coin": 5.395143123411182,
+    "averageDistance": 6394.624540653214,
+    "nodeStatisfy": 9
+  },
+  {
+    "time": 28800,
+    "id": "4",
+    "distance": 33574.92553128643,
+    "mining": false,
+    "coin": 5.250492084067963,
+    "averageDistance": 6394.624540653214,
+    "nodeStatisfy": 9
+  },
+  {
+    "time": 28800,
+    "id": "5",
+    "distance": 28893.243218133684,
+    "mining": true,
+    "coin": 4.518364297144837,
+    "averageDistance": 6394.624540653214,
+    "nodeStatisfy": 9
+  },
+  {
+    "time": 28800,
+    "id": "6",
+    "distance": 38003.07224399704,
+    "mining": false,
+    "coin": 5.9429716322508295,
+    "averageDistance": 6394.624540653214,
+    "nodeStatisfy": 9
+  },
+  {
+    "time": 28800,
+    "id": "7",
+    "distance": 28696.82502496074,
+    "mining": true,
+    "coin": 4.48764815549739,
+    "averageDistance": 6394.624540653214,
+    "nodeStatisfy": 9
+  },
+  {
+    "time": 28800,
+    "id": "8",
+    "distance": 31220.594501715645,
+    "mining": false,
+    "coin": 4.882318626095042,
+    "averageDistance": 6394.624540653214,
+    "nodeStatisfy": 9
+  },
+  {
+    "time": 28800,
+    "id": "9",
+    "distance": 30698.32119972903,
+    "mining": false,
+    "coin": 4.800644823565072,
+    "averageDistance": 6394.624540653214,
+    "nodeStatisfy": 9
+  },
+  {
+    "time": 32400,
+    "id": "0",
+    "distance": 30396.16676804725,
+    "mining": false,
+    "coin": 4.809152132994822,
+    "averageDistance": 6320.4835129885,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 32400,
+    "id": "1",
+    "distance": 30669.375842413723,
+    "mining": true,
+    "coin": 4.852378109900708,
+    "averageDistance": 6320.4835129885,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 32400,
+    "id": "10",
+    "distance": 30812.271376169854,
+    "mining": false,
+    "coin": 4.874986433055493,
+    "averageDistance": 6320.4835129885,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 32400,
+    "id": "11",
+    "distance": 29407.907635880772,
+    "mining": false,
+    "coin": 4.652793979360592,
+    "averageDistance": 6320.4835129885,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 32400,
+    "id": "12",
+    "distance": 33520.22308665329,
+    "mining": true,
+    "coin": 5.303427027025659,
+    "averageDistance": 6320.4835129885,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 32400,
+    "id": "13",
+    "distance": 34046.884017805125,
+    "mining": true,
+    "coin": 5.386753077962989,
+    "averageDistance": 6320.4835129885,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 32400,
+    "id": "14",
+    "distance": 31225.736662955445,
+    "mining": true,
+    "coin": 4.940403150927777,
+    "averageDistance": 6320.4835129885,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 32400,
+    "id": "15",
+    "distance": 31846.269668900193,
+    "mining": false,
+    "coin": 5.038581241997797,
+    "averageDistance": 6320.4835129885,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 32400,
+    "id": "16",
+    "distance": 31026.03968578379,
+    "mining": true,
+    "coin": 4.908807945155737,
+    "averageDistance": 6320.4835129885,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 32400,
+    "id": "17",
+    "distance": 32949.26434177184,
+    "mining": true,
+    "coin": 5.213092364541668,
+    "averageDistance": 6320.4835129885,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 32400,
+    "id": "18",
+    "distance": 32944.251477039594,
+    "mining": true,
+    "coin": 5.2122992504196315,
+    "averageDistance": 6320.4835129885,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 32400,
+    "id": "19",
+    "distance": 34541.03218430556,
+    "mining": true,
+    "coin": 5.464935097658945,
+    "averageDistance": 6320.4835129885,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 32400,
+    "id": "2",
+    "distance": 32854.8672895418,
+    "mining": false,
+    "coin": 5.1981572647132985,
+    "averageDistance": 6320.4835129885,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 32400,
+    "id": "3",
+    "distance": 30076.628931943193,
+    "mining": true,
+    "coin": 4.758596216592633,
+    "averageDistance": 6320.4835129885,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 32400,
+    "id": "4",
+    "distance": 34080.861645078214,
+    "mining": false,
+    "coin": 5.392128873533576,
+    "averageDistance": 6320.4835129885,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 32400,
+    "id": "5",
+    "distance": 25934.424391661396,
+    "mining": true,
+    "coin": 4.103234244400217,
+    "averageDistance": 6320.4835129885,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 32400,
+    "id": "6",
+    "distance": 36599.7672084861,
+    "mining": true,
+    "coin": 5.790659390737136,
+    "averageDistance": 6320.4835129885,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 32400,
+    "id": "7",
+    "distance": 27037.522711189653,
+    "mining": false,
+    "coin": 4.277761765476952,
+    "averageDistance": 6320.4835129885,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 32400,
+    "id": "8",
+    "distance": 30658.252386007778,
+    "mining": true,
+    "coin": 4.850618203972137,
+    "averageDistance": 6320.4835129885,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 32400,
+    "id": "9",
+    "distance": 31420.603987215152,
+    "mining": true,
+    "coin": 4.971234229572196,
+    "averageDistance": 6320.4835129885,
+    "nodeStatisfy": 13
+  },
+  {
+    "time": 36000,
+    "id": "0",
+    "distance": 38615.24807838186,
+    "mining": false,
+    "coin": 5.501082014967558,
+    "averageDistance": 7019.57323546822,
+    "nodeStatisfy": 7
+  },
+  {
+    "time": 36000,
+    "id": "1",
+    "distance": 34389.129137578246,
+    "mining": false,
+    "coin": 4.899034169743856,
+    "averageDistance": 7019.57323546822,
+    "nodeStatisfy": 7
+  },
+  {
+    "time": 36000,
+    "id": "10",
+    "distance": 35772.96516878462,
+    "mining": false,
+    "coin": 5.096173794160649,
+    "averageDistance": 7019.57323546822,
+    "nodeStatisfy": 7
+  },
+  {
+    "time": 36000,
+    "id": "11",
+    "distance": 37781.02515480898,
+    "mining": true,
+    "coin": 5.3822396159228765,
+    "averageDistance": 7019.57323546822,
+    "nodeStatisfy": 7
+  },
+  {
+    "time": 36000,
+    "id": "12",
+    "distance": 34418.20284506197,
+    "mining": false,
+    "coin": 4.903175975307878,
+    "averageDistance": 7019.57323546822,
+    "nodeStatisfy": 7
+  },
+  {
+    "time": 36000,
+    "id": "13",
+    "distance": 35903.99477820333,
+    "mining": false,
+    "coin": 5.11484011546301,
+    "averageDistance": 7019.57323546822,
+    "nodeStatisfy": 7
+  },
+  {
+    "time": 36000,
+    "id": "14",
+    "distance": 34878.429857844436,
+    "mining": true,
+    "coin": 4.968739364611525,
+    "averageDistance": 7019.57323546822,
+    "nodeStatisfy": 7
+  },
+  {
+    "time": 36000,
+    "id": "15",
+    "distance": 34775.880795424935,
+    "mining": false,
+    "coin": 4.954130347940634,
+    "averageDistance": 7019.57323546822,
+    "nodeStatisfy": 7
+  },
+  {
+    "time": 36000,
+    "id": "16",
+    "distance": 33691.51230833191,
+    "mining": false,
+    "coin": 4.799652511365902,
+    "averageDistance": 7019.57323546822,
+    "nodeStatisfy": 7
+  },
+  {
+    "time": 36000,
+    "id": "17",
+    "distance": 35326.57430183193,
+    "mining": false,
+    "coin": 5.032581485628674,
+    "averageDistance": 7019.57323546822,
+    "nodeStatisfy": 7
+  },
+  {
+    "time": 36000,
+    "id": "18",
+    "distance": 34557.4417129862,
+    "mining": false,
+    "coin": 4.9230117777496405,
+    "averageDistance": 7019.57323546822,
+    "nodeStatisfy": 7
+  },
+  {
+    "time": 36000,
+    "id": "19",
+    "distance": 37897.642140758995,
+    "mining": false,
+    "coin": 5.398852732139227,
+    "averageDistance": 7019.57323546822,
+    "nodeStatisfy": 7
+  },
+  {
+    "time": 36000,
+    "id": "2",
+    "distance": 34338.728578550035,
+    "mining": true,
+    "coin": 4.891854166439161,
+    "averageDistance": 7019.57323546822,
+    "nodeStatisfy": 7
+  },
+  {
+    "time": 36000,
+    "id": "3",
+    "distance": 37046.98155371824,
+    "mining": false,
+    "coin": 5.277668643234423,
+    "averageDistance": 7019.57323546822,
+    "nodeStatisfy": 7
+  },
+  {
+    "time": 36000,
+    "id": "4",
+    "distance": 34015.8456342335,
+    "mining": true,
+    "coin": 4.845856648714709,
+    "averageDistance": 7019.57323546822,
+    "nodeStatisfy": 7
+  },
+  {
+    "time": 36000,
+    "id": "5",
+    "distance": 31107.132744677227,
+    "mining": false,
+    "coin": 4.431484892486105,
+    "averageDistance": 7019.57323546822,
+    "nodeStatisfy": 7
+  },
+  {
+    "time": 36000,
+    "id": "6",
+    "distance": 35071.596730242156,
+    "mining": true,
+    "coin": 4.996257686013416,
+    "averageDistance": 7019.57323546822,
+    "nodeStatisfy": 7
+  },
+  {
+    "time": 36000,
+    "id": "7",
+    "distance": 33438.097523019496,
+    "mining": true,
+    "coin": 4.763551344412907,
+    "averageDistance": 7019.57323546822,
+    "nodeStatisfy": 7
+  },
+  {
+    "time": 36000,
+    "id": "8",
+    "distance": 35902.14249051683,
+    "mining": false,
+    "coin": 5.114576240776564,
+    "averageDistance": 7019.57323546822,
+    "nodeStatisfy": 7
+  },
+  {
+    "time": 36000,
+    "id": "9",
+    "distance": 33028.75201186701,
+    "mining": true,
+    "coin": 4.705236472921266,
+    "averageDistance": 7019.57323546822,
+    "nodeStatisfy": 7
+  }
+]
