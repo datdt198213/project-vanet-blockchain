@@ -1,7 +1,6 @@
 import os
 import sys
 import json
-import xmltodict
 import os
 import sys
 
